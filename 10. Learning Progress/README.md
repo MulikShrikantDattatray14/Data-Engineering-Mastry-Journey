@@ -9,3 +9,5 @@ Keep **actual** verified completions distinct from scheduled sessions and concep
 - [Guided Python Slot 2 Lesson 1–12 archive](../99.%20Reference%20Materials/Legacy%20Journey%20Snapshot/10-learning-journal/sessions/2026-11-06/slot-02-python.md)
 
 **No credit from moving files.** Only a reviewed attempt can change solved totals. The 192-file Journey snapshot is now SHA-verified. [Dashboard source](<../99. Reference Materials/Legacy Journey Snapshot/dashboard/index.html>) and progress JSON remain preserved; GitHub Pages cutover is separate.
+
+The new Pages deployment requires [enabling GitHub Pages](../docs/README.md); its workflow currently fails until the source is set to **GitHub Actions** in repository Settings. The original older dashboard stays available and unchanged.

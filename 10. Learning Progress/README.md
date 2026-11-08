@@ -1,5 +1,7 @@
 # Learning Progress
 
+**[Unified dashboard source](../docs/index.html)** is configured to read actual progress from the archived `progress/daily-progress.json`. GitHub Pages needs to be enabled for `main` → `/docs` before this dashboard is publicly served from the new repository.
+
 Keep **actual** verified completions distinct from scheduled sessions and conceptual notes. Preserve historic dates and the November 7–8 Diwali break.
 
 - [Original Journey dashboard / project](../99.%20Reference%20Materials/Legacy%20Journey%20Snapshot/dashboard/README.md)

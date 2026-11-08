@@ -21,3 +21,6 @@ jobs:
 
       - name: Execute foundation examples and verify SVG diagrams
         run: python3 scripts/check_foundation_examples.py
+
+      - name: Verify newly integrated SQL and Python teaching examples
+        run: python3 scripts/verify_learning_examples.py

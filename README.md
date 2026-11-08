@@ -6,8 +6,8 @@ One organized learning home for **SQL, Python, data modeling, Spark, pipelines, 
 
 ## Explore
 
-- [SQL Mastery](01.%20SQL%20Mastery/README.md)
-- [Python Mastery](02.%20Python%20Mastery/README.md)
+- [SQL Mastery](01.%20SQL%20Mastery/README.md) — [205 PNP questions](01.%20SQL%20Mastery/PNP-PROBLEM-INDEX.md), [Bosscoder practice](01.%20SQL%20Mastery/BOSSCODER-PROBLEM-INDEX.md)
+- [Python Mastery](02.%20Python%20Mastery/README.md) — [80-page mentorship index](02.%20Python%20Mastery/PDF-COVERAGE-INDEX.md), [seven Bosscoder lectures](02.%20Python%20Mastery/BOSSCODER-COVERAGE-INDEX.md)
 - [Database Design and Modeling](03.%20Database%20Design%20and%20Modeling/README.md)
 - [Data Pipelines and ETL](04.%20Data%20Pipelines%20and%20ETL/README.md)
 - [Apache Spark](05.%20Apache%20Spark/README.md)
@@ -15,8 +15,8 @@ One organized learning home for **SQL, Python, data modeling, Spark, pipelines, 
 - [Data System Design](07.%20Data%20System%20Design/README.md)
 - [Projects](08.%20Projects/README.md)
 - [Interview Preparation](09.%20Interview%20Preparation/README.md)
-- [Learning Progress](10.%20Learning%20Progress/README.md)
-- [Preserved Sources and Migration Audit](99.%20Reference%20Materials/README.md)
+- [Learning Progress](10.%20Learning%20Progress/README.md) — [dashboard source](docs/index.html)
+- [Preserved Sources and Migration Audit](99.%20Reference%20Materials/README.md) — [W3Schools references](99.%20Reference%20Materials/W3SCHOOLS-TOPICS.md)
 
 ## Method
 

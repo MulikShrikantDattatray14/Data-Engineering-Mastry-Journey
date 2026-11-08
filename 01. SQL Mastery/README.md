@@ -1,6 +1,6 @@
 # SQL Mastery
 
-**Browse [205 PNP SQL questions](PNP-PROBLEM-INDEX.md) and the [Bosscoder foundation/problem index](BOSSCODER-PROBLEM-INDEX.md).** Existing Bosscoder problem files are preserved in the [complete local original source archive](../99.%20Reference%20Materials/README.md), while each concept has a single canonical foundation note here.
+**[Detailed SQL concept coverage register](SOURCE-GAP-REGISTER.md)** · Browse [205 PNP SQL questions](PNP-PROBLEM-INDEX.md) and the [Bosscoder foundation/problem index](BOSSCODER-PROBLEM-INDEX.md).** Existing Bosscoder problem files are preserved in the [complete local original source archive](../99.%20Reference%20Materials/README.md), while each concept has a single canonical foundation note here.
 
 **Canonical source:** [Bosscoder SQL foundation notes and numbered practice](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments) + [PNP 205-question source](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/2.PNP-%20foundations%20and%20practice). These source files are preserved; they are not repeated as second copies.
 
@@ -27,6 +27,10 @@ These short foundations explain one topic once. Original Bosscoder/PNP question 
 | Cumulative metrics and ranking | [Window Functions](<09. Window Functions/0. Foundation Notes.md>) | Source-backed |
 | Hierarchies and graph walks | [Recursive CTEs](<10. Recursive CTEs/0. Foundation Notes.md>) | Source-backed |
 | Missing-value interpretation | [NULL Logic](<11. NULL Logic/0. Foundation Notes.md>) | PNP P006 verified |
+| SQL date boundaries and monthly revenue | [Dates and Time](<12. Dates and Time/0. Foundation Notes.md>) | Source-backed; practice pending |
+| Consecutive sequences | [Gaps and Islands](<13. Gaps and Islands/0. Foundation Notes.md>) | Source-backed; SQLite example verified |
+| Latest-record correctness | [Data Quality and Deduplication](<14. Data Quality and Deduplication/0. Foundation Notes.md>) | Source-backed |
+| Revenue share and query plans | [Analytics and Performance](<15. Analytics and Performance/0. Foundation Notes.md>) | Source-backed; SQLite example verified |
 
 **First fully integrated example:** [SQL NULL Logic foundation](<11. NULL Logic/0. Foundation Notes.md>) and [PNP P006 progressive worked solution](<11. NULL Logic/1. PNP P006 - Most expensive never discounted.md>) include step-by-step intermediate rows, SQLite/T-SQL dialect distinction and links back to both preserved sources. Original Bosscoder and PNP notes remain preserved while the exhaustive four-source, problem-by-problem reconciliation continues. 
 

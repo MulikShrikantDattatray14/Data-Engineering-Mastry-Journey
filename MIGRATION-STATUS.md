@@ -39,3 +39,10 @@ A source-to-snapshot audit verified **552/552 original Mastry** blobs unchanged 
 - **Subject indexes:** 205 distinct PNP SQL question IDs, Bosscoder SQL problem index, all 80 Python mentorship pages, seven Bosscoder lecture audits, and 36 official W3Schools Python topic links now have navigation pages.
 - **Progress dashboard:** `docs/index.html` is committed and now reads the **active** `10. Learning Progress/daily-progress.json`; the archived JSON stays unchanged as an original. GitHub Pages site activation remains outstanding.
 - **Conceptual consolidation:** eight initial Python foundation chapters, SQL Joins/NULL, and one detailed SQL P006 solution are canonical examples. Comprehensive four-source content reconciliation is **not yet certified**.
+
+## Latest quality gates
+
+- **Automated validation:** [most recent passing repository integrity run](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/validate-learning.yml). It checks the 192 copied Journey Git blob hashes, the fixed original-Mastery submodule SHA, 76 mentorship lesson pages, 205 unique PNP SQL IDs, canonical progress data and relative Markdown links.
+- **Canonical progress:** `10. Learning Progress/daily-progress.json` is now the active tracker read by `docs/index.html`. The original historical JSON remains immutable in the Legacy Journey Snapshot.
+- **Four-source concept mapping:** [Source Coverage Matrix](<99. Reference Materials/SOURCE-COVERAGE-MATRIX.md>) now distinguishes concept-specific source links from verified mastery and flags remaining gaps.
+- **Open migration completion tracker:** [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) records the remaining topic audits, link/output verification, PDF/submodule durability decision and dashboard activation. **This repository is not certified fully consolidated.**

@@ -44,7 +44,7 @@ This register distinguishes **source preserved** from **concept audited** and **
 6. Do not delete original PDFs, datasets, lecture notes, question files or previous repositories.
 7. Validate example outputs, Markdown links, SVG assets and source mapping before publishing to the final repository.
 
-**Migration stage:** source integrity verified (744/744) and additional Python dictionaries, functions, modules/files and SQL joins foundation notes added. The remaining source-by-source consolidation, new repo creation and dashboard cutover are **not complete**. Specific W3Schools dictionaries, file handling and SQL joins pages were verified from the official site on November 8, 2026.
+**Migration stage:** source integrity verified (744/744) and additional Python dictionaries, functions, modules/files and SQL joins foundation notes added. The final repository is created, but exhaustive source-by-source conceptual consolidation and GitHub Pages cutover are **not complete**. Specific W3Schools dictionaries, file handling and SQL joins pages were verified from the official site on November 8, 2026.
 
 ## Verified topic and question ID indexes
 
@@ -55,3 +55,23 @@ The [topic-and-problem source index](TOPIC-AND-PROBLEM-INDEX.json) now records:
 - A source pointer for Bosscoder lecture audits and official W3Schools Python/SQL tutorials.
 
 The consolidated canonical notes currently include Python basics, operators, loops, slicing, tuples/sets, dictionaries, functions and file-handling previews, plus SQL joins and NULL logic and one fully worked SQL problem. **Remaining unique-source conceptual coverage and all unsolved problem sets are not yet audited.**
+
+
+## Concept-level four-source reconciliation — first pass
+
+The table below makes the **topic ownership** explicit. A source being linked means we know where it lives, **not** that every exercise on that page has been independently completed. This prevents the same explanation from being copied four times.
+
+| Canonical note (single explanation) | PNP mentorship source | Bosscoder source | W3Schools official topic | ChatGPT Study Mode | Audit outcome |
+|---|---|---|---|---|---|
+| [Python basics](../02.%20Python%20Mastery/00.%20Python%20Basics/0.%20Foundation%20Notes.md) | PDF pp. 5–10 | Python Refresher 1 | [Python Intro](https://www.w3schools.com/python/python_intro.asp), [Strings](https://www.w3schools.com/python/python_strings.asp) | Lessons 1–3 reviewed | Foundation starter saved; strings and input/output source coverage still need checking |
+| [Operators and decisions](../02.%20Python%20Mastery/01.%20Operators%20and%20Decisions/0.%20Foundation%20Notes.md) | PDF pp. 7, 9, 11 | Python Refresher 1 | [Operators](https://www.w3schools.com/python/python_operators.asp), [Conditions](https://www.w3schools.com/python/python_conditions.asp) | Lessons 4–7 reviewed | Negative modulo and conditional branch accuracy retained for revision |
+| [Loops](../02.%20Python%20Mastery/02.%20Loops/0.%20Foundation%20Notes.md) | PDF pp. 12–13 | Python Refresher 1 | [For](https://www.w3schools.com/python/python_for_loops.asp), [While](https://www.w3schools.com/python/python_while_loops.asp) | Lessons 8–10 reviewed | Range stop/step, indexing and indentation retained for revision |
+| [Lists and slicing](../02.%20Python%20Mastery/03.%20Lists%20and%20Slicing/0.%20Foundation%20Notes.md) | PDF p. 14 | Python Refresher 1 | [Lists](https://www.w3schools.com/python/python_lists.asp) | Lesson 11 reviewed | Static SVG and progressive output added; reverse stepping revision retained |
+| [Tuples and sets](../02.%20Python%20Mastery/04.%20Tuples%20and%20Sets/0.%20Foundation%20Notes.md) | PDF p. 15 | Python Refresher 1 | [Tuples](https://www.w3schools.com/python/python_tuples.asp), [Sets](https://www.w3schools.com/python/python_sets.asp) | Tuple Lesson 12B complete; Sets 13A unanswered | Tuples documented; sets not marked mastered |
+| [Dictionaries](../02.%20Python%20Mastery/05.%20Dictionaries%20and%20Grouping/0.%20Foundation%20Notes.md) | PDF pp. 16, 29 | Python lecture coverage check pending | [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) | Not independently practiced | Source-aligned preview, no mastery credit |
+| [Functions](../02.%20Python%20Mastery/06.%20Functions%20and%20Reuse/0.%20Foundation%20Notes.md) | PDF pp. 18–19 | Functional Programming lecture | [Functions](https://www.w3schools.com/python/python_functions.asp) | Not independently practiced | Source-aligned preview, no mastery credit |
+| [Modules and files](../02.%20Python%20Mastery/07.%20Modules%20and%20Files/0.%20Foundation%20Notes.md) | PDF pp. 20–22, 33 | Modules/Errors lecture | [Modules](https://www.w3schools.com/python/python_modules.asp), [File Handling](https://www.w3schools.com/python/python_file_handling.asp) | Not independently practiced | Source-aligned preview; detailed file-format audit pending |
+| [SQL joins](../01.%20SQL%20Mastery/02.%20Joins/0.%20Foundation%20Notes.md) | PNP question bank, Joins topic | Bosscoder Joins | [SQL Joins](https://www.w3schools.com/sql/sql_join.asp) | Diagnostic questions reviewed, some corrections pending | Canonical introduction created; complete edge-case audit pending |
+| [SQL NULL logic](../01.%20SQL%20Mastery/11.%20NULL%20Logic/0.%20Foundation%20Notes.md) | PNP P006 | Bosscoder source cross-check pending | [SQL NULL](https://www.w3schools.com/sql/sql_null_values.asp) | P006 final SQLite answer verified | One progressive worked example; full NULL topic audit pending |
+
+**Gap discipline:** The remaining PNP pages, Bosscoder subtopics, W3Schools unique features, and source-specific graded assignments require inspection before marking complete. This matrix is not a certificate of comprehensive coverage. Only append a new concept to its canonical note after confirming it is genuinely missing.

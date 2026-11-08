@@ -25,9 +25,17 @@
 - [ ] Every canonical topic linked/mapped to all four sources and unique gaps merged (eight Python canonical foundation chapters, SQL Joins/NULL and one progressive PNP P006 example are published; exhaustive content deduplication remains outstanding).
 - [ ] Full functional links, code snippets and visual checks (new repository notes and source hashes checked; GitHub Pages deployment and complete lesson audits pending).
 - [x] New public `Data-Engineering-Mastry-Journey` repository created by user and populated with unified topic notes, inventories, the 192-file Journey archive, and a pinned Mastery source submodule.
-- [ ] GitHub Pages moved or configured at new repository location.
+- [ ] GitHub Pages enabled/deployed at new repo: **workflow added**, but first run failed because Pages must be enabled manually via [Settings → Pages](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/settings/pages), choose **GitHub Actions**. Then [rerun the deployment](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/deploy-pages.yml).
 - [ ] User-approved final switchover after verification.
 
 ## Integrity result
 
 A source-to-snapshot audit verified **552/552 original Mastry** blobs unchanged and **192/192 Journey** blobs identical to their source. The [source inventory](<99. Reference Materials/SOURCE-INVENTORY.json>) records paths and SHA hashes from the original inventories. Journey files are copied byte-for-byte; Mastery is pinned as a submodule, not physically duplicated. The learning-content migration is not fully audited until the full four-source topic mapping and dashboard cutover are verified.
+
+## Current new-repository transfer result
+
+- **Journey archive:** 192/192 files are copied into this repository and their Git blob SHAs match the originals exactly.
+- **Original Mastery:** all 552 source files remain in the original repository, now linked here as a Git submodule pinned to commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`. Binary PDFs/ZIPs are accessible through that submodule but are **not physically copied** into this repository's Git object store.
+- **Subject indexes:** 205 distinct PNP SQL question IDs, Bosscoder SQL problem index, all 80 Python mentorship pages, seven Bosscoder lecture audits, and 36 official W3Schools Python topic links now have navigation pages.
+- **Progress dashboard:** `docs/index.html` is committed and reads the preserved progress JSON; GitHub Pages site activation remains outstanding.
+- **Conceptual consolidation:** eight initial Python foundation chapters, SQL Joins/NULL, and one detailed SQL P006 solution are canonical examples. Comprehensive four-source content reconciliation is **not yet certified**.

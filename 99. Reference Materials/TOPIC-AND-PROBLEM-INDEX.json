@@ -1,0 +1,2003 @@
+{
+  "name": "Four-source learning coverage inventory",
+  "status": "source-index-verified; conceptual dedup audit in progress",
+  "python": {
+    "source_pdf_path": "2. Python Mastry/Source/1793477658005.pdf",
+    "intro_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "indexed_lesson_pages": [
+      {
+        "lesson": 1,
+        "topic": "Your first Python program",
+        "source_path": "2. Python Mastry/1. Python from Zero/01. Your first Python program.md",
+        "pdf_page": 5,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Variables and names",
+        "source_path": "2. Python Mastry/1. Python from Zero/02. Variables and names.md",
+        "pdf_page": 6,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Numbers and maths",
+        "source_path": "2. Python Mastry/1. Python from Zero/03. Numbers and maths.md",
+        "pdf_page": 7,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Strings: working with text",
+        "source_path": "2. Python Mastry/1. Python from Zero/04. Strings - working with text.md",
+        "pdf_page": 8,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "True, False, and comparisons",
+        "source_path": "2. Python Mastry/1. Python from Zero/05. True False and comparisons.md",
+        "pdf_page": 9,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Input and output",
+        "source_path": "2. Python Mastry/1. Python from Zero/06. Input and output.md",
+        "pdf_page": 10,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 7,
+        "topic": "Making decisions: if, elif, else",
+        "source_path": "2. Python Mastry/1. Python from Zero/07. Making decisions.md",
+        "pdf_page": 11,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 8,
+        "topic": "Loops part 1: for and range",
+        "source_path": "2. Python Mastry/1. Python from Zero/08. Loops part 1 - for and range.md",
+        "pdf_page": 12,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 9,
+        "topic": "Loops part 2: while, break, continue",
+        "source_path": "2. Python Mastry/1. Python from Zero/09. Loops part 2 - while break continue.md",
+        "pdf_page": 13,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 10,
+        "topic": "Lists: ordered collections",
+        "source_path": "2. Python Mastry/1. Python from Zero/10. Lists - ordered collections.md",
+        "pdf_page": 14,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 11,
+        "topic": "Tuples and sets",
+        "source_path": "2. Python Mastry/1. Python from Zero/11. Tuples and sets.md",
+        "pdf_page": 15,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 12,
+        "topic": "Dictionaries: key and value",
+        "source_path": "2. Python Mastry/1. Python from Zero/12. Dictionaries - key and value.md",
+        "pdf_page": 16,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 13,
+        "topic": "Which data structure?",
+        "source_path": "2. Python Mastry/1. Python from Zero/13. Which data structure.md",
+        "pdf_page": 17,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 14,
+        "topic": "Functions: reusable steps",
+        "source_path": "2. Python Mastry/1. Python from Zero/14. Functions - reusable steps.md",
+        "pdf_page": 18,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 15,
+        "topic": "Functions part 2: a mini pipeline",
+        "source_path": "2. Python Mastry/1. Python from Zero/15. Functions part 2 - mini pipeline.md",
+        "pdf_page": 19,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 16,
+        "topic": "Modules, packages and pip",
+        "source_path": "2. Python Mastry/1. Python from Zero/16. Modules packages and pip.md",
+        "pdf_page": 20,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 17,
+        "topic": "Reading errors without panic",
+        "source_path": "2. Python Mastry/1. Python from Zero/17. Reading errors.md",
+        "pdf_page": 21,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 18,
+        "topic": "Files: read and write",
+        "source_path": "2. Python Mastry/1. Python from Zero/18. Files - read and write.md",
+        "pdf_page": 22,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 19,
+        "topic": "Mini project: monthly sales report",
+        "source_path": "2. Python Mastry/1. Python from Zero/19. Mini project - monthly sales report.md",
+        "pdf_page": 23,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 20,
+        "topic": "Practice set 0: first steps",
+        "source_path": "2. Python Mastry/1. Python from Zero/20. Practice set 0 - first steps.md",
+        "pdf_page": 24,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "The 6-step approach to any coding question",
+        "source_path": "2. Python Mastry/2. Python Foundations/01. The 6-step approach to any coding question.md",
+        "pdf_page": 25,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Names objects and mutability",
+        "source_path": "2. Python Mastry/2. Python Foundations/02. Names objects and mutability.md",
+        "pdf_page": 26,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Numbers strings and dates",
+        "source_path": "2. Python Mastry/2. Python Foundations/03. Numbers strings and dates.md",
+        "pdf_page": 27,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Lists tuples sets and Big-O",
+        "source_path": "2. Python Mastry/2. Python Foundations/04. Lists tuples sets and Big-O.md",
+        "pdf_page": 28,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "Dicts defaultdict and Counter",
+        "source_path": "2. Python Mastry/2. Python Foundations/05. Dicts defaultdict and Counter.md",
+        "pdf_page": 29,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Loops comprehensions and unpacking",
+        "source_path": "2. Python Mastry/2. Python Foundations/06. Loops comprehensions and unpacking.md",
+        "pdf_page": 30,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 7,
+        "topic": "Functions scope and closures",
+        "source_path": "2. Python Mastry/2. Python Foundations/07. Functions scope and closures.md",
+        "pdf_page": 31,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 8,
+        "topic": "Errors exceptions and context managers",
+        "source_path": "2. Python Mastry/2. Python Foundations/08. Errors exceptions and context managers.md",
+        "pdf_page": 32,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 9,
+        "topic": "Files CSV JSON JSON Lines and paths",
+        "source_path": "2. Python Mastry/2. Python Foundations/09. Files CSV JSON JSON Lines and paths.md",
+        "pdf_page": 33,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 10,
+        "topic": "Practice set 1 foundations",
+        "source_path": "2. Python Mastry/2. Python Foundations/10. Practice set 1 foundations.md",
+        "pdf_page": 34,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "Iterators and generators",
+        "source_path": "2. Python Mastry/3. Advanced Python/01. Iterators and generators.md",
+        "pdf_page": 35,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "itertools functools and sorting",
+        "source_path": "2. Python Mastry/3. Advanced Python/02. itertools functools and sorting.md",
+        "pdf_page": 36,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Classes and dataclasses",
+        "source_path": "2. Python Mastry/3. Advanced Python/03. Classes and dataclasses.md",
+        "pdf_page": 37,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Decorators and context managers",
+        "source_path": "2. Python Mastry/3. Advanced Python/04. Decorators and context managers.md",
+        "pdf_page": 38,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "Concurrency threads processes and asyncio",
+        "source_path": "2. Python Mastry/3. Advanced Python/05. Concurrency threads processes and asyncio.md",
+        "pdf_page": 39,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Practice set 2 advanced",
+        "source_path": "2. Python Mastry/3. Advanced Python/06. Practice set 2 advanced.md",
+        "pdf_page": 40,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "Big-O in plain words",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/01. Big-O in plain words.md",
+        "pdf_page": 41,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Space complexity",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/02. Space complexity.md",
+        "pdf_page": 42,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Time versus space trade-offs",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/03. Time versus space trade-offs.md",
+        "pdf_page": 43,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "What Python operations cost",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/04. What Python operations cost.md",
+        "pdf_page": 44,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "Arrays and strings with two pointers",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/05. Arrays and strings with two pointers.md",
+        "pdf_page": 45,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Hashing",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/06. Hashing.md",
+        "pdf_page": 46,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 7,
+        "topic": "Sliding windows",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/07. Sliding windows.md",
+        "pdf_page": 47,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 8,
+        "topic": "Stacks and queues",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/08. Stacks and queues.md",
+        "pdf_page": 48,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 9,
+        "topic": "Linked lists",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/09. Linked lists.md",
+        "pdf_page": 49,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 10,
+        "topic": "Binary search",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/10. Binary search.md",
+        "pdf_page": 50,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 11,
+        "topic": "Sorting",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/11. Sorting.md",
+        "pdf_page": 51,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 12,
+        "topic": "Recursion and backtracking",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/12. Recursion and backtracking.md",
+        "pdf_page": 52,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 13,
+        "topic": "Trees with DFS and BFS",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/13. Trees with DFS and BFS.md",
+        "pdf_page": 53,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 14,
+        "topic": "Graphs and pipeline DAGs",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/14. Graphs and pipeline DAGs.md",
+        "pdf_page": 54,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 15,
+        "topic": "Heaps and greedy choices",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/15. Heaps and greedy choices.md",
+        "pdf_page": 55,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 16,
+        "topic": "Dynamic programming basics",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/16. Dynamic programming basics.md",
+        "pdf_page": 56,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 17,
+        "topic": "Practice set 3: DSA",
+        "source_path": "2. Python Mastry/4. DSA and Complexity/17. Practice set 3 - DSA.md",
+        "pdf_page": 57,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "Hear the coding pattern in the question",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/01. The 18-pattern map.md",
+        "pdf_page": 58,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Count first, then choose the top K (P1 and P2)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/02. Frequency count and top K.md",
+        "pdf_page": 59,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Group baskets and keep the latest record (P3 and P4)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/03. Grouping and latest-record deduplication.md",
+        "pdf_page": 60,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Rolling windows and pre-sorted streams (P5 and P6)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/04. Windows and sorted streams.md",
+        "pdf_page": 61,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "Flatten dictionaries; explode lists of records (P7)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/05. Flatten nested JSON.md",
+        "pdf_page": 62,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Split sessions and find consecutive streaks (P8 and P9)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/06. Sessions and streaks.md",
+        "pdf_page": 63,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 7,
+        "topic": "Parse messy logs and keep the skipped lines (P10)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/07. Parse logs.md",
+        "pdf_page": 64,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 8,
+        "topic": "Merge time intervals; join files with a lookup (P11 and P12)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/08. Intervals and hash joins.md",
+        "pdf_page": 65,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 9,
+        "topic": "Read big files in chunks; retry transient failures (P13 and P14)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/09. Chunking and retries.md",
+        "pdf_page": 66,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 10,
+        "topic": "Pull every page; cache repeated lookups (P15 and P16)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/10. Pagination and LRU caching.md",
+        "pdf_page": 67,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 11,
+        "topic": "Quarantine bad rows and compare snapshots (P17 and P18)",
+        "source_path": "2. Python Mastry/5. Coding Round Patterns/11. Validation and snapshot differences.md",
+        "pdf_page": 68,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "Pandas essentials, mapped to SQL",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/01. Pandas essentials mapped to SQL.md",
+        "pdf_page": 69,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Pandas results can be wrong without an error",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/02. Pandas pitfalls and speed.md",
+        "pdf_page": 70,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Load, query, transact and upsert with Python",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/03. Python and databases.md",
+        "pdf_page": 71,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Build a small ETL pipeline you can rerun",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/04. Build an idempotent ETL pipeline.md",
+        "pdf_page": 72,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "Test the code and check the data",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/05. Testing and data quality.md",
+        "pdf_page": 73,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Move from pandas to PySpark, then schedule with Airflow",
+        "source_path": "2. Python Mastry/6. Python for Data Engineering/06. From pandas to PySpark and Airflow.md",
+        "pdf_page": 74,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 1,
+        "topic": "Interview set: Python coding for data engineering",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/01. Interview set - Python coding.md",
+        "pdf_page": 75,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 2,
+        "topic": "Interview set: pandas and data wrangling",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/02. Interview set - pandas.md",
+        "pdf_page": 76,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 3,
+        "topic": "Concept questions with short answers",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/03. Concept questions.md",
+        "pdf_page": 77,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 4,
+        "topic": "Complexity cheat sheet",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/04. Complexity cheat sheet.md",
+        "pdf_page": 78,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 5,
+        "topic": "The preparation flow: ten weeks from zero to interviews",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/05. Ten-week preparation flow.md",
+        "pdf_page": 79,
+        "status": "source_preserved; independent study not implied"
+      },
+      {
+        "lesson": 6,
+        "topic": "Final revision sheet and the last 48 hours",
+        "source_path": "2. Python Mastry/7. Practice Prep Flow and Revision/06. Final revision sheet.md",
+        "pdf_page": 80,
+        "status": "source_preserved; independent study not implied"
+      }
+    ]
+  },
+  "sql": {
+    "pnpmastery_questions": [
+      {
+        "id": "A001",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A001. Count employees per department, keeping departments that have none.md",
+        "source_blob_sha": "0b9306e594b206fd99612baff55d2f28a53060dd",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A002",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A002. Second highest salary, no LIMIT and no window function.md",
+        "source_blob_sha": "d797abb456ebf1a35ad4ade88c345170c997043c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A003",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A003. Third highest distinct salary, ties collapsed.md",
+        "source_blob_sha": "3d93fdfbec83c68a495dee74e044b24fb0470004",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A004",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A004. List customers who have never placed an order.md",
+        "source_blob_sha": "eb5d2da2b0ba565a913599ca5137d9cb33599693",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A005",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A005. Find delivered orders that have no payment row.md",
+        "source_blob_sha": "dac439085707ed03c458bfd8fae06a9455131559",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A006",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A006. MySQL has no FULL OUTER JOIN. Emulate one between customers and or.md",
+        "source_blob_sha": "20e4460e715ec53fd41f063e1368fa3753f2a0fd",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A007",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A007. Product IDs that exist in products but were never ordered — set-op.md",
+        "source_blob_sha": "92d491023d8184e85e1732f4122b967e31575d52",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A008",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A008. Build a complete date × category grid so empty combinations still.md",
+        "source_blob_sha": "668f755b58b74935d9be1b7f6e2f635b713b4ec8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A009",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A009. Bucket every product into a price band using a non-equi join.md",
+        "source_blob_sha": "6bcfa001f4a28934d4e06d277463eb242822a4de",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A010",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A010. Find every employee who earns more than their own manager.md",
+        "source_blob_sha": "8443513ecb9e95928d475f636011d63c01f1fcf5",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A011",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A011. List all pairs of colleagues in the same department, without mirro.md",
+        "source_blob_sha": "fb8226a93e2b3fa12e98b32bc29d13747157114c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A012",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A012. Managers with three or more direct reports.md",
+        "source_blob_sha": "0ae54085049ef49de5aeb1e6f5e8614e2f9e50c0",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A013",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A013. Customers who bought product 101 but never product 202.md",
+        "source_blob_sha": "fbe7edcdc1b633e1574ca54cf538653a757cc522",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A014",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/A014. Employees who manage nobody (the leaves of the org tree).md",
+        "source_blob_sha": "638cb50c24be32c94818a26285a45664ccd756df",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "A015",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A015. Show each employee next to their department average, without colla.md",
+        "source_blob_sha": "6140bffe76e4aaecec6fd28005aa0bc47ab842df",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A016",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A016. Departments where the average salary tops 50,000 and headcount is.md",
+        "source_blob_sha": "362737f84e5ee2b6fecb67ba74ec1e112a6010f3",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A017",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A017. Revenue by product category, highest first.md",
+        "source_blob_sha": "183466f25cf4a1d4d81674d70d06c9e0411ba09e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A018",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A018. Monthly count of distinct buyers, cancelled orders excluded.md",
+        "source_blob_sha": "3d32fe4d91a33e305e91e486ebe8b1b9dd270a14",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A019",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A019. Category revenue with a grand-total row at the bottom.md",
+        "source_blob_sha": "82fccf042cbe4093ffc65c9af78ceb2ee07e6223",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A020",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A020. Average order value per customer, only for customers with 3+ order.md",
+        "source_blob_sha": "f3b7856077cf2ca55e7727e2bc51bd8450cc8cc8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A021",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A021. Which weekday brings in the most orders.md",
+        "source_blob_sha": "ecbffb7cdd43adf69c8b08a861e0e00efe4c5964",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A022",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A022. Turn order status into columns one row per customer, counts per st.md",
+        "source_blob_sha": "0ea4e11d0f88dbc1f493c8bf988dc75b0018a91f",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A023",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A023. Revenue by category with 2025 and 2026 side by side.md",
+        "source_blob_sha": "80ff729583250f12a84a21948d7b579748c74385",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A024",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A024. Cancellation rate per customer as a percentage.md",
+        "source_blob_sha": "9ee7fe4ccc0fddad0445f3c826d2da066378f521",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A025",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A025. Customers who ordered in both 2025 and 2026.md",
+        "source_blob_sha": "6472992948dbc22431e0cfc060c8b76e70e9592a",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A026",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A026. Unpivot turn three metric columns of a summary table into labelval.md",
+        "source_blob_sha": "496bef1b16778344cc2db5f17e23c3a2e9934ebf",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A027",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/A027. First order, last order and active lifespan per customer.md",
+        "source_blob_sha": "e04c9c77c24074b9ee487c44f3a3ec2bb8fa8c45",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A028",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A028. Employees paid above the average of their own department.md",
+        "source_blob_sha": "604c8cdbce16585ec2bac1aae993c5a665770d48",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A029",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A029. The most recent order for every customer, ties allowed.md",
+        "source_blob_sha": "0acf6cd02ea12eeb48afedc842b837f94cc03627",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A030",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A030. Products priced above their category average.md",
+        "source_blob_sha": "880601ae007f5e973173e60e78796ca0372af20d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A031",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A031. Customers whose lifetime spend beats the average lifetime spend.md",
+        "source_blob_sha": "c6cff00bb74113b9ec4a43a59542f6474abf2f40",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A032",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A032. Each category and its single best-selling product name.md",
+        "source_blob_sha": "664e76fc3d426cf1ea9ad04840862847d31eeeaf",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A033",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A033. Orders larger than that customer's own average order.md",
+        "source_blob_sha": "bf1949125ec92270f1a1ed0bb74f3fe0c6a224bd",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A034",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A034. Customers who placed at least one order — write it three ways.md",
+        "source_blob_sha": "b188907b69acead999e19e2256ad5fb812d2305d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A035",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A035. Why does this return zero rows, and how do you fix it.md",
+        "source_blob_sha": "249ae7c5f629a258505e46b3f9a44fa2749aa3d6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A036",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A036. Departments with at least one employee earning above 100,000.md",
+        "source_blob_sha": "f92cbe24f967ded03eb01e5eda093a94bfba6468",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A037",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A037. Orders that contain any Electronics product.md",
+        "source_blob_sha": "da7c4fe83f06a585c1b7e0142ac3039e68109961",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A038",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A038. Customers who have bought every product in the Audio category (rel.md",
+        "source_blob_sha": "bce5e8d3a156c85b8f0bb29540e437e83ccab5be",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A039",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/A039. Products bought by more than 10 distinct customers.md",
+        "source_blob_sha": "1f798377ac12922c1f937e29011fc10e5fb3ca1a",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A040",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A040. Rewrite the spend above average spend query with a CTE defined onc.md",
+        "source_blob_sha": "f3d3e722370834a65b532edd0ecfa36f0227d5f4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A041",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A041. Chain two CTEs monthly revenue, then only the months above the yea.md",
+        "source_blob_sha": "cf1871f0ab44e36aeca7c5194e4612273020f298",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A042",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A042. Compare every department average against the company average in on.md",
+        "source_blob_sha": "2b7bbd8e917f2c75f91410868eedc4dde818f78f",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A043",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A043. Filter on a window function result — why WHERE fails and what to d.md",
+        "source_blob_sha": "b4830fd8ce95dac743c9f668cc360d8821a04f91",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A044",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A044. Build a clean order spine, then attach item counts to it.md",
+        "source_blob_sha": "e6d31713cd9ae72ad5dc0fbe6685b79e586860b3",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A045",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/A045. Deduplicate first, aggregate second — in one readable statement.md",
+        "source_blob_sha": "d5b4c69444f8f32e67cd433e6b63239856bc5511",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A046",
+        "topic_folder": "10. Recursive CTE",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/10. Recursive CTE/A046. Generate every date in January 2026, with no calendar table.md",
+        "source_blob_sha": "257e50b61a42df3981b449efe21301ba5958e4ef",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A047",
+        "topic_folder": "10. Recursive CTE",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/10. Recursive CTE/A047. Every employee under manager 5, at any depth, with their level.md",
+        "source_blob_sha": "c7fbaf8e8160a0c469541a23c6cfa11b7b1facc7",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A048",
+        "topic_folder": "10. Recursive CTE",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/10. Recursive CTE/A048. Print the full reporting path of every employee up to the top.md",
+        "source_blob_sha": "ad946a1b825a46f064f0d6304b68b116bf0c887c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A049",
+        "topic_folder": "10. Recursive CTE",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/10. Recursive CTE/A049. How deep does the org chart go.md",
+        "source_blob_sha": "761046ba33b6c5c3b1b3e1e93e12cb58c37d7998",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A050",
+        "topic_folder": "10. Recursive CTE",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/10. Recursive CTE/A050. Split 'a,b,c' into one row per value.md",
+        "source_blob_sha": "b0cb6b6e51c73a157b0ffdc6367ee8594c07d925",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A051",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A051. Show ROW_NUMBER, RANK and DENSE_RANK together and explain the diff.md",
+        "source_blob_sha": "2593dee4fa58352b31442c2a49bdcb149fd30010",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A052",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A052. Rank employees by salary inside each department.md",
+        "source_blob_sha": "1580cbe5bd7a7de498021483be39e67e49c5da72",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A053",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A053. The highest-paid employee per department, ties broken by earliest.md",
+        "source_blob_sha": "2415e2fb39c673626f3fc803d37d6964703ca6ac",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A054",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A054. Percentile position of each salary within the company.md",
+        "source_blob_sha": "aee8087b885167e552415ab48df1c9aaa9e1d84c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A055",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A055. Share of employees earning at or below each salary.md",
+        "source_blob_sha": "8c8c4d7ead577f786ab77919f6c04bc0798a7344",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A056",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A056. Rank categories by revenue — a window on top of an aggregate.md",
+        "source_blob_sha": "fb9e57e02cd038ed2cd312ed64c2769f7e38fb3d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A057",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A057. Month-over-month revenue change in absolute terms.md",
+        "source_blob_sha": "69fa22926de433ee2b8190d2e5d64bf8b10bde1c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A058",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A058. Same thing as a growth percentage, safe against a zero denominator.md",
+        "source_blob_sha": "5a1aecd38b429843c4bad310e1c25e2809ac5e4d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A059",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A059. Days between each customer's consecutive orders.md",
+        "source_blob_sha": "82bfe53ac71b6023478235d16b297e5d95d8f14c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A060",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A060. Next order date per customer, with a placeholder when there isn't.md",
+        "source_blob_sha": "6237a4bfa32b819c41c85a6e07b5a7a302489ab4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A061",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A061. Customers whose most recent order was smaller than the one before.md",
+        "source_blob_sha": "6f3f440cd2152e07b509fbf1492921d375829acc",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A062",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A062. Compare every month against the same month last year.md",
+        "source_blob_sha": "c74e070703fb111ec138c4b89426ed9a0c43f45e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A063",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A063. Running total of revenue by date.md",
+        "source_blob_sha": "f1b80eb27b6079414263f1497d9041a340ee6bd7",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A064",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A064. Running total of spend per customer, oldest order first.md",
+        "source_blob_sha": "18cb163bef2ba0e0ebc699aeeb3d54cfbe68a0d1",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A065",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A065. Seven-day moving average of daily revenue, calendar-correct.md",
+        "source_blob_sha": "3ed636792e25455903a75daf3fa31e4d58a16fb9",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A066",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A066. Show the difference between ROWS and RANGE when values tie.md",
+        "source_blob_sha": "67ae69cbbdaee250db53057171ab3482ccb108f9",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A067",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A067. Running total that resets at the start of every month.md",
+        "source_blob_sha": "d9ad182199cd687c0fdfaaf846575b1d6aaa3f90",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A068",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A068. Each order against the biggest order seen so far for that customer.md",
+        "source_blob_sha": "130c2d5e7f9efc5f7a0afd073618f4f04b98f3eb",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A069",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A069. Split customers into four spend quartiles.md",
+        "source_blob_sha": "518a30fa3c649e61d29ed1326741d2b24537c0ec",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A070",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A070. Each category's share of total revenue, as a percentage.md",
+        "source_blob_sha": "289da2f3137fe948b437a414a00754a5a7109cab",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A071",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A071. Every employee's salary as a share of their department's payroll.md",
+        "source_blob_sha": "7b0a26b7a6a6343fd45bac299c1094f377642c90",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A072",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A072. Median salary — MySQL has no MEDIAN function.md",
+        "source_blob_sha": "8c4a92cfaba2acb7e7235ba03c2fafdeb110c3bb",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A073",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A073. The top 20% of customers by spend.md",
+        "source_blob_sha": "f54d3676e0a921fa7a9caaf71bbd3fce461f7c62",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A074",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A074. Top 3 products by revenue inside each category.md",
+        "source_blob_sha": "100e4cfc4e2a90e3911f17ad25dede61ff30d1b4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A075",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A075. The latest payment row for every order.md",
+        "source_blob_sha": "df907567f01bead61ff67afa5845aa5a7bf32dd5",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A076",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A076. Top 2 customers by spend in each city.md",
+        "source_blob_sha": "6b87c321406a65cdcdc346a81fe554877da20752",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A077",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A077. Each customer's second most recent order.md",
+        "source_blob_sha": "3851825388394342b08a04c3b8c7ce11fdd80c91",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A078",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/A078. Top 3 salaries per department without any window function.md",
+        "source_blob_sha": "77c072224bf2f069b2468f2f299e7ca75f86f0d8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A079",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/A079. Most recent order per customer, returning the whole row, no CTE.md",
+        "source_blob_sha": "390c1f009ed8cc0c101a047f32e74946bdf6c644",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A080",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/A080. Find the missing order_id ranges in the sequence.md",
+        "source_blob_sha": "b3741537d5ed13dd50ba5df11023ed7db542a60e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A081",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/A081. Collapse each customer's consecutive ordering days into startend r.md",
+        "source_blob_sha": "e55eab41df5a04044c62b7294a1eb27c91a4eda2",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A082",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/A082. Longest ordering streak per customer, in days.md",
+        "source_blob_sha": "e731eacbf70559c37d324b1cd84a1f859d694bdc",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A083",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/A083. Customers with three or more consecutive months of orders.md",
+        "source_blob_sha": "d4baa6518ee90522ac5a5a24368980015d965ecd",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A084",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/A084. Collapse a list of consecutive IDs into compact ranges.md",
+        "source_blob_sha": "33d010d698baa4b2f0b891d602aedc226c349017",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A085",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A085. Find every duplicated (order_id, paid_at) combination in payments.md",
+        "source_blob_sha": "3d7d0259231887892bd70f70cd017333ccda7001",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A086",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A086. Return one clean row per key, keeping the earliest payment.md",
+        "source_blob_sha": "bb228c4f897bd6b93d25de198cd3f9bd3fc033eb",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A087",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A087. Actually delete the duplicates, keeping the lowest payment_id.md",
+        "source_blob_sha": "d701707e2810e2d9065f2bb362e35f8310a5d8ba",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A088",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A088. Why does this fail, and how do you make MySQL accept it.md",
+        "source_blob_sha": "4426613948ef36cf4d5d7bf67e5e4eca3cc0ea4e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A089",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A089. How many duplicate groups exist, and how many extra rows do they a.md",
+        "source_blob_sha": "b93db48be869c37c1b28b47b70d755ca87bd4666",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A090",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/A090. Keep only the newest record per natural key when the table has a v.md",
+        "source_blob_sha": "c8f9f650232f532b202677d8cfd75f0eda4d041f",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A091",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/A091. Three counts, three different answers. Explain each.md",
+        "source_blob_sha": "8b8d8dd763bfe3455a96b2b030874813baa640e7",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A092",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/A092. Sort salaries descending but push NULLs to the bottom — MySQL has.md",
+        "source_blob_sha": "01e258132caf62d9de02ea1a8abf364ab99e21a0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A093",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/A093. Show a usable contact value from the first non-null of three colum.md",
+        "source_blob_sha": "70d5ceadc9fa1c6e105a80624f40656e52cf2bc3",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A094",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/A094. Join two tables on a column that contains NULLs and still match th.md",
+        "source_blob_sha": "c3c7571909e4be539c95f83e6e0be50d6c85e8a6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A095",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/A095. Why does AVG disagree with SUM  COUNT(), and how do you make them.md",
+        "source_blob_sha": "dc3eb037dbae6341c974185fd9c5baf6df794698",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A096",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/A096. Orders from the last 30 days, written so the index still gets used.md",
+        "source_blob_sha": "403c5e129970268f24a925e8527d55d833b7a3f6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A097",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/A097. First and last day of each order's month.md",
+        "source_blob_sha": "5fd46f87854e52c3ba4c22fd56e635774c04edd6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A098",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/A098. Weekly order counts, weeks starting on Monday.md",
+        "source_blob_sha": "89555669d558721ab2f949a612d377c0095680e0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A099",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/A099. Customers who placed their first order within 7 days of signing up.md",
+        "source_blob_sha": "ac542b2b0366010d6888354e8a8b047475349bb5",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "A100",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/A100. Month-one retention customers who ordered again in the month after.md",
+        "source_blob_sha": "277fafe7f196cdcb7b2eaef65602ef39c2455dc5",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P001",
+        "topic_folder": "0. SQL basics",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/0. SQL basics/P001. Brand directory.md",
+        "source_blob_sha": "6daaa2d1453dbaaf28ff43278d45ea0a339b3601",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P002",
+        "topic_folder": "1. Intro to SQL and Advanced Select",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/1. Intro to SQL and Advanced Select/P002. Ten highest-priced products.md",
+        "source_blob_sha": "2c33c20b483675b6b73cec8da609b89e391af09d",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P003",
+        "topic_folder": "1. Intro to SQL and Advanced Select",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/1. Intro to SQL and Advanced Select/P003. Customers in metro cities.md",
+        "source_blob_sha": "2260186b5eb5dba4b6eeb9d9bbe6cf4c4a3ffa76",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P004",
+        "topic_folder": "8. Advance string functions, regex and clause",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/8. Advance string functions, regex and clause/P004. Customer emails that cannot be delivered.md",
+        "source_blob_sha": "a79ad97c4bc4417a3c24ae094bf37218a7570cb3",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P005",
+        "topic_folder": "1. Intro to SQL and Advanced Select",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/1. Intro to SQL and Advanced Select/P005. Orders placed in Q1 2025.md",
+        "source_blob_sha": "ebebd5c3755712ab9ff69676269eb69be574578f",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P006",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/P006. Most expensive products that are never discounted.md",
+        "source_blob_sha": "777dcceccf731128d314c4dbdb7905c0369c8d6c",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P007",
+        "topic_folder": "1. Intro to SQL and Advanced Select",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/1. Intro to SQL and Advanced Select/P007. Discount amount and percentage per product.md",
+        "source_blob_sha": "da19af9f18ffb044c2ef52e7329dceff740e0e81",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P008",
+        "topic_folder": "1. Intro to SQL and Advanced Select",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/1. Intro to SQL and Advanced Select/P008. Price band labels.md",
+        "source_blob_sha": "a7821e2ffaa2dca14311e87f2faa042350ad3705",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P009",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P009. Check how Active and Allowed are encoded.md",
+        "source_blob_sha": "f05436e3324db07b77b278e3db0caeafe3d68dc8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P010",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P010. Headline order KPIs.md",
+        "source_blob_sha": "00d89791c3250cc2667bdda00964cfb6a674e9bc",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P011",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P011. How much of the catalogue has ever sold.md",
+        "source_blob_sha": "f8d950741d1020668a7c421b6bdc869ffc4fdbb0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P012",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P012. Price and discount statistics per category ID.md",
+        "source_blob_sha": "603612b78b5012fab45736509e900be6b449b19c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P013",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P013. States with at least five customers.md",
+        "source_blob_sha": "bd16f49572bc74b52b88f914287d5b218786c08f",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P014",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P014. Orders per month in 2025.md",
+        "source_blob_sha": "4f9f75bac8eed5f2b0cc6de6c625e5c0e3b25700",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P015",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P015. Product count for every category.md",
+        "source_blob_sha": "1a7920340ec3b70b7c84d429c0c334d11c0e6e55",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P016",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P016. December 2025 orders with customer names.md",
+        "source_blob_sha": "b7a9ad139303eb84aec0fef9772c34028de12f4c",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P017",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P017. Orders with payment type and shipper.md",
+        "source_blob_sha": "ef18f202ba1b0f9c5a67eeadffb2e1edbbd92855",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P018",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P018. Customers with no order in the last 90 days.md",
+        "source_blob_sha": "99aa9cae179fa3fd8f37db42ca89599438207c0d",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P019",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P019. Units sold per product.md",
+        "source_blob_sha": "6522a8f6311829759852236f2252b454aefb34df",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P020",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P020. Days to ship and days to deliver.md",
+        "source_blob_sha": "4c67d821f100d9fb8a340fbe4a2fb9f0f2b5706c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P021",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P021. Top five customers by number of orders.md",
+        "source_blob_sha": "3c16327cc3d4ab6b5c16d6b5a8bd29b1a5fff499",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P022",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P022. Orders with more than eight line items.md",
+        "source_blob_sha": "df7e47951ecb9df9ac44cc904eb503270c95bf6d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P023",
+        "topic_folder": "8. Advance string functions, regex and clause",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/8. Advance string functions, regex and clause/P023. Chocolate or cookie products under 250, excluding sugar-free.md",
+        "source_blob_sha": "720b0e8e7124c63e45d7af5c325b6b29a31a90a8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P024",
+        "topic_folder": "11. NULL Logic",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/11. NULL Logic/P024. Suppliers outside India or with no email.md",
+        "source_blob_sha": "8ba26281be0328894890d8a7015f19a3f617c952",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P025",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P025. Customer sign-ups by year and quarter.md",
+        "source_blob_sha": "83aa4cc8662789b80f95fc9b64531d226a95ec80",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P026",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P026. List-price value by category.md",
+        "source_blob_sha": "52e88f44276743481672cb887dae0c37b1403f2a",
+        "previously_solved_baseline": true
+      },
+      {
+        "id": "P027",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P027. Average order value by customer state.md",
+        "source_blob_sha": "2b9a2a20334e9d24401c8720dc1b0ecbe723e985",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P028",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P028. Payment mix share of orders and value.md",
+        "source_blob_sha": "cfd74c395f45c091f355c76b8f6f6d34b202d737",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P029",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P029. Order value and units by shipper without double counting.md",
+        "source_blob_sha": "1de7e98ef33506a617e4f7483e1c70acbd1b6f67",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P030",
+        "topic_folder": "5. CTEs",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/5. CTEs/P030. Repeat versus one-time customers.md",
+        "source_blob_sha": "7a978d67c2b3fe71ec7b5645c7465f34034806a5",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P031",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P031. Customers who spend more than the average customer.md",
+        "source_blob_sha": "304fea2577f697fbc7409ed229c8547a16e8cc9c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P032",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P032. Products priced above their category average.md",
+        "source_blob_sha": "170580e306f77c61cc209dec055388a53684016c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P033",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P033. Products that have never been ordered.md",
+        "source_blob_sha": "5bc9bbd856f54271fc629d76a6bb0bc99e9290d5",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P034",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P034. Each supplier's share of units supplied.md",
+        "source_blob_sha": "fde47d98e49a8f6cc94745b05ff3bf65f02f4eae",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P035",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P035. Late-delivery rate by shipper.md",
+        "source_blob_sha": "8464f2c30c50459a7c9a991ea9f741ccdfee814d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P036",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P036. Payment method mix by month as columns.md",
+        "source_blob_sha": "6d271928f88ba21507a4a4e7238bbea750a69437",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P037",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P037. Prove no order was paid with a method that is not allowed.md",
+        "source_blob_sha": "13de904886a87807a7c8ea3dc6efe0a6b538c670",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P038",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P038. Products from inactive categories that still sold in the latest ye.md",
+        "source_blob_sha": "50e5ec07b777015e77f0df613c58ed89cb642a81",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P039",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P039. Categories with no products, and categories with products but no s.md",
+        "source_blob_sha": "ab83ec76cdc388b209732cff739c62e6b6da3421",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P040",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P040. Days from sign-up to first order.md",
+        "source_blob_sha": "4ce15aa0ccceccb219027b787309af57a1416c34",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P041",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P041. Most expensive product in each category.md",
+        "source_blob_sha": "30af7f9fe147026c0eecce83e4c8c693336fad37",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P042",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P042. RANK vs DENSE_RANK vs ROW_NUMBER on order counts.md",
+        "source_blob_sha": "0c8d08af7bcbf884b1562c1f43927d5ec6175613",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P043",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P043. Month-to-date order value for the latest three months.md",
+        "source_blob_sha": "a3ab0413e1dd409e49fa919bdd230448b4071aa4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P044",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P044. Month-over-month growth in order value.md",
+        "source_blob_sha": "09f943d73117f2581dfab16d877a26639f894178",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P045",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P045. Typical gap between a customer's orders.md",
+        "source_blob_sha": "76ce0abbf4c1f479cc684f4de2e03f2ac15b6ad1",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P046",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P046. Same-brand products where one costs at least twice the other.md",
+        "source_blob_sha": "9477f89d7839be54cd8c90a38574ffd4fc954680",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P047",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P047. Brands with at least three products, and how much they sold.md",
+        "source_blob_sha": "3994875bf71d07b93cedc9960a6fe3bc8de32c1d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P048",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P048. Do discounted products sell more.md",
+        "source_blob_sha": "055530607f0ae4ba79cd9ceaa4e04e5853f06e24",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P049",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P049. Top three products by units in each category.md",
+        "source_blob_sha": "1abe60e63a3619063fc89b3c68d471d1e206da74",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P050",
+        "topic_folder": "3. Sorting and Grouping",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/3. Sorting and Grouping/P050. Customers who buy across at least ten categories.md",
+        "source_blob_sha": "cdbac6cd158e97b6dea4097096f10a7fb1474577",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P051",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P051. Orders fulfilled by one supplier vs several.md",
+        "source_blob_sha": "3f1379343f171b902f5d0192cd6dd871615da4e0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P052",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P052. Where shipping time goes dispatch vs transit by shipper.md",
+        "source_blob_sha": "aef86827cfe0cc05c73a38b9220b7643fcb00932",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P053",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P053. Thirty-day sign-up to purchase conversion by country.md",
+        "source_blob_sha": "033d6e23cd28980d5a2be18cd0d5c608688e0c53",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P054",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P054. Weighted vs simple average discount by sub-category.md",
+        "source_blob_sha": "5daffd10cf5c996f282b57c9949101d4badfc320",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P055",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P055. Category list-price value latest year vs previous year.md",
+        "source_blob_sha": "2415c76713a73b642a0e67f2635adfa23dceffb6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P056",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P056. Customers who ordered last year but not this year.md",
+        "source_blob_sha": "d3f9054810b8c0337089b088a873d89444f1fa9b",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P057",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P057. One contact directory for suppliers and shippers.md",
+        "source_blob_sha": "5c4f5002ed74fad21fcb425898954bc1cc8f81c1",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P058",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P058. Each customer's latest order.md",
+        "source_blob_sha": "3b2ae93ca8b2a77b14ea182490b4b629da88da2c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P059",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P059. Basket size by month.md",
+        "source_blob_sha": "3faf0f41fdf123b3330dcda784ad27551104241d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P060",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P060. Sub-category share of its category.md",
+        "source_blob_sha": "b40a23ff03ebbf20b578318dc6d8de78d62db15c",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P061",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P061. Monthly cohort retention.md",
+        "source_blob_sha": "b6bf67ee468f10bcfab8dcfa0f81cd9ad7656e60",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P062",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P062. Which products make up 80% of list-price value (Pareto).md",
+        "source_blob_sha": "564ea158c8601820176feb7d17632c8bf5fda6d0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P063",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P063. RFM segmentation.md",
+        "source_blob_sha": "37c05e67792bfbad5ffac4a83638511e0caaa2b0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P064",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P064. Three-month moving average of order value, with no missing months.md",
+        "source_blob_sha": "cebae7618f34327faeabd6790aeddbbd4a95e41d",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P065",
+        "topic_folder": "13. Gaps and Islands",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/13. Gaps and Islands/P065. Longest run of consecutive months with an order.md",
+        "source_blob_sha": "a7b40c93d66c2fa77e188081f41b91b91a581155",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P066",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P066. How fast do customers come back for a second order.md",
+        "source_blob_sha": "6f9872c8f72dd666be3e356318aec2175156e6ce",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P067",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P067. Median vs mean order value by payment type.md",
+        "source_blob_sha": "590aa7f85667f81d124c0f9248b1c8721f009868",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P068",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P068. Second-highest spender in each state, counting delivered orders on.md",
+        "source_blob_sha": "a80b0bf2147dc7d8e92612541b34a80b9017b154",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P069",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P069. Customers whose spend grew every active quarter of the latest year.md",
+        "source_blob_sha": "e9cacb210d57d3218b6ad98ca8f2a5b9343e4f8a",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P070",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P070. Sub-categories most often bought together.md",
+        "source_blob_sha": "17ae031a4000d0974a5c1043c684732cc8ae136a",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P071",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P071. Deduplicate customer accounts by email.md",
+        "source_blob_sha": "d2cae3c82004124d3fe445ea5b65eb664b0ff952",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P072",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P072. Same product on several lines of one order split or duplicate.md",
+        "source_blob_sha": "62250373aafa5402aa879a731f4fafe40165a7f4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P073",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P073. Category share of list-price value latest vs previous year.md",
+        "source_blob_sha": "715dc885bfbba0fbee422535c95b1f35310367ef",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P074",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P074. Customers whose latest order is below their own average.md",
+        "source_blob_sha": "62b0653774a78898ce98c0ca257ed872dd6ff5a2",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P075",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P075. Rolling 28-day active customers, week by week.md",
+        "source_blob_sha": "f04c07cb922afc3648e3f799c3d327d0ceff3381",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P076",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P076. Order value from new vs returning customers by month.md",
+        "source_blob_sha": "5c991b66eb5a87e858a021b0c94f0e93c173f190",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P077",
+        "topic_folder": "2. Joins",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/2. Joins/P077. Single-source products and the value at risk.md",
+        "source_blob_sha": "22d728c1686886684dcea80381b71303aed52056",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P078",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P078. Expensive within their sub-category but selling below its median.md",
+        "source_blob_sha": "c8baea659a6c96edd55d0eed03b805907d05a681",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P079",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P079. At which order does a customer cross 10,000 in spend.md",
+        "source_blob_sha": "8446d5ea1b09182909e452ce05b4c62141f6bdb4",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P080",
+        "topic_folder": "6. SubQueries",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/6. SubQueries/P080. Sub-category repurchase rate within 90 days.md",
+        "source_blob_sha": "49c42503bdf27ed5369854f47011360329e6ab45",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P081",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P081. Year-to-date vs same period last year.md",
+        "source_blob_sha": "054faf9e755d6f7212a7c8906be5165aa922abf8",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P082",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P082. Each customer's favourite category.md",
+        "source_blob_sha": "b12c819076c2418c805dd88a020278c3007a85e0",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P083",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P083. Underperforming sub-categories in the last six months.md",
+        "source_blob_sha": "b1339a417e6f47b85792b43d45f32edf32f281ad",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P084",
+        "topic_folder": "4. Aggregation",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/4. Aggregation/P084. Delivery time by state and shipper with subtotals.md",
+        "source_blob_sha": "e019aa308f9726e1328a44e24e89c7c4db677701",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P085",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P085. Win-back customers returning after 180+ days.md",
+        "source_blob_sha": "36e53c1398e4c533961c84b661fe501615a34033",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P086",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P086. Reconcile order headers with order lines.md",
+        "source_blob_sha": "6ef60c84817d83962ef24d77f301b9ad8b962f93",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P087",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P087. Referential integrity audit across all seven relationships.md",
+        "source_blob_sha": "28bed1fe1c7d2e6c4c92e68f6a619a6fb2780e02",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P088",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P088. Date validity audit.md",
+        "source_blob_sha": "52c73f3594668d77afbe679b25a84997fb3ced59",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P089",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P089. Incremental load with a watermark and lookback.md",
+        "source_blob_sha": "dc820d26afb08381d923f2cd215a0d64297a8d91",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P090",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P090. Column-by-column completeness profile of Orders.md",
+        "source_blob_sha": "1fa536155bfc0115c796ae7c740d0b23dff851f7",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P091",
+        "topic_folder": "12. Dates and Time",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P091. Cumulative value per customer by cohort (LTV curve).md",
+        "source_blob_sha": "cf11e56982938b3227f711e00534237f88d451aa",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P092",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P092. How duplicate accounts distort the repeat-customer rate.md",
+        "source_blob_sha": "314f8e6cf95d3a70b21e841f799942bbc27fe587",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P093",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P093. Possible duplicate order submissions.md",
+        "source_blob_sha": "2b53cdb94d64cb19581be48c9af6f0a8670b72c2",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P094",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P094. Supplier concentration per category (HHI).md",
+        "source_blob_sha": "8e62e472a3e5307405d9c3491a15ed5b630e780e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P095",
+        "topic_folder": "14. Data Quality and Deduplication",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/14. Data Quality and Deduplication/P095. Debug a revenue-by-category query that gives wrong numbers.md",
+        "source_blob_sha": "6556470a667af5ddb73e9adce81e65bb4331cb3b",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P096",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P096. Make a slow order report sargable and index it.md",
+        "source_blob_sha": "bcee556369e0af953521ec9ec1b8be96d71986e2",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P097",
+        "topic_folder": "9. Windowing Functions",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/9. Windowing Functions/P097. What do customers buy on their second order.md",
+        "source_blob_sha": "9bf349ac0fe866697d481d3206ecd4598ec3c76e",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P098",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P098. Category association rules support, confidence, lift.md",
+        "source_blob_sha": "526ba18093580b581cb8ef5442a2ce31b222f3fd",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P099",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P099. Flag unusual weeks in order volume.md",
+        "source_blob_sha": "69f4a36c43f3df6da10fd0b35a3eab302fb946d1",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "P100",
+        "topic_folder": "15. Analytics and Performance",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/15. Analytics and Performance/P100. Monthly KPI scorecard with month-over-month change.md",
+        "source_blob_sha": "1c6b25889256fa585ef272b581a676a98759e555",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "X001",
+        "topic_folder": "7. Extra Problems",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/7. Extra Problems/X001. Product ratings practice 1.md",
+        "source_blob_sha": "64263c8b18c5d86ad29761ade25b1e5089231ede",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "X002",
+        "topic_folder": "7. Extra Problems",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/7. Extra Problems/X002. Product ratings practice 2.md",
+        "source_blob_sha": "119cf5e1e585f5e489feae778cbb709f3852c8a6",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "X003",
+        "topic_folder": "7. Extra Problems",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/7. Extra Problems/X003. Product ratings practice 3.md",
+        "source_blob_sha": "5c2077f3c3867f2eb9d07739f447a2129b60dc62",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "X004",
+        "topic_folder": "7. Extra Problems",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/7. Extra Problems/X004. Product ratings practice 4.md",
+        "source_blob_sha": "d47730dee16635b10f650412cc81cc06f02fa6d7",
+        "previously_solved_baseline": false
+      },
+      {
+        "id": "X005",
+        "topic_folder": "7. Extra Problems",
+        "source_path": "1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/7. Extra Problems/X005. Product ratings practice 5.md",
+        "source_blob_sha": "3ff60456a287f52c1fa9512b4a3951d1c653be62",
+        "previously_solved_baseline": false
+      }
+    ]
+  },
+  "study_mode": {
+    "completed_independent_pnp_reattempts": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005",
+      "P006"
+    ],
+    "next_python_lesson": "13A Sets",
+    "pdf_pages_verified": 0
+  },
+  "other_sources": {
+    "bosscoder": "UNIFIED-REPOSITORY/99. Reference Materials/Legacy Journey Snapshot/02-python/bosscoder",
+    "w3schools_python": "https://www.w3schools.com/python/",
+    "w3schools_sql": "https://www.w3schools.com/sql/"
+  }
+}

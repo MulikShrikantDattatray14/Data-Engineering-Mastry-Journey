@@ -2,12 +2,12 @@
 
 One organized learning home for **SQL, Python, data modeling, Spark, pipelines, cloud, projects and interviews**.
 
-**Status: migration in progress — originals remain protected.** Canonical notes are written once per concept, and practice files preserve original question IDs, learner-submitted solutions, verified outputs and progressive walkthroughs.
+**Status: all 744 original files preserved and hash-verified; detailed four-source topic auditing continues.** Canonical notes are written once per concept, and practice files preserve original question IDs, learner-submitted solutions, verified outputs and progressive walkthroughs.
 
 ## Explore
 
-- [SQL Mastery](01.%20SQL%20Mastery/README.md) — [205 PNP questions](01.%20SQL%20Mastery/PNP-PROBLEM-INDEX.md), [Bosscoder practice](01.%20SQL%20Mastery/BOSSCODER-PROBLEM-INDEX.md)
-- [Python Mastery](02.%20Python%20Mastery/README.md) — [80-page mentorship index](02.%20Python%20Mastery/PDF-COVERAGE-INDEX.md), [seven Bosscoder lectures](02.%20Python%20Mastery/BOSSCODER-COVERAGE-INDEX.md)
+- [SQL Mastery](01.%20SQL%20Mastery/README.md) — [15 foundation topics](01.%20SQL%20Mastery/README.md), [205 PNP questions](01.%20SQL%20Mastery/PNP-PROBLEM-INDEX.md), [Bosscoder practice](01.%20SQL%20Mastery/BOSSCODER-PROBLEM-INDEX.md), [source gap audit](01.%20SQL%20Mastery/SOURCE-GAP-REGISTER.md)
+- [Python Mastery](02.%20Python%20Mastery/README.md) — [12 foundational chapters](02.%20Python%20Mastery/README.md), [80-page mentorship index](02.%20Python%20Mastery/PDF-COVERAGE-INDEX.md), [seven Bosscoder lectures](02.%20Python%20Mastery/BOSSCODER-COVERAGE-INDEX.md), [page-by-page gap audit](02.%20Python%20Mastery/SOURCE-GAP-REGISTER.md)
 - [Database Design and Modeling](03.%20Database%20Design%20and%20Modeling/README.md)
 - [Data Pipelines and ETL](04.%20Data%20Pipelines%20and%20ETL/README.md)
 - [Apache Spark](05.%20Apache%20Spark/README.md)
@@ -17,6 +17,8 @@ One organized learning home for **SQL, Python, data modeling, Spark, pipelines, 
 - [Interview Preparation](09.%20Interview%20Preparation/README.md)
 - [Learning Progress](10.%20Learning%20Progress/README.md)
 - [Preserved Sources and Migration Audit](99.%20Reference%20Materials/README.md) — [W3Schools references](99.%20Reference%20Materials/W3SCHOOLS-TOPICS.md)
+
+**Next verified study checkpoint:** Python Lesson 13A — Sets (unanswered), after Lesson 12B Tuples. No source exercise completion credit is created by copying material.
 
 **Daily accountability and verified progress:** [Active progress tracker](<10. Learning Progress/daily-progress.json>). Historical records remain intact in References; the **active file is not the archived copy**.
 

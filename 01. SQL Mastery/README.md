@@ -1,12 +1,12 @@
 # SQL Mastery
 
-**Browse [205 PNP SQL questions](PNP-PROBLEM-INDEX.md) and the [Bosscoder foundation/problem index](BOSSCODER-PROBLEM-INDEX.md).** Existing Bosscoder problem files stay in the [pinned original course repository](../99.%20Reference%20Materials/README.md), while each concept has a single canonical foundation note here.
+**Browse [205 PNP SQL questions](PNP-PROBLEM-INDEX.md) and the [Bosscoder foundation/problem index](BOSSCODER-PROBLEM-INDEX.md).** Existing Bosscoder problem files are preserved in the [complete local original source archive](../99.%20Reference%20Materials/README.md), while each concept has a single canonical foundation note here.
 
 **Canonical source:** [Bosscoder SQL foundation notes and numbered practice](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments) + [PNP 205-question source](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/2.PNP-%20foundations%20and%20practice). These source files are preserved; they are not repeated as second copies.
 
 | Foundation topic | Existing canonical notes | Numbered practice |
 |---|---|---|
-| SQL basics | [0. Foundation Notes](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/0.%20SQL%20basics/0.%20Foundation%20Notes.md) | [Source topic](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/0.%20SQL%20basics) |
+| SQL basics | [Unified foundational note](<00. SQL Basics/0. Foundation Notes.md>) | [Source topic](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/0.%20SQL%20basics) |
 | Joins | [Unified 0. Foundation Notes](<02. Joins/0. Foundation Notes.md>) | [Original Bosscoder numbered problems](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/2.%20Joins) |
 | Sorting/grouping | [0. Foundation Notes](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/3.%20Sorting%20and%20Grouping/0.%20Foundation%20Notes.md) | [Numbered problems](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments/3.%20Sorting%20and%20Grouping) |
 
@@ -16,6 +16,7 @@ These short foundations explain one topic once. Original Bosscoder/PNP question 
 
 | Topic | Canonical foundation | Study status |
 |---|---|---|
+| SQL tables, keys and safe changes | [SQL Basics](<00. SQL Basics/0. Foundation Notes.md>) | Source-backed; no new exercise credit |
 | SELECT, filtering and sorting | [Advanced SELECT](<01. Advanced SELECT/0. Foundation Notes.md>) | Source-backed; independent exercise status tracked separately |
 | Joins and missing matches | [Joins](<02. Joins/0. Foundation Notes.md>) | Reviewed in Study Mode; revision questions remain |
 | GROUP BY / HAVING | [Sorting and Grouping](<03. Sorting and Grouping/0. Foundation Notes.md>) | Source-backed |

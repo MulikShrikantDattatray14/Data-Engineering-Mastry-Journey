@@ -18,3 +18,10 @@ For any new supplied PDF, keep the exact source bytes inside its subject/provide
 ## How the references are preserved
 
 The Mastery submodule is pinned to commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`, so it stays stable even when the original main branch changes. GitHub's web interface follows its link to the original repository. It **does not duplicate** the PDFs in this repository's object storage. If the old Mastery repository is deleted or made private, access to this reference may break; preserve it indefinitely or later migrate the binary objects with a full Git clone/push workflow. W3Schools is linked to its official site, not copied.
+
+## Cross-reference indexes
+
+- [All 80 PDF pages, 205 PNP SQL IDs and source provenance](TOPIC-AND-PROBLEM-INDEX.json)
+- [Official W3Schools Python/SQL topics](W3SCHOOLS-TOPICS.md)
+- [Four-source unique-concept coverage matrix](SOURCE-COVERAGE-MATRIX.md)
+- [Full original file SHA inventory](SOURCE-INVENTORY.json)

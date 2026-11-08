@@ -1,5 +1,7 @@
 # SQL Mastery
 
+**Browse the [205-question PNP SQL index](PNP-PROBLEM-INDEX.md)**. Existing Bosscoder problem files stay in the [pinned original course repository](../99.%20Reference%20Materials/README.md), while each concept has a single canonical foundation note here.
+
 **Canonical source:** [Bosscoder SQL foundation notes and numbered practice](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments) + [PNP 205-question source](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/1.%20SQL%20Mastery/1.%20SQL%20Mastry/2.PNP-%20foundations%20and%20practice). These source files are preserved; they are not repeated as second copies.
 
 | Foundation topic | Existing canonical notes | Numbered practice |

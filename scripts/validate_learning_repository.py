@@ -82,7 +82,7 @@ def check_local_markdown_links() -> None:
     rx = re.compile(r"\]\((?:<([^>]+)>|([^)]*))\)")
     for folder in files:
         for md in folder.rglob("*.md"):
-            if "Legacy Journey Snapshot" in md.parts:
+            if "Legacy Journey Snapshot" in md.parts or "Original Mastery Snapshot" in md.parts:
                 continue
             content = md.read_text(encoding="utf-8")
             for match in rx.finditer(content):

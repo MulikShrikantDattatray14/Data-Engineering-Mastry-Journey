@@ -42,7 +42,7 @@ jobs:
               source=pathlib.Path(tmp)/"source"
               subprocess.run(["git","clone","--quiet","https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry.git",str(source)],check=True)
               subprocess.run(["git","-C",str(source),"checkout","--quiet","--detach","bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a"],check=True)
-              tracked=subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode().split("\\0")
+              tracked=subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode().split(chr(0))
               tracked={x for x in tracked if x}
               expected={x["original_path"] for x in entries}
               assert tracked==expected, f"Tracked path mismatch: extra={tracked-expected} missing={expected-tracked}"

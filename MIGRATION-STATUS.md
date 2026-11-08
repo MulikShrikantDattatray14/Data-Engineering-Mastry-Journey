@@ -1,65 +1,58 @@
-# Migration control / preservation checklist
+# Migration and Quality Status
 
-## Existing sources (immutable during migration)
+**Repository:** [Data Engineering Mastry Journey](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey)  
+**Learning goal:** Strong SQL, Python and Data Engineering fundamentals, progressively verified through ChatGPT Study Mode, with an aspirational product-company role around ₹30 LPA.  
+**Dashboard:** **Intentionally not included**, per user preference.
 
-1. [Data-Engineering-Mastry](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry) — 552 files / ~29.07 MB at initial tree inventory. Includes SQL Bosscoder, PNP content, original PDF/ZIP/CSV/XLSX assets, Python 80-page source PDF, and 76 Python source-aligned lesson entries. All 552 original source files remain unchanged in the old repository, with its complete immutable snapshot stored at `99. Reference Materials/Original Mastery Snapshot/`.
-2. [data-engineering-journey](https://github.com/MulikShrikantDattatray14/data-engineering-journey) — 192 files / ~0.98 MB at initial tree inventory. Includes study history, dashboard, plans, progress JSON, Bosscoder lecture source-audit notes and reviewed work. All 192 files are copied into `99. Reference Materials/Legacy Journey Snapshot/` and SHA-verified against the original.
-3. [W3Schools Python](https://www.w3schools.com/python/) and [W3Schools SQL](https://www.w3schools.com/sql/): external official source links only, not scraped/copied lesson pages.
-4. ChatGPT Study Mode: verified concepts and original corrections; keep concise novel learning in canonical note, detailed attempts in separate evidence.
+## 1. Source preservation — verified
 
-## Non-destructive migration rules
+| Source collection | Exact archived location | Verification |
+|---|---|---|
+| Original Data-Engineering-Mastry | [Original Mastery Snapshot](<99. Reference Materials/Original Mastery Snapshot/>) | **552/552 files** present; every Git blob hash matches pinned original commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a` |
+| Original data-engineering-journey | [Legacy Journey Snapshot](<99. Reference Materials/Legacy Journey Snapshot/>) | **192/192 files** present; original Git blob hashes match |
+| W3Schools | [Official reference links](<99. Reference Materials/W3SCHOOLS-TOPICS.md>) | External topic references; copyright-protected lesson pages are not copied |
+| ChatGPT Study Mode | Preserved [study records](<99. Reference Materials/Legacy Journey Snapshot/study-records/>) and [active progress JSON](<10. Learning Progress/daily-progress.json>) | Genuine attempts retained; no inferred mastery |
 
-- Never delete, overwrite, rename, or force-push the source repositories as part of initial migration.
-- Preserve binary materials byte-for-byte, and record old→new paths and SHA/size before declaring migration complete.
-- Link to existing source-backed files; never create a second lengthy conceptual explanation simply because another course taught it.
-- Do not mark an originally provided Bosscoder/PNP question solved without independent submitted code and verified review.
-- Verify every original file has either an untouched resident copy or a verified archived snapshot and a traceable mapping.
-- The study progress record must retain real progress only, no invented work on Diwali Nov 7–8.
-- Complete source-to-topic coverage auditing for SQL, Python 80-page PDF, seven Bosscoder lecture PDFs, and W3Schools before any “nothing missed” certification.
+All **744 source files are stored in this repository**; original PDFs, images, ZIPs, CSVs, spreadsheets and lecture notes remain available. The two older repositories were not deleted, renamed, or modified as part of the migration. The redundant Git submodule and temporary import workflows were retired after the hash-verification passed.
 
-## Next migration gates
+**Caution:** The new repository is public. Keep source licensing and personal-information permissions in mind before distributing course materials.
 
-- [x] Both source trees inventoried.
-- [x] Staging branch created in existing repository (original main untouched).
-- [x] All 192 Journey files snapshotted, with exact path/blob SHA reconciliation (192/192).
-- [ ] Every canonical topic linked/mapped to all four sources and unique gaps merged (eight Python canonical foundation chapters, SQL Joins/NULL and one progressive PNP P006 example are published; exhaustive content deduplication remains outstanding).
-- [ ] Full functional links, code snippets and visual checks (new repository notes and source hashes checked; complete lesson audits pending).
-- [x] New public `Data-Engineering-Mastry-Journey` repository created by user and populated with unified topic notes, inventories, the 192-file Journey archive, and a pinned Mastery source submodule.
-- [ ] User-approved final switchover after verification.
+## 2. Single canonical learning structure
 
-## Integrity result
+- **SQL:** [15 topic foundations](<01. SQL Mastery/README.md>) covering SQL basics, advanced SELECT, joins, grouping, aggregation, CTEs, subqueries, strings, windows, recursive CTEs, NULL, dates, gaps/islands, deduplication and analytics. There is no standalone duplicate foundation for the extra-problem collection.
+- **Python:** [12 topic foundations](<02. Python Mastery/README.md>) including the JS-friendly introductory lessons and later source-aligned preview topics.
+- **Practice:** [205 PNP SQL IDs](<01. SQL Mastery/PNP-PROBLEM-INDEX.md>) and the [Bosscoder original problem index](<01. SQL Mastery/BOSSCODER-PROBLEM-INDEX.md>). Distinct source questions retain their identity; **only actually independently solved and reviewed problems get separate learner-solution records**.
+- **Four-source references:** Bosscoder, PNP, W3Schools and verified Study Mode contributions point to one canonical concept explanation rather than four copied notes.
 
+**A teaching example does not constitute a solved problem.** SQL P001–P006 are six *verified reattempts of previously solved source questions*, not six new official completions. Python Study Mode last completed the tuple exercise (Lesson 12B); Sets Lesson 13A remains unanswered.
 
-## Current new-repository transfer result
+## 3. No-skip audits — still pending
 
-- **Journey archive:** 192/192 files are copied into this repository and their Git blob SHAs match the originals exactly.
-- **Original Mastery:** all 552 source files remain in the original repository, now physically copied into `99. Reference Materials/Original Mastery Snapshot/` from commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`. Binary PDFs/ZIPs/CSV/XLSX/assets were copied and verified here.
-- **Subject indexes:** 205 distinct PNP SQL question IDs, Bosscoder SQL problem index, all 80 Python mentorship pages, seven Bosscoder lecture audits, and 36 official W3Schools Python topic links now have navigation pages.
-- **Conceptual consolidation:** eight initial Python foundation chapters, SQL Joins/NULL, and one detailed SQL P006 solution are canonical examples. Comprehensive four-source content reconciliation is **not yet certified**.
+| Audit | Progress |
+|---|---|
+| File-by-file source preservation | **Complete, hash-verified** |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
+| Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
+| Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
+| W3Schools unique material | Official topics linked; remaining individual concept comparisons pending |
+| Individual executable examples | Representative SQL/Python samples validated; exhaustive code/output audit pending |
+| Progress records and Markdown links | Automated checks run on every push; verify latest [GitHub Actions](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/validate-learning.yml) |
 
-## Latest quality gates
+The original course may cover a concept more deeply than a quick foundation note. **Do not claim that every unique course idea has been integrated until its line-level/topic-level comparison passes.**
 
-- **Automated validation:** [most recent passing repository integrity run](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/validate-learning.yml). It checks the 192 copied Journey Git blob hashes, all 552 original Mastery SHA-verified blobs, 76 mentorship lesson pages, 205 unique PNP SQL IDs, canonical progress data and relative Markdown links.
-- **Canonical progress:** `10. Learning Progress/daily-progress.json` is now the active tracker read by `docs/index.html`. The original historical JSON remains immutable in the Legacy Journey Snapshot.
-- **Four-source concept mapping:** [Source Coverage Matrix](<99. Reference Materials/SOURCE-COVERAGE-MATRIX.md>) now distinguishes concept-specific source links from verified mastery and flags remaining gaps.
-- **Open migration completion tracker:** [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) records the remaining topic audits, link/output verification, PDF/submodule durability decision and final source coverage. **This repository is not certified fully consolidated.**
+## 4. Quality rules for all future updates
 
-## Dashboard intentionally discontinued
+1. **Context first:** why a concept exists, its data-engineering problem, plain-language meaning, then a small runnable example.
+2. **Visual understanding:** progressive row outputs, index diagrams, data-flow visuals and useful JS analogies where they genuinely help.
+3. **One canonical foundation per concept:** add missing insights in place. Never reprint complete lectures or save repeated explanations.
+4. **Practice problem format:** full question, input/output, learner's exact first and reviewed answers, verified SQLite, labeled SQL Server conversion, official source solution when supplied, and step-by-step intermediate outputs.
+5. **Mastery evidence:** distinguish source-preserved, taught, reviewed, independently solved and mastered. Do not advance counts from saved snippets or Git commits.
+6. **Reference retention:** do not alter source archives, PDFs, datasets or past attempts.
+7. **No dashboard:** only Markdown, verified JSON progress and Study Mode check-ins.
 
-The user opted out of any dashboard feature. The active `docs/` site and `.github/workflows/deploy-pages.yml` have been withdrawn from the working tree. GitHub Pages does not need to be enabled. Historic dashboard assets in the immutable Legacy Journey Snapshot remain preserved as reference only. The canonical learning progress record is `10. Learning Progress/daily-progress.json`, complemented by GitHub Markdown notes and ChatGPT Study Mode accountability.
+## 5. Remaining completion decision
 
-## New canonical content review
+This repository is now **standalone and structurally organized** with complete raw-source preservation and automated integrity validation. The **full conceptual merging and individual problem-output checks are not certified complete**; continue from the [open source audit and no-duplicate checklist (Issue #1)](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1).
 
-- [x] Published eight additional concise SQL concept foundations with source preservation links and testable sample tables.
-- [x] Independently checked eight associated SQL example outputs against SQLite (SELECT, grouping, aggregates, CTEs, correlated subqueries, strings, windows, recursive CTE).
-- [x] Published four more Python source-aligned conceptual reference chapters (comprehensions, generators, pandas, idempotent ETL/data quality), not labeled as completed Study Mode work.
-- [x] Added original visual diagrams for SQL grouping and cumulative window totals.
-- [ ] Finish detailed per-source line and exercise auditing. Existence of notes does not prove all distinct source nuances were consolidated.
-
-## Independent source archive now complete
-
-- [x] **552/552** original Mastery files, including all original PDFs, data and images, now stored as ordinary files under `99. Reference Materials/Original Mastery Snapshot/`. SHA matches verified against the pinned original.
-- [x] **192/192** Journey files stored under `99. Reference Materials/Legacy Journey Snapshot/` with matching SHA hashes.
-- [x] Removed now-redundant submodule and temporary import workflows. The originals remain untouched.
-- [x] CI validates both physical source snapshots (all **744 original files**).
-- [ ] The full conceptual reconciliation remains ongoing; source preservation is complete, **not** all course learning and problem mastery.
+No delete/retire action should be taken against either original repository.

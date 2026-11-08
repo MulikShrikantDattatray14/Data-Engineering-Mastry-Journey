@@ -1,0 +1,68 @@
+name: One-Time Preserve Original Mastery Sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/preserve-original-mastery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout unified repository
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Copy pinned original and verify all tracked blobs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import pathlib
+          import shutil
+          import subprocess
+          import tempfile
+
+          target=pathlib.Path("99. Reference Materials/Original Mastery Snapshot")
+          assert not target.exists(), "Snapshot already exists: refusing to overwrite"
+          inventory=json.loads(pathlib.Path("99. Reference Materials/SOURCE-INVENTORY.json").read_text())
+          entries=[x for x in inventory["entries"] if x["source"]=="Data-Engineering-Mastry/main"]
+          assert len(entries)==552, len(entries)
+          with tempfile.TemporaryDirectory() as tmp:
+              source=pathlib.Path(tmp)/"source"
+              subprocess.run(["git","clone","--quiet","https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry.git",str(source)],check=True)
+              subprocess.run(["git","-C",str(source),"checkout","--quiet","--detach","bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a"],check=True)
+              tracked=subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode().split("\\0")
+              tracked={x for x in tracked if x}
+              expected={x["original_path"] for x in entries}
+              assert tracked==expected, f"Tracked path mismatch: extra={tracked-expected} missing={expected-tracked}"
+              shutil.copytree(source,target,ignore=shutil.ignore_patterns(".git"))
+              for e in entries:
+                  path=target/e["original_path"]
+                  assert path.is_file(), f"Missing: {path}"
+                  b=path.read_bytes()
+                  sha=hashlib.sha1(f"blob {len(b)}".encode()+bytes([0])+b).hexdigest()
+                  assert sha==e["git_blob_sha"], f"Blob mismatch: {path}"
+              print(f"Verified exactly {len(entries)} pinned source files byte-for-byte.")
+          PY
+
+      - name: Commit verified source snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "99. Reference Materials/Original Mastery Snapshot"
+          git diff --cached --quiet && exit 0
+          git commit -m "Archive 552 verified original Mastery source files, PDFs and datasets"
+          git push origin HEAD:main

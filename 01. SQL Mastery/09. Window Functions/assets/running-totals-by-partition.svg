@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="ttl desc">
+<title id="ttl">SQL window running totals by customer</title>
+<desc id="desc">Customer A has sales 100, 300, 500, with cumulative totals 100, 400, 900. Customer B has one sale of 200 and running total 200.</desc>
+<rect x="0" y="0" width="1000" height="330" rx="20" fill="#0f172a"/>
+<text x="32" y="46" font-family="Arial" fill="#f8fafc" font-size="24" font-weight="700">SUM(amount) OVER (PARTITION BY customer ORDER BY id)</text>
+<text x="32" y="86" font-family="Arial" fill="#93c5fd" font-size="20">Partition A</text>
+<text x="32" y="220" font-family="Arial" fill="#fca5a5" font-size="20">Partition B</text>
+<rect x="200" y="105" width="175" height="83" rx="12" fill="#173d33" stroke="#34d399" stroke-width="2"/><text x="288" y="134" font-size="18" font-family="Arial" fill="#cbd5e1" text-anchor="middle">Sale 100</text><text x="288" y="168" font-size="24" font-family="Arial" font-weight="700" fill="#6ee7b7" text-anchor="middle">Total 100</text><rect x="440" y="105" width="175" height="83" rx="12" fill="#173d33" stroke="#34d399" stroke-width="2"/><text x="528" y="134" font-size="18" font-family="Arial" fill="#cbd5e1" text-anchor="middle">Sale 300</text><text x="528" y="168" font-size="24" font-family="Arial" font-weight="700" fill="#6ee7b7" text-anchor="middle">Total 400</text><rect x="680" y="105" width="175" height="83" rx="12" fill="#173d33" stroke="#34d399" stroke-width="2"/><text x="768" y="134" font-size="18" font-family="Arial" fill="#cbd5e1" text-anchor="middle">Sale 500</text><text x="768" y="168" font-size="24" font-family="Arial" font-weight="700" fill="#6ee7b7" text-anchor="middle">Total 900</text>
+<rect x="200" y="236" width="175" height="75" rx="12" fill="#3b2734" stroke="#fda4af" stroke-width="2"/>
+<text x="287" y="263" font-size="18" font-family="Arial" fill="#cbd5e1" text-anchor="middle">Sale 200</text>
+<text x="287" y="292" font-size="24" font-family="Arial" font-weight="700" fill="#fda4af" text-anchor="middle">Total 200</text>
+</svg>

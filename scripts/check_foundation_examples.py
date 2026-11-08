@@ -134,6 +134,7 @@ def run_examples():
     print("PASS Python idempotent SQLite load")
 
     for asset in [
+        "01. SQL Mastery/00. SQL Basics/assets/customer-order-relationship.svg",
         "02. Python Mastery/03. Lists and Slicing/assets/sales-every-second.svg",
         "01. SQL Mastery/03. Sorting and Grouping/assets/where-group-having.svg",
         "01. SQL Mastery/09. Window Functions/assets/running-totals-by-partition.svg",

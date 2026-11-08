@@ -1,0 +1,12 @@
+{"user_id": 1, "ts": "2025-04-01T10:00:00", "event": "view", "props": {"page": "/p/4", "device": "mobile"}}
+{"user_id": 1, "ts": "2025-04-01T10:05:00", "event": "cart", "props": {"page": "/cart", "device": "mobile"}}
+{"user_id": 1, "ts": "2025-04-01T10:20:00", "event": "checkout", "props": {"page": "/checkout", "device": "mobile"}}
+{"user_id": 1, "ts": "2025-04-01T10:22:00", "event": "purchase", "props": {"page": "/thanks", "device": "mobile"}}
+{"user_id": 1, "ts": "2025-04-01T14:00:00", "event": "view", "props": {"page": "/p/7", "device": "desktop"}}
+{"user_id": 2, "ts": "2025-04-01T10:00:00", "event": "view", "props": {"page": "/p/3", "device": "desktop"}}
+{"user_id": 2, "ts": "2025-04-01T10:02:00", "event": "view", "props": {"page": "/p/6", "device": "desktop"}}
+{"user_id": 2, "ts": "2025-04-01T10:40:00", "event": "cart", "props": {"page": "/cart", "device": "desktop"}}
+{"user_id": 3, "ts": "2025-04-01T11:00:00", "event": "view", "props": {"page": "/p/2", "device": "mobile"}}
+{"user_id": 3, "ts": "2025-04-01T11:10:00", "event": "cart", "props": {"page": "/cart", "device": "mobile"}}
+{"user_id": 3, "ts": "2025-04-01T11:15:00", "event": "checkout", "props": {"page": "/checkout", "device": "mobile"}}
+{"user_id": 4, "ts": "2025-04-01T12:00:00", "event": "view", "props": {"page": "/p/1", "device": "tablet"}}

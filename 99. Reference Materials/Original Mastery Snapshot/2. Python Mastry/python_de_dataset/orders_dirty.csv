@@ -1,0 +1,8 @@
+order_id,customer_id,order_date,status,amount
+116,8,2025-05-02,delivered,-50
+117,,2025-05-02,delivered,499
+118,3,2025-02-30,delivered,799
+119,2,2025-05-03,shipped,1200
+120,5,2025-05-03,delivered,abc
+121,4,2025-05-04,delivered,999
+122,1,2025-05-04,DELIVERED ,450

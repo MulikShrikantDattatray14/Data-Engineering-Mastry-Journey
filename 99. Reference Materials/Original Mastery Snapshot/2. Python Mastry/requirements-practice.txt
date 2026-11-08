@@ -1,0 +1,5 @@
+﻿# Extra packages used by the runnable Part 6 and Part 7 data lessons.
+# The Part 1–5 examples use the Python standard library.
+pandas
+numpy
+pytest

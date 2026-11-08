@@ -1,0 +1,96 @@
+[
+  {
+    "customer_id": 1,
+    "name": "Aarav",
+    "signup_date": "2025-01-05",
+    "referred_by": null,
+    "address": {
+      "city": "Bengaluru",
+      "pincode": "560001"
+    },
+    "tags": []
+  },
+  {
+    "customer_id": 2,
+    "name": "Diya",
+    "signup_date": "2025-01-12",
+    "referred_by": 1,
+    "address": {
+      "city": "Mumbai",
+      "pincode": "400001"
+    },
+    "tags": [
+      "referral"
+    ]
+  },
+  {
+    "customer_id": 3,
+    "name": "Kabir",
+    "signup_date": "2025-02-03",
+    "referred_by": null,
+    "address": {
+      "city": "Delhi",
+      "pincode": "110001"
+    },
+    "tags": []
+  },
+  {
+    "customer_id": 4,
+    "name": "Meera",
+    "signup_date": "2025-02-20",
+    "referred_by": 2,
+    "address": {
+      "city": "Bengaluru",
+      "pincode": "560034"
+    },
+    "tags": [
+      "referral"
+    ]
+  },
+  {
+    "customer_id": 5,
+    "name": "Rohan",
+    "signup_date": "2025-03-08",
+    "referred_by": null,
+    "address": {
+      "city": "Pune",
+      "pincode": "411001"
+    },
+    "tags": []
+  },
+  {
+    "customer_id": 6,
+    "name": "Sana",
+    "signup_date": "2025-03-15",
+    "referred_by": null,
+    "address": {
+      "city": null,
+      "pincode": null
+    },
+    "tags": []
+  },
+  {
+    "customer_id": 7,
+    "name": "Vikram",
+    "signup_date": "2025-04-01",
+    "referred_by": 3,
+    "address": {
+      "city": "Delhi",
+      "pincode": "110017"
+    },
+    "tags": [
+      "referral"
+    ]
+  },
+  {
+    "customer_id": 8,
+    "name": "Zoya",
+    "signup_date": "2025-04-10",
+    "referred_by": null,
+    "address": {
+      "city": "Hyderabad",
+      "pincode": "500001"
+    },
+    "tags": []
+  }
+]

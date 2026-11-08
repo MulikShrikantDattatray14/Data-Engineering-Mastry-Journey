@@ -1,0 +1,11 @@
+PaymentID,PaymentType,Allowed
+1,UPI,Yes
+2,Credit Card,Yes
+3,Debit Card,Yes
+4,Net Banking,Yes
+5,Cash on Delivery,Yes
+6,Wallet,Yes
+7,EMI,Yes
+8,Pay Later,No
+9,Gift Card,No
+10,Food Card,N

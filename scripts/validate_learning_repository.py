@@ -20,7 +20,7 @@ def check(ok: bool, message: str) -> None:
 
 def git_blob_sha(path: Path) -> str:
     content = path.read_bytes()
-    header = f"blob {len(content)}\\0".encode()
+    header = ("blob " + str(len(content)) + chr(0)).encode()
     return hashlib.sha1(header + content).hexdigest()
 
 
@@ -76,7 +76,7 @@ def check_local_markdown_links() -> None:
              ROOT / "07. Data System Design", ROOT / "08. Projects",
              ROOT / "09. Interview Preparation", ROOT / "10. Learning Progress",
              ROOT / "99. Reference Materials", ROOT / "docs")
-    rx = re.compile(r"\\]\\((?:<([^>]+)>|([^)]*))\\)")
+    rx = re.compile(r"\]\((?:<([^>]+)>|([^)]*))\)")
     for folder in files:
         for md in folder.rglob("*.md"):
             if "Legacy Journey Snapshot" in md.parts:

@@ -1,6 +1,6 @@
 # Python Mastery
 
-**[Full 80-page mentorship coverage index](PDF-COVERAGE-INDEX.md)** and **[seven-lecture Bosscoder index](BOSSCODER-COVERAGE-INDEX.md)**. Keep the original PDF and all 76 detailed companion lessons in the pinned source submodule. Introductory foundation notes are concise, visual, and JavaScript-friendly; source-backed later-topic notes are not automatically marked mastered.
+**[Full 80-page mentorship coverage index](PDF-COVERAGE-INDEX.md)** and **[seven-lecture Bosscoder index](BOSSCODER-COVERAGE-INDEX.md)**. Keep the original PDF and all 76 detailed companion lessons in the immutable local source archive. Introductory foundation notes are concise, visual, and JavaScript-friendly; source-backed later-topic notes are not automatically marked mastered.
 
 **Recommended:** Start with the short, JS-friendly notes, then consult the fully preserved 80-page PDF and Bosscoder lecture reference only when extra depth is needed.
 
@@ -21,7 +21,7 @@
 
 **Study-mode checkpoint:** Lesson 12B tuple exercise completed; next Lesson 13A sets (unanswered). No official Python problem-bank completions verified yet. Don't create numbered solved-problem files for tutor-generated beginner examples.
 
-**Visuals:** Use GitHub-compatible SVG diagrams, small tables with progressive intermediate states and captions for every difficult concept. Interactive equivalents live in the dashboard; Markdown retains a self-contained static explanation. JS comparisons only when genuinely helpful.
+**Visuals:** Use GitHub-compatible SVG diagrams, small tables with progressive intermediate states and captions for every difficult concept. GitHub Markdown itself includes self-contained diagrams and progressive examples; no dashboard is maintained. JS comparisons only when genuinely helpful.
 
 [Full Python source index](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/README.md) · [80-page PDF](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/Source/1793477658005.pdf) · [W3Schools Python](https://www.w3schools.com/python/).
 

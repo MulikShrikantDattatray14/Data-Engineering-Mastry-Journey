@@ -37,5 +37,5 @@ A source-to-snapshot audit verified **552/552 original Mastry** blobs unchanged 
 - **Journey archive:** 192/192 files are copied into this repository and their Git blob SHAs match the originals exactly.
 - **Original Mastery:** all 552 source files remain in the original repository, now linked here as a Git submodule pinned to commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`. Binary PDFs/ZIPs are accessible through that submodule but are **not physically copied** into this repository's Git object store.
 - **Subject indexes:** 205 distinct PNP SQL question IDs, Bosscoder SQL problem index, all 80 Python mentorship pages, seven Bosscoder lecture audits, and 36 official W3Schools Python topic links now have navigation pages.
-- **Progress dashboard:** `docs/index.html` is committed and reads the preserved progress JSON; GitHub Pages site activation remains outstanding.
+- **Progress dashboard:** `docs/index.html` is committed and now reads the **active** `10. Learning Progress/daily-progress.json`; the archived JSON stays unchanged as an original. GitHub Pages site activation remains outstanding.
 - **Conceptual consolidation:** eight initial Python foundation chapters, SQL Joins/NULL, and one detailed SQL P006 solution are canonical examples. Comprehensive four-source content reconciliation is **not yet certified**.

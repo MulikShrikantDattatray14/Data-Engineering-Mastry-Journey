@@ -17,7 +17,7 @@ This register distinguishes **source preserved** from **concept audited** and **
 | Bosscoder SQL | Original foundation notes plus individual numbered SQL problem files in `1. SQL Mastery` | Existing notes linked; full four-source topic dedup **pending** |
 | Bosscoder Python | Seven lecture note/audit groups and assignment records inside preserved Journey snapshot | Seven lectures preserved; subject-specific concept audit **pending** |
 | PNP SQL | Original question bank and source materials (PDF, solutions, datasets) | Source preserved; individual question mapping to canonical topics **pending** |
-| PNP Python mentorship | [Original 80-page PDF](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/2.%20Python%20Mastry/Source/1793477658005.pdf) and all 76 source-aligned lesson entries | 80-page source preserved; page-by-page consolidation **pending** |
+| PNP Python mentorship | [Original 80-page PDF](Original%20Mastery%20Snapshot/2.%20Python%20Mastry/Source/1793477658005.pdf) and all 76 source-aligned lesson entries | 80-page source preserved; page-by-page consolidation **pending** |
 | W3Schools SQL/Python | [Official SQL](https://www.w3schools.com/sql/) and [official Python](https://www.w3schools.com/python/) URLs; 36 Python topical references already in original lesson indexes | Official landing pages checked; detailed topic checks **ongoing** |
 | ChatGPT Study Mode | Full independent attempt/evidence history in preserved Journey snapshot | Lessons 1–12 summarized, next Lesson 13A; new insights linked, no copied transcripts in canonical notes |
 

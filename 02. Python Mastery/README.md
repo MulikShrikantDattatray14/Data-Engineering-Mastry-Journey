@@ -23,6 +23,6 @@
 
 **Visuals:** Use GitHub-compatible SVG diagrams, small tables with progressive intermediate states and captions for every difficult concept. Interactive equivalents live in the dashboard; Markdown retains a self-contained static explanation. JS comparisons only when genuinely helpful.
 
-[Full Python source index](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/2.%20Python%20Mastry/README.md) · [80-page PDF](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/2.%20Python%20Mastry/Source/1793477658005.pdf) · [W3Schools Python](https://www.w3schools.com/python/).
+[Full Python source index](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/README.md) · [80-page PDF](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/Source/1793477658005.pdf) · [W3Schools Python](https://www.w3schools.com/python/).
 
 **Coverage transparency:** Notes 00–04 summarize Study Mode topics already reviewed (with specific revision gaps). Notes 05–11 are source-aligned **preview/reference notes**, not learner-mastered coursework. The untouched full 80-page PDF and detailed reference files continue to cover more material than these quick notes.

@@ -1,6 +1,6 @@
 # Python Mastery
 
-**[Full 80-page mentorship coverage index](PDF-COVERAGE-INDEX.md)**. Keep the original PDF and all 76 detailed companion lessons in the pinned source submodule. Introductory foundation notes are concise, visual, and JavaScript-friendly; source-backed later-topic notes are not automatically marked mastered.
+**[Full 80-page mentorship coverage index](PDF-COVERAGE-INDEX.md)** and **[seven-lecture Bosscoder index](BOSSCODER-COVERAGE-INDEX.md)**. Keep the original PDF and all 76 detailed companion lessons in the pinned source submodule. Introductory foundation notes are concise, visual, and JavaScript-friendly; source-backed later-topic notes are not automatically marked mastered.
 
 **Recommended:** Start with the short, JS-friendly notes, then consult the fully preserved 80-page PDF and Bosscoder lecture reference only when extra depth is needed.
 

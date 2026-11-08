@@ -75,3 +75,11 @@ The table below makes the **topic ownership** explicit. A source being linked me
 | [SQL NULL logic](../01.%20SQL%20Mastery/11.%20NULL%20Logic/0.%20Foundation%20Notes.md) | PNP P006 | Bosscoder source cross-check pending | [SQL NULL](https://www.w3schools.com/sql/sql_null_values.asp) | P006 final SQLite answer verified | One progressive worked example; full NULL topic audit pending |
 
 **Gap discipline:** The remaining PNP pages, Bosscoder subtopics, W3Schools unique features, and source-specific graded assignments require inspection before marking complete. This matrix is not a certificate of comprehensive coverage. Only append a new concept to its canonical note after confirming it is genuinely missing.
+
+## Expanded canonical chapters (newly source-mapped)
+
+- **SQL:** Advanced SELECT, GROUP BY/HAVING, aggregation, CTEs, correlated subqueries, strings/patterns, window functions and recursive CTEs now each have a concise single-topic foundation note under `01. SQL Mastery`. The sample query outputs were independently executed in SQLite with expected results in the migration review. The original Bosscoder notes remain the long-form source, not a second canonical foundation explanation.
+- **Python:** Comprehensions, generators, pandas and idempotent ETL/data quality now have distinct concise notes under `02. Python Mastery`, with mentorship page and Bosscoder references. These are **source-aligned future-topic notes**, not passed Study Mode checkpoints.
+- **Visuals:** SQL grouping and window examples now include original SVGs; text/table fallback remains in Markdown.
+
+**Not yet audited:** complete Bosscoder question-by-question mapping, PNP problem overlaps, every nuance of 80 mentorship pages, full Python DSA/coding patterns/advanced coverage, and independent execution of every code block. Never mark these as complete simply because reference files exist.

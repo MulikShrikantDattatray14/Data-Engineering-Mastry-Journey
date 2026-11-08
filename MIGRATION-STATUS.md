@@ -47,3 +47,11 @@
 ## Dashboard intentionally discontinued
 
 The user opted out of any dashboard feature. The active `docs/` site and `.github/workflows/deploy-pages.yml` have been withdrawn from the working tree. GitHub Pages does not need to be enabled. Historic dashboard assets in the immutable Legacy Journey Snapshot remain preserved as reference only. The canonical learning progress record is `10. Learning Progress/daily-progress.json`, complemented by GitHub Markdown notes and ChatGPT Study Mode accountability.
+
+## New canonical content review
+
+- [x] Published eight additional concise SQL concept foundations with source preservation links and testable sample tables.
+- [x] Independently checked eight associated SQL example outputs against SQLite (SELECT, grouping, aggregates, CTEs, correlated subqueries, strings, windows, recursive CTE).
+- [x] Published four more Python source-aligned conceptual reference chapters (comprehensions, generators, pandas, idempotent ETL/data quality), not labeled as completed Study Mode work.
+- [x] Added original visual diagrams for SQL grouping and cumulative window totals.
+- [ ] Finish detailed per-source line and exercise auditing. Existence of notes does not prove all distinct source nuances were consolidated.

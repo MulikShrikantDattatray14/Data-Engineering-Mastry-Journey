@@ -1,27 +1,28 @@
-# Reference materials — preserve originals
+# Reference Materials — Original source archives
 
-**Never delete reference assets.** Original PDF, ZIP, CSV, XLSX, source notes, assets, and prior repositories are retained, even if shorter canonical notes cover the same idea.
+**Never modify or remove the original source records.** The original 552-file Mastery collection and 192-file Journey collection have been copied **inside this repository** with exact Git blob SHA verification. Both older GitHub repositories are untouched as extra backups. No submodule is needed.
 
-## Preserved source locations and original files
+## Preserved complete source snapshots
 
-- [Bosscoder SQL foundational notes and assignments](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/1.%20SQL%20Mastery/1.%20SQL%20Mastry/1.Bosscoder%20Academy%20-%20foundational%20notes%20and%20Assignments)
-- [PNP SQL source questions, solutions and source PDFs](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/1.%20SQL%20Mastery/1.%20SQL%20Mastry/2.PNP-%20foundations%20and%20practice)
-- [Python PDF (80 pages), dataset and complete detailed notes](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/2.%20Python%20Mastry)
-- [Python original PDF](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/2.%20Python%20Mastry/Source/1793477658005.pdf)
-- [Original Mastery Snapshot](<Original Mastery Snapshot>) — complete local source snapshot containing **all 552 original source files**, including PDFs, datasets, screenshots and prior course solutions. All 552 original source files are available directly in this repository.
-- [Legacy Journey Snapshot](<Legacy Journey Snapshot/>) — **all 192 original Journey files copied here with matching Git blob SHA hashes** (Bosscoder lecture audits, dashboard, progress, SQL/Python study records).
+- [Original Mastery Snapshot](<Original Mastery Snapshot/>) — 552 unchanged source files, including Bosscoder SQL notes and numbered problems, PNP SQL question source PDFs, CSV/XLSX datasets, ZIP files, screenshots, all 76 PDF-aligned Python lesson files and the original 80-page Python mentorship PDF. Source commit: `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`.
+- [Legacy Journey Snapshot](<Legacy Journey Snapshot/>) — 192 original files, including Bosscoder Python lecture notes/assignments, Study Mode attempts, learning journals, progress history and original files from the earlier study repository.
 
-## Source coverage
+## Direct original material
 
-For any new supplied PDF, keep the exact source bytes inside its subject/provider references area; add original filename, page count, source link, topic map and checked status. Only add subject concept notes where the source adds something unique. Do not copy official W3Schools lessons wholesale; preserve verified official URLs.
+- [Bosscoder SQL notes and assignments](<Original Mastery Snapshot/1. SQL Mastery/1. SQL Mastry/1.Bosscoder Academy - foundational notes and Assignments/>)
+- [PNP SQL practice and source PDFs](<Original Mastery Snapshot/1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/>)
+- [80-page Python mentorship PDF](<Original Mastery Snapshot/2. Python Mastry/Source/1793477658005.pdf>)
+- [Original complete Python lessons](<Original Mastery Snapshot/2. Python Mastry/>)
+- [Bosscoder Python lecture archive](<Legacy Journey Snapshot/02-python/bosscoder/>)
+- [Original Study Mode evidence](<Legacy Journey Snapshot/10-learning-journal/>)
 
-## How the references are preserved
+## Coverage and provenance
 
-The Mastery submodule is copied byte-for-byte from commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`, so it stays stable even when the original main branch changes. GitHub's web interface follows its link to the original repository. All 552 source files, including PDFs, are now stored directly in this repository. If the old Mastery repository is deleted or made private, access to this reference may break; preserve it indefinitely or later migrate the binary objects with a full Git clone/push workflow. W3Schools is linked to its official site, not copied.
+- [Original file locations and Git hashes](SOURCE-INVENTORY.json)
+- [Mentorship PDF page index and PNP SQL source question IDs](TOPIC-AND-PROBLEM-INDEX.json)
+- [Bosscoder / PNP / W3Schools / Study Mode coverage matrix](SOURCE-COVERAGE-MATRIX.md)
+- [Official W3Schools topic links](W3SCHOOLS-TOPICS.md)
 
-## Cross-reference indexes
+**Learning content is deduplicated into subject-wise foundational notes.** The references are preserved verbatim for evidence, attribution and cross-checking. A source question is documented as independently solved only after the learner attempts it and the answer is reviewed. New source PDFs should be stored here unchanged before any summaries are written.
 
-- [All 80 PDF pages, 205 PNP SQL IDs and source provenance](TOPIC-AND-PROBLEM-INDEX.json)
-- [Official W3Schools Python/SQL topics](W3SCHOOLS-TOPICS.md)
-- [Four-source unique-concept coverage matrix](SOURCE-COVERAGE-MATRIX.md)
-- [Full original file SHA inventory](SOURCE-INVENTORY.json)
+The historical repositories remain available at [Data-Engineering-Mastry](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry) and [data-engineering-journey](https://github.com/MulikShrikantDattatray14/data-engineering-journey); neither is required to read these copies.

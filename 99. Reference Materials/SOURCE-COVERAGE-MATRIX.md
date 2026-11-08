@@ -4,8 +4,8 @@ This register distinguishes **source preserved** from **concept audited** and **
 
 ## Inventory integrity
 
-- Original SQL/Python Mastery: **552/552** blobs verified unchanged in staging.
-- Original Journey: **192/192** blobs verified identical inside the preserved snapshot.
+- Original SQL/Python Mastery: **552/552** Git blobs copied and verified inside the unified repository.
+- Original Journey: **192/192** Git blobs copied and verified inside the unified repository.
 - Total: **744/744** source files byte-identical by Git blob hash.
 - [Downloadable machine-readable path and hash inventory](SOURCE-INVENTORY.json) maps every original file to its preserved location.
 - No original repository was deleted, renamed, force-pushed or overwritten.
@@ -83,3 +83,7 @@ The table below makes the **topic ownership** explicit. A source being linked me
 - **Visuals:** SQL grouping and window examples now include original SVGs; text/table fallback remains in Markdown.
 
 **Not yet audited:** complete Bosscoder question-by-question mapping, PNP problem overlaps, every nuance of 80 mentorship pages, full Python DSA/coding patterns/advanced coverage, and independent execution of every code block. Never mark these as complete simply because reference files exist.
+
+## Source snapshot integrity
+
+The previous reference submodule has been replaced with a **native complete 552-file Mastery snapshot**. The separate 192-file original Journey snapshot also remains. Every archived source file has a matching Git blob SHA, including binary PDFs, ZIPs, spreadsheets and datasets. A source file being preserved is **not** itself evidence that its unique topics have been incorporated into a canonical note or that the learner mastered them.

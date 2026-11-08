@@ -26,4 +26,4 @@ Each foundation note begins with **why the concept matters**, explains it plainl
 
 Sources: **Bosscoder, PNP Mentorship, official W3Schools, and ChatGPT Study Mode.** The source material stays preserved. We will not falsely mark coursework mastered or create redundant practice question files.
 
-**Read [Migration Status](MIGRATION-STATUS.md) before treating the four-source conceptual merge as complete.** The original Mastery repository is mounted as a pinned Git submodule in the Reference Materials folder; all 192 historic Journey files are copied and hash-verified here. Detailed content audits remain pending. No dashboard is maintained in this repository.
+**Read [Migration Status](MIGRATION-STATUS.md) before treating the four-source conceptual merge as complete.** Both original source collections are physically present and hash-verified under Reference Materials (552 Mastery files and 192 Journey files). Both older repositories remain untouched. Detailed content audits remain pending. No dashboard is maintained in this repository.

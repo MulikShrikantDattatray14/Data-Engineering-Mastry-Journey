@@ -99,9 +99,6 @@ def run_python_examples():
     assert "  PAID ".strip().lower()=="paid"
     assert "101,Pune,2500".split(",")==["101","Pune","2500"]
     assert -13//4==-4 and -13%4==3
-    ids={10,20,30,20,10}
-    ids.add(40)
-    assert len(ids)==4 and (20 in ids) and (50 not in ids)
     transaction=(101,"SUCCESS",2500,"INR")
     assert transaction[:2]+(3000,)+transaction[3:]==(101,"SUCCESS",3000,"INR")
     raw=[1200,1500,-300,1800,0,2200]

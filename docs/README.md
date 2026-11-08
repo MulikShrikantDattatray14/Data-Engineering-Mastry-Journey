@@ -2,9 +2,9 @@
 
 The static dashboard is committed at [docs/index.html](index.html), and the deployment workflow is available at [the Pages GitHub Action](../.github/workflows/deploy-pages.yml).
 
-**Current state:** The workflow failed at `actions/configure-pages` because GitHub Pages has not yet been enabled for this newly created repository. The dashboard HTML passed a JavaScript syntax check and successfully references the SHA-verified progress JSON at:
+**Current state:** The workflow failed at `actions/configure-pages` because GitHub Pages has not yet been enabled for this newly created repository. The dashboard HTML passed a JavaScript syntax check and is configured to load the canonical active progress JSON at:
 
-`99. Reference Materials/Legacy Journey Snapshot/progress/daily-progress.json`
+`10. Learning Progress/daily-progress.json`
 
 ## One-time GitHub configuration
 
@@ -14,6 +14,6 @@ The static dashboard is committed at [docs/index.html](index.html), and the depl
 4. Choose **Run workflow** (main), or push a change under `docs/`.
 5. Verify the successful deployment URL reported by the run, ordinarily `https://mulikshrikantdattatray14.github.io/Data-Engineering-Mastry-Journey/`.
 
-No new progress is credited merely by changing the dashboard. Any verified new study completion should be recorded in the **single canonical progress JSON** in the preserved Journey data, followed by a dashboard refresh.
+No new progress is credited merely by changing the dashboard. Any verified new study completion should be recorded in the **single canonical progress JSON** at `10. Learning Progress/daily-progress.json`, followed by a dashboard refresh.
 
 **Important:** The original historical dashboard remains preserved in the Legacy Journey Snapshot and the existing Pages site is left unchanged until the new deployment is verified.

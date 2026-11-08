@@ -14,7 +14,7 @@
 - Link to existing source-backed files; never create a second lengthy conceptual explanation simply because another course taught it.
 - Do not mark an originally provided Bosscoder/PNP question solved without independent submitted code and verified review.
 - Verify every original file has either an untouched resident copy or a verified archived snapshot and a traceable mapping.
-- The dashboard should retain real progress only, no invented work on Diwali Nov 7–8.
+- The study progress record must retain real progress only, no invented work on Diwali Nov 7–8.
 - Complete source-to-topic coverage auditing for SQL, Python 80-page PDF, seven Bosscoder lecture PDFs, and W3Schools before any “nothing missed” certification.
 
 ## Next migration gates
@@ -23,21 +23,18 @@
 - [x] Staging branch created in existing repository (original main untouched).
 - [x] All 192 Journey files snapshotted, with exact path/blob SHA reconciliation (192/192).
 - [ ] Every canonical topic linked/mapped to all four sources and unique gaps merged (eight Python canonical foundation chapters, SQL Joins/NULL and one progressive PNP P006 example are published; exhaustive content deduplication remains outstanding).
-- [ ] Full functional links, code snippets and visual checks (new repository notes and source hashes checked; GitHub Pages deployment and complete lesson audits pending).
+- [ ] Full functional links, code snippets and visual checks (new repository notes and source hashes checked; complete lesson audits pending).
 - [x] New public `Data-Engineering-Mastry-Journey` repository created by user and populated with unified topic notes, inventories, the 192-file Journey archive, and a pinned Mastery source submodule.
-- [ ] GitHub Pages enabled/deployed at new repo: **workflow added**, but first run failed because Pages must be enabled manually via [Settings → Pages](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/settings/pages), choose **GitHub Actions**. Then [rerun the deployment](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/deploy-pages.yml).
 - [ ] User-approved final switchover after verification.
 
 ## Integrity result
 
-A source-to-snapshot audit verified **552/552 original Mastry** blobs unchanged and **192/192 Journey** blobs identical to their source. The [source inventory](<99. Reference Materials/SOURCE-INVENTORY.json>) records paths and SHA hashes from the original inventories. Journey files are copied byte-for-byte; Mastery is pinned as a submodule, not physically duplicated. The learning-content migration is not fully audited until the full four-source topic mapping and dashboard cutover are verified.
 
 ## Current new-repository transfer result
 
 - **Journey archive:** 192/192 files are copied into this repository and their Git blob SHAs match the originals exactly.
 - **Original Mastery:** all 552 source files remain in the original repository, now linked here as a Git submodule pinned to commit `bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a`. Binary PDFs/ZIPs are accessible through that submodule but are **not physically copied** into this repository's Git object store.
 - **Subject indexes:** 205 distinct PNP SQL question IDs, Bosscoder SQL problem index, all 80 Python mentorship pages, seven Bosscoder lecture audits, and 36 official W3Schools Python topic links now have navigation pages.
-- **Progress dashboard:** `docs/index.html` is committed and now reads the **active** `10. Learning Progress/daily-progress.json`; the archived JSON stays unchanged as an original. GitHub Pages site activation remains outstanding.
 - **Conceptual consolidation:** eight initial Python foundation chapters, SQL Joins/NULL, and one detailed SQL P006 solution are canonical examples. Comprehensive four-source content reconciliation is **not yet certified**.
 
 ## Latest quality gates
@@ -45,4 +42,8 @@ A source-to-snapshot audit verified **552/552 original Mastry** blobs unchanged 
 - **Automated validation:** [most recent passing repository integrity run](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/workflows/validate-learning.yml). It checks the 192 copied Journey Git blob hashes, the fixed original-Mastery submodule SHA, 76 mentorship lesson pages, 205 unique PNP SQL IDs, canonical progress data and relative Markdown links.
 - **Canonical progress:** `10. Learning Progress/daily-progress.json` is now the active tracker read by `docs/index.html`. The original historical JSON remains immutable in the Legacy Journey Snapshot.
 - **Four-source concept mapping:** [Source Coverage Matrix](<99. Reference Materials/SOURCE-COVERAGE-MATRIX.md>) now distinguishes concept-specific source links from verified mastery and flags remaining gaps.
-- **Open migration completion tracker:** [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) records the remaining topic audits, link/output verification, PDF/submodule durability decision and dashboard activation. **This repository is not certified fully consolidated.**
+- **Open migration completion tracker:** [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) records the remaining topic audits, link/output verification, PDF/submodule durability decision and final source coverage. **This repository is not certified fully consolidated.**
+
+## Dashboard intentionally discontinued
+
+The user opted out of any dashboard feature. The active `docs/` site and `.github/workflows/deploy-pages.yml` have been withdrawn from the working tree. GitHub Pages does not need to be enabled. Historic dashboard assets in the immutable Legacy Journey Snapshot remain preserved as reference only. The canonical learning progress record is `10. Learning Progress/daily-progress.json`, complemented by GitHub Markdown notes and ChatGPT Study Mode accountability.

@@ -15,10 +15,10 @@ One organized learning home for **SQL, Python, data modeling, Spark, pipelines, 
 - [Data System Design](07.%20Data%20System%20Design/README.md)
 - [Projects](08.%20Projects/README.md)
 - [Interview Preparation](09.%20Interview%20Preparation/README.md)
-- [Learning Progress](10.%20Learning%20Progress/README.md) — [dashboard source](docs/index.html)
+- [Learning Progress](10.%20Learning%20Progress/README.md)
 - [Preserved Sources and Migration Audit](99.%20Reference%20Materials/README.md) — [W3Schools references](99.%20Reference%20Materials/W3SCHOOLS-TOPICS.md)
 
-**Daily accountability and verified progress:** [Active progress tracker](<10. Learning Progress/daily-progress.json>) · [Dashboard source](docs/index.html). Historical records remain intact in References; the **active file is not the archived copy**.
+**Daily accountability and verified progress:** [Active progress tracker](<10. Learning Progress/daily-progress.json>). Historical records remain intact in References; the **active file is not the archived copy**.
 
 ## Method
 
@@ -26,4 +26,4 @@ Each foundation note begins with **why the concept matters**, explains it plainl
 
 Sources: **Bosscoder, PNP Mentorship, official W3Schools, and ChatGPT Study Mode.** The source material stays preserved. We will not falsely mark coursework mastered or create redundant practice question files.
 
-**Read [Migration Status](MIGRATION-STATUS.md) before treating the four-source conceptual merge as complete.** The original Mastery repository is mounted as a pinned Git submodule in the Reference Materials folder; all 192 historic Journey files are copied and hash-verified here. Detailed content audits and GitHub Pages configuration remain pending.
+**Read [Migration Status](MIGRATION-STATUS.md) before treating the four-source conceptual merge as complete.** The original Mastery repository is mounted as a pinned Git submodule in the Reference Materials folder; all 192 historic Journey files are copied and hash-verified here. Detailed content audits remain pending. No dashboard is maintained in this repository.

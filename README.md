@@ -18,6 +18,8 @@ One organized learning home for **SQL, Python, data modeling, Spark, pipelines, 
 - [Learning Progress](10.%20Learning%20Progress/README.md) — [dashboard source](docs/index.html)
 - [Preserved Sources and Migration Audit](99.%20Reference%20Materials/README.md) — [W3Schools references](99.%20Reference%20Materials/W3SCHOOLS-TOPICS.md)
 
+**Daily accountability and verified progress:** [Active progress tracker](<10. Learning Progress/daily-progress.json>) · [Dashboard source](docs/index.html). Historical records remain intact in References; the **active file is not the archived copy**.
+
 ## Method
 
 Each foundation note begins with **why the concept matters**, explains it plainly, shows useful diagrams and progressively executed examples, and adds a **JavaScript comparison** when helpful. Each solved SQL problem follows the Bosscoder format: question, sample input/output, original learner SQL, SQLite version, SQL Server translation, source-linked official answer, and intermediate execution outputs.

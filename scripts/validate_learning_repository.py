@@ -4,7 +4,6 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -44,11 +43,15 @@ def check_sources() -> None:
         if f.is_file():
             check(git_blob_sha(f) == e["git_blob_sha"], f"Changed historic Journey blob: {relative}")
 
-    submodule_path = "99. Reference Materials/Original Mastery Repository"
-    stage = subprocess.run(["git", "ls-files", "--stage", "--", submodule_path],
-                           cwd=ROOT, check=True, capture_output=True, text=True).stdout
-    check("160000 bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a" in stage,
-          "Mastery submodule pin has changed; reverify original 552 source entries")
+    # Every original Mastery source is now a regular file in this repository.
+    # Validate each blob, including binary PDFs, images, ZIPs, CSVs and XLSX files.
+    source_root = ROOT / "99. Reference Materials/Original Mastery Snapshot"
+    for e in mastery:
+        relative = e["original_path"]
+        f = source_root / relative
+        check(f.is_file(), f"Missing original Mastery source: {relative}")
+        if f.is_file():
+            check(git_blob_sha(f) == e["git_blob_sha"], f"Changed original Mastery blob: {relative}")
 
 
 def check_indexes() -> None:
@@ -102,7 +105,7 @@ def main() -> int:
             print("FAIL:", error)
         print(f"Total failures: {len(errors)}")
         return 1
-    print("PASS: 192 Journey files SHA-verified, Mastery source submodule pinned,")
+    print("PASS: 192 Journey + 552 Mastery source files SHA-verified,")
     print("      76 Python PDF pages and 205 PNP SQL IDs indexed,")
     print("      canonical progress and local Markdown links validated.")
     return 0

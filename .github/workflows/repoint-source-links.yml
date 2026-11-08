@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/repoint-source-links.yml'
+      - '01. SQL Mastery/PNP-PROBLEM-INDEX.md'
   workflow_dispatch:
 
 permissions:

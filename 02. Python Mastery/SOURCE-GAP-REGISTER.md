@@ -1,5 +1,8 @@
 # Python Mentorship — Page-by-Page Concept Gap Register
 
+**Runtime extension (2026-11-10, PDF pp.25–30):** Independently read the six unmodified original Part 2 companion lessons, inventoried **23 Run/edit-linked Python snippets** (3+4+4+3+5+4), and added an immutable-source-SHA-pinned [source-to-output checker and per-page evidence register](MENTORSHIP-PAGES-25-30-RUNTIME-AUDIT.md). It is wired into CI; verify the latest workflow run before asserting PASS. Previous 131 source-linked runtime checks on pp.5–24 plus these 23 = **154 candidate companion snippet checks on pp.5–30**, contingent on the new CI run. Original PDF images/exercises and independent learner course credit remain unverified.
+
+
 **Mentorship companion runtime extension (2026-11-10, pp. 21–24):** Four preserved source lessons inspected; 5+7+5+5 = **22** original run/edit-linked snippets executed against archived printed outputs and source-file inputs (15 orders/eight customers) in isolated scratch workspaces. [Exact original source SHA, per-page evidence, output/edge-case caveats and CI checker](MENTORSHIP-PAGES-21-24-RUNTIME-AUDIT.md). Combined pp. 5–24 companion runtime checks: **131 snippets**. This does **not** verify every original PDF image, separate exercises, W3Schools source pages, Bosscoder material, official grading or student mastery. The source archive and learner logs remain untouched.
 
 

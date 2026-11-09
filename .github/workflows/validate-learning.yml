@@ -22,6 +22,9 @@ jobs:
       - name: Check fenced Python examples parse successfully
         run: python3 scripts/check_python_fences.py
 
+      - name: Validate SQL semantic edge cases with SQLite
+        run: python3 scripts/check_sql_semantic_edge_cases.py
+
       - name: Execute foundation examples and verify SVG diagrams
         run: python3 scripts/check_foundation_examples.py
 

@@ -1,5 +1,8 @@
 # Python Mentorship — Page-by-Page Concept Gap Register
 
+**Companion runtime extension (2026-11-10, PDF pp.31–34):** All four preserved Part 2 companion source lessons individually inspected; their **19 linked original Python code/output pairs** (5+4+4+6) are checked against published transcripts with original source/dataset Git blob hashes and scratch-only execution. [Evidence and caveats](MENTORSHIP-PAGES-31-34-RUNTIME-AUDIT.md). First integrated Actions run [42698484281](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/42698484281) passed on checker+workflow commit `5a6d178`. Cumulative companion example checks through page 34 = **173**. This excludes original-PDF page-image comparison and learner exercise submissions, which remain pending; current final HEAD CI must be rechecked after documentation edits.
+
+
 **Runtime extension (2026-11-10, PDF pp.25–30):** Independently read the six unmodified original Part 2 companion lessons, inventoried **23 Run/edit-linked Python snippets** (3+4+4+3+5+4), and added an immutable-source-SHA-pinned [source-to-output checker and per-page evidence register](MENTORSHIP-PAGES-25-30-RUNTIME-AUDIT.md). It is wired into CI; verify the latest workflow run before asserting PASS. Previous 131 source-linked runtime checks on pp.5–24 plus these 23 = **154 candidate companion snippet checks on pp.5–30**, contingent on the new CI run. Original PDF images/exercises and independent learner course credit remain unverified.
 
 

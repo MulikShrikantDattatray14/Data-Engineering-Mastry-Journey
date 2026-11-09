@@ -31,7 +31,7 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 | Audit | Progress |
 |---|---|
 | File-by-file source preservation | **Complete, hash-verified** |
-| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **67/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **81/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
 | Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
@@ -103,3 +103,15 @@ No delete/retire action should be taken against either original repository.
 - These are **archive-Markdown statement inspections and original reviewer-designed examples**. **Full official PDF SQL execution, full dataset outputs, individual original learner submissions, additional Bosscoder/Python examples, full W3Schools concept comparison, DE domain material and licensing signoff remain pending.** The source archives and learner-progress files remain unchanged.
 - **Status reconciliation:** Earlier '25 mapped / 51 Python mentorship pages pending' refers to **short-primer/fine-grained verification**, whereas later pp. 5–80 topic crosswalks are **higher-level mapping**, not full page-by-page executed examples. Neither figure can be treated as a final source coverage percentage. The overall audit remains open.
 
+
+
+### CTE and NULL Logic source-inspection extension — 2026-11-09
+
+- Individually opened the **seven archived CTE question records** A040–A045, P030 and **seven archived NULL Logic question records** A091–A095, P006, P024. Read prompts, examples, schema references and learner/official solution visibility; each new ID is recorded in [PNP semantic audit](<01. SQL Mastery/PNP-SEMANTIC-AUDIT.md>). CTE **7/7** and NULL **7/7** are *statement-reviewed*, **not answered or mastered**. Total targeted PNP task-statement coverage rises from 67 to **81/205**, with **124 uninspected**.
+- Executed **nine independently authored SQLite fixtures locally**, covering department/company average weighting, window-rank filtering with ties, empty order-spine preservation, payment deduplication, repeat buyer denominators, three kinds of COUNT, NULL-safe join fan-out, AVG's NULL denominator, and multi-issue supplier labels. Added [script](scripts/check_pnp_cte_null_cases.py) and [workflow step](.github/workflows/validate-learning.yml). These **synthetic fixtures do not validate** official MySQL/SQL Server answers or full source datasets.
+- Integrated only source-specific missing explanations into the [CTEs foundation](<01. SQL Mastery/05. CTEs/0. Foundation Notes.md>) and [NULL foundation](<01. SQL Mastery/11. NULL Logic/0. Foundation Notes.md>). Independently executed two additional illustrative snippets (NULL-last sorting and nonblank COALESCE), but did **not** add those to the CI fixture count. Cross-checked official W3Schools SQL NULL and COALESCE pages without copying their instructional material.
+- **Source-content ambiguity kept visible:** A040's previous query is missing; A041 does not establish whether revenue averaging includes zero-order months; A045's payment-event conflicting-amount resolution is undefined; A093/A094 use relations absent from the advanced volume's shared schema, and A095 references an absent discount column. Do not fabricate those source contracts. P006's old verified reattempt remains unchanged.
+- **Preservation:** these changes update only the audit register, canonical teaching notes, source-coverage register, new script, CI workflow and this migration note; no archived original or learner-attempt/progress files were edited. Repo integrity and full official-answer verification still need final end-to-end signoff.
+- **CI verification boundary:** the nine fixtures passed in local SQLite, but **the post-push GitHub Actions result has not been independently confirmed** through the available connector. Do not mark the current head green based solely on previous commits or local runs.
+
+**Still outstanding:** targeted inspection of 124 PNP questions; source-answer/full-dataset signoff for all 205; fine-grained Python and Bosscoder exercises, W3Schools and other DE topics, complete runtime examples, licensing, independent current-head CI and final signoff. Continue audit; keep Issue #1 open.

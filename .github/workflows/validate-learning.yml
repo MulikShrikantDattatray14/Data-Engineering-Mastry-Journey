@@ -48,3 +48,6 @@ jobs:
 
       - name: Verify 12 recursive CTE and consecutive-streak source semantics
         run: python3 scripts/check_pnp_recursive_streak_cases.py
+
+      - name: Verify archived SELECT answers and independent string/rating edge cases
+        run: python3 scripts/check_pnp_select_strings_extras.py

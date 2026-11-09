@@ -31,7 +31,7 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 | Audit | Progress |
 |---|---|
 | File-by-file source preservation | **Complete, hash-verified** |
-| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **23/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
 | Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
@@ -70,3 +70,10 @@ The source archive, learner-progress semantics, and no-dashboard decision remain
 This repository is now **standalone and structurally organized** with complete raw-source preservation and automated integrity validation. The **full conceptual merging and individual problem-output checks are not certified complete**; continue from the [open source audit and no-duplicate checklist (Issue #1)](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1).
 
 No delete/retire action should be taken against either original repository.
+
+### PNP join-question audit extension — 2026-11-09
+
+- Re-opened **12 additional previously uninspected PNP join-task Markdown sources** (A006, A008, A009, A011, A013, P027, P029, P038, P039, P046, P053 and P070), checking their original prompt semantics, documented assumptions, illustrative examples and unsolved status. The PNP [semantic register](<01.%20SQL%20Mastery/PNP-SEMANTIC-AUDIT.md>) now documents **23/205 question statements inspected** across the two targeted batches; this is **not** a fraction of verified learner answers. The Joins source-group count is **14/25 texts**, including the previously inspected A004 and A005.
+- Integrated missing join-grain, full-outer emulation, unique-pair and category-coverage teaching patterns in the [single canonical Joins note](<01.%20SQL%20Mastery/02.%20Joins/0.%20Foundation%20Notes.md>) without editing archived originals or learner submissions.
+- Built and locally executed **four additional self-contained SQLite audit fixtures** in [PNP join regressions](scripts/check_pnp_join_cases.py), covering source-aligned A006, P029, P039 and P070 traps; added those fixtures to GitHub Actions. Synthetic fixtures **do not** execute official solutions or certify all 205 outputs.
+- **Pending after this batch:** 182 PNP source-task texts without targeted inspection; complete official/learner-answer output verification for all 205; remaining fine-grained Python, Bosscoder, W3Schools and DE topic checks, and final copyright/license review. The original 744 source files, active progress tracker and no-dashboard preference remain untouched.

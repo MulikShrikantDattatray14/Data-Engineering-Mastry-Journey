@@ -183,6 +183,29 @@ def main():
     """)
     assert unused == [(1,'A',4.0)],unused
     print("PASS X005 reviewer-only rated-not-ordered; no official key")
+    # Provenance-only check against the ACTUAL PRESERVED PostgreSQL answer key
+    # (not merely the Markdown's description or its excerpt). Text comparison
+    # does not establish official correctness or PostgreSQL execution.
+    key_path = (ROOT / "99. Reference Materials" / "Original Mastery Snapshot" /
+                "1. SQL Mastery" / "1. SQL Mastry" /
+                "2.PNP- foundations and practice" / "Source Materials" /
+                "PrepNPlaced_SQL_100_v2" / "sql" / "all_100_solutions.sql")
+    key = key_path.read_text(encoding="utf-8")
+    headers = list(re.finditer(r"^-- Q(\d+)\. [^\n]*\n", key, re.M))
+    for qid in (1,2,3,4,5,7,8):
+        selected = [i for i,h in enumerate(headers) if int(h.group(1)) == qid]
+        assert len(selected) == 1, (qid, "source-key section not unique")
+        idx = selected[0]
+        end = headers[idx + 1].start() if idx + 1 < len(headers) else len(key)
+        source_query = key[headers[idx].end():end].strip()
+        pid = f"P{qid:03d}"
+        excerpt = archived_sql(pid, "Official solution")
+        # Normalize whitespace only; do NOT rewrite keywords/columns/logic.
+        normalize = lambda sql: re.sub(r"\s+", " ", sql).strip()
+        assert normalize(source_query) == normalize(excerpt), (
+            pid, "official archived Markdown excerpt differs from raw key")
+        print("PASS", pid, "official excerpt matches preserved source-key SQL text")
+    print("Seven official-answer TEXT-provenance matches; full result verification pending.")
     print("10 fixture groups passed: six archived learner SQL, four reviewer queries.")
     print("One extra P001 excerpt mismatch reproduced. No official-dataset signoff.")
 

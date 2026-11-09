@@ -22,6 +22,9 @@ jobs:
       - name: Check fenced Python examples parse successfully
         run: python3 scripts/check_python_fences.py
 
+      - name: Verify 48 archived mentorship Python snippets against printed source outputs
+        run: python3 scripts/check_mentorship_python_pages_05_10.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

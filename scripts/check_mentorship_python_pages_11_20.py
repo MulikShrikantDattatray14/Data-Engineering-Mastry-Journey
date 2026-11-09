@@ -141,6 +141,12 @@ class ArchivedMentorshipPages11To20(unittest.TestCase):
                             self.assertEqual(set(ast.literal_eval(rows[1])),
                                              {"b", "a", "n"})
                             self.assertEqual(len(rows), 2)
+                        elif key == (20, 4):
+                            # tool.py deliberately prints when executed as
+                            # main, but importing it in #5 must stay quiet.
+                            # The source shows no fixed transcript for #4.
+                            self.assertEqual(compact(result.stdout),
+                                             "running the tool")
                         elif shown is None:
                             self.assertEqual(result.stdout, "",
                                              f"{key}: expected declarations only")

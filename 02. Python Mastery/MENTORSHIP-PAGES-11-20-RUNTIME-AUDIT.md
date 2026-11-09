@@ -24,7 +24,7 @@ The [runnable source checker](../scripts/check_mentorship_python_pages_11_20.py)
 2. **Page 17 #3:** original illustrative order of set members is **not guaranteed** by Python. Compare members, not particular set iteration order; this is a source presentation caveat, not a wrong result.
 3. **Page 18 #4:** intentional NameError for a function-local variable accessed globally, checked by exception class.
 4. **Page 19 #3–5:** the displayed mini-pipeline is deliberately split into rows, parser and summary. #5 is context dependent; test only after both preceding source snippets. #6 emits '1 orders', a grammatical rough edge that does match code.
-5. **Page 20 #2–3, #4–5 and #7–8:** example module/import pairs require real temporary source files and working-directory import. #6 creates and invokes modules/child Python in a temporary directory; never writes the archived paths. #1 seeded-random output is checked in the CI runtime.
+5. **Page 20 #2–3, #4–5 and #7–8:** example module/import pairs require real temporary source files and working-directory import. **#4 deliberately prints 'running the tool' when executed directly, even though it has no displayed transcript; importing tool.py in #5 must not print.** The first CI checker mistakenly assumed #4 had no output and failed; corrected checker tests both direct-run and import semantics. #6 creates and invokes modules/child Python in a temporary directory; no original archive path is written. #1 seeded-random output is tested in CI.
 6. Six source examples lack a fixed printed transcript because they declare definitions, or print live timings. Never invent an official result for an absent transcript.
 
 ## Evidence boundary and follow-up

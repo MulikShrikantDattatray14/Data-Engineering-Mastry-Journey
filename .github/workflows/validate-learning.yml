@@ -57,3 +57,6 @@ jobs:
 
       - name: Validate PNP date and cohort edge cases on source-linked SQLite fixtures
         run: python3 scripts/check_pnp_dates_cases.py
+
+      - name: Validate PNP window-function source inventory and 15 synthetic edge cases
+        run: python3 scripts/check_pnp_window_cases.py

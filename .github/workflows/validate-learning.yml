@@ -40,6 +40,9 @@ jobs:
       - name: Execute all 26 original advanced Python mentorship examples, PDF pages 35-40
         run: python3 scripts/check_mentorship_python_pages_35_40.py
 
+      - name: Execute 23 DSA mentorship source examples and six synthetic boundaries, PDF pages 41-46
+        run: python3 scripts/check_mentorship_python_pages_41_46.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

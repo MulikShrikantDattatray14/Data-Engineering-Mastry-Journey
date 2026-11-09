@@ -19,6 +19,9 @@
 | 10. Pandas for DE | [0. Foundation Notes](<10. Pandas for Data Engineering/0. Foundation Notes.md>) | Mentorship p. 69; Bosscoder lecture 7 |
 | 11. Idempotent ETL and quality | [0. Foundation Notes](<11. Idempotent ETL and Data Quality/0. Foundation Notes.md>) | Mentorship pp. 72–73 |
 | 12. Advanced Python patterns | [0. Foundation Notes](<12. Advanced Python Patterns/0. Foundation Notes.md>) | Mentorship pp. 34–40; exercises archived, not marked solved |
+| 13. DSA and complexity | [0. Foundation Notes](<13. DSA and Complexity/0. Foundation Notes.md>) | Mentorship pp. 41–57; source questions Q16–Q20 preserved |
+| 14. DE coding patterns | [0. Foundation Notes](<14. Data Engineering Coding Patterns/0. Foundation Notes.md>) | Mentorship pp. 58–68; 18 DE patterns |
+| 15. Interview practice and revision | [0. Foundation Notes](<15. Python Interview Practice and Revision/0. Foundation Notes.md>) | Mentorship pp. 75–80; nine interview questions and 34 oral prompts preserved |
 
 **Study-mode checkpoint:** Lesson 12B tuple exercise completed; next Lesson 13A sets (unanswered). No official Python problem-bank completions verified yet. Don't create numbered solved-problem files for tutor-generated beginner examples.
 
@@ -26,6 +29,6 @@
 
 [Full Python source index](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/README.md) · [80-page PDF](../99.%20Reference%20Materials/Original%20Mastery%20Snapshot/2.%20Python%20Mastry/Source/1793477658005.pdf) · [W3Schools Python](https://www.w3schools.com/python/).
 
-**Source text audit checkpoint (2026-11-09):** Mentorship pages 5–40 compared at the concept-text level; the source gap register distinguishes reviewed notes from independently verified problems, original full-dataset outputs and external W3Schools/Bosscoder comparisons. This is **not** a full four-source completion claim.
+**Source audit checkpoint (2026-11-09):** Mentorship pages 5–40 compared at the concept-text level, and pages 41–80 mapped at the topic/section level; the source gap register distinguishes reviewed notes from independently verified problems, original full-dataset outputs and external W3Schools/Bosscoder comparisons. This is **not** a full four-source completion claim.
 
-**Coverage transparency:** Notes 00–04 summarize Study Mode topics already reviewed (with specific revision gaps). Notes 05–12 are source-aligned **preview/reference notes**, not learner-mastered coursework. The untouched full 80-page PDF and detailed reference files continue to cover more material than these quick notes.
+**Coverage transparency:** Notes 00–04 summarize Study Mode topics already reviewed (with specific revision gaps). Notes 05–15 are source-aligned **preview/reference notes**, not learner-mastered coursework. The untouched full 80-page PDF and detailed reference files continue to cover more material than these quick notes.

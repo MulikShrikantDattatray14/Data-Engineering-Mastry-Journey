@@ -31,7 +31,7 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 | Audit | Progress |
 |---|---|
 | File-by-file source preservation | **Complete, hash-verified** |
-| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **47/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **67/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
 | Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
@@ -93,3 +93,13 @@ No delete/retire action should be taken against either original repository.
 - Added a 13-question [semantic register](<01. SQL Mastery/PNP-SEMANTIC-AUDIT.md>) with missing policy flags, updated the single [canonical Sorting and Grouping note](<01. SQL Mastery/03. Sorting and Grouping/0. Foundation Notes.md>), and added **eight independently executed synthetic SQLite edge-case fixtures** to [scripts/check_pnp_grouping_cases.py](scripts/check_pnp_grouping_cases.py) and CI.
 - Inspected the official W3Schools GROUP BY and HAVING topic pages and cross-referenced their overlapping lessons without copying tutorial material.
 - **Still pending:** official answer/dataset verification across all 205, missing-source-rule decisions, Python/Bosscoder/W3Schools fine-grained audits, other DE domains, remaining runtime examples, licensing and final signoff. All 744 original archived files and study progress records stay immutable.
+
+
+### PNP Aggregation targeted source inspection — 2026-11-09
+
+- Opened **all 20 individually archived Aggregation source question Markdown records** (A019, A020, A022–A024, A026–A027, P010–P012, P035–P036, P047–P048, P051–P052, P054–P055, P059 and P084). Compared each preserved task and illustrative input/output contract. This raises **distinct source-statement review to 67/205 (138 remaining)**, with **20/20 Aggregation statements inspected**, not independently solved.
+- Documented each question's distinct calculation/denominator, granularity and open semantic ambiguities in [PNP semantic audit](<01. SQL Mastery/PNP-SEMANTIC-AUDIT.md>). Important gap: **A026 refers to cust_summary, which is not in the shared seven-table schema**; do not invent the missing relation.
+- Created and locally ran **six synthetic SQLite regression fixtures** for P011, P047, P051, P054, P059 and P084 and added the script to CI; added only genuinely missing aggregation-grain and weighted-mean explanations to the [existing Aggregation foundation](<01. SQL Mastery/04. Aggregation/0. Foundation Notes.md>).
+- These are **archive-Markdown statement inspections and original reviewer-designed examples**. **Full official PDF SQL execution, full dataset outputs, individual original learner submissions, additional Bosscoder/Python examples, full W3Schools concept comparison, DE domain material and licensing signoff remain pending.** The source archives and learner-progress files remain unchanged.
+- **Status reconciliation:** Earlier '25 mapped / 51 Python mentorship pages pending' refers to **short-primer/fine-grained verification**, whereas later pp. 5–80 topic crosswalks are **higher-level mapping**, not full page-by-page executed examples. Neither figure can be treated as a final source coverage percentage. The overall audit remains open.
+

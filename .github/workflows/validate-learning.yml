@@ -60,3 +60,6 @@ jobs:
 
       - name: Validate PNP window-function source inventory and 15 synthetic edge cases
         run: python3 scripts/check_pnp_window_cases.py
+
+      - name: Validate 27 archived quality/analytics sources and 13 synthetic regressions
+        run: python3 scripts/check_pnp_quality_analytics_cases.py

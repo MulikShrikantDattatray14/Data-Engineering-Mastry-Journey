@@ -51,6 +51,20 @@ The original course may cover a concept more deeply than a quick foundation note
 6. **Reference retention:** do not alter source archives, PDFs, datasets or past attempts.
 7. **No dashboard:** only Markdown, verified JSON progress and Study Mode check-ins.
 
+
+## Audit extension — 2026-11-09 (evidence-bounded)
+
+The source archive, learner-progress semantics, and no-dashboard decision remain unchanged.
+
+- **Python mentorship PDF pp. 5–40:** preserved lesson text compared against the short canonical teaching notes; missing first-run, collections, functions, error handling, DSA precursor and advanced language concepts added. This is **not** a complete exercise-by-exercise output audit.
+- **Python mentorship PDF pp. 41–80:** topic/section-level comparison mapped into new dedicated canonical guides for DSA, the 18 DE coding patterns, pandas/ETL and interview preparation. These are **not** independently completed workbook pages.
+- **Bosscoder Python lectures 1–7:** their previously preserved PDF audit summaries were compared to canonical topic coverage. New OOP, NumPy and visualization chapters plus a seven-lecture crosswalk capture important missing concepts. Individual PDF examples and graded assignment answers are **not** exhaustively verified.
+- **SQL PNP:** 11 named source question statements inspected and recorded in [targeted semantic audit](<01.%20SQL%20Mastery/PNP-SEMANTIC-AUDIT.md>). Four independent SQLite semantic fixtures added to CI (NULL anti-joins, latest-order tie-break, MTD daily aggregation and active-quarter growth); these **do not** validate 205 full official answers.
+- **Automation:** [Python fenced-code AST syntax check](scripts/check_python_fences.py) and [SQL semantic edge-case regression check](scripts/check_sql_semantic_edge_cases.py) added to the passing repository validation workflow.
+- **Remaining:** exhaustive 205-question SQL comparison and actual output verification, Bosscoder assignment and full example checks, live W3Schools topic-by-topic unique material checks, advanced Python runtime-specific examples, other DE domain material, final licensing review, and formal source-to-concept signoff.
+
+**No invented mastery:** The tracker does not gain independent source completions from this content-editing audit. Historical solved/reattempted source IDs retain their original status.
+
 ## 5. Remaining completion decision
 
 This repository is now **standalone and structurally organized** with complete raw-source preservation and automated integrity validation. The **full conceptual merging and individual problem-output checks are not certified complete**; continue from the [open source audit and no-duplicate checklist (Issue #1)](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1).

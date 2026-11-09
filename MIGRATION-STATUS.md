@@ -20,7 +20,7 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 ## 2. Single canonical learning structure
 
 - **SQL:** [15 topic foundations](<01. SQL Mastery/README.md>) covering SQL basics, advanced SELECT, joins, grouping, aggregation, CTEs, subqueries, strings, windows, recursive CTEs, NULL, dates, gaps/islands, deduplication and analytics. There is no standalone duplicate foundation for the extra-problem collection.
-- **Python:** [12 topic foundations](<02. Python Mastery/README.md>) including the JS-friendly introductory lessons and later source-aligned preview topics.
+- **Python:** [expanded canonical topic foundations](<02. Python Mastery/README.md>) including the JS-friendly introductory lessons and later source-aligned preview topics.
 - **Practice:** [205 PNP SQL IDs](<01. SQL Mastery/PNP-PROBLEM-INDEX.md>) and the [Bosscoder original problem index](<01. SQL Mastery/BOSSCODER-PROBLEM-INDEX.md>). Distinct source questions retain their identity; **only actually independently solved and reviewed problems get separate learner-solution records**.
 - **Four-source references:** Bosscoder, PNP, W3Schools and verified Study Mode contributions point to one canonical concept explanation rather than four copied notes.
 
@@ -31,9 +31,9 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 | Audit | Progress |
 |---|---|
 | File-by-file source preservation | **Complete, hash-verified** |
-| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **122/205 distinct source question texts inspected in targeted passes (83 remaining; 205 indexed)** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **205/205 distinct question statements inspected** (0 uninspected; original datasets/official answers and learner solves remain separately pending); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
-| Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
+| Python short-foundation mapping | **initial 25 page primers mapped / 51 gaps**; later detailed checks separately logged below; full example and exercise checks still outstanding |
 | Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
 | W3Schools unique material | Official topics linked; remaining individual concept comparisons pending |
 | Individual executable examples | Representative SQL/Python samples validated; exhaustive code/output audit pending |
@@ -194,3 +194,11 @@ No delete/retire action should be taken against either original repository.
 - Continue output/exercise checks of mentorship pages 11–80, Bosscoder Python and SQL original lecture/graded assignments, W3Schools official comparisons, other DE sources, SQL official answer/dataset verification, licensing and exhaustive final review. [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) remains **OPEN**. The separate ChatGPT Library learning record remains **unsynchronized**; no study-origin GitHub writes allowed before full independently verified audit plus final CI.
 - **CI:** the checker was wired into [validate-learning.yml](.github/workflows/validate-learning.yml). Check the *final main HEAD* run separately after these documentation commits; an earlier green run is not sufficient for a later main HEAD.
 
+
+
+### Mentorship Python linked examples on PDF pp. 11–20 — 2026-11-09
+
+- Individually inspected ten untouched archived companion source lessons, recording original file SHA and 61 individual source-linked Python snippet contracts in [auditor register](<02. Python Mastery/MENTORSHIP-PAGES-11-20-RUNTIME-AUDIT.md>). Pages 5–10 had 48 previous checks; combined 109 snippet inventory for pages 5–20 **only**, not complete PDF certification.
+- Added [source-preserving Python executable audit](scripts/check_mentorship_python_pages_11_20.py) to [GitHub Actions](.github/workflows/validate-learning.yml): individual text outputs, deliberate NameError, unpredictable set order and timing, context-dependent mini-pipeline and temp-file modules. **Check latest main-head CI before asserting execution success.**
+- **PNP statement inspections are 205/205;** this does not certify 205 full official source-answer and dataset validations. Remaining: mentorship pages 21–80 source examples/exercises/PDF review, Bosscoder SQL/Python source exercises, W3Schools, other DE subjects, licensing and final coverage signoff.
+- No 744-file source archive, historical learner attempt or active progress JSON changed; separate ChatGPT Library learning log remains unsynchronized until full audit signoff and post-audit green CI. Issue #1 stays open.

@@ -25,6 +25,9 @@ jobs:
       - name: Verify 48 archived mentorship Python snippets against printed source outputs
         run: python3 scripts/check_mentorship_python_pages_05_10.py
 
+      - name: Check 61 archived mentorship Python snippets, PDF pages 11-20
+        run: python3 scripts/check_mentorship_python_pages_11_20.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

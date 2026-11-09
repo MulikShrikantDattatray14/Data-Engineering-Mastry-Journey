@@ -43,3 +43,26 @@ The stdlib-only script [`scripts/check_sql_semantic_edge_cases.py`](../scripts/c
 - SQL dialect differences matter: SQLite, SQL Server and MySQL syntax are not interchangeable.
 
 **Do not modify the user's `My solution` sections or official-answer visibility just because a reviewer can derive another query.** Full source-to-concept comparison, all 205 individual execution checks and accurate completion records remain independent outstanding tasks.
+
+## Join-question source audit extension — 2026-11-09
+
+The following **12 additional** original question files were opened and their **task requirements, illustrative source-file examples, sample output contracts and pending learner-answer state** reviewed. This brings the *distinct inspected statement IDs* in this document to **23/205** (11 earlier + 12 here); **none** of these 12 unsolved exercises was credited as answered. Advanced-volume question texts do not supply source sample rows; their archived Markdown examples are explicitly *illustrative*, not official expected outputs.
+
+| ID | Source contract / subtle case verified from preserved question text | Status of independent answer/output verification |
+|---|---|---|
+| A006 | MySQL FULL OUTER JOIN emulation; preserve unmatched customers **and** unmatched orders, including orphan and NULL keys, without doubling matched rows. | Task/sample read; additional SQLite fixture passed; original MySQL official answer not executed. |
+| A008 | Complete date × category grid with missing combinations; date source and aggregate measures are **not defined** in source. | Task/sample read; cross-join concept mapped; source answer not executed. |
+| A009 | Non-equi product-to-price-band join; quoted sample assumes half-open `[min,max)` intervals, **not source-mandated** price boundaries. | Task/sample read; boundary/overlap contract still needs actual source solution review. |
+| A011 | Same-department colleague pairs only once, no reflexive or mirrored rows; NULL department policy worth testing. | Task/sample read; not independently answered. |
+| A013 | Bought 101 **at least once** but 202 **never**, across all orders for a customer, not merely the same order. | Task/sample read; not independently answered. |
+| P027 | AOV grouped by customer State (including Unknown for missing/unmatched); at least ten orders; AOV denominator counts only **orders with a non-NULL total** whereas displayed orders includes all. | Prompt/output contract read; full data/output validation pending. |
+| P029 | Shipper order-value **one row per order** versus order-line quantity totals; unmatched or blank shipper rolled into Unknown. | Prompt/output contract read; isolated fan-out vs preaggregation SQLite fixture passed; full source answer pending. |
+| P038 | Inactive-category products that sold in the **latest calendar year present in Orders**, not current system year; last order date and only that year's units. | Prompt/output contract read; no full query executed. |
+| P039 | Four category states (empty, products but none sold, some unsold, all sold), full Category inventory, per-product sold flag and total units; action ordering. | Prompt/output contract read; isolated category-status SQLite fixture passed; full source answer pending. |
+| P046 | Self-pairs with same non-NULL Brand and Sub_Category, cheaper-to-pricier once, price ratio >=2, handle zero denominator/ties explicitly. | Prompt/output contract read; source SQL Server/MySQL variants not verified. |
+| P053 | First-ever order **within 0–30 calendar days inclusive from signup**; never-ordered customers remain in denominator; do not count later orders after an early out-of-range first order. | Prompt/output contract read; full query/data execution pending. |
+| P070 | Different subcategories bought together counted **once per order** (even with multiple line items), unordered alphabetical pair, ten highest **including ties at tenth**. | Prompt/output contract read; isolated repeated-line/pair-count SQLite fixture passed; full top-ten-with-ties test still pending. |
+
+**Executable scope:** The separate [PNP join regression fixture](../scripts/check_pnp_join_cases.py) passes four standalone SQLite tests for A006 (full join emulation), P029 (order-grain fan-out), P039 (four categories / duplicate line rows), and P070 (unordered pairs deduplicated per order). CI executes this file on pushes. These are **reviewer-generated, source-aligned synthetic fixtures**, not the original exercises' independently submitted answers and not complete validation of official PDFs or datasets.
+
+**Coverage remaining:** **182 source question statements** not inspected in these two targeted reviews; all **205** original answers/outputs still require source-specific signoff at the required level, including previously solved records. W3Schools, Bosscoder and other DE-domain audits remain open. Do not change the learner tracker or official-answer visibility from this review.

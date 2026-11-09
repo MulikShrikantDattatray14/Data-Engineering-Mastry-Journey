@@ -25,6 +25,9 @@ jobs:
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 
+      - name: Verify source-aligned PNP join, grain and pair semantics
+        run: python3 scripts/check_pnp_join_cases.py
+
       - name: Execute foundation examples and verify SVG diagrams
         run: python3 scripts/check_foundation_examples.py
 

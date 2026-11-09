@@ -28,6 +28,9 @@ jobs:
       - name: Verify source-aligned PNP join, grain and pair semantics
         run: python3 scripts/check_pnp_join_cases.py
 
+      - name: Verify PNP grouping semantics on eight synthetic SQLite fixtures
+        run: python3 scripts/check_pnp_grouping_cases.py
+
       - name: Execute archived learner JOIN answers against independent SQLite fixtures
         run: python3 scripts/check_pnp_archived_join_answers.py
 

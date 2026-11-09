@@ -31,7 +31,7 @@ All **744 source files are stored in this repository**; original PDFs, images, Z
 | Audit | Progress |
 |---|---|
 | File-by-file source preservation | **Complete, hash-verified** |
-| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **23/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
+| PNP SQL topic inventory | **16 groups / 205 unique IDs indexed**; **47/205 distinct source question texts inspected in targeted passes** (not answers verified); [topic gap register](<01. SQL Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python mentorship PDF inventory | **80 pages accounted for**, [76 original lesson pages mapped](<02. Python Mastery/SOURCE-GAP-REGISTER.md>) |
 | Python short-foundation mapping | **25 page primers mapped / 51 pages requiring detailed concept audit**; these counts are not mastery scores |
 | Bosscoder Python lectures | **7 original lecture source audits preserved**; fine-grained integration still pending |
@@ -85,3 +85,11 @@ No delete/retire action should be taken against either original repository.
 - Compared saved original SQLite answer blocks with visible official answers for 10 previously solved source records and recorded discrepancies in the [semantic audit](<01.%20SQL%20Mastery/PNP-SEMANTIC-AUDIT.md>) without editing either original or learner progress. P077 remains unsolved and its official answer intentionally unavailable.
 - Added [source-linked JOIN answer regression checks](scripts/check_pnp_archived_join_answers.py) for ten prior solved files. Independent fixtures check unmatched rows, direct reports, date cutoffs, unknown references, numeric aggregation and the empty-category FULL OUTER case. These are **not** official dataset output checks and are **not** evidence of any new independent learner completion.
 - Still required: 171 remaining source-statement reads; all 205 full dataset/official-answer verifications, integration of remaining unique Python/Bosscoder/W3Schools concepts, DE subject material, CI-expanded runtime checks, final licensing review and explicit signoff. Never mark the overall audit complete based on this subset.
+
+ 
+### PNP Sorting and Grouping source review — 2026-11-09
+
+- Individually reviewed **13/13** source Markdown task statements and illustrative input/output records in the Sorting and Grouping set. Combined distinct question-text inspection: **47/205**; **158** remain. This is not verified solutions or new learner credit.
+- Added a 13-question [semantic register](<01. SQL Mastery/PNP-SEMANTIC-AUDIT.md>) with missing policy flags, updated the single [canonical Sorting and Grouping note](<01. SQL Mastery/03. Sorting and Grouping/0. Foundation Notes.md>), and added **eight independently executed synthetic SQLite edge-case fixtures** to [scripts/check_pnp_grouping_cases.py](scripts/check_pnp_grouping_cases.py) and CI.
+- Inspected the official W3Schools GROUP BY and HAVING topic pages and cross-referenced their overlapping lessons without copying tutorial material.
+- **Still pending:** official answer/dataset verification across all 205, missing-source-rule decisions, Python/Bosscoder/W3Schools fine-grained audits, other DE domains, remaining runtime examples, licensing and final signoff. All 744 original archived files and study progress records stay immutable.

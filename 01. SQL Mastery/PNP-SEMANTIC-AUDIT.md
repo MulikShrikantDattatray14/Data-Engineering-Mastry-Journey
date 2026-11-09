@@ -87,3 +87,30 @@ Opened the **11 additional archived PNP JOIN markdown source files** below, comp
 | P077 | Across all order lines, exactly one **nonblank SupplierID** for each qualifying ProductID; product value divided by *all products'* list-price value, not just qualifying products. A missing supplier-directory row gets Unknown supplier/country, not automatically disqualified. | Original question/sample read; archived learner answer and official answer are intentionally hidden/pending. No solution was generated, tested or credited. |
 
 New source-linked CI script [check_pnp_archived_join_answers.py](../scripts/check_pnp_archived_join_answers.py) **executes the literal saved SQLite answer block** from each of the 10 already-solved archived files on reviewer-created, isolated SQLite fixture data, and asserts exact output rows (except unordered queries compared as sets). These are **synthetic regression checks** and are *not* whole-dataset evaluation, a new independent learner solve, or official-answer verification; variants and other SQL dialects still need checking. The script refuses to fabricate missing answers. The 11 newly reviewed IDs bring the distinct targeted source-question statements to **34/205**; **171 source statements remain without targeted inspection**. JOIN group statement reading is **25/25**, while exact source-dataset outputs, ambiguity decisions and official solutions require further signoff.
+
+ 
+## Sorting and Grouping statement audit — 2026-11-09
+
+The **13 original PNP Sorting and Grouping Markdown source questions** were individually opened and their task, source output contract, illustrative sample rows, schema, and unanswered status inspected. Total **47/205 distinct PNP task statements inspected** (25 JOIN, 13 Sorting/Grouping, 9 other topic questions). This is *not* verification of 47 official/learner answers. All 13 records still have pending original learner/official answer blocks, which were not filled or treated as mastery.
+
+| ID | Source task and verified risk | Remaining boundary |
+|---|---|---|
+| A016 | Departments with AVG(salary) **strictly > 50,000** and headcount **>= 5**; NULL salary affects AVG differently than employee count. | Text/illustrative case inspected; headcount/NULL policy and official SQL unchecked. |
+| A017 | Descending revenue by product category; sample calculates each order-line qty × order-line unit price, *not current catalog price*. | Text and sample checked; unmatched category policy and official SQL pending. |
+| A018 | Monthly **distinct** buyers, excluding canceled orders first; repeated customer purchases counted once. | Text inspected; synthetic SQLite duplicate/canceled/NULL-buyer regression passed. |
+| A021 | Weekday with **most orders** (not most revenue); actual weekday mapping depends on date/dialect. | Monday/Tuesday sample checked; source tie and timezone policy unspecified. |
+| A025 | Customers with orders in *both* 2025 and 2026, not two orders within one year. | Text/sample inspected; no official execution. |
+| A039 | Products with **more than 10 different customers**, regardless of repeat order/line count. | Text inspected; synthetic SQLite 11 distinct vs 10-plus-repeat buyer regression passed. |
+| P009 | Count each distinct **raw stored** Category.Active and Payments.Allowed value, including NULL; preserve source_table and flag_column labels. | Text/sample inspected; synthetic SQLite NULL/count regression passed; mixed-storage-type rendering ambiguity remains. |
+| P013 | States with **>=5** customers, missing states displayed as Unknown; order by descending count, state. | Source example checked; blank/whitespace handling not defined. |
+| P014 | Orders and stored order value per **observed** 2025 month; missing February absent in illustrative expected output. | Synthetic SQLite half-open ISO timestamp and missing-month regression passed. |
+| P021 | Five highest customer *positions*, **including all ties at fifth**; missing customer directory name is Unknown customer. | Six-way source tie sample checked; adversarial fixture confirms RANK fifth cutoff and demonstrates DENSE_RANK would include too many. |
+| P022 | Orders with **more than eight OrderDetails rows**, separately COUNT(DISTINCT ProductID) and SUM(Quantity). | Nine rows / eight products in source sample; synthetic fixture passed quantity and line-count separation. |
+| P025 | Group signups by year and calendar quarter; NULL date produces **one NULL/NULL group, sorted last**. | Source April and NULL examples checked; synthetic SQLite quarter boundary and NULL ordering passed. |
+| P050 | Ten or more **distinct numeric CategoryID values** bought across all lines; comma-separated IDs *numerically ordered*, separately count distinct orders. | Source 10-category example checked; synthetic SQLite duplicate-line, category-10 sorting and multiple-order regression passed. |
+
+[Eight reviewer-authored SQLite grouping regressions](../scripts/check_pnp_grouping_cases.py) are run locally and in CI. They assert underlying grouping pitfalls using **synthetic data**, not the archived official PDF answers, unattempted learner SQL, or the actual whole source dataset. No exercise completion credit follows.
+
+Cross-source check: current W3Schools [GROUP BY](https://www.w3schools.com/sql/sql_groupby.asp) and [HAVING](https://www.w3schools.com/sql/sql_having.asp) lesson pages were independently reviewed. Their introductory aggregation/group-filter concepts are already covered by this repository's canonical foundation, so they were linked rather than copied. The source-specific tie, nullable flag and quarter/sorted-list caveats were added only to that one foundation.
+
+**Still pending:** **158** uninspected PNP source statements; full official/dataset/learner-answer verification of **all 205** questions; detailed Python/Bosscoder/W3Schools and Data Engineering topic audits, complete runnable examples and public-course licensing signoff. Original sources and learner progress unchanged.

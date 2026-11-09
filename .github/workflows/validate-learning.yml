@@ -54,3 +54,6 @@ jobs:
 
       - name: Verify synthetic PNP SubQueries edge cases
         run: python3 scripts/check_pnp_subqueries_cases.py
+
+      - name: Validate PNP date and cohort edge cases on source-linked SQLite fixtures
+        run: python3 scripts/check_pnp_dates_cases.py

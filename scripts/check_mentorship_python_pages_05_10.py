@@ -89,6 +89,16 @@ class ArchivedPythonMentorshipOutputChecks(unittest.TestCase):
                         self.assertNotEqual(run.returncode, 0)
                         self.assertIn(EXCEPTION_EXAMPLES[key], run.stderr)
                         self.assertIn(EXCEPTION_EXAMPLES[key], expected)
+                    elif key == (6, 2):
+                        # A blank line is claimed in the source, but print()
+                        # after the input prompt creates only one newline.
+                        self.assertEqual(run.returncode, 0, run.stderr)
+                        self.assertEqual(canonical_output(run.stdout),
+                                         "Your name: How many items? Price per item:\n"
+                                         "Hi Meera, your total is 747.00")
+                        self.assertEqual(canonical_output(expected),
+                                         "Your name: How many items? Price per item:\n\n"
+                                         "Hi Meera, your total is 747.00")
                     elif key == (6, 7):
                         # Source shows terminal-echoed input ("Quantity: 3").
                         # Captured stdin does not echo characters back to stdout.

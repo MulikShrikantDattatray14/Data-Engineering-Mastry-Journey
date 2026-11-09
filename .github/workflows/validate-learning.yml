@@ -34,6 +34,9 @@ jobs:
       - name: Verify six source-aligned PNP aggregation edge cases
         run: python3 scripts/check_pnp_aggregation_cases.py
 
+      - name: Verify PNP CTE and NULL edge cases on nine independent SQLite fixtures
+        run: python3 scripts/check_pnp_cte_null_cases.py
+
       - name: Execute archived learner JOIN answers against independent SQLite fixtures
         run: python3 scripts/check_pnp_archived_join_answers.py
 

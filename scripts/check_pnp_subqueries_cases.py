@@ -145,5 +145,26 @@ class SubquerySourceFixtures(unittest.TestCase):
         con.close()
 
 
+    def test_P056_latest_year_excludes_this_year_and_keeps_orphans(self):
+        con = fixture("""CREATE TABLE Customers(id INT, first TEXT, last TEXT);
+                         CREATE TABLE Orders(id INT, cust INT, day TEXT);""",
+                      {"Customers":[(1,"Asha","Rao"),(2,"Ben","Das")],
+                       "Orders":[(10,1,"2024-03-01"),(11,1,"2024-12-01"),
+                                 (12,2,"2024-05-01"),(13,2,"2025-01-01"),
+                                 (14,99,"2024-09-30")]})
+        q = """WITH latest AS (SELECT CAST(strftime('%Y',MAX(day)) AS INT) yr FROM Orders)
+               SELECT o.cust,COALESCE(NULLIF(TRIM(c.first||' '||c.last),''),'Unknown customer'),
+                      MAX(o.day),
+                      SUM(CASE WHEN CAST(strftime('%Y',o.day) AS INT)=l.yr-1 THEN 1 ELSE 0 END)
+               FROM Orders o CROSS JOIN latest l LEFT JOIN Customers c ON c.id=o.cust
+               GROUP BY o.cust
+               HAVING SUM(CASE WHEN CAST(strftime('%Y',o.day) AS INT)=l.yr-1 THEN 1 ELSE 0 END)>0
+                  AND SUM(CASE WHEN CAST(strftime('%Y',o.day) AS INT)=l.yr THEN 1 ELSE 0 END)=0
+               ORDER BY MAX(o.day) DESC,o.cust"""
+        self.assertEqual(con.execute(q).fetchall(),
+                         [(1,"Asha Rao","2024-12-01",2),
+                          (99,"Unknown customer","2024-09-30",1)])
+        con.close()
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

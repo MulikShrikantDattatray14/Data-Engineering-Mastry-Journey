@@ -148,7 +148,7 @@ class SourceInventory(unittest.TestCase):
         local = {"__name__": "auditor"}
         with contextlib.redirect_stdout(io.StringIO()):
             exec(compile(code, "preserved-source-p75-q42", "exec"), local)
-        with self.assertRaises(AttributeError):
+        with self.assertRaises(TypeError):
             local["unflatten"]({"address": "Pune", "address.city": "Mumbai"})
         # Reversing the order silently loses the previous nested dictionary.
         self.assertEqual(local["unflatten"]({"address.city": "Mumbai", "address": "Pune"}),

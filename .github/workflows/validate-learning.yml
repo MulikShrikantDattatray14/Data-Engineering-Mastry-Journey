@@ -83,6 +83,9 @@ jobs:
       - name: Audit Bosscoder Lecture-04 source-pinned modules/scope/exceptions notes and 11 MCQs
         run: python3 scripts/check_bosscoder_modules_04_notes.py
 
+      - name: Audit Bosscoder Lecture-05 OOP source-pinned public notes, 12 pending MCQs and seven synthetic boundaries
+        run: python3 scripts/check_bosscoder_oop_05_notes.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

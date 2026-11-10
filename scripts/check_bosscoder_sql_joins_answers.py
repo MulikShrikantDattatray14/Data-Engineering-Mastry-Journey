@@ -69,9 +69,9 @@ INSERT INTO Students VALUES (1,'Amy',80),(2,'Zed',88),(3,'Bela',70),(4,'Eve',60)
         [('Nora',10,100),('Amy',9,80),('Zed',9,88),('Bela',8,70),('NULL',7,60),('NULL',7,69)]),
     10: ("""CREATE TABLE Wands(id INTEGER,code INTEGER,coins_needed INTEGER,power INTEGER);
 CREATE TABLE Wands_Property(code INTEGER,age INTEGER,is_evil INTEGER);
-INSERT INTO Wands_Property VALUES (1,20,0),(2,20,0),(3,10,0),(4,99,1);
+INSERT INTO Wands_Property VALUES (1,20,0),(2,30,0),(3,10,0),(4,99,1);
 INSERT INTO Wands VALUES (1,1,30,5),(2,2,20,5),(3,2,25,5),(4,3,5,5),(5,4,1,10),(6,1,15,4),(7,1,10,5);""",
-        [(7,20,10,5),(4,10,5,5),(6,20,15,4)]),
+        [(2,30,20,5),(7,20,10,5),(4,10,5,5),(6,20,15,4)]),
     11: ("""CREATE TABLE Weather(id INTEGER,recordDate TEXT,temperature INTEGER);
 INSERT INTO Weather VALUES (1,'2020-02-28',10),(2,'2020-02-29',20),
 (3,'2020-03-02',50),(4,'2020-03-03',60);""",

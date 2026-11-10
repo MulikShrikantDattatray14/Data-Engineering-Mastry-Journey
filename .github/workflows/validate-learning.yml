@@ -115,6 +115,9 @@ jobs:
       - name: Replay four immutable Bosscoder Recursive CTE sources (8 saved variants; sample and synthetic fixtures)
         run: python3 scripts/check_bosscoder_sql_recursive_cte_answers.py
 
+      - name: Audit six immutable Bosscoder Extra Problems archived SQL answers (6 original samples, 6 synthetic)
+        run: python3 scripts/check_bosscoder_sql_extra_answers.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

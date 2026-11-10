@@ -68,6 +68,9 @@ jobs:
           /tmp/mentor-pandas-db-runtime/bin/pip install --disable-pip-version-check 'pytest==8.4.2'
           /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_73_74.py
 
+      - name: Audit 15 preserved mentorship stdout contracts, 22 practice prompts, and four synthetic boundaries, PDF pages 75-80
+        run: /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_75_80.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

@@ -1,0 +1,37 @@
+# Independent source audit: mentorship PDF companion pages 73–74 (10 November 2026)
+
+**Audit scope, not learner work:** Individually inspected the two preserved Markdown companion lessons, six numbered source-linked Python blocks and six ungraded "Your turn" prompts. Sources remain untouched. This is NOT rendered-original-PDF text/image parity, course grading, independent learner work or a validated Spark/Airflow deployment. [Executable archive-read-only checker](../scripts/check_mentorship_python_pages_73_74.py) and [passing integration CI](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/42762822459) on commit 9b97f390bb8bc72c4b6d3bafe80110c5aaa128ea.
+
+## Exact preserved-source inventory and runtime evidence
+
+| PDF page / archived source | Original Git blob SHA-1 | Source snippets independently inspected | Outcome (distinct verification tiers) |
+| --- | --- | --- | --- |
+| **73** — [Testing and data quality](<../99. Reference Materials/Original Mastery Snapshot/2. Python Mastry/6. Python for Data Engineering/05. Testing and data quality.md>) | 05b4ff35d2666ef5908237686f2a517dd718301a | #1 status normalizer / amount parser; #2 original six-case pytest suite, dependent on #1 as transform.py; #3 pandas quality report. Three ungraded prompts inspected. | **Two original exact stdout matches PASS** (#1 one-line normalizer output; #3 full two-line clean/dirty file report). **One descriptive original pytest contract PASS** (#2 genuinely executed the six authored tests in an isolated scratch directory, finds "6 passed", not machine-dependent complete pytest stdout). |
+| **74** — [pandas to PySpark/Airflow](<../99. Reference Materials/Original Mastery Snapshot/2. Python Mastry/6. Python for Data Engineering/06. From pandas to PySpark and Airflow.md>) | 17b999bcc639f184c5ca7bac4c3a325d4d05e763 | #1 original pandas largest-delivered-order ranking, #2 Spark dense-rank example, #3 Airflow 3 illustrative DAG. Three ungraded prompts inspected. | **One original descriptive output contract PASS** (#1 exactly seven published customer/order/amount rows). #2 and #3 **Python syntax inspected only**, not executed in actual Spark/JVM or Airflow environments; the Airflow load explicitly raises NotImplementedError. Their source-printed Spark table is NOT runtime-verified. |
+
+### Source dataset integrity anchors (original Git blob SHA-1)
+
+- [orders.csv](<../99. Reference Materials/Original Mastery Snapshot/2. Python Mastry/python_de_dataset/orders.csv>): 2d08d1fc6acdc4f26c4427f27ac7925bfb202ea2
+- [orders_dirty.csv](<../99. Reference Materials/Original Mastery Snapshot/2. Python Mastry/python_de_dataset/orders_dirty.csv>): e36bedf1e6b9b5ef2582b007440c92ccf9fda83a
+- [customers.json](<../99. Reference Materials/Original Mastery Snapshot/2. Python Mastry/python_de_dataset/customers.json>): d6125fce237e7f7e3193667946d1eb117cd19db0
+
+CI checker checks the six original numbered Run/Edit links, reads *the original linked code*, compiles every block and counts all six ungraded practice prompts. It verifies original lesson and dataset Git blob hashes before and after runs, creates isolated scratch copies, runs page 73 original transform, its original pytest six-case suite, original pandas checks and page 74 original pandas rank. The pytest harness copies #1 into a disposable transform.py, precisely as the lesson states; it never edits the original. **All eight checker methods passed on GitHub Actions run 42762822459**, including three separately labeled reviewer-authored synthetic boundaries.
+
+## Three independent synthetic boundary groups (not original answers)
+
+1. **Page 73 non-finite amount validation:** the exact original amount parser accepts NaN and Infinity because the only positivity guard compares value <= 0; zero/negative amounts do raise ValueError. The six original pytest cases miss this flaw. This repeats a broader issue previously seen on p.68; do not duplicate original code or a foundation lesson.
+2. **Page 73 empty input:** the original run_checks function on an empty order DataFrame returns no failures: uniqueness plus all() checks pass vacuously. Pipeline completeness/row-count policy is not validated. Raw dirty status 'DELIVERED ' is correctly rejected by the raw-check example but should be normalized first if the intended ingest contract accepts it.
+3. **Page 74 ties and missing customers:** two synthetic tied delivered orders for one customer both receive rank 1 (expected dense-rank behavior); a missing customer_id gets a null pandas group-rank and is excluded. Spark Window.partitionBy groups null keys rather than dropping them, so literal pandas/Spark parity needs a NULL policy and real Spark testing.
+
+**Additional source limitations:** p.73 source tests are only six predetermined unit cases, not an official or complete production data-validation suite. p.74 source Spark example is optional and was not executed without a Spark/Java runtime; Spark data typing, printed table and tie ordering still need direct runtime evidence. The source Airflow DAG is illustrative and intentionally has no warehouse load; scheduling, retries, XCom, idempotent dates and registration remain unchecked. Its naive string replace operation changes every occurrence of 'raw' in a path, not necessarily only a designated raw-zone segment.
+
+## W3Schools linked-site comparison (two NEW official URLs)
+
+- Page 73's [Python Try...Except](https://www.w3schools.com/python/python_try_except.asp) official page was independently opened/inspected 10 Nov 2026: try/except/else/finally, named exceptions and raise are covered. It does not document pytest parametrization or establish that the mentorship's six tests were graded by W3Schools. Page 73's [Python Functions](https://www.w3schools.com/python/python_functions.asp) is an existing, previously inspected prerequisite.
+- Page 74's [Python Dates](https://www.w3schools.com/python/python_datetime.asp) official page was independently opened/inspected 10 Nov 2026: datetime creation and formatting are covered, but not Airflow logical dates, retries, backfills or scheduler behavior. Page 74's [Python Functions](https://www.w3schools.com/python/python_functions.asp) and [Modules](https://www.w3schools.com/python/python_modules.asp) were already checked as general language prerequisites.
+
+**W3Schools unique official-page text inspections: 13 previously + 2 newly inspected = 15, not W3Schools course/exercise completion or licensing validation.**
+
+## Cumulative evidence classification and outstanding work
+
+After this successful integration run: **299 prior source-linked output-contract checks through p.72 + 2 literal printed matches + 2 descriptive output checks = 303 mixed-tier source output checks through p.74**. This count excludes the two optional, **syntax-only** Spark/Airflow examples and is not 303 byte-exact stdout transcripts, official assessment answers or independently solved learner exercises. Exactly **six remaining companion PDF pages 75–80** still require source code/output auditing, plus direct original 80-page PDF fidelity; 205 PNP SQL original-dataset/official-key validations, Bosscoder lectures/assignments, other DE subjects, W3Schools remaining provider comparisons, licensing and final source-concept integrity. **Issue #1 must remain open** and the separate ChatGPT Library interactive study record must remain unsynced until full audit signoff and final green CI.

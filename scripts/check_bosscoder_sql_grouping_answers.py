@@ -170,7 +170,7 @@ def main() -> None:
                 check(number, query, *SAMPLES[number], "source displayed sample")
                 print(f"Sorting/Grouping {number:02d}/11 solution {alternative}: retyped archived displayed sample PASS")
     assert len(SAMPLES) == 4
-    print("11 original source records SHA-pinned; 12 archived-SQL synthetic executions (#04 twice), 5 source-sample executions (#04 not sampled); 0 official Academy platform grades; 0 new learner credits.")
+    print("11 original source records SHA-pinned; 12 archived-SQL synthetic executions (#04 twice), 4 source-sample executions; 0 official Academy platform grades; 0 new learner credits.")
 
 if __name__ == "__main__":
     main()

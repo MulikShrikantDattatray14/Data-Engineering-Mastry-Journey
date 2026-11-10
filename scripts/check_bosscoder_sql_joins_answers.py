@@ -89,7 +89,7 @@ PENDING = {4, 5}
 
 def archived_sql(number: int, name: str, expected_blob: str) -> str | None:
     data = (BASE / name).read_bytes()
-    git_blob = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    git_blob = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
     assert git_blob == expected_blob, (number, name, git_blob, expected_blob)
     page = data.decode("utf-8")
     assert "## Question and image" in page and "## Schema" in page, name

@@ -100,6 +100,9 @@ jobs:
       - name: Replay 10 immutable Bosscoder Joins SQL answers and protect 2 pending records
         run: python3 scripts/check_bosscoder_sql_joins_answers.py
 
+      - name: Replay 11 immutable Bosscoder Sorting and Grouping SQL answers on source and synthetic fixtures
+        run: python3 scripts/check_bosscoder_sql_grouping_answers.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

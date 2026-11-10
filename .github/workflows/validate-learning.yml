@@ -97,6 +97,9 @@ jobs:
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 
+      - name: Replay 10 immutable Bosscoder Joins SQL answers and protect 2 pending records
+        run: python3 scripts/check_bosscoder_sql_joins_answers.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

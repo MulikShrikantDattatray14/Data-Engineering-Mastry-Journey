@@ -63,6 +63,11 @@ jobs:
           /tmp/mentor-pandas-db-runtime/bin/pip install --disable-pip-version-check 'pandas==2.3.3' 'numpy>=2.0,<3'
           /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_69_72.py
 
+      - name: Audit original Python mentorship pp.73-74 (2 literal outputs, 2 descriptive contracts, 3 synthetic groups; Spark/Airflow syntax only)
+        run: |
+          /tmp/mentor-pandas-db-runtime/bin/pip install --disable-pip-version-check 'pytest==8.4.2'
+          /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_73_74.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

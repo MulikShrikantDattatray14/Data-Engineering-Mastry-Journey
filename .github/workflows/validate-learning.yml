@@ -57,6 +57,12 @@ jobs:
       - name: Check 8 archived mentorship output contracts, one API mock, and five boundary groups, PDF pages 65-68
         run: python3 scripts/check_mentorship_python_pages_65_68.py
 
+      - name: Check 8 original mentorship stdout contracts, 4 descriptive, and 4 synthetic cases, PDF pages 69-72
+        run: |
+          python3 -m venv /tmp/mentor-pandas-db-runtime
+          /tmp/mentor-pandas-db-runtime/bin/pip install --disable-pip-version-check 'pandas==2.3.3' 'numpy>=2.0,<3'
+          /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_69_72.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

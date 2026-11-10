@@ -1,7 +1,7 @@
 """Source-preserving audit of archived Python mentorship companion pages 65-68.
 
 Eight source-published output checks (one source contains a broken closing fence),
-one network-dependent illustrative definition syntax/mock checked, and four
+one network-dependent illustrative definition syntax/mock checked, and five
 auditor-created synthetic boundary groups. Never treats these as learner answers
 or as official PDF page-parity verification.
 """

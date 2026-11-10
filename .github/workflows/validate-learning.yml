@@ -80,6 +80,9 @@ jobs:
       - name: Audit Bosscoder Functional Programming Lecture-03 archived examples, pending MCQs and six synthetic boundaries
         run: python3 scripts/check_bosscoder_functional_03_notes.py
 
+      - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
+        run: python3 scripts/check_bosscoder_sql_intro_answers.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

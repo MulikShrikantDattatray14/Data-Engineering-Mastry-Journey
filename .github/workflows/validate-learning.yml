@@ -54,6 +54,9 @@ jobs:
           python3 -m venv /tmp/mentor-pandas-runtime
           /tmp/mentor-pandas-runtime/bin/pip install --disable-pip-version-check 'pandas==2.3.3'
           /tmp/mentor-pandas-runtime/bin/python scripts/check_mentorship_python_pages_59_64.py
+      - name: Check 8 archived mentorship output contracts, one API mock, and four boundary groups, PDF pages 65-68
+        run: python3 scripts/check_mentorship_python_pages_65_68.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

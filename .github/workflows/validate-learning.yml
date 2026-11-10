@@ -77,6 +77,9 @@ jobs:
       - name: Audit Bosscoder Refresher-2 archived notes (13 source examples, 4 pending assignments, 5 synthetic boundaries)
         run: python3 scripts/check_bosscoder_refresher_02_notes.py
 
+      - name: Audit Bosscoder Functional Programming Lecture-03 archived examples, pending MCQs and six synthetic boundaries
+        run: python3 scripts/check_bosscoder_functional_03_notes.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

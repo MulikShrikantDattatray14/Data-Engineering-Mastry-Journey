@@ -39,7 +39,7 @@ MCQ_SHA = {
 
 def pinned_text(path: Path, expected: str) -> str:
     raw = path.read_bytes()
-    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     assert sha == expected, (path, sha, expected)
     return raw.decode("utf-8")
 
@@ -47,7 +47,7 @@ def pinned_text(path: Path, expected: str) -> str:
 def python_fences(markdown: str) -> list[str]:
     marker = chr(96) * 3
     return re.findall(
-        r"^" + re.escape(marker + "python") + r"\\s*\\n(.*?)^" + re.escape(marker) + r"\\s*$",
+        r"^" + re.escape(marker + "python") + r"\s*\n(.*?)^" + re.escape(marker) + r"\s*$",
         markdown, flags=re.M | re.S,
     )
 
@@ -66,9 +66,9 @@ def archived_source_contracts() -> None:
     all_notes = [python_fences(pinned_text(ARCHIVE / name, sha)) for name, sha in NOTE_SHA.items()]
     assert [len(x) for x in all_notes] == [4, 3, 4], [len(x) for x in all_notes]
     outputs = [
-        ["orders.csv: 250 rows\\n", "daily-load test\\n", "1\\nsales\\n", "True\\n"],
-        ["", "", "['Combined', 'FromApi', 'FromFile', 'Origin', 'object']\\n"],
-        ["", "1 1\\n", "10 records\\n", "[{'id': 1}]\\n"],
+        ["orders.csv: 250 rows\n", "daily-load test\n", "1\nsales\n", "True\n"],
+        ["", "", "['Combined', 'FromApi', 'FromFile', 'Origin', 'object']\n"],
+        ["", "1 1\n", "10 records\n", "[{'id': 1}]\n"],
     ]
     with tempfile.TemporaryDirectory(prefix="bc05-archived-") as tmp:
         directory = Path(tmp)
@@ -83,7 +83,7 @@ def archived_source_contracts() -> None:
         assert "**Platform completion:** Not verified" in t, name
         assert "## Problem to reason about" in t and "## Four choices" in t, name
         last_choices = t.split("## Four choices")[-1].split("## Your independent attempt")[0]
-        opts = re.findall(r"^([1-4])\\. ", last_choices, flags=re.M)
+        opts = re.findall(r"^([1-4])\. ", last_choices, flags=re.M)
         assert opts == ["1", "2", "3", "4"], (name, opts)
     print("PASS: 12/12 distinct original archived MCQ statement/options/status SHA pins, all pending")
     # Historical records Q01-Q08 duplicate their choice headings; Q06 option wording differs.

@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import types
 import unittest
 from pathlib import Path
 
@@ -121,7 +122,10 @@ def source_namespace(page: int, number: int) -> dict:
         work = Path(temp)
         prepare_scratch(work)
         previous = Path.cwd()
-        scope: dict = {"__name__": "auditor_source_definition"}
+        module_name = f"auditor_source_page_{page}_example_{number}"
+        module = types.ModuleType(module_name)
+        sys.modules[module_name] = module  # dataclasses resolves its forward types through sys.modules.
+        scope: dict = module.__dict__
         try:
             os.chdir(work)
             with contextlib.redirect_stdout(io.StringIO()):

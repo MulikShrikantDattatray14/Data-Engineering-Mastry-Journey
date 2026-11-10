@@ -83,6 +83,42 @@ INSERT INTO Orders VALUES (1,'2019-12-31',1),(2,'2020-01-01',2),
 (3,'2020-12-31',3),(4,'2021-01-01',1),(5,'2020-06-01',NULL);""",
         [('A',),('D',)]),
 }
+# Small independently reconstructed *published sample tables* from archived sources,
+# distinct from auditor-synthetic boundary cases and platform grading.
+SOURCE_SAMPLE_CASES = {
+    6: ("""CREATE TABLE Students(student_id INTEGER,student_name TEXT);
+CREATE TABLE Subjects(subject_name TEXT);
+CREATE TABLE Examinations(student_id INTEGER,subject_name TEXT);
+INSERT INTO Students VALUES (1,'Alice'),(2,'Bob'),(13,'John'),(6,'Alex');
+INSERT INTO Subjects VALUES ('Math'),('Physics'),('Programming');
+INSERT INTO Examinations VALUES (1,'Math'),(1,'Physics'),(1,'Programming'),
+(2,'Programming'),(1,'Physics'),(1,'Math'),(13,'Math'),(13,'Programming'),
+(13,'Physics'),(2,'Math'),(1,'Math');""",
+        [(1,'Alice','Math',3),(1,'Alice','Physics',2),(1,'Alice','Programming',1),
+         (2,'Bob','Math',1),(2,'Bob','Physics',0),(2,'Bob','Programming',1),
+         (6,'Alex','Math',0),(6,'Alex','Physics',0),(6,'Alex','Programming',0),
+         (13,'John','Math',1),(13,'John','Physics',1),(13,'John','Programming',1)]),
+    9: ("""CREATE TABLE Students(ID INTEGER,Name TEXT,Marks INTEGER);
+CREATE TABLE Grades(Grade INTEGER,Min_Mark INTEGER,Max_Mark INTEGER);
+INSERT INTO Grades VALUES (1,0,9),(2,10,19),(3,20,29),(4,30,39),(5,40,49),
+(6,50,59),(7,60,69),(8,70,79),(9,80,89),(10,90,100);
+INSERT INTO Students VALUES (1,'Julia',88),(2,'Samantha',68),(3,'Maria',99),
+(4,'Scarlet',78),(5,'Ashley',63),(6,'Jane',81);""",
+        [('Maria',10,99),('Jane',9,81),('Julia',9,88),('Scarlet',8,78),
+         ('NULL',7,63),('NULL',7,68)]),
+    10: ("""CREATE TABLE Wands(id INTEGER,code INTEGER,coins_needed INTEGER,power INTEGER);
+CREATE TABLE Wands_Property(code INTEGER,age INTEGER,is_evil INTEGER);
+INSERT INTO Wands VALUES (1,4,3688,8),(2,3,9365,3),(3,3,7187,10),
+(4,3,734,8),(5,1,6020,2),(6,2,6773,7),(7,3,9873,9),(8,3,7721,7),
+(9,1,1647,10),(10,4,504,5),(11,2,7587,5),(12,5,9897,10),(13,3,4651,8),
+(14,2,5408,1),(15,2,6018,7),(16,4,7710,5),(17,2,8798,7),(18,2,3312,3),
+(19,4,7651,6),(20,5,5689,3);
+INSERT INTO Wands_Property VALUES (1,45,0),(2,40,0),(3,4,1),(4,20,0),(5,17,0);""",
+        [(9,45,1647,10),(12,17,9897,10),(1,20,3688,8),(15,40,6018,7),
+         (19,20,7651,6),(11,40,7587,5),(10,20,504,5),(18,40,3312,3),
+         (20,17,5689,3),(5,45,6020,2),(14,40,5408,1)]),
+}
+
 ORDERED = {6, 9, 10, 12}
 PENDING = {4, 5}
 
@@ -103,7 +139,7 @@ def archived_sql(number: int, name: str, expected_blob: str) -> str | None:
 
 
 def main() -> None:
-    assert len(PINS) == 12 and len(CASES) == 10 and set(CASES) == set(range(1, 13)) - PENDING
+    assert len(SOURCE_SAMPLE_CASES) == 3 and len(PINS) == 12 and len(CASES) == 10 and set(CASES) == set(range(1, 13)) - PENDING
     for number, (name, blob_sha) in enumerate(PINS, 1):
         query = archived_sql(number, name, blob_sha)
         if query is None:
@@ -118,9 +154,16 @@ def main() -> None:
         else:
             assert sorted(got, key=repr) == sorted(expected, key=repr), (number, name, got, expected)
         print(f"Bosscoder Joins {number:02d}/12: exact archived SQLite answer / synthetic fixture PASS")
+        if number in SOURCE_SAMPLE_CASES:
+            sample_setup, published = SOURCE_SAMPLE_CASES[number]
+            with sqlite3.connect(":memory:") as sample_db:
+                sample_db.executescript(sample_setup)
+                published_replay = sample_db.execute(query).fetchall()
+            assert published_replay == published, (number, name, published_replay, published)
+            print(f"Bosscoder Joins {number:02d}/12: displayed archived sample input/output replay PASS; no official grader")
     print("Known discrepancy: #09 emits TEXT 'NULL' instead of SQL NULL for hidden names.")
     print("Known divergence: #03 retains missing product lookup rows; supplied lecture inner join omits them.")
-    print("12 archived records pinned; 10 historical answer fixtures PASS; 2 pending; no Academy grade/learner completion.")
+    print("12 archived records pinned; 10 synthetic historical-query fixtures and 3 displayed sample replays; 2 pending; no Academy grade/learner completion.")
 
 
 if __name__ == "__main__":

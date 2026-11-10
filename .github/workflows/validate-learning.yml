@@ -89,6 +89,11 @@ jobs:
       - name: Verify 16 source-pinned Bosscoder NumPy public examples, 12 pending MCQs and 7 boundary groups
         run: /tmp/mentor-pandas-db-runtime/bin/python scripts/check_bosscoder_numpy_06_notes.py
 
+      - name: Verify 17 source-pinned Bosscoder Pandas/plots teaching snippets, 10 pending MCQs and seven synthetic groups
+        run: |
+          /tmp/mentor-pandas-db-runtime/bin/pip install --disable-pip-version-check 'matplotlib==3.10.8' 'seaborn==0.13.2'
+          /tmp/mentor-pandas-db-runtime/bin/python scripts/check_bosscoder_pandas_07_notes.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

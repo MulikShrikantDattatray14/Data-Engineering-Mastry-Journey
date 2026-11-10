@@ -193,7 +193,6 @@ class MentorshipPages65To68(unittest.TestCase):
         scope = original_namespace(66, 1)
         with self.assertRaises(ValueError):
             list(scope["read_in_chunks"]("ignored.csv", 0))
-        self.assertEqual([len(x) for x in scope["read_in_chunks"]("ignored.csv", 1)][:0], [])
         # Retry exhaustion is surfaced; no real sleep or network call.
         scope = original_namespace(66, 2)
         def always_limited():

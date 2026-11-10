@@ -71,6 +71,9 @@ jobs:
       - name: Audit 15 preserved mentorship stdout contracts, 22 practice prompts, and four synthetic boundaries, PDF pages 75-80
         run: /tmp/mentor-pandas-db-runtime/bin/python scripts/check_mentorship_python_pages_75_80.py
 
+      - name: Audit preserved Bosscoder Refresher-1 derived notes, 12 pending assignments, and four boundary checks
+        run: python3 scripts/check_bosscoder_refresher_01_notes.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

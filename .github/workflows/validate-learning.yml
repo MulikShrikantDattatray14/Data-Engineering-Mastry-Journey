@@ -121,6 +121,9 @@ jobs:
       - name: Replay 13 immutable Bosscoder SQL string/pattern answers on source and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_strings_answers.py
 
+      - name: Replay 14 immutable Bosscoder Windowing SQL answers on source-derived and synthetic fixtures
+        run: python3 scripts/check_bosscoder_sql_window_answers.py
+
       - name: Validate SQL semantic edge cases with SQLite
         run: python3 scripts/check_sql_semantic_edge_cases.py
 

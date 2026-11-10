@@ -1,0 +1,48 @@
+# Bosscoder Lecture 03 — independently checked Functional Programming source (10 Nov 2026)
+
+**Evidence tiers (do not merge):** private original PDF pages visually/textually inspected; selected PDF examples auditor-transcribed and locally executed; original public *Journey-derived notes* executed in source-hash-pinned CI; independent synthetic boundary assertions; ten Academy MCQ prompt **statements inspected** and immutable; **zero platform/official grades and zero learner attempts newly verified**.
+
+## Primary-source identity and limits
+
+- Private learner-owned **`Functional Programming .ipynb - Colab.pdf`**, 1,451,624 bytes, **42/42 pages** (visual contact sheets plus page-level extracted text independently checked). SHA-256: `5302b23aeccb7b9446d9de3d95f724d48f5efd594d5017d7beaa4760464e9a32`. The PDF is **not copied into the public repository**; the full source cannot run in public Actions without additional permission/safe access.
+- Existing preserved archival outline `lecture-03/pdf-source-audit.md` and four original *independent public note chapters* were individually opened and compared. This audit **extends** their topic-only crosswalk; it does not imply every cell of the proprietary Colab notebook was extracted or statefully run.
+- 21 **selected, manually reconstructed PDF-specific behavior checks passed locally**, spanning PDF pp.14,16,20,25–26,29,31,33–34,36–38,40–42: default parameters, factorial, callable passing, conditional lambda, filter/map transformations, default-lambda capture, decorator print repetition, property get/set, multi-iterable maps, Celsius, partial, functional chained reduction, zipped adults, even-square reduction, truncating zip, unzip, sum/max/concatenation/seeded reduction. These were **local checks**, not GitHub CI / official answers. The reconstructed examples are not byte-for-byte original Colab notebook cells and some were shortened/rephrased; this is selective source behavior verification, NOT exact PDF transcription/fidelity.
+- Two **separate defect demonstrations** passed locally: p34 executes 100 mapped transforms for `list(map(...))[:10]` rather than only ten; p42's literal printed statement `print(max value)` does not compile even though the PDF displays `8`. The corrected concept would use the preexisting `max_value` variable; no source was changed. No false original-source success claim is made for these two contradictions.
+
+## Page-by-page source examination and canonical crosswalk
+
+| Source PDF pages | Independently reviewed material | Preserved original independent note | Canonical study notes |
+| --- | --- | --- | --- |
+| 1–11 | FP definitions, purity, immutable-state preference, first-class/HOF, recursion, declarative framing, ten benefit families; FP/imperative/OOP comparison including state, testing, concurrency and limitations | `01-functional-foundations.md` | Python Functions; Advanced Patterns |
+| 12–16 | Function declaration/call, positional/keyword/default/`*args`/`**kwargs`, `return`, scope, nested functions, recursion, docstrings and annotations | `02-functions-and-purity.md` | Python Functions |
+| 17–22 | Purity, side effects, referential transparency, first-class functions, HOF, passing/storing/returning functions, `map`, `filter`, `reduce` | `02-functions-and-purity.md` | Python Functions; Advanced Patterns |
+| 23–27 | Lambda restrictions, sorting/data transformation, ternary, list lambda defaults, filtering/mapping, comparison with `def`; layout-truncated output continuation | `03-lambdas-and-decorators.md` | Python Functions; Comprehensions |
+| 28–31 | Decorators/wrappers, decorators with arguments, `@staticmethod`, `@classmethod`, `@property`/setter | `03-lambdas-and-decorators.md` | Advanced Patterns; Object-Oriented Python |
+| 32–34 | `map` single/multiple inputs, iterators, `functools.partial`, lambda, eager-materialization misconception | `04-map-filter-zip-reduce.md` | Advanced Patterns; Comprehensions |
+| 35–37 | `filter` on numbers/strings/custom objects/zipped inputs; lazy map/filter/reduce composition and printed cumulative result | `04-map-filter-zip-reduce.md` | Comprehensions; Functions |
+| 37–40 | `zip` two/three streams, unequal lengths, filesystem `zipfile` vs iterable zip, `os.walk`, ZIP member listing/extraction, `zip(*pairs)` | `04-map-filter-zip-reduce.md` | Comprehensions; Modules and Files |
+| 40–42 | `reduce` two-argument fold, empty handling and initializer, sum/max/concatenate examples; source syntax discrepancy at p42 | `04-map-filter-zip-reduce.md` | Advanced Patterns |
+
+**Comparison conclusions:** Original independent Journey notes already distinguish `zipfile` from `zip`, explain `islice` to avoid p34 eager-materialization, warn about recursion-depth and parallelism overclaims, explain safe ZIP extraction and preserve `@wraps` metadata. Existing canonical Functions, Comprehensions, Advanced Patterns, Modules/Files and Object-Oriented chapters already cover the core lecture subjects; **no duplicate new foundation chapter created**.
+
+## Source-specific discrepancies and unresolved parity
+
+1. **p34 confirmed published misstatement:** `list(doubled_numbers)[:10]` exhausts the complete mapped stream before slicing. A lazy ten-item sample needs a bounded iterator consumer such as `itertools.islice`. Locally checked on a 100-element deliberately observable input.
+2. **p42 confirmed source/PDF output disagreement:** `print(max value)` is visibly invalid Python syntax but published result is `8`. The preceding fold computing `max_value` itself produces `8`; the source's specific print line cannot generate that result.
+3. **pp28–29 decorator wrapper:** the displayed generic wrapper calls `func()` but does not forward the wrapped function's return value, and it doesn't preserve metadata with `functools.wraps`. The preserved independent note corrects both for a reusable ETL wrapper.
+4. **p31 class-decorator use-case wording:** `@staticmethod` is not limited to methods that do not modify state, and `@classmethod` does not necessarily mutate class state; these decorators primarily control implicit argument binding. The canonical OOP chapter must be used for precise behavior.
+5. **pp5–12 concurrency narrative:** pure/immutable design reduces some shared-state hazards but does not make all FP automatically parallel or always faster, especially with Python interpreter/runtime and I/O constraints.
+6. **pp26–27 outputs:** line-length/page-break crops some comments/text. Only selected unambiguous, page-visible sample contracts were executed. **No full-original-notebook notebook-cell-state or hidden-output equivalence claim.**
+7. **pp38–39 ZIP file examples:** depend on locally existing files, directory contents, archive overwrite and cell execution order; displayed empty `namelist()` is not a universal ZIP-output contract. Directory and archive operations were not exercised against original private files; security and data provenance are unresolved.
+
+## Source-linked executable checks and Academy assignment inventory
+
+The new public [CI checker](../scripts/check_bosscoder_functional_03_notes.py) pins **four unchanged archived note Git blob SHA-1s** and runs **all 24 fenced Python blocks** individually in isolated scratch working directories, checking literal stdout (including three intentionally no-output OOP/definition blocks and a purely structural purity definition). This checks the **public source-archived independent notes, not 24 original private Colab code cells**. The checker also pins **all ten unchanged MCQ Markdown blobs**, checks their learner-pending/unverified labels, and performs **six separate auditor-synthetic boundary groups**: lazy/eager map, late lambda capture, strict-length zip, mutable-default aliasing, decorated metadata preservation, seeded/empty reduction. All synthetic examples are *not official or learner submissions*. Exact CI pass/fail must be confirmed from current-main Actions after integration.
+
+Ten assignments individually inspected and still **pending**: Q01 lambda default argument, Q02 unequal map inputs, Q03 functional/declarative classification, Q04 zip-to-dictionary, Q05 closure cell inspection, Q06 lambda-versus-`def`, Q07 mutable default, Q08 impure external global, Q09 FP principle statement, Q10 order-sensitive reduction. These are **paraphrased public records from screenshots**, not original graded-platform answers; screenshots/platform correctness and original options were not independently reverified in this pass. All MCQ selections, answers and platform results remain **UNVERIFIED / learner pending**.
+
+## Preservation, other audit obligations and learning-sync boundary
+
+Only this new ledger, source-pinned public checker, CI workflow, source-gap register and migration-status updates are permitted audit commits. The private Academy PDF, **all 744 immutable original archive files**, ten source question records, previous independent learner attempts, `10. Learning Progress/daily-progress.json` and the separate ChatGPT Library learning journal stay untouched.
+
+**Remaining before full Issue #1 signoff:** original private PDF full cell/state fidelity and all Academy graded outcome verification; Bosscoder lecture 04–07 primary sources and assignment audits; all 205 PNP SQL official-answer/full-original-dataset/dialect validations despite 205 statement reads; original mentorship PDF page-image parity; remaining W3Schools unique official references; non-SQL DE subject depth; Spark/Airflow actual runtimes; detailed source-to-concept/rights/privacy/license review and exact-current-main CI. **Do not close Issue #1. Do not sync Library learner progress to GitHub until full independent signoff and final green CI.**

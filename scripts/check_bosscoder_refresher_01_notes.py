@@ -62,7 +62,7 @@ EXACT = {
     (3, 4): "No failures found\n",
     (3, 5): "finished\n",
 }
-# 22 literal outputs, 2 descriptive stdout checks + 1 no-output structural
+# 22 literal outputs, 3 descriptive stdout checks + 1 no-output structural
 # check + 1 counted but deliberately unexecuted interactive-input example.
 DYNAMIC = {(1, 1), (1, 8), (2, 8), (3, 6)}
 SKIPPED = {(1, 9)}

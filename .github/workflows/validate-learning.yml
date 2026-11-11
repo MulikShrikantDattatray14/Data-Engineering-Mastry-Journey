@@ -211,3 +211,6 @@ jobs:
 
       - name: Audit Q066 Q067 pinned source percentiles, 2 original illustrations and 4 synthetic groups
         run: python3 scripts/check_pnp_66_67_source_answers.py
+
+      - name: Audit Q073 Q076 archived key queries, 4 returned-row illustrations, 4 synthetic groups and known Q076 missing-month discrepancy
+        run: python3 scripts/check_pnp_73_76_source_answers.py

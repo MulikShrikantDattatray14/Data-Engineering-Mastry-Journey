@@ -181,3 +181,6 @@ jobs:
 
       - name: Verify PNP Q001-Q008 archived key provenance, learner samples and synthetic counterexamples
         run: python3 scripts/check_pnp_first_eight_source_answers.py
+
+      - name: Verify immutable PNP Q009-Q016 source excerpts and bounded key/learner outputs
+        run: python3 scripts/check_pnp_09_16_source_answers.py

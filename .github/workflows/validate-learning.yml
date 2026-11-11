@@ -219,3 +219,6 @@ jobs:
         run: python3 scripts/check_pnp_77_80_source_answers.py
       - name: Inspect Q081-Q088 pinned sources and replay Q081 Q082 Q085 Q086 keys (bounded; Q086 ordering discrepancy)
         run: python3 scripts/check_pnp_81_88_source_answers.py
+
+      - name: Replay Q087 and Q088 pinned supplied keys on 2 original examples, synthetic edges and nine-rule empty-data discrepancy
+        run: python3 scripts/check_pnp_87_88_source_answers.py

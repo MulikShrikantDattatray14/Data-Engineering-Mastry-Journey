@@ -214,3 +214,6 @@ jobs:
 
       - name: Audit Q073 Q076 archived key queries, 4 returned-row illustrations, 4 synthetic groups and known Q076 missing-month discrepancy
         run: python3 scripts/check_pnp_73_76_source_answers.py
+
+      - name: Audit pinned PNP Q077-Q080 reference key, 4 illustrations, 4 boundary groups and 2 conditional cases
+        run: python3 scripts/check_pnp_77_80_source_answers.py

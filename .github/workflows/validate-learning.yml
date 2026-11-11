@@ -217,3 +217,5 @@ jobs:
 
       - name: Audit pinned PNP Q077-Q080 reference key, 4 illustrations, 4 boundary groups and 2 conditional cases
         run: python3 scripts/check_pnp_77_80_source_answers.py
+      - name: Inspect Q081-Q088 pinned sources and replay Q081 Q082 Q085 Q086 keys (bounded; Q086 ordering discrepancy)
+        run: python3 scripts/check_pnp_81_88_source_answers.py

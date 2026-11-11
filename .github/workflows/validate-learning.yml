@@ -167,3 +167,5 @@ jobs:
         run: python3 scripts/check_pnp_quality_analytics_cases.py
       - name: Audit seven immutable non-SQL DE roadmap stubs without crediting unbuilt work
         run: python3 scripts/check_de_subject_boundaries.py
+      - name: Replay both archived Bosscoder SQL Basics foundation chapters and four synthetic boundaries
+        run: python3 scripts/check_bosscoder_sql_basics_foundation.py

@@ -172,3 +172,6 @@ jobs:
 
       - name: Replay 16 original Bosscoder Advanced SELECT chapter outputs and six independent boundaries
         run: python3 scripts/check_bosscoder_sql_select_foundation.py
+
+      - name: Replay 19 immutable Bosscoder Joins foundation printed outputs and five synthetic counterexamples
+        run: python3 scripts/check_bosscoder_sql_joins_foundation.py

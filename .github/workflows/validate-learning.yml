@@ -192,3 +192,6 @@ jobs:
 
       - name: Audit PNP Q033-Q040 immutable key sources, illustrative outputs and synthetic boundaries
         run: python3 scripts/check_pnp_33_40_source_answers.py
+
+      - name: Audit PNP Q041-Q048 immutable key, eight source illustrations and eight synthetic groups
+        run: python3 scripts/check_pnp_41_48_source_answers.py

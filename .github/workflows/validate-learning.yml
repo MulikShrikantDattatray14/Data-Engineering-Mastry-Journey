@@ -175,3 +175,6 @@ jobs:
 
       - name: Replay 19 immutable Bosscoder Joins foundation printed outputs and five synthetic counterexamples
         run: python3 scripts/check_bosscoder_sql_joins_foundation.py
+
+      - name: Replay 13 preserved Bosscoder Sorting Grouping foundation outputs and six synthetic boundaries
+        run: python3 scripts/check_bosscoder_sql_grouping_foundation.py

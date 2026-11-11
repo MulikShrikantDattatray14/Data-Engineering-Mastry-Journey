@@ -187,3 +187,5 @@ jobs:
 
       - name: Verify PNP Q017-Q024 immutable sources, illustrative SQL, and bounded counterexamples
         run: python3 scripts/check_pnp_17_24_source_answers.py
+      - name: Check PNP Q025-Q032 immutable source pins, supplied key, illustrative outputs, and synthetic boundaries
+        run: python3 scripts/check_pnp_25_32_source_answers.py

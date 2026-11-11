@@ -203,3 +203,5 @@ jobs:
 
       - name: Audit PNP Q061-Q064 supplied keys, 4 illustrations and 5 synthetic SQLite boundary groups
         run: python3 scripts/check_pnp_61_64_source_answers.py
+      - name: Pin PNP Q065-Q072 sources and replay Q070-Q072 keys on six bounded SQLite fixtures
+        run: python3 scripts/check_pnp_65_72_source_answers.py

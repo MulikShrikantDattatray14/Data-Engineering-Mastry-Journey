@@ -189,3 +189,6 @@ jobs:
         run: python3 scripts/check_pnp_17_24_source_answers.py
       - name: Check PNP Q025-Q032 immutable source pins, supplied key, illustrative outputs, and synthetic boundaries
         run: python3 scripts/check_pnp_25_32_source_answers.py
+
+      - name: Audit PNP Q033-Q040 immutable key sources, illustrative outputs and synthetic boundaries
+        run: python3 scripts/check_pnp_33_40_source_answers.py

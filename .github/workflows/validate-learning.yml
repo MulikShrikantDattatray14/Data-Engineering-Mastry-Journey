@@ -222,3 +222,6 @@ jobs:
 
       - name: Replay Q087 and Q088 pinned supplied keys on 2 original examples, synthetic edges and nine-rule empty-data discrepancy
         run: python3 scripts/check_pnp_87_88_source_answers.py
+
+      - name: Replay Q083 Q084 source-pinned supplied keys, 2 illustrations, 2 boundaries and 2 conditional contradictions
+        run: python3 scripts/check_pnp_83_84_source_answers.py

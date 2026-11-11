@@ -169,3 +169,6 @@ jobs:
         run: python3 scripts/check_de_subject_boundaries.py
       - name: Replay both archived Bosscoder SQL Basics foundation chapters and four synthetic boundaries
         run: python3 scripts/check_bosscoder_sql_basics_foundation.py
+
+      - name: Replay 16 original Bosscoder Advanced SELECT chapter outputs and six independent boundaries
+        run: python3 scripts/check_bosscoder_sql_select_foundation.py

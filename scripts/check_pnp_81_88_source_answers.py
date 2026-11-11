@@ -68,7 +68,7 @@ def sqlite_key(n, sql):
                    "(CASE WHEN SUBSTR(a.ytd_end, 6, 5) = '02-29' "
                    "THEN DATE(a.ytd_end, '-1 year', '-1 day') "
                    "ELSE DATE(a.ytd_end, '-1 year') END)")
-        sql = swap(sql, "pr.ytd_end + 1", "DATE(pr.ytd_end, '+1 day')", 2)
+        sql = swap(sql, "pr.ytd_end + 1", "DATE(pr.ytd_end, '+1 day')", 3)
         sql = swap(sql, "pr.prior_ytd_end + 1",
                    "DATE(pr.prior_ytd_end, '+1 day')")
     if n == 85:

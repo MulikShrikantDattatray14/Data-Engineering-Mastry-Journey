@@ -184,3 +184,6 @@ jobs:
 
       - name: Verify immutable PNP Q009-Q016 source excerpts and bounded key/learner outputs
         run: python3 scripts/check_pnp_09_16_source_answers.py
+
+      - name: Verify PNP Q017-Q024 immutable sources, illustrative SQL, and bounded counterexamples
+        run: python3 scripts/check_pnp_17_24_source_answers.py

@@ -36,7 +36,7 @@ def sql_tokens(sql):
 
     A SQL string literal (including ' ' inside CONCAT_WS) stays exact.
     """
-    return re.findall(r"'(?:''|[^'])*'|\"(?:\"\"|[^\"])*\"|[A-Za-z_]\\w*|\\d+(?:\\.\\d+)?|::|>=|<=|<>|!=|[^\\s]", sql)
+    return re.findall(r"'(?:''|[^'])*'|\"(?:\"\"|[^\"])*\"|[A-Za-z_]\w*|\d+(?:\.\d+)?|::|>=|<=|<>|!=|[^\s]", sql)
 
 def learner_sql(text):
     s = text.split("## My solution — SQLite", 1)[1].split("### Step-by-step", 1)[0]

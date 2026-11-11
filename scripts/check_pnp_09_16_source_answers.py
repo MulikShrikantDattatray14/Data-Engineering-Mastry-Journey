@@ -86,7 +86,7 @@ def main():
  for q in (q15,keyq(k,15)):
   check(c,q,[(2,"Toys",0),(1,"Snacks",2)],"Q015 saved/key source sample")
  c.close()
- q16=fence(docs[16],"## My solution — SQLite","## My solution — SQL Server")
+ q16=fence(docs[16],"## My solution — SQLite","### Step-by-step explanation with one example")
  assert len(q16)==2
  c=db("CREATE TABLE Customers(CustomerID INT,FirstName TEXT,LastName TEXT,City TEXT)","CREATE TABLE Orders(OrderID INT,CustomerID INT,OrderDate TEXT,Total_Order_Amount REAL)")
  c.execute("INSERT INTO Customers VALUES(1,'Anu','Sen',' Delhi ')")

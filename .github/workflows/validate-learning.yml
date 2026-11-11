@@ -228,3 +228,5 @@ jobs:
 
       - name: Replay PNP Q092/Q094 exact source keys (2 source examples, 2 synthetic groups and 2 conditional diagnostics)
         run: python3 scripts/check_pnp_92_94_source_answers.py
+      - name: Replay exact archived PNP Q097-Q098 keys (2 original illustrations, 2 synthetic groups, 2 empty boundaries)
+        run: python3 scripts/check_pnp_97_98_source_answers.py

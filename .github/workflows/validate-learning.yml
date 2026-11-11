@@ -208,3 +208,6 @@ jobs:
 
       - name: Replay Q065 Q068 Q069 pinned PostgreSQL keys on seven bounded SQLite fixtures
         run: python3 scripts/check_pnp_65_69_source_answers.py
+
+      - name: Audit Q066 Q067 pinned source percentiles, 2 original illustrations and 4 synthetic groups
+        run: python3 scripts/check_pnp_66_67_source_answers.py

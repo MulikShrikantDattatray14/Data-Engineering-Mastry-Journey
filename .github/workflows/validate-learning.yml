@@ -178,3 +178,6 @@ jobs:
 
       - name: Replay 13 preserved Bosscoder Sorting Grouping foundation outputs and six synthetic boundaries
         run: python3 scripts/check_bosscoder_sql_grouping_foundation.py
+
+      - name: Verify PNP Q001-Q008 archived key provenance, learner samples and synthetic counterexamples
+        run: python3 scripts/check_pnp_first_eight_source_answers.py

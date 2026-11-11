@@ -127,7 +127,9 @@ def verify_synthetic(fences: list[str]) -> None:
     db = synthetic_database()
     # S3. Full catalog coverage is 2 paid products, not two purchases.
     assert db.execute(fences[11]).fetchall() == [(1,), (2,)]
-    assert db.execute(fences[12]).fetchall() == [(1,), (2,)]
+    # Customer 1 meets catalog coverage but has a returned event; only 2
+    # satisfies the *separate* A-and-B-but-no-returns source contract.
+    assert db.execute(fences[12]).fetchall() == [(2,)]
     # The optional empty-catalog caveat is NOT handled by this query:
     # it sees only paid-order groups; do not call this an all-customers proof.
     db.execute("DELETE FROM Product")
@@ -136,10 +138,11 @@ def verify_synthetic(fences: list[str]) -> None:
         (1,), (2,), (3,), (4,)]
     db.close()
 
-    # S4. Returned event MUST remain visible to HAVING even if amount is NULL.
+    # S4. A newly returned event MUST remain visible to HAVING even if its
+    # amount is NULL; both otherwise qualifying customers now have returns.
     db = synthetic_database()
     db.execute("INSERT INTO Orders VALUES(8,2,10,'2021-03-01','returned',NULL)")
-    assert db.execute(fences[12]).fetchall() == [(1,)]
+    assert db.execute(fences[12]).fetchall() == []
     db.close()
 
     # S5. First-date ties and identical calendar dates across products must

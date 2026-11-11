@@ -198,3 +198,5 @@ jobs:
 
       - name: Audit PNP Q049-Q056 immutable key, 8 source illustrations, 8 synthetic groups and 2 known divergences
         run: python3 scripts/check_pnp_49_56_source_answers.py
+      - name: Audit pinned PNP Q057-Q060 source keys, 4 illustrations, 4 independent boundaries and Q060 name collision
+        run: python3 scripts/check_pnp_57_60_source_answers.py

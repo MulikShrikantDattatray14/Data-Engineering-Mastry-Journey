@@ -31,6 +31,13 @@ def key_sql(text, n):
     assert m, f"Missing Q{n} supplied key"
     return m.group(1).strip()
 
+def sql_tokens(sql):
+    """Compare immutable SQL tokens while ignoring only layout whitespace.
+
+    A SQL string literal (including ' ' inside CONCAT_WS) stays exact.
+    """
+    return re.findall(r"'(?:''|[^'])*'|\"(?:\"\"|[^\"])*\"|[A-Za-z_]\\w*|\\d+(?:\\.\\d+)?|::|>=|<=|<>|!=|[^\\s]", sql)
+
 def learner_sql(text):
     s = text.split("## My solution — SQLite", 1)[1].split("### Step-by-step", 1)[0]
     m = re.search(r"(?ms)^" + "\x60"*3 + r"sql\s*\n(.*?)\n" + "\x60"*3, s)
@@ -109,9 +116,9 @@ def main():
         if n in (17, 18, 19):
             assert "Solved (recorded)" in text
             assert "## My solution — SQLite" in text
-            assert " ".join(key_sql(keys, n).split()) == " ".join(
-                re.search(r"(?ms)^## Official solution.*?^" + "\x60"*3 + r"sql\s*\n(.*?)\n" + "\x60"*3, text).group(1).split()
-            ), f"Q{n}: public supplied key excerpt differs"
+            assert sql_tokens(key_sql(keys, n)) == sql_tokens(
+                re.search(r"(?ms)^## Official solution.*?^" + "\x60"*3 + r"sql\s*\n(.*?)\n" + "\x60"*3, text).group(1)
+            ), f"Q{n}: public supplied key excerpt differs (non-layout token change)"
         else:
             assert "NOT SOLVED YET" in text
             assert "## My solution — SQLite\n\nPending." in text

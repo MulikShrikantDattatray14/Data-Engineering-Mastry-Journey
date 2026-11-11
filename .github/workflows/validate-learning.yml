@@ -165,3 +165,5 @@ jobs:
 
       - name: Validate 27 archived quality/analytics sources and 13 synthetic regressions
         run: python3 scripts/check_pnp_quality_analytics_cases.py
+      - name: Audit seven immutable non-SQL DE roadmap stubs without crediting unbuilt work
+        run: python3 scripts/check_de_subject_boundaries.py

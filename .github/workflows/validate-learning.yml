@@ -200,3 +200,6 @@ jobs:
         run: python3 scripts/check_pnp_49_56_source_answers.py
       - name: Audit pinned PNP Q057-Q060 source keys, 4 illustrations, 4 independent boundaries and Q060 name collision
         run: python3 scripts/check_pnp_57_60_source_answers.py
+
+      - name: Audit PNP Q061-Q064 supplied keys, 4 illustrations and 5 synthetic SQLite boundary groups
+        run: python3 scripts/check_pnp_61_64_source_answers.py

@@ -14,7 +14,7 @@ Each of four original archived Markdown files and the corresponding Q097–Q100 
 
 ## Bounded replay and provenance
 
-New read-only source-hash-pinned checker: [scripts/check_pnp_97_98_source_answers.py](../../scripts/check_pnp_97_98_source_answers.py). It asserts original Git blobs for Q097, Q098 and the supplied answer key, extracts original reference SQL at runtime and replays it **unchanged** with SQLite. It verifies **two original archived output illustrations, two independent synthetic fixture groups and two empty-input boundaries**. These are source-key tests, never saved learner attempts or provider-grader results.
+New read-only source-hash-pinned checker: [scripts/check_pnp_97_98_source_answers.py](../scripts/check_pnp_97_98_source_answers.py). It asserts original Git blobs for Q097, Q098 and the supplied answer key, extracts original reference SQL at runtime and replays it **unchanged** with SQLite. It verifies **two original archived output illustrations, two independent synthetic fixture groups and two empty-input boundaries**. These are source-key tests, never saved learner attempts or provider-grader results.
 
 The previous conservative **89/205** bounded supplied-key execution tally can become **91/205** only once matching main-commit GitHub Actions CI is independently verified. Q084's native PostgreSQL ROLLUP is still only partially reconstructed. Q089/Q090/Q091/Q093/Q095/Q096/Q099/Q100 and remaining unsatisfied IDs need individual runtime work. Full original commerce dataset, rendered source-PDF parity, native PostgreSQL, remaining Python/Bosscoder/W3Schools course checks, all other DE runtimes, privacy/licensing, unresolved semantic issues and final source-to-concept signoff remain open.
 

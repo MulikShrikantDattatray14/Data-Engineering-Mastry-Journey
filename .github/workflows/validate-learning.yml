@@ -364,3 +364,11 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_95_native_postgres.py
+      - name: Replay PNP Q096 slow and supplied sargable SQL natively and inspect synthetic EXPLAIN/index probes
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_96_native_postgres.py

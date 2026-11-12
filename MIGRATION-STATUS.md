@@ -1,5 +1,15 @@
 # Migration and Quality Status
 
+## CURRENT — 12 November 2026: Advanced A081–A090 source-pinned inspection + 20 reviewer SQLite fixtures (PARTIAL)
+
+- [x] **Individually inspected A081–A090 preserved Markdown questions** and pinned all ten original Git blob SHAs. Their locally illustrated examples, shared schema and PDF p.16–17 citations were inspected; the ten original historical `NOT SOLVED YET` records, saved SQLite/SQL Server `Pending` answers and official placeholder `Pending` remain unchanged. [Ten-question evidence ledger](01.%20SQL%20Mastery/PNP-ADVANCED-81-90-PARTIAL-INDEPENDENT-AUDIT.md). **PDF page claims are source attributions, NOT verified PDF/official MySQL answer parity.**
+- [x] **Added source-blob-pinned read-only Python/SQLite checker and registered it in CI**: [scripts/check_pnp_advanced_81_90_sources.py](scripts/check_pnp_advanced_81_90_sources.py). Twenty bounded reviewer-authored fixtures cover calendar/year-month streaks, duplicate days/IDs, NULL keys/timestamps, earliest-payment ties, delete dedup within fresh in-memory fixtures, duplicate group/excess metrics, and latest snapshot timestamps/versions. **Candidate SQL is auditor-authored, not official source SQL or learner work.** Actual CI result and any failures must be independently checked before claiming a CI pass.
+- [ ] **Unresolved:** Native MySQL A088 modifying-target subquery error and MySQL-safe rewrite (SQLite cannot authenticate it); A084 `seat_bookings` and A090 `customer_snapshots` absent from shared schema; original MySQL provider answers, PDF page/dataset parity, NULL/stale statuses and deterministic tie policies, production transaction safety. The conservative P-series supplied-key execution count remains **93/205 total IDs**; reviewer A-series fixtures do not increase it.
+- [ ] **Full independent signoff STILL NOT MET:** A091–A100/X001–X005, seven unresolved P-series native/semantic checks, remaining mentorship Python, Bosscoder/W3Schools and DE subject audits, licensing/privacy and full source-to-concept final acceptance. Issue #1 remains OPEN. **Do NOT sync** the separate ChatGPT Library learner-study record to GitHub until completed full audit signoff plus passing comprehensive CI. No grades, provider answers or mastery are inferred.
+
+---
+
+
 ## CURRENT — 12 November 2026: A071–A080 original source review and 20 bounded reviewer fixtures (PARTIAL)
 
 - [x] **Ten preserved A071–A080 original Markdown statements individually inspected and original Git-blob SHA pinned**, including task, locally authored illustrations, seven-table schema, original `NOT SOLVED YET`, learner answer Pending and official answer Pending. Eight records are in Windowing, A078 is in SubQueries, and A080 is in Gaps and Islands. [Question-level evidence ledger](<01. SQL Mastery/PNP-ADVANCED-71-80-PARTIAL-INDEPENDENT-AUDIT.md>). Original Advanced PDF pp.14–16 and supplied MySQL answer text have **not** been authenticated or independently compared.

@@ -133,9 +133,10 @@ def check():
     early, finished = execute(sql, partial), execute(sql, complete)
     assert early[0] == ("2025-01-01", 1, 100.0, 100.0, 100.0, None), early
     assert finished[0] == ("2025-01-01", 1, 100.0, 100.0, 100.0, 100.0), finished
-    assert early[1] == finished[1] == (
-        "2026-01-01", 1, None, None, None, None)
-    print("PASS Q091 ORIGINAL_KEY midmonth vs last-day cohort-maturity boundary")
+    assert early[1] == ("2026-01-01", 1, None, None, None, None), early
+    assert finished[1] == ("2026-01-01", 1, 20.0, None, None, None), finished
+    print("PASS Q091 ORIGINAL_KEY midmonth vs last-day cutoff; Q1-2026 m0 "
+          "becomes mature only at March month-end")
 
     assert execute(sql, []) == [], "empty Orders must have no cohorts"
     print("PASS Q091 ORIGINAL_KEY empty Orders boundary")

@@ -236,3 +236,6 @@ jobs:
 
       - name: Audit pinned PNP Q096 slow vs supplied sargable report on four SQLite fixtures and plan evidence
         run: python3 scripts/check_pnp_96_source_answers.py
+
+      - name: Verify all 205 actual PNP P/A/X source IDs and 100 supplied-key sections
+        run: python3 scripts/check_pnp_source_inventory.py

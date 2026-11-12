@@ -257,3 +257,5 @@ jobs:
 
       - name: Audit source-pinned A051-A060 and 20 synthetic window/rank/date fixtures
         run: python3 scripts/check_pnp_advanced_51_60_sources.py
+      - name: Audit source-pinned A061-A070 and 20 calendar/window/peer reviewer SQLite fixture groups
+        run: python3 scripts/check_pnp_advanced_61_70_sources.py

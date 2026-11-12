@@ -147,7 +147,7 @@ def main():
     check_case("A054","archived percentile rank",EMP,
         {"employees":e([(1,10,40000),(2,10,60000),(3,10,80000)])},
         [(1,40000,0.0),(2,60000,0.5),(3,80000,1.0)])
-    check_case("A054","two low-salary peers share percentile; singleton zero",EMP,
+    check_case("A054","two low-salary peers share percentile and max is one",EMP,
         {"employees":e([(2,10,100),(1,10,100),(3,10,300)])},
         [(1,100,0.0),(2,100,0.0),(3,300,1.0)])
     check_case("A055","archived cumulative fraction includes salary peers",EMP,

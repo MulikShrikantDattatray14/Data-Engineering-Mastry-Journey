@@ -285,7 +285,7 @@ jobs:
         run: python3 scripts/check_pnp_89_source_incremental.py
 
   native_postgres_pnp_84_90:
-    name: Source-pinned native PostgreSQL 16 Q084/Q090 (partial audit)
+    name: Native PostgreSQL 16 P084/P089/P090/P091/P093/P100 source-key audit (partial)
     runs-on: ubuntu-latest
     services:
       postgres:

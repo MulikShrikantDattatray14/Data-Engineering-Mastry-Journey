@@ -27,3 +27,21 @@ Additional open interpretations: where two empty baskets should count as identic
 Native PostgreSQL 16 run of the unaltered query, actual source PDF pp.186–189, complete original dataset and authenticated provider output may alter the grading assessment. Validate a revised denominator policy with provider before suggesting modifications to archived answer. Q084 native ROLLUP and Q089/Q090/Q099/Q100 and the other known P-series gaps still require final verification. Previous **93/205 conservative passing supplied-key count is unchanged:** a checker that successfully reproduces a spec contradiction does **not** make Q093 a passed output-contract verification.
 
 Auditor-controlled checker, new evidence ledger, workflow, and additive status log only; preserve all source archives, historical learner work, canonical foundation notes, and deferred ChatGPT Library learner record unchanged. Issue #1 remains OPEN pending independent entire-source audit, privacy/licensing review, cross-source concept signoff, and final comprehensive CI.
+
+---
+
+## Native PostgreSQL 16.15 addendum — 13 November 2026 (PARTIAL)
+
+**New independent scope:** [exact original Q093 supplier-key native runner](../scripts/check_pnp_93_native_postgres.py) reads and Git-blob-pins the archived question `2b53cdb94d64cb19581be48c9af6f0a8670b72c2` and supplier Q1–Q100 key `7912c8e676621c513e0b635a40c6ee299404676e`, extracts untouched Q93 SQL, and executes **native** `STRING_AGG ORDER BY`, `BOOL_AND`, row-wise `IS NOT DISTINCT FROM` and FILTER aggregates on PostgreSQL 16.15 (server version `160015`). All data and tables are disposable PostgreSQL TEMP fixtures; this makes no mutations to archived records, learning progress or canonical notes.
+
+**Independently inspected native logs:** [Actions run 43289920993](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43289920993) native job **SUCCESS**, with six fixture groups:
+- Original illustrated two-order pair `(same_day_pairs=1, basket=1, amount=1, exact=1)` PASS.
+- Independent three same-day pairs across five orders `(3,1,1,0)` PASS; day/customer isolation preserved.
+- Empty Orders `(0,0,0,0)` PASS.
+- Same-day equal header pair with **one absent OrderDetails row** yields `(0,0,0,0)` (**source contract denominator discrepancy reproduced**, expected header pair count is 1).
+- Two same-day equal-amount orders with **NULL Quantity** yield `(0,0,0,0)` (**denominator discrepancy reproduced**).
+- Matching baskets and NULL amounts yield `(pairs=1,basket=1,amount=0,exact=1)` (**NULL equality policy inconsistency reproduced**).
+
+**Material conclusion:** these three previously SQLite-derived source/key divergences are now reproduced directly by the **unmodified** supplier PostgreSQL key, not an adapter. The `JOIN signatures` and `WHERE sg.basket_known` prefilter discards order pairs for the requested all-orders denominator. In contrast, native row-wise null-safe equality counts NULL-header exact copies while `=` does not count NULL amounts. Requires provider/business semantics, original PDF pp.186–189 and full dataset parity; **not** an authenticated official answer failure or a learner completion.
+
+**Evidence tiers:** indexed YES; statement/key inspected YES; bounded native synthetic fixture checks PASSED for samples and discrepancies; official answer verified **NO**; learner independently solved **NO**. Original Pending badges/attempts preserved. The conservative **94/205** clean source-key tally remains unchanged, Issue #1 OPEN, pending Library learning record UNSYNCED until complete audit and comprehensive final CI.

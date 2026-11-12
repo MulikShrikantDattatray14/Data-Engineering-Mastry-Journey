@@ -274,3 +274,6 @@ jobs:
         run: python3 scripts/check_pnp_91_source_cohort.py
       - name: Check source-pinned Q093 duplicate-submission supplied key and document unknown-basket pair gaps
         run: python3 scripts/check_pnp_93_source_pairs.py
+
+      - name: Replay original Q099 weekly anomaly supplied key on 5 date/calendar/STDDEV boundary groups
+        run: python3 scripts/check_pnp_99_source_anomaly.py

@@ -108,7 +108,7 @@ def case(sid,label,schema,rows,expected,broken=None,input_value=None):
                 raise AssertionError("A043 archived invalid SQL unexpectedly succeeded")
         got=db.execute(REVIEWER[sid],(input_value,) if sid=="A050" else ()).fetchall()
         assert got==expected,(sid,label,got,expected)
-    print("PASS",sid,label,"(reviewer SQLite; A043 additionally source broken SQL)")
+    print("PASS",sid,label,"(reviewer SQLite"+("; A043 original broken query reproduced" if sid=="A043" else "")+")")
 
 def main():
     broken=check_sources()

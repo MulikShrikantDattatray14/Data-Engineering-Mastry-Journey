@@ -266,3 +266,6 @@ jobs:
 
       - name: Audit pinned A091-A100 NULL logic and date questions; twenty reviewer-only SQLite cases
         run: python3 scripts/check_pnp_advanced_91_100_sources.py
+
+      - name: Audit source-pinned X001-X005 ratings questions and ten reviewer-only SQLite cases
+        run: python3 scripts/check_pnp_extra_01_05_sources.py

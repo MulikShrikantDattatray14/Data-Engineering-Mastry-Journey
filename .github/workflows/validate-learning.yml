@@ -285,7 +285,7 @@ jobs:
         run: python3 scripts/check_pnp_89_source_incremental.py
 
   native_postgres_pnp_84_90:
-    name: Native PostgreSQL 16 P084/P089/P090/P091/P093/P100 source-key audit (partial)
+    name: Native PostgreSQL 16 P084/P089/P090/P091/P093/P099/P100 source-key audit (partial)
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -348,3 +348,11 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_100_native_postgres.py
+      - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_99_native_postgres.py

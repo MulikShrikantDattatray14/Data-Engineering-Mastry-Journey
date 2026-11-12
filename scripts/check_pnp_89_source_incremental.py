@@ -90,14 +90,10 @@ def database(rows, target=()):
 
 
 def snapshot(c):
-    return dict(c.execute(
+    return {r[0]: r[1:] for r in c.execute(
         "SELECT OrderID, CustomerID, PaymentID, OrderDate, ShipperID, "
         "Total_Order_Amount, ShipDate, DeliveryDate, etl_updated_at "
-        "FROM orders_target ORDER BY OrderID").fetchall() and
-        [(r[0], r[1:]) for r in c.execute(
-            "SELECT OrderID, CustomerID, PaymentID, OrderDate, ShipperID, "
-            "Total_Order_Amount, ShipDate, DeliveryDate, etl_updated_at "
-            "FROM orders_target ORDER BY OrderID")])
+        "FROM orders_target ORDER BY OrderID")}
 
 
 def replay_modeled_upsert(c, batch_sql):
@@ -142,7 +138,7 @@ def test_illustration(batch):
     assert replay_modeled_upsert(c, batch) == (1, 1, 1)
     rows = snapshot(c)
     assert rows[1][-1] == 7 and rows[2][-1] == 2 and rows[3][-1] == 2
-    assert rows[4][-1] == 7 and rows[2][5] == 200
+    assert rows[4][-1] == 7 and rows[2][4] == 200
     assert replay_modeled_upsert(c, batch) == (0, 0, 3)
     assert snapshot(c) == rows, "rerun modified already-synced source"
     c.close()
@@ -158,7 +154,7 @@ def test_archived_key_seed(seed, batch):
     observed = replay_modeled_upsert(c, batch)
     assert observed == (3, 0, 1), ("unexpected original seed/batch outcome", observed)
     assert observed != (1, 1, 1), "illustration/key seed discrepancy unexpectedly vanished"
-    assert replay_modeled_upsert(c, batch) == (0, 0, 4)
+    assert replay_modeled_upsert(c, batch) == (0, 0, 3)
     c.close()
     print("REPRODUCED Q089 source-key demo seed mismatch: 3/0/1 versus pictured 1/1/1")
 

@@ -283,3 +283,36 @@ jobs:
 
       - name: Audit PNP Q089 immutable-key incremental batch and seeded-demo discrepancy (SQLite plus modeled UPSERT)
         run: python3 scripts/check_pnp_89_source_incremental.py
+
+  native_postgres_pnp_84_90:
+    name: Source-pinned native PostgreSQL 16 Q084/Q090 (partial audit)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: audit
+          POSTGRES_PASSWORD: audit
+          POSTGRES_DB: audit
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U audit -d audit"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - name: Replay original SQL Q084 ROLLUP and Q090 LATERAL on disposable native PostgreSQL 16 tables
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: |
+          python3 -m venv /tmp/pnp-native-pg
+          /tmp/pnp-native-pg/bin/python -m pip install --disable-pip-version-check 'psycopg[binary]==3.2.10'
+          /tmp/pnp-native-pg/bin/python scripts/check_pnp_84_90_native_postgres.py

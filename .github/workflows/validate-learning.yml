@@ -269,3 +269,6 @@ jobs:
 
       - name: Audit source-pinned X001-X005 ratings questions and ten reviewer-only SQLite cases
         run: python3 scripts/check_pnp_extra_01_05_sources.py
+
+      - name: Audit original PNP Q091 cohort source-key maturity and documented sample mismatch
+        run: python3 scripts/check_pnp_91_source_cohort.py

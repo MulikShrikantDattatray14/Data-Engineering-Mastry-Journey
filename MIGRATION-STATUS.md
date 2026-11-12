@@ -1,5 +1,13 @@
 # Migration and Quality Status
 
+## CURRENT — 12 November 2026: Extra SQL X001–X005 five-source audit + reviewer-only rating fixtures (PARTIAL)
+
+- [x] **Individually inspected and source-blob-pinned X001–X005 original preserved Markdown prompts** plus the archived PrepNPlaced Commerce Dataset v2 README. The README explicitly says these five ratings tasks have **NO official answer key**; the provider-key verification state is not available, and none was fabricated. All five learner statuses remain `NOT SOLVED YET` / `Pending`. [Question-level X001–X005 ledger](<01. SQL Mastery/PNP-EXTRA-01-05-PARTIAL-INDEPENDENT-AUDIT.md>).
+- [x] **Added isolated read-only reviewer SQL regression checker** [scripts/check_pnp_extra_01_05_sources.py](scripts/check_pnp_extra_01_05_sources.py) plus CI registration: ten local/boundary SQLite fixture groups across missing categories, brand minimum 20, odd/even median units, rating-band averages and unrated/never-ordered products. Test results must be confirmed from real CI logs, **not merely existence of the checker**. No original archives or historical learner attempts changed.
+- [ ] **Remaining:** actual eight-table source dataset execution on native PostgreSQL/MySQL, rating-generated-data/joins/NULL/median/return policies, full original PDF and answer output parity for P-series, seven unresolved P-series native/semantic gaps, outstanding Python/Bosscoder/W3Schools/other Data Engineering source checks, integrity/privacy/licensing, cross-source mapping and comprehensive CI. Conservative original-key P-series tally stays **93/205** and is not increased by X-series reviewer SQL. All five source exercises are still unsolved by the learner. **Issue #1 OPEN**; ChatGPT Library pending learning record stays **UNSYNCED** until completed full audit and successful final CI.
+
+---
+
 ## CURRENT — 12 November 2026: Advanced A091–A100 source-pinned NULL/date review and reviewer fixture checker (PARTIAL)
 
 - [x] **Individually retrieved and inspected all ten A091–A100 preserved source records**: task text, shared schema, local examples, PDF p.18–19 attributions, original `NOT SOLVED YET` badges, both archived learner solution `Pending` fields and provider solution placeholder `Pending`. Exact original Git blob SHAs, ten question-specific semantics and limitations are documented in [A091–A100 independent evidence ledger](<01. SQL Mastery/PNP-ADVANCED-91-100-PARTIAL-INDEPENDENT-AUDIT.md>). These page references are attributed by the archive; **the original PDF/MySQL provider answers have NOT been checked**.

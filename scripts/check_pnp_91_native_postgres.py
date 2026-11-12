@@ -32,7 +32,7 @@ INSERT = ("INSERT INTO Orders (OrderID, CustomerID, OrderDate, Total_Order_Amoun
 
 def git_blob(path: Path) -> str:
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def original_sql() -> str:
@@ -40,12 +40,12 @@ def original_sql() -> str:
     assert git_blob(KEY) == KEY_BLOB, "original supplier Q91 answer key changed"
     task = QUESTION.read_text(encoding="utf-8-sig")
     for token in ("# PNP Q091.", "NOT SOLVED YET",
-                  "## My solution — SQLite\\n\\nPending",
-                  "## Official solution\\n\\nPending",
+                  "## My solution — SQLite\n\nPending",
+                  "## Official solution\n\nPending",
                   "2025-01-01", "2026-01-01"):
-        assert token.replace("\\n", "\n") in task, ("archived task/status drift", token)
+        assert token.replace("\n", "\n") in task, ("archived task/status drift", token)
     key_text = KEY.read_text(encoding="utf-8-sig")
-    match = re.search(r"(?ms)^-- Q91\\. [^\\n]*\\n(.*?)(?=^-- Q92\\.|\\Z)",
+    match = re.search(r"(?ms)^-- Q91\. [^\n]*\n(.*?)(?=^-- Q92\.|\Z)",
                       key_text)
     assert match, "cannot find original Q91 key"
     sql = match.group(1).strip()

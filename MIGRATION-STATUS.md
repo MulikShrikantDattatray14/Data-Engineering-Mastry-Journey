@@ -1,5 +1,16 @@
 # Migration and Quality Status
 
+## CURRENT — 12 November 2026: P089 source-key incremental ETL demo seed mismatch (PARTIAL)
+
+- [x] **Individually inspected original Q089:** P089 question Git blob dc820d26afb08381d923f2cd215a0d64297a8d91, original supplied PostgreSQL Q89 answer in key blob 7912c8e676621c513e0b635a40c6ee299404676e. Preserved NOT SOLVED YET and Pending fields. [Evidence ledger](01.%20SQL%20Mastery/PNP-Q089-INCREMENTAL-LOAD-PARTIAL-INDEPENDENT-AUDIT.md).
+- [x] **Bounded source-derived fixture replay:** new [checker](scripts/check_pnp_89_source_incremental.py) executes original key's extracted 14-day-back seed and 21-day watermark/batch CTE on SQLite with asserted date-syntax substitutions; PostgreSQL's data-modifying CTE / ON CONFLICT / RETURNING is **separately modeled in Python, NOT natively executed**. Four check groups: task's illustrated target 1 inserted/1 updated/1 unchanged then no-op rerun; **original key's own seed yields 3 inserted/0 updated/1 unchanged on the very same source rows**, not pictured 1/1/1; 21-day inclusive boundary / NULL dates / unchanged timestamps; empty source. This is an **archived demonstration seed-assumption mismatch**, not a provider-confirmed answer failure.
+- [x] **First CI and log check:** script/workflow main SHA 517385c554c3d2558afb43b0cfa3ce4cccb6e1bd, [Actions 43258093063](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43258093063), **94/94 validation job steps passed**, including all four Q089 groups and original Git-blob assertions. Final documentation-head CI must also pass before claiming this tranche's validation final.
+- [ ] **Unresolved and classification:** Q089 indexed/statement inspected and four bounded SQLite seed/batch plus modeled-UPSERT fixtures passed, but **NO full native PostgreSQL source-key pass, no official/provider answer verification, no independently solved learner exercise**. Require original database runtime with complete schema/data and transaction-safe ON CONFLICT/RETURNING/timestamps, full PDF/sample reconciliation, and other six P-series semantic/native gates. Conservative passing P-series supplied-key count remains **94/205 overall source IDs**, unchanged by the modeled Q089 run.
+- [ ] **Issue #1 stays OPEN** with source-to-concept, Python/Bosscoder/W3Schools/other DE, licensing/privacy, and comprehensive CI/signoff pending. User's separate ChatGPT Library pending learner-study record remains **UNSYNCED with GitHub**, and no learning-session edits, historical learner attempts, original archives or canonical notes were altered.
+
+---
+
+
 ## CURRENT — 12 November 2026: P100 supplied-key eight-KPI scorecard discrepancy audit (PARTIAL)
 
 - [x] **Original sources independently read and pinned:** archived P100 monthly scorecard Markdown Git blob `1c6b25889256fa585ef272b581a676a98759e555` (five-order input, eight KPI output rows, November/December same-day 28-day windows, PDF pp.210–213 *attribution*, unchanged `NOT SOLVED YET` and Pending answer fields), plus bundled Q100 PostgreSQL key blob `7912c8e676621c513e0b635a40c6ee299404676e`. [Individual P100 evidence](<01. SQL Mastery/PNP-Q100-SOURCE-KPI-PARTIAL-INDEPENDENT-AUDIT.md>) records five auditor fixture groups separately from source and official-answer tiers.

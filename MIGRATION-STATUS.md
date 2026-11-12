@@ -1,5 +1,15 @@
 # Migration and Quality Status
 
+## CURRENT — 12 November 2026: A071–A080 original source review and 20 bounded reviewer fixtures (PARTIAL)
+
+- [x] **Ten preserved A071–A080 original Markdown statements individually inspected and original Git-blob SHA pinned**, including task, locally authored illustrations, seven-table schema, original `NOT SOLVED YET`, learner answer Pending and official answer Pending. Eight records are in Windowing, A078 is in SubQueries, and A080 is in Gaps and Islands. [Question-level evidence ledger](<01. SQL Mastery/PNP-ADVANCED-71-80-PARTIAL-INDEPENDENT-AUDIT.md>). Original Advanced PDF pp.14–16 and supplied MySQL answer text have **not** been authenticated or independently compared.
+- [x] **Twenty bounded SQLite fixture groups implemented (two per question)** in [read-only original-hash-pinned reviewer checker](scripts/check_pnp_advanced_71_80_sources.py): payroll NULL/zero; odd/even median; rounded-up top 20%; product ties; latest payment/date tie; top-two cities including no-orders; second latest order; top-three **distinct** salaries without a window; latest complete order without a CTE; min-to-max missing ID ranges and duplicates. All solution queries are **auditor-authored** and not supplier SQL, learner submissions, graded answers, or mastery. The exact final-head CI result belongs in Issue #1 after independent execution and log verification.
+- [ ] **Open ambiguities** include tied salaries/ranks, zero/NULL salaries, missing/zero-spend customers, timestamp ties, payment status, order status, native MySQL/MySQL PDF parity, and min/max ID-bound semantics. No original full datasets, provider authentication, source MySQL engine or original PDF pages checked. A081–A100/X001–X005, seven remaining P-series native/semantic checks, Python/Bosscoder/W3Schools/other DE, licensing/privacy and source-to-concept signoff remain open.
+- [ ] **Conservative P-series source-key bounded replay remains 93/205**, unaffected by these reviewer A-series tests. Keep GitHub Issue #1 OPEN; no interactive learner-study GitHub synchronization before complete independent audit and final successful CI. No original source archive, historical learner answer, progress record or canonical foundation note intentionally changed.
+
+---
+
+
 ## CURRENT — 12 November 2026: Advanced A061–A070 individually inspected and 20 reviewer SQLite cases (PARTIAL)
 
 - [x] **All ten original A061–A070 source Markdown records independently read and pinned to immutable Git blob SHAs**: tasks, seven-table schema, locally authored sample tables, PDF p.12–14 *attribution* and historical **NOT SOLVED YET** / learner and official answer **Pending**. [Detailed ten-ID evidence ledger](<01. SQL Mastery/PNP-ADVANCED-61-70-PARTIAL-INDEPENDENT-AUDIT.md>) explicitly distinguishes indexed, statement-inspected, bounded reviewer synthetic, unverified provider answer and independently unsolved learner coursework.

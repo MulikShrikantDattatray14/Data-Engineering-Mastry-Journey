@@ -63,13 +63,14 @@ def run(conn, sql, orders, customers=(), shippers=()):
         conn.execute(CREATE_ORDERS)
         conn.execute(CREATE_CUSTOMERS)
         conn.execute(CREATE_SHIPPERS)
-        if orders:
-            conn.executemany(
-                "INSERT INTO Orders VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", orders)
-        if customers:
-            conn.executemany("INSERT INTO Customers VALUES (%s,%s)", customers)
-        if shippers:
-            conn.executemany("INSERT INTO Shippers VALUES (%s,%s)", shippers)
+        with conn.cursor() as cur:
+            if orders:
+                cur.executemany(
+                    "INSERT INTO Orders VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", orders)
+            if customers:
+                cur.executemany("INSERT INTO Customers VALUES (%s,%s)", customers)
+            if shippers:
+                cur.executemany("INSERT INTO Shippers VALUES (%s,%s)", shippers)
         # Immutable original PostgreSQL key, without any SQL rewrites:
         return conn.execute(sql).fetchall()
 

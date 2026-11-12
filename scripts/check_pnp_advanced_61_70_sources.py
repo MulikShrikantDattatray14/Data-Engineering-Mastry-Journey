@@ -201,7 +201,7 @@ def main():
       (1,1,"2026-01-01",10),(2,1,"2026-01-03",20),
       (3,1,"2026-01-07",40)]),
       [("2026-01-07",70,10.0)])
-    check("A065","leap across February-to-March and rolling eighth day",order_rows([
+    check("A065","February-to-March calendar boundary and rolling eighth day",order_rows([
       (1,1,"2026-02-27",7),(2,1,"2026-03-01",21),
       (3,1,"2026-03-06",14)]),
       [("2026-03-05",28,4.0),("2026-03-06",35,5.0)])

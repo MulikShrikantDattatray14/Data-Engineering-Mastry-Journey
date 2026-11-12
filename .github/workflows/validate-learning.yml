@@ -263,3 +263,6 @@ jobs:
         run: python3 scripts/check_pnp_advanced_71_80_sources.py
       - name: Audit immutable A081-A090 source and twenty bounded reviewer-only SQLite cases
         run: python3 scripts/check_pnp_advanced_81_90_sources.py
+
+      - name: Audit pinned A091-A100 NULL logic and date questions; twenty reviewer-only SQLite cases
+        run: python3 scripts/check_pnp_advanced_91_100_sources.py

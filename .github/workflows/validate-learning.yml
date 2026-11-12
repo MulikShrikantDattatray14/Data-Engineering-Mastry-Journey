@@ -316,3 +316,12 @@ jobs:
           python3 -m venv /tmp/pnp-native-pg
           /tmp/pnp-native-pg/bin/python -m pip install --disable-pip-version-check 'psycopg[binary]==3.2.10'
           /tmp/pnp-native-pg/bin/python scripts/check_pnp_84_90_native_postgres.py
+      - name: Forensic native PostgreSQL 16 Q089 original incremental-load key and guarded syntax control
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_89_native_postgres.py
+

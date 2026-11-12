@@ -66,7 +66,7 @@ def sqlite_date_translation(sql: str) -> str:
         sql, "DATE_TRUNC('quarter', fo.first_month)::date",
         "date(fo.first_month, 'start of year', printf('+%d months', "
         "3 * CAST((CAST(strftime('%m', fo.first_month) AS INTEGER) - 1) / 3 "
-        "AS INTEGER)))", count=2)
+        "AS INTEGER)))", count=3)
     sql = replace_exact(
         sql, "EXTRACT(YEAR  FROM o.OrderDate) - EXTRACT(YEAR  FROM fo.first_month)",
         "CAST(strftime('%Y', o.OrderDate) AS INTEGER) - "

@@ -245,3 +245,6 @@ jobs:
 
       - name: Audit ten source-pinned A011-A020 questions and eight saved A012/A014 SQLite fixture groups
         run: python3 scripts/check_pnp_advanced_11_20_sources.py
+
+      - name: Check source-pinned A021-A030 prompts and 20 auditor-authored SQLite principle fixtures (not official answers)
+        run: python3 scripts/check_pnp_advanced_21_30_sources.py

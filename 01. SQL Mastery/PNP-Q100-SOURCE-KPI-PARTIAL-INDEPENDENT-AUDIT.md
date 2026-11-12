@@ -28,3 +28,23 @@ Checker fixture PASS claims require exact-commit GitHub Actions confirmation. De
 ## Remaining and preservation
 
 P100 remains **partial** pending native PostgreSQL, authentic PDF and full Commerce v2 dataset parity, exact label policy, absent line/no-prior treatment and final reviewed correction. The existing conservative tally **94/205 source IDs with bounded passing P-series key tests must not increase for P100**, because it exposes nonconforming outcomes; this does not represent 94 authenticated official solutions or learner solves. Other P-series gates, A/X source-answer verification, Python mentorship, Bosscoder, W3Schools, other Data Engineering curriculum, privacy/licensing and full source-to-concept signoff remain open. Original source archives, historical learner attempts/progress, foundation notes and learner completion flags are untouched. Issue #1 stays **OPEN**. Separate ChatGPT Library pending study record remains **UNSYNCED** until independently completed full audit and final comprehensive green CI.
+
+---
+
+## Native PostgreSQL 16.15 independent addendum — 13 November 2026
+
+**Source provenance and preserved history:** Re-inspected immutable P100 statement Git blob `1c6b25889256fa585ef272b581a676a98759e555` and original 100-key PostgreSQL SQL Git blob `7912c8e676621c513e0b635a40c6ee299404676e`. The historical archived badge still says **NOT SOLVED YET**; learner and purported official-solution fields in the question record remain **Pending**. Supplier ZIP SQL is a *supplied source answer*, not a provider-marked learner solution.
+
+**Independent execution advancement:** [Native P100 checker](../scripts/check_pnp_100_native_postgres.py) SHA-guards both source blobs and extracts Q100 unmodified. It executes the original PostgreSQL SQL on disposable `CREATE TEMP TABLE ... ON COMMIT DROP` fixtures. No SQLite translations, no canonical notes, no original archive writes. [Native GitHub Actions execution 43299631570](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43299631570), native job ID `131467009050`: independently inspected decoded logs showing PostgreSQL `server_version_num=160015` and all five groups below. The code-head run's full other-job conclusion and later documentation-head CI require separate confirmation.
+
+| Original-key native fixture | Observed output / audit meaning |
+|---|---|
+| Original five orders, Nov/Dec 1–28 | Eight numerical KPI values, percent changes and both windows agree with source illustration; seventh literal KPI name differs: expected `On-time delivery`, key yields `On-time delivery (<= 7 days)` |
+| Missing OrderDetails in prior **or** latest period | Reproduced **zero** returned KPI rows even though `Orders` contains order headers in both periods; source INNER JOIN removes an entire period |
+| Latest orders but no prior-month orders; also empty Orders | Both yield **zero** KPI rows; for latest-only the task's desired no-prior baseline rendering remains unspecified |
+| Feb 28 / Mar 31 with delivery preceding OrderDate | Eight rows, correct capped windows; erroneous pre-order delivery excluded from on-time denominator |
+| Matching OrderDetails rows with NULL Quantity | Eight KPI rows remain, but Units prior/latest are NULL; distinguish from fully missing detail rows |
+
+**Evidence tiers:** P100 is `indexed`, `statement individually inspected`, and `original supplied SQL native synthetic-tested`, with the original sample numerical values matched and **three output/contract gaps reproduced** (label, missing details, no-prior display policy). This is **not** official-answer verified; no learner independently solved it; no mastery or duration can be inferred. Even successful negative regressions do **not** make P100 a clean full-task answer. The conservative 94/205 clean bounded supplied-key tally must stay unchanged.
+
+**Remaining:** Provider PDF pp.210–213 *rendered* parity and complete source Commerce Dataset v2, exact business policy for missing detail rows / absent prior period / null-unit semantics, corrective answer review, all other SQL source-key gaps, Bosscoder, Python mentorship, W3Schools, other DE subjects, source-to-concept provenance, privacy/licensing and comprehensive audit-wide CI/signoff. Issue #1 stays OPEN. The separate ChatGPT Library learner record and later study evidence remain **UNSYNCED** until full audit signoff plus final green CI. Original archives, history and canonical notes were not modified.

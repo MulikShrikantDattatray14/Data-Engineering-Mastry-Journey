@@ -272,3 +272,5 @@ jobs:
 
       - name: Audit original PNP Q091 cohort source-key maturity and documented sample mismatch
         run: python3 scripts/check_pnp_91_source_cohort.py
+      - name: Check source-pinned Q093 duplicate-submission supplied key and document unknown-basket pair gaps
+        run: python3 scripts/check_pnp_93_source_pairs.py

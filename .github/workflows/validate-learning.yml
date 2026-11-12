@@ -242,3 +242,6 @@ jobs:
 
       - name: Audit 10 source-pinned Advanced SQL questions; replay archived A004/A005 answers on 8 SQLite fixtures
         run: python3 scripts/check_pnp_advanced_01_10_sources.py
+
+      - name: Audit ten source-pinned A011-A020 questions and eight saved A012/A014 SQLite fixture groups
+        run: python3 scripts/check_pnp_advanced_11_20_sources.py

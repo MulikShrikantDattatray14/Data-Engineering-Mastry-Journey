@@ -230,3 +230,6 @@ jobs:
         run: python3 scripts/check_pnp_92_94_source_answers.py
       - name: Replay exact archived PNP Q097-Q098 keys (2 original illustrations, 2 synthetic groups, 2 empty boundaries)
         run: python3 scripts/check_pnp_97_98_source_answers.py
+
+      - name: Audit source-pinned Q090 unpivot and Q095 category sales keys on source and synthetic fixtures
+        run: python3 scripts/check_pnp_90_95_source_answers.py

@@ -37,7 +37,7 @@ LABELS = (
 
 def git_blob(path):
     raw = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def extract_key():
@@ -49,7 +49,7 @@ def extract_key():
         assert marker in statement, marker
     assert "| On-time delivery | % |" in statement
     source = KEY.read_text(encoding="utf-8")
-    match = re.search(r"(?ms)^-- Q100\\.[^\\n]*\\n(.*?)(?=^-- Q\\d+\\.|\\Z)", source)
+    match = re.search(r"(?ms)^-- Q100\.[^\n]*\n(.*?)(?=^-- Q\d+\.|\Z)", source)
     assert match is not None, "Original Q100 answer block missing"
     sql = match.group(1).strip()
     assert sql.startswith("WITH anchor AS (") and sql.endswith(";")

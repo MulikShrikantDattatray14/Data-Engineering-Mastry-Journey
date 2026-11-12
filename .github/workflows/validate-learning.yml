@@ -251,3 +251,6 @@ jobs:
 
       - name: Inspect pinned A031-A040; check 20 bounded SQLite groups, including A035 original NULL-poison query
         run: python3 scripts/check_pnp_advanced_31_40_sources.py
+
+      - name: Audit source-pinned A041-A050; inspect 10 statements and assert 13 reviewer SQLite fixtures
+        run: python3 scripts/check_pnp_advanced_41_50_sources.py

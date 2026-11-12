@@ -277,3 +277,6 @@ jobs:
 
       - name: Replay original Q099 weekly anomaly supplied key on 5 date/calendar/STDDEV boundary groups
         run: python3 scripts/check_pnp_99_source_anomaly.py
+
+      - name: Replay immutable P100 KPI source key and reproduce missing-lines/label failures
+        run: python3 scripts/check_pnp_100_source_kpis.py

@@ -31,7 +31,7 @@ def read_sources():
     sources = {}
     for sid, (rel, sha) in PINS.items():
         data = (BASE / rel).read_bytes()
-        blob_sha = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+        blob_sha = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
         assert blob_sha == sha, f"{sid}: preserved original blob has changed"
         source = data.decode("utf-8")
         assert source.startswith(f"# Advanced Q{sid[1:]}. "), sid
@@ -43,17 +43,17 @@ def read_sources():
             assert "![SOLVED]" in source, sid
         else:
             assert "NOT SOLVED YET" in source, sid
-            assert "## My solution — SQLite\\n\\nPending." in source, sid
-            assert "## Official solution\\n\\nPending until" in source, sid
+            assert "## My solution — SQLite\n\nPending." in source, sid
+            assert "## Official solution\n\nPending until" in source, sid
         sources[sid] = source
     print("PASS: 10 original A011-A020 Git blobs intact; 2 historical solved, 8 pending")
     return sources
 
 def extract(source, heading):
-    pieces = source.split(heading + "\\n", 1)
+    pieces = source.split(heading + "\n", 1)
     assert len(pieces) == 2, f"missing {heading}"
-    section = pieces[1].split("\\n## ", 1)[0]
-    query = re.search(r"(?ms)^\x60\x60\x60sql[ \\t]*\\n(.*?)^\x60\x60\x60", section)
+    section = pieces[1].split("\n## ", 1)[0]
+    query = re.search(r"(?ms)^\x60\x60\x60sql[ \t]*\n(.*?)^\x60\x60\x60", section)
     assert query, f"no archived SQL under {heading}"
     return query.group(1).strip()
 

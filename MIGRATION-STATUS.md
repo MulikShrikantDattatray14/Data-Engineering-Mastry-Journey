@@ -1,5 +1,14 @@
 # Migration and Quality Status
 
+## CURRENT — 12 November 2026: Advanced A041–A050 independent source inspection and bounded SQLite fixtures (PARTIAL)
+
+- [x] **Original A041–A050 individually inspected and SHA-pinned**: original immutable Markdown task, local non-PDF illustration, seven-table schema, Advanced PDF p.9–10 attribution and unchanged NOT SOLVED YET / Pending learner and official fields. [Ten-question evidence ledger](<01. SQL Mastery/PNP-ADVANCED-41-50-PARTIAL-INDEPENDENT-AUDIT.md>) records each source SHA, exact sample interpretation, test status and unresolved policies. **No provider PDF/MySQL answer authenticated; no new learner completions.**
+- [x] **Thirteen bounded SQLite groups locally tested across A041, A043–A047 and A050** with reviewer-authored SQL: observed-month/year revenue, top-five RANK tie, order spine/item count, duplicate-payment conflict, exact 31-date recursive calendar, cyclic management graph with guard, and delimiter/empty-token policy. Only A043 also extracts/runs original archived *broken* SQL and reproduces a window-alias misuse error in SQLite. [Source-pinned read-only regression script](scripts/check_pnp_advanced_41_50_sources.py) is included in CI; **native MySQL and original PDF parity remain OPEN**.
+- [x] **Scoped auditor-only commits** add the checker, validation step and evidence ledger; original source archive, historical learner attempts/progress and canonical teaching notes remain untouched. CI for exact final documented main head will be checked separately; until then do **not** treat local passes or a previous green run as current commit verification.
+- [ ] **Open ambiguities:** A041 calendar-month vs observed-month average; A042 one-scan claim and employee vs department weighting; A043 ranking ties/dialect; A044 duplicate item identity; A045 conflicting same-timestamp payments; A046 MySQL recursion; A047 depth/cycle rules; A048 orphan/cycle/full-path behavior; A049 empty chart/multiple roots; A050 empty tokens and delimiters. A042/A048/A049 are statement-inspected ONLY, **not executable-verified**. Actual PDF pp.9–10 and original MySQL solutions remain unverified.
+- [ ] **Global audit still incomplete:** P-series original supplied-key count unchanged **93/205** (reviewer A-series tests do not increase it). A051–A100/X001–X005, seven remaining P-series native replays, all original datasets/PDF source parity, Python/Bosscoder/W3Schools and DE runtime, semantics, licensing/privacy and final source-to-concept integrity checks remain. Issue #1 stays OPEN. Defer separate ChatGPT Library learning-record sync and GitHub interactive study updates until full independent signoff and successful final CI.
+
+---
 
 ## CURRENT — 12 November 2026: Advanced A031–A040 source inspection and bounded SQLite replays (PARTIAL)
 

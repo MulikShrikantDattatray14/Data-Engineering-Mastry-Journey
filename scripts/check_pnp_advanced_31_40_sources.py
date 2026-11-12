@@ -144,7 +144,7 @@ def main():
     fixture("A034","duplicate orders, unlinked customers and NULL foreign keys",{"customers":[(10,"Asha"),(20,"Bela"),(30,"Cara")],
          "orders":[O(1,10),O(2,10),O(3,999),O(4,None),O(5,30)]},[(10,"Asha"),(30,"Cara")])
     fixture("A035","archived source NULL poison demonstration",{"employees":[(1,"Boss",None,1,0),(2,"Ada",1,1,0),(3,"Ben",1,1,0)]},([],[(2,"Ada"),(3,"Ben")]),broken)
-    fixture("A035","no NULL managers: original coincidentally works",{"employees":[(1,"A",2,1,0),(2,"B",1,1,0),(3,"C",1,1,0)]},([(3,"C")],[(3,"C")]),broken)
+    fixture("A035","no NULL managers: original coincidentally works",{"employees":[(1,"A",2,1,0),(2,"B",1,1,0),(3,"C",1,1,0)]},([(3,"C",1,1,0)],[(3,"C")]),broken)
     fixture("A036","archived local illustration",{"departments":[(10,"Sales"),(20,"Support")],
          "employees":[(1,"A",None,10,120000),(2,"B",None,10,80000),(3,"C",None,20,90000)]},[(10,"Sales")])
     fixture("A036","strict salary bound, NULL salary and orphan department",{"departments":[(10,"Sales"),(20,"Support"),(30,"Design")],

@@ -239,3 +239,6 @@ jobs:
 
       - name: Verify all 205 actual PNP P/A/X source IDs and 100 supplied-key sections
         run: python3 scripts/check_pnp_source_inventory.py
+
+      - name: Audit 10 source-pinned Advanced SQL questions; replay archived A004/A005 answers on 8 SQLite fixtures
+        run: python3 scripts/check_pnp_advanced_01_10_sources.py

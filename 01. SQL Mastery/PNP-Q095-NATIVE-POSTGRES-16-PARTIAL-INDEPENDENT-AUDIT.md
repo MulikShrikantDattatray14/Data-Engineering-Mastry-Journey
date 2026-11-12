@@ -23,13 +23,13 @@
 
 The source correction does not provide the requested written, exhaustive fault-by-fault row-count / total explanation. The conditional duplicate-name/Unmapped-label identity collisions require provider/business uniqueness policy and are not authenticated official-answer failures.
 
-**Execution confirmation gate:** Initial ledger lists asserted outcomes, not an independently confirmed native run; examine exact-commit Actions result, PostgreSQL version, SHA pins and native logs before marking fixture execution passed.
+**Execution now independently confirmed on native PostgreSQL 16.16:** source+workflow commit **b9e7fa3116abb4426e849ad6b6dcfc298de7c412** passed [GitHub Actions run 43322605189](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43322605189) (94/94 general validation steps and 13/13 native job steps SUCCESS, no failures/skips). Independently decoded native job **131546878000** confirms original-source Git SHA pins, server_version_num **160016**, both unchanged SQL queries, and all **four** fixture groups, including deliberately broken starter and conditional collision reproduction. Bounded original-key synthetic-tested (PASS for listed fixtures; contract ambiguity still OPEN), **not** provider-authenticated official answer or learner solve. Documentation-head final CI remains separately verifiable.
 
 ## Evidence levels and unfinished gates
 
 - **Indexed:** yes, part of preserved 205 P/A/X questions.
 - **Statement inspected:** yes, original Q095 statement, schema, sample, status, starter and supplier SQL individually read.
-- **Synthetic test passed:** only after independently reviewing the native CI results and decoded logs.
+- **Synthetic test passed:** YES, only within four verified native PostgreSQL 16.16 fixture groups (original key unmodified, checker CI inspected). This does not remove source/policy gaps.
 - **Official answer verified:** NO; the supplied key is not authenticated provider grading.
 - **Learner independently solved:** NO; the source remains NOT SOLVED YET / Pending.
 

@@ -29,3 +29,19 @@ Read-only [source-pinned Q091 checker](../scripts/check_pnp_91_source_cohort.py)
 **Indexed:** yes, Q091 exists in 205 source-question inventory. **Statement inspected:** yes, question and source key inspected independently. **Synthetic test passed:** yes, bounded original-key date translation with source mismatch and two boundary checks. **Official answer verified:** **NO**; the actual source/key contradicts its sample, and no native PostgreSQL/provider-grade/full-dataset parity. **Learner independently solved:** **NO**; preserved Pending records.
 
 Do not inflate the conservative 93/205 bounded source-key verification tally: a reproduced **failing source contract** is not a verified correct official output. Other Q084/Q089/Q090/Q093/Q099/Q100 native/semantic issues, source-PDF actual page parity, full provider datasets, other Python/Bosscoder/W3Schools/DE material, cross-source concept coverage, licensing/privacy and audit-wide CI/signoff remain unresolved. Keep [Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) open and **do not sync the separate ChatGPT Library learner-study record** until complete audit acceptance and successful final CI.
+
+---
+
+## Native PostgreSQL 16.15 addendum — 13 November 2026 (PARTIAL)
+
+**New independent scope:** [exact original supplier-key native runner](../scripts/check_pnp_91_native_postgres.py) pins the original Q091 question blob `cf11e56982938b3227f711e00534237f88d451aa` and original key blob `7912c8e676621c513e0b635a40c6ee299404676e`. It extracts and runs the untouched Q91 PostgreSQL SQL, with **no SQLite date translations**, against disposable PostgreSQL 16.15 TEMP Orders tables. Original historical `NOT SOLVED YET` and official/learner `Pending` fields remain unchanged.
+
+**Independently inspected native CI evidence:** the native PostgreSQL job of [Actions run 43289920993](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43289920993) completed **SUCCESS**, source pins and version `160015` printed, four bounded fixture groups passed:
+1. Original four-order illustration reproduces key rows `2025-Q1 (1,100,150,150,NULL)` and `2026-Q1 (1,NULL,NULL,NULL,NULL)`, **contradicting precisely two displayed source cells** (`m12=200` and `m0=80` respectively). This is a PASS **for discrepancy reproduction**, NOT a successful full task contract.
+2. Independent Jan-2027 anchor restores 2025-Q1 m12=200 and matures 2026-Q1 m0/m3/m6=80 while leaving its m12 NULL.
+3. Independent 2026-Mar-15 vs Mar-31 anchor boundary: 2025-Q1 m12 is NULL vs 100; 2026-Q1 m0 is NULL vs 20. This demonstrates the supplied **quarter-end cohort maturity** gate and whole-month date policy.
+4. Empty Orders returns no invented cohort rows.
+
+**Transparent test correction:** initial [CI run 43289624989](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43289624989) failed due an **auditor checker expectation** that March-31 2026 would leave Q1-2026 m0 immature. Native SQL instead correctly follows its existing maturity expression, making that m0 mature; checker-only correction commit `72a6ba8f206f8838a16444c714e05d6a44b6db6a` fixed expected boundary while retaining original question and answer verbatim. No source workaround or source rewrite.
+
+**Evidence tiers:** indexed YES; statement and supplied key individually inspected YES; bounded **native PostgreSQL synthetic test passed YES (including reproduced known mismatch)**; official answer verified **NO**; independently solved by learner **NO**. Original PDF pp.180–184, complete Commerce v2 dataset, provider interpretation of contradictory source illustration, other curriculum, privacy/licensing and global signoff still OPEN. The conservative **94/205** *clean* source-key replay count is unchanged. Issue #1 remains OPEN; deferred ChatGPT Library learner-study evidence remains UNSYNCED.

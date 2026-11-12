@@ -36,11 +36,11 @@ COLUMNS = ("OrderID", "CustomerID", "PaymentID", "OrderDate",
 
 def git_blob(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def extracted_key(key_text, number):
-    match = re.search(rf"(?ms)^-- Q{number}\\. [^\\n]*\\n(.*?)(?=^-- Q\\d+\\.|\\Z)", key_text)
+    match = re.search(rf"(?ms)^-- Q{number}\. [^\n]*\n(.*?)(?=^-- Q\d+\.|\Z)", key_text)
     assert match, f"Original Q{number} key not found"
     sql = match.group(1).strip()
     assert sql.startswith("WITH ") and sql.endswith(";"), number

@@ -280,3 +280,6 @@ jobs:
 
       - name: Replay immutable P100 KPI source key and reproduce missing-lines/label failures
         run: python3 scripts/check_pnp_100_source_kpis.py
+
+      - name: Audit PNP Q089 immutable-key incremental batch and seeded-demo discrepancy (SQLite plus modeled UPSERT)
+        run: python3 scripts/check_pnp_89_source_incremental.py

@@ -254,3 +254,6 @@ jobs:
 
       - name: Audit source-pinned A041-A050; inspect 10 statements and assert 13 reviewer SQLite fixtures
         run: python3 scripts/check_pnp_advanced_41_50_sources.py
+
+      - name: Audit source-pinned A051-A060 and 20 synthetic window/rank/date fixtures
+        run: python3 scripts/check_pnp_advanced_51_60_sources.py

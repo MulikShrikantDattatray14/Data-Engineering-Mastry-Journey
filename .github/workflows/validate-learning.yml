@@ -233,3 +233,6 @@ jobs:
 
       - name: Audit source-pinned Q090 unpivot and Q095 category sales keys on source and synthetic fixtures
         run: python3 scripts/check_pnp_90_95_source_answers.py
+
+      - name: Audit pinned PNP Q096 slow vs supplied sargable report on four SQLite fixtures and plan evidence
+        run: python3 scripts/check_pnp_96_source_answers.py

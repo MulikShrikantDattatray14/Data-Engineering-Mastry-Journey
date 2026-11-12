@@ -134,7 +134,11 @@ def check_sample(sql):
     ]
     assert len(rows) == 8, rows
     for actual, expected_row in zip(rows, expected):
-        assert actual[:6] == expected_row, (actual, expected_row)
+        # PostgreSQL and SQLite floating subtraction can leave harmless
+        # binary noise (133.33 - 100 == 33.33000000000001).
+        assert (actual[:4] == expected_row[:4] and
+                round(actual[4], 2) == expected_row[4] and
+                actual[5] == expected_row[5]), (actual, expected_row)
         assert actual[6:] == ("2026-11-01 to 2026-11-28",
                               "2026-12-01 to 2026-12-28"), actual
     # Source's own expected-output label is "On-time delivery"; key adds

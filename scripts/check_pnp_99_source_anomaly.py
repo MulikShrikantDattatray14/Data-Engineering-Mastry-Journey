@@ -11,7 +11,6 @@ import re
 import sqlite3
 from datetime import date, timedelta
 from pathlib import Path
-from statistics import stdev
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / ("99. Reference Materials/Original Mastery Snapshot/"
@@ -73,7 +72,16 @@ def source_sql():
     sql = replace_n(
         sql, "DATE_TRUNC('week', o.OrderDate)::date",
         "WEEK_START(o.OrderDate)", n=2)
-    for unsupported in ("DATE_TRUNC(", "generate_series(", "::date", "INTERVAL '7 days'"):
+    # Avoid SQLite/Python empty-frame window-UDF crashes: implement the
+    # sample stddev identity from built-in SUM and COUNT window functions.
+    # This is a scoped dialect adaptation, not a replacement source answer.
+    sql = replace_n(
+        sql, "STDDEV_SAMP(w.orders) OVER prior_8w",
+        "CASE WHEN COUNT(*) OVER prior_8w >= 2 THEN "
+        "SQRT((SUM(1.0*w.orders*w.orders) OVER prior_8w "
+        "- (SUM(1.0*w.orders) OVER prior_8w * SUM(1.0*w.orders) OVER prior_8w) "
+        "/ (COUNT(*) OVER prior_8w)) / ((COUNT(*) OVER prior_8w) - 1)) END")
+    for unsupported in ("DATE_TRUNC(", "generate_series(", "::date", "INTERVAL '7 days'", "STDDEV_SAMP("):
         assert unsupported not in sql, unsupported
     print("PASS Q099 source and supplied-key Git blob identity; original historical Pending preserved")
     print("SCOPE Q099: asserted PG-to-SQLite week/date/spine/stddev adaptations; original remaining SQL preserved")
@@ -87,30 +95,11 @@ def iso_week_start(raw):
     return (day - timedelta(days=day.weekday())).isoformat()
 
 
-class StddevSampleWindow:
-    def __init__(self):
-        self.vals = []
-
-    def step(self, x):
-        if x is not None:
-            self.vals.append(float(x))
-
-    def inverse(self, x):
-        if x is not None:
-            self.vals.remove(float(x))
-
-    def value(self):
-        return stdev(self.vals) if len(self.vals) >= 2 else None
-
-    def finalize(self):
-        return self.value()
-
 
 def execute(sql, orders):
     connection = sqlite3.connect(":memory:")
     try:
         connection.create_function("WEEK_START", 1, iso_week_start)
-        connection.create_window_function("STDDEV_SAMP", 1, StddevSampleWindow)
         connection.execute("CREATE TABLE Orders(OrderID INTEGER, OrderDate TEXT)")
         if orders:
             connection.executemany("INSERT INTO Orders VALUES (?,?)", orders)

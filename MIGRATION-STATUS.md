@@ -1,3 +1,12 @@
+## CI VERIFIED / source-to-concept addendum — 13 November 2026: OOP Lecture-05 (PARTIAL)
+
+- [x] [GitHub Actions run 43398994946](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43398994946) on exact commit `c9103e36864bd9b7f543768120936b7a9b2da7e7` completed **SUCCESS** with **100/100 general validation steps + 18/18 native PostgreSQL job steps**, zero failed/skipped. Decoded validation job `131796846380` independently shows **12/12 reviewer unittest methods PASS** (12 immutable archive/status guards, 11 authored behavioral checks). This is bounded CI, **not official Academy scoring or exhaustive audit completion**.
+- [x] Further individually inspected Lecture-05 companion records: classes/methods `d4edea0c25bb4e3ba9f993c7be510783d53ba3cb`, inheritance/MRO `37fcd48c2ae27037ac7240d08ccd1a33be73c611`, encapsulation/ABC `e8fd269bfdaab9f667746e1ebdf371a0ecf7de21`, lecture `README.md` `f290537fd1e7d3e80cc8637065dd4bbce3933a90`, and 48-point learner coverage checklist `1ffb7b86e89181878291db65c7c666cbb4e88290`. Concept-to-assessment crosswalk is explicitly recorded in [OOP question ledger](<02. Python Mastery/BOSSCODER-OOP-05-PENDING-MCQ-SEMANTIC-AUDIT.md>); archived checklist is **unchecked**, no independent learner mastery.
+- [x] One-commit code/evidence baseline `b5c8321debf503feb59acbbaeaa80edb763fc4cc` → `c9103e36864bd9b7f543768120936b7a9b2da7e7` modified exactly four **audit-only** paths (new reviewer checker, new ledger, CI workflow, additive MIGRATION-STATUS.md). Original archives, learner history and canonical foundations untouched. Subsequent status-only documentation commit requires its own exact-head CI.
+- [ ] Original private Academy screenshots/program text, grading, pending student work, full SQL/Python/DE audit, source PDF/full datasets, licensing/privacy and final full signoff remain unresolved. Conservative clean PNP supplied-key replay tally **94/205** unchanged, learning record and later practice **UNSYNCED to GitHub**, Issue #1 must remain **OPEN**.
+
+---
+
 ## PARTIAL — 13 November 2026: Bosscoder OOP Lecture-05 twelve derived MCQs (NO student completion)
 
 - [x] Each Q01–Q12 original derivative assignment **individually statement inspected** and immutable Git-blob-pinned; archive README remains 0/12 reviewed; each Chosen/Review Pending, platform Not verified. [Per-item evidence ledger](<02. Python Mastery/BOSSCODER-OOP-05-PENDING-MCQ-SEMANTIC-AUDIT.md>).

@@ -37,3 +37,21 @@ Read-only checker: `scripts/check_bosscoder_oop_05_pending_mcq_semantics.py`. So
 Evidence tiers: twelve **indexed**, twelve **statement inspected**, twelve **source-hash pinned and reviewer-synthetic tested** (subject to independently verified CI), zero **authenticated official answers**, zero **learner independently solved** from these records. The base Lecture-05 teaching-note checker already existed; this addition does not authenticate screenshots or other subjects.
 
 **Still open:** all-original PDF parity, remainder of PNP SQL/mentorship/Bosscoder/W3Schools/DE work, source-to-concept, integrity/privacy/licensing and full-audit final signoff. PNP clean bounded original-key replay remains **94/205**, unchanged. Original archives and historical attempts/progress stay read-only. Separate ChatGPT Library pending-study record and later learner practice are **UNSYNCED to GitHub** until independent full-audit signoff, then require separate scoped learning-sync commits and post-sync CI.
+
+## Companion source-to-concept reconciliation (documentation only)
+
+Independently inspected the five original legacy public chapter/coverage files, not merely the question index:
+
+| Immutable original legacy companion | Git blob SHA | Assessment coverage observed, not learner mastery |
+|---|---|---|
+| `lecture-05/01-classes-objects-methods.md` | `d4edea0c25bb4e3ba9f993c7be510783d53ba3cb` | Q01/Q03/Q04/Q05/Q11: attributes, shadowing, method forms, mutable class state |
+| `lecture-05/02-inheritance-and-mro.md` | `37fcd48c2ae27037ac7240d08ccd1a33be73c611` | Q07/Q08/Q09/Q10/Q12: override, MRO, initializer, super |
+| `lecture-05/03-encapsulation-polymorphism-abstraction.md` | `e8fd269bfdaab9f667746e1ebdf371a0ecf7de21` | Q02/Q06/Q07: name mangling, ABC, dispatch |
+| `lecture-05/README.md` | `f290537fd1e7d3e80cc8637065dd4bbce3933a90` | Lists topics; explicitly says graded MCQs 0/12 reviewed and no verified mastery |
+| `lecture-05/04-coverage-audit.md` | `1ffb7b86e89181878291db65c7c666cbb4e88290` | 48-point checklist remains unchecked; concept documentation is not completion |
+
+This crosswalk supports **index + source/topic mapping only**. It does **not** establish provider-PDF parity, original program replay, official answers or independent learner work. The nonduplicated notes appear to describe the MCQ concepts, so no editorial rewrite of canonical Python foundations is justified from this reviewer audit alone; interactive-study-derived changes remain prohibited pre-signoff.
+
+## Verified code-head CI and preservation
+
+[Run 43398994946](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43398994946) completed SUCCESS on exact `c9103e36864bd9b7f543768120936b7a9b2da7e7`, **100/100 general validation and 18/18 native PostgreSQL steps**, zero failed/skipped; decoded validation job `131796846380` shows all twelve source-hash/behavior test methods PASS. GitHub independent [comparison](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/compare/b5c8321debf503feb59acbbaeaa80edb763fc4cc...c9103e36864bd9b7f543768120936b7a9b2da7e7) confirms only four audit-owned files changed; original archives, learner attempts/progress and foundations unchanged. The next documentation-only commit still requires separate exact-main CI.

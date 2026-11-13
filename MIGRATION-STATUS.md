@@ -1,3 +1,13 @@
+## CURRENT — 13 November 2026: Refresher-1 Q02/Q10/Q11/Q12 pending-task semantic audit (PARTIAL)
+
+- [x] **Individually read 4 immutable archived task summaries:** Q02 leap-year SHA `12e283590b5a17fe3adfb8ff90e04c7b2444c2f3`, Q10 recursive factorial `d4c9f2cde6e9b3954bf16a6f6a99a701578167ec`, Q11 reverse integer `a76c70d01531821c6801ac8c20f4f74c8e5c0035`, Q12 Armstrong `4067fa0f0f82b158d7813b3fa64c7c70adea460c`. All four remain **learner Pending / platform Unverified / mastery Pending**; these are paraphrased archived statements rather than primary platform questions. [Per-record evidence ledger](<02. Python Mastery/BOSSCODER-REFRESHER-01-PENDING-Q02-Q10-Q11-Q12-SEMANTIC-AUDIT.md>).
+- [x] **Independent reviewer models, not Academy solutions:** [read-only checker](scripts/check_bosscoder_refresher_01_pending_semantics.py) exercises Q02's entire 7,301-year 1700–9000 domain against stdlib calendar, Q11's 10,000 integers against text-reversal, Q12's 10,000 integers against an independent digit-power-sum, and Q10 recursive factorial inputs 1–200 against `math.factorial`. All five locally runnable semantic methods passed; the sixth source-pin test requires repository checkout and must be checked in GitHub Actions.
+- [x] **Q10 real bounded runtime caveat:** isolated Python with explicit 1,000-frame recursion ceiling reliably throws `RecursionError` for naive recursion on N=10,000, whereas 10000! has 35,660 decimal digits. Actual Academy recursion ceiling, runtime and answer serialization **unverified**, so this is a reproduced acceptance-risk, not an official-answer grade or failed Academy submission.
+- [ ] **Final exact-main CI:** independent full job/log confirmation required after these scoped audit-only commits. Original archives, learner history/progress and canonical foundations unchanged; source-to-concept, provenance, licensing/privacy and every other unfinished SQL/Python/Bosscoder/W3Schools/DE gate still require work. Conservative original PNP SQL bounded source-key replay **94/205 remains unchanged**; no new official answers or learner credit.
+- [ ] **Issue #1 OPEN; delayed learner sync:** ChatGPT Library `/Data Engineering Study/DE_LEARNING_PENDING_GITHUB_SYNC_2026-11-09.md` and later interactive study remain **UNSYNCED with GitHub** until independently signed-off entire source audit and final successful comprehensive CI. Do not close/notify full completion.
+
+---
+
 # Migration and Quality Status
 
 ## PARTIAL — 13 November 2026: Bosscoder Lecture-02 four pending assignments independently stress-reviewed (NOT learner solutions)

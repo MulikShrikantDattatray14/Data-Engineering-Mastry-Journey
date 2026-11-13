@@ -61,7 +61,7 @@ class CrossSourceFilteringAndSet(unittest.TestCase):
         for path, expected in PINS.items():
             with self.subTest(path=path):
                 b = (ROOT / path).read_bytes()
-                got = hashlib.sha1(b"blob " + str(len(b)).encode() + b"\\0" + b).hexdigest()
+                got = hashlib.sha1(b"blob " + str(len(b)).encode() + b"\0" + b).hexdigest()
                 self.assertEqual(got, expected)
         index = (ROOT / "99. Reference Materials/W3SCHOOLS-TOPICS.md").read_text()
         for page in ("sql_like.asp", "sql_in.asp", "sql_exists.asp"):

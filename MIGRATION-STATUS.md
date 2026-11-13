@@ -1,5 +1,15 @@
 # Migration and Quality Status
 
+## PARTIAL — 13 November 2026: Bosscoder Lecture-02 four pending assignments independently stress-reviewed (NOT learner solutions)
+
+- [x] Independently inspected and pinned all four original Lecture-02 Python assignment statements: Q01 `ad53f8699c8f15a9b6e5f8ce0742a3001c3f046f`, Q02 `8f154967ea2c4615347818dba135c3988ab0e4ee`, Q03 `7a1be61fc9ca0ade2e14647f951f9b335a88f3a1`, Q04 `107db65ad457f4fac5ba0d0c0216b5fed744bf5a`. All remain original **Attempt: Pending**, **Reviewed: Pending**, Academy completion **Unverified**. [New independent evidence ledger](<02. Python Mastery/BOSSCODER-REFRESHER-02-PENDING-ASSIGNMENTS-SEMANTIC-AUDIT.md>).
+- [x] New [read-only synthetic checker](scripts/check_bosscoder_refresher_02_pending_semantics.py) covers both Q01/Q02/Q03 source examples, all N=1..10 shapes, Q03 one-cell/no-interior borders, three archived Q04 examples and strict equality/negative/large value boundaries, **21,844 exhaustive reviewer-vs-brute comparison arrays (n=1..7)**, and four **200,000-element** asymptotic boundary inputs. Seven deterministic unittest methods; only auditor-owned models, no source key or learner answer executed.
+- [ ] **Exact-head CI verification pending at commit time:** only new checker, workflow registration, this additive status and additive ledger may change; update Issue #1 with actual Actions result and scoped comparison after independently checking main. Do not equate green synthetic tests with original Academy grading or full PDF parity.
+- [ ] **Outstanding:** primary Bosscoder PDF/judge hidden tests and input/output contract are not available inside GitHub CI; source summaries do not authenticate Academy answer keys. Other PNP P/A/X, Python PDF, Bosscoder, W3Schools, non-SQL DE, licensing/privacy and cross-source checks remain incomplete. The **94/205** P-series key tally stays unchanged. Issue #1 must remain OPEN, and Library deferred interactive study evidence remains UNSYNCED.
+
+---
+
+
 ## PARTIAL — 13 November 2026: six still-Pending Advanced SQL prompts, 24 native PostgreSQL reviewer-only fixtures
 
 - [x] **A002/A003/A006/A007/A008/A009 individually source-inspected and original Git blobs pinned:** A002 `d797abb456ebf1a35ad4ade88c345170c997043c`, A003 `3d93fdfbec83c68a495dee74e044b24fb0470004`, A006 `20e4460e715ec53fd41f063e1368fa3753f2a0fd`, A007 `92d491023d8184e85e1732f4122b967e31575d52`, A008 `668f755b58b74935d9be1b7f6e2f635b713b4ec8`, A009 `6bcfa001f4a28934d4e06d277463eb242822a4de`. Each preserved archived record still explicitly says NOT SOLVED YET; SQLite learner, SQL Server learner, and displayed official answers all Pending. Six were previously individually statement-inspected; no new unique source IDs or learner completions were counted. [Question-level evidence ledger](<01. SQL Mastery/PNP-ADVANCED-PENDING-A002-A003-A006-A007-A008-A009-NATIVE-POSTGRES-PARTIAL-AUDIT.md>).

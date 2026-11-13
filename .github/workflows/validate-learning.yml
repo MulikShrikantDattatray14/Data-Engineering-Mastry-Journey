@@ -101,6 +101,10 @@ jobs:
       - name: Audit Bosscoder Lecture-05 OOP source-pinned public notes, 12 pending MCQs and seven synthetic boundaries
         run: python3 scripts/check_bosscoder_oop_05_notes.py
 
+
+      - name: Reviewer-only source-hash-pinned semantics of twelve pending Bosscoder Lecture-05 OOP MCQs
+        run: python3 scripts/check_bosscoder_oop_05_pending_mcq_semantics.py
+
       - name: Verify 16 source-pinned Bosscoder NumPy public examples, 12 pending MCQs and 7 boundary groups
         run: /tmp/mentor-pandas-db-runtime/bin/python scripts/check_bosscoder_numpy_06_notes.py
 

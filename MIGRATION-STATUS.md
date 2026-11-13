@@ -1,3 +1,12 @@
+## PARTIAL — 13 November 2026: Bosscoder OOP Lecture-05 twelve derived MCQs (NO student completion)
+
+- [x] Each Q01–Q12 original derivative assignment **individually statement inspected** and immutable Git-blob-pinned; archive README remains 0/12 reviewed; each Chosen/Review Pending, platform Not verified. [Per-item evidence ledger](<02. Python Mastery/BOSSCODER-OOP-05-PENDING-MCQ-SEMANTIC-AUDIT.md>).
+- [x] Added a read-only 12-method reviewer checker to CI: source pins and eleven independent Python OOP behavior probes (attributes, mangling, shadows, static binding, ABC, dispatch, MRO, constructors, class list, explicit super). Tests are auditor-authored miniatures, **NOT exact unseen original Academy code, official-answer verification, learner submissions or mastery**. Final exact-main CI status to be independently checked after scoped commit.
+- [ ] Source blockers: Q04 original invocation absent; Q08 hierarchy/overrides absent (A/B/C possible); Q09 base order unspecified; Q10 explicit super call unspecified; Q06 saved choice #2 wording inconsistent between duplicated sections; original Academy screenshots, answer key, grades and independent learner selections unavailable. No source files changed to "correct" hidden questions.
+- [ ] **KEEP Issue #1 OPEN:** clean bounded PNP replay still 94/205. Python PDF/source parity, SQL, Bosscoder, W3Schools/DE, licensing/privacy and comprehensive final audit outstanding. Original archives, history/attempts and canonical foundations untouched; ChatGPT Library learner record and later practice **UNSYNCED** until full independent signoff and post-sync CI.
+
+---
+
 ## CURRENT — 13 November 2026: Bosscoder Lecture-04 pending exception MCQs Q01–Q11 (PARTIAL; original statuses preserved)
 
 - [x] **11/11 archived source statements separately inspected, Git-blob-pinned and checked still pending:** Q01 2da86260, Q02 5ef441ab, Q03 e846847a, Q04 2dde9366, Q05 667e329c, Q06 5dfe9de3, Q07 7b3e407e, Q08 abc35b78, Q09 8866d908, Q10 2c539921, Q11 a8ab3c28 (full 40-hex pins in [the source-by-source ledger](02.%20Python%20Mastery/BOSSCODER-MODULES-04-PENDING-MCQ-SEMANTIC-AUDIT.md) and [read-only checker](scripts/check_bosscoder_modules_04_pending_mcq_semantics.py)). These are screenshot **paraphrases**, not original Academy MCQ screenshots; all 11 **Selection/Reviewed: Pending**, original README **0/11 reviewed**.

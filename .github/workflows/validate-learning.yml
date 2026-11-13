@@ -333,6 +333,9 @@ jobs:
       - name: Audit 8 W3 SQL intro, syntax, MAX, UNION ALL, ANY/ALL, DROP DB and data types pages (14 reviewer tests)
         run: python3 scripts/check_w3schools_sql_intro_quantifiers_types_cross_source.py
 
+      - name: Independently review original archive rights provenance and bounded credential signatures
+        run: python3 scripts/check_archive_public_rights_and_credential_boundaries.py
+
   native_postgres_pnp_84_90:
     name: Native PostgreSQL 16 PNP Q084/Q089/Q090/Q091/Q093/Q095/Q096/Q097/Q098/Q099/Q100 partial audit
     runs-on: ubuntu-latest

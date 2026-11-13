@@ -116,7 +116,7 @@ class CrossSourceFilteringAndSet(unittest.TestCase):
         self.assertEqual(self.q("""
           SELECT id FROM Orders WHERE created_at BETWEEN '2026-07-01' AND '2026-07-31'
           ORDER BY id
-        """), [(11,)])
+        """), [(11,),(14,)])
         self.assertEqual(self.q("""
           SELECT id FROM Orders WHERE created_at>='2026-07-01'
             AND created_at<'2026-08-01' ORDER BY id

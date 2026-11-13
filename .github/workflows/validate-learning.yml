@@ -292,6 +292,9 @@ jobs:
       - name: Audit ten source-pinned A011-A020 questions and eight saved A012/A014 SQLite fixture groups
         run: python3 scripts/check_pnp_advanced_11_20_sources.py
 
+      - name: Reviewer-only source-pinned A015/A021/A024/A027/A028 null/timezone/denominator boundaries
+        run: python3 scripts/check_pnp_advanced_15_21_24_27_28_policy.py
+
       - name: Check source-pinned A021-A030 prompts and 20 auditor-authored SQLite principle fixtures (not official answers)
         run: python3 scripts/check_pnp_advanced_21_30_sources.py
 

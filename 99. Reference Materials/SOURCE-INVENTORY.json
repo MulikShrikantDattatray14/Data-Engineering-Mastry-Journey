@@ -1,12 +1,12 @@
 {
   "title": "Data Engineering Mastry Journey — original source file inventory mapped to new repository",
   "generated_from": "GitHub source and staging tree hashes",
-  "verification": "Journey: 192 exact Git blob SHA matches in new repository. Mastery: pinned submodule commit with 552 source files; original native blob objects remain in source repository, not duplicated.",
+  "verification": "Independently compared 14 November 2026: 552 Original Mastery source blobs at bef07ec3e20825eb8e29bd9afc9f6d7ad8c77e3a and 192 Legacy Journey source blobs at 92666943f5d6a223db496d4fbdc7017f195d682d match the 744 physically copied archived Git blobs in this repository. This is byte-level provenance, not source-PDF text, licensing, grading, learner mastery or privacy clearance.",
   "summary": {
     "original_mastry_files": 552,
     "original_journey_files": 192,
     "journey_sha_verified": 192,
-    "mastery_submodule_files": 552
+    "mastery_sha_verified": 552
   },
   "entries": [
     {

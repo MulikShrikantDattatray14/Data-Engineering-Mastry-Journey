@@ -1,3 +1,12 @@
+## PARTIAL — 13 November 2026: Bosscoder pandas Lecture-07 derived MCQ Q01–Q10 independent reviewer replay
+
+- [x] Individually statement-inspected ten public derivative assignment question/code/options and original Pending student status, verified immutable original Git blob pins. [Question-by-question additive ledger](<02. Python Mastery/BOSSCODER-PANDAS-07-PENDING-MCQ-SEMANTIC-AUDIT.md>).
+- [x] Added read-only 11-method reviewer checker: stored Q01–Q05/Q07 literal code execution, Q08–Q10 execution with explicitly declared notebook-import context, Q06 incomplete-snippet and synthetic data checks. Independent boundaries include loc/iloc, missing aggregate data, missing groups, reset index/dtype and plotting artists. **Exact-head GitHub Actions pending separate verification**. All these checks are source-paraphrase or reviewer synthetic evidence, not Academy official answers or learner completions.
+- [ ] Reproduced blockers: Q01 options 1/3 duplicate; Q06 undefined DataFrame and unspecified speed benchmark; Q08/Q09/Q10 omit imports and need notebook scope. Original private screenshots, authenticated key and grades unavailable; no exercise marked solved.
+- [ ] Original source preservation, PNP SQL clean bounded supplied-key tally **94/205** unchanged, full PDFs/data, Python mentorship, other Bosscoder/W3Schools/DE, licensing/privacy, source-to-concept and final CI/signoff still pending. Issue #1 OPEN. Separate ChatGPT Library learner-study record and later study remain **UNSYNCED with GitHub**.
+
+---
+
 ## PARTIAL — 13 November 2026: twelve Bosscoder NumPy Lecture-06 pending MCQs (synthetic reviewer checks only)
 
 - [x] **All 12 original archived *public derivative* MCQ prompts individually statement-inspected and Git SHA-pinned**, with each original 4-option set, Pending choice/review and Academy Unverified status preserved. See [per-question ledger](<02. Python Mastery/BOSSCODER-NUMPY-06-PENDING-MCQ-SEMANTIC-AUDIT.md>) for the twelve exact 40-hex blob pins, concept mapping and limits. These are private-screenshot *paraphrases*, not primary Academy screenshot parity.

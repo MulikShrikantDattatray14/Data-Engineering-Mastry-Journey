@@ -4,6 +4,7 @@ No Academy official answer, learner submission, grade or mastery is claimed.
 """
 from __future__ import annotations
 import ast, contextlib, functools, hashlib, io, re, unittest
+from typing import get_type_hints
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -90,7 +91,7 @@ class FunctionalMCQReviewer(unittest.TestCase):
             compile("lambda x: int: x", "lambda-check", "eval")
         namespace = {}
         exec("def f(x: int) -> int:\n    return x", namespace)
-        self.assertEqual(namespace["f"].__annotations__, {"x": int, "return": int})
+        self.assertEqual(get_type_hints(namespace["f"]), {"x": int, "return": int})
         print("PASS Q06: independently constructed Python syntax contrast")
 
     def test_08_q07_ambiguous_mutable_default_protocol(self):

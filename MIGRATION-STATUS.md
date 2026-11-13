@@ -1,3 +1,15 @@
+## PARTIAL — 13 November 2026: eight official W3Schools DDL/constraints pages — independently inspected, synthetic reviewer checks
+
+- [x] Inspected eight *live original* primary W3Schools pages individually: CREATE TABLE, Constraints, NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK and DEFAULT. This expands the previously evidenced 32 to **40 distinct W3Schools SQL lesson pages inspected**, not full W3 syllabus completion.
+- [x] Seven original/canonical local sources read and Git-blob-pinned, including immutable archived Bosscoder Basics, W3 selected index, canonical SQL Basics/Joins/NULL/Data Quality/Analytics. Eight missing links in the selected-topic index; not evidence of lost concepts.
+- [x] Independently authored read-only 14-method SQLite reviewer suite: 1 seven-source SHA/index guard and 13 synthetic correctness/boundary fixtures. Local isolated run verified 13/13 semantics; full GitHub CI must independently execute the original-source guard. Specific counterexamples: NOT NULL allows blanks, CHECK allows NULL/UNKNOWN, DEFAULT only for omitted values, CTAS loses keys/constraints, SQLite FK pragma is per connection, UNIQUE NULL semantics and PK auto-number are dialect-dependent.
+- [ ] Exact final-head GitHub Actions results must be independently checked after push; do not claim green without verifying final SHA and both validation jobs.
+- [ ] **Keep issue open**: No official W3 editor/grades, 0 new official solutions and 0 new learner solves; source PDFs/full PNP commerce dataset, remaining supplied-key parity (94/205 conservative), remaining Python/Bosscoder/W3/DE, licensing/privacy, full source-to-concept parity and independent signoff remain. GitHub study journal sync **NOT DONE**; maintain separate Library pending record until after full audit and post-sync CI.
+
+Detailed ledger: [W3Schools DDL constraints partial audit](<01. SQL Mastery/W3SCHOOLS-SQL-DDL-CONSTRAINTS-PARTIAL-AUDIT.md>). Checker: [auditor-only synthetic regression](scripts/check_w3schools_sql_constraints_ddl_cross_source.py).
+
+---
+
 ## PARTIAL — 13 November 2026: eight additional official W3Schools SQL MIN/SUM/AVG, Aliases, INSERT/UPDATE/DELETE and TOP/LIMIT lessons
 
 - [x] **8/8 additional distinct live official lesson bodies individually inspected**: [MIN](https://www.w3schools.com/sql/sql_min_max.asp), [SUM](https://www.w3schools.com/sql/sql_sum.asp), [AVG](https://www.w3schools.com/sql/sql_avg.asp), [Aliases](https://www.w3schools.com/sql/sql_alias.asp), [INSERT](https://www.w3schools.com/sql/sql_insert.asp), [UPDATE](https://www.w3schools.com/sql/sql_update.asp), [DELETE](https://www.w3schools.com/sql/sql_delete.asp), [TOP/LIMIT/FETCH](https://www.w3schools.com/sql/sql_top.asp). Distinct live W3 SQL pages independently inspected now **32**, NOT complete syllabus. The `sql_min_max.asp` page currently shows **MIN**, not a second separately verified MAX page. [Per-page provenance/contract ledger](<01. SQL Mastery/W3SCHOOLS-SQL-AGGREGATES-DML-LIMIT-PARTIAL-AUDIT.md>).

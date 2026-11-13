@@ -131,6 +131,9 @@ jobs:
       - name: Review eight live W3 SQL aggregate alias INSERT UPDATE DELETE and limit lessons against pinned source fixtures
         run: python3 scripts/check_w3schools_sql_aggregate_dml_limit_cross_source.py
 
+      - name: Verify eight official W3Schools DDL constraint lessons against source-pinned reviewer fixtures
+        run: python3 scripts/check_w3schools_sql_constraints_ddl_cross_source.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

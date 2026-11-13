@@ -134,6 +134,9 @@ jobs:
       - name: Verify eight official W3Schools DDL constraint lessons against source-pinned reviewer fixtures
         run: python3 scripts/check_w3schools_sql_constraints_ddl_cross_source.py
 
+      - name: Audit eight official W3 SQL schema/index/date/view/injection/prepared lessons against preserved sources
+        run: python3 scripts/check_w3schools_sql_schema_views_safety_cross_source.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

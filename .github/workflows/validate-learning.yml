@@ -388,3 +388,11 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_92_94_native_postgres.py
+      - name: Native PostgreSQL 16 replay of four archived Advanced learner and attributed answer pairs (12 bounded groups)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_advanced_historical_01_04_05_10_native_postgres.py

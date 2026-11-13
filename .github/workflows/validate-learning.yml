@@ -396,3 +396,12 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_advanced_historical_01_04_05_10_native_postgres.py
+
+      - name: Audit six source-pinned pending Advanced SQL problems on 24 native PostgreSQL reviewer-only fixtures
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_advanced_pending_02_03_06_07_08_09_native_postgres.py

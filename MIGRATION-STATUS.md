@@ -1,3 +1,11 @@
+## PARTIAL — 13 November 2026: eight official W3Schools SQL lessons independently compared to PNP, Bosscoder and canonical foundations
+
+- [x] Eight official site lesson bodies individually read: SELECT, NULL, joins overview, INNER, LEFT, GROUP BY, HAVING and COUNT. Compared ten immutable local source/index/foundation Git blobs. [Per-page exact-scope cross-source evidence](<01. SQL Mastery/W3SCHOOLS-SQL-SELECT-NULL-JOINS-GROUPING-PARTIAL-AUDIT.md>).
+- [x] Added an auditor-only read-only 13-method SQLite checker with 10 original source-hash guards and 8 official URL guards; behavior tests use **synthetic** tables including NULL, unmatched customers, nullable matched right-side fields, fan-out, WHERE/ON, grouping, HAVING and COUNT semantics. These fixtures are **not official W3Schools editor outputs, source PDF keys, course grades or learner solutions**.
+- [ ] **Code-head GitHub Actions CI and exact-final-head verification pending independent inspection**; do not infer a green result. Original archives, learner attempts/progress and canonical study notes are intentionally unchanged. Known scope gaps: remaining official W3Schools pages, private PNP/Bosscoder PDFs and datasets, licensing/privacy, full source-to-concept signoff. Conservative clean PNP replay remains **94/205**; Issue #1 OPEN; separate Library learner-study work UNSYNCED with GitHub.
+
+---
+
 ## CI-VERIFIED partial Pandas-07 Q01–Q10 derivative MCQ semantic replay — 13 November 2026
 
 - [x] **Independently inspected exact code/ledger/status-head CI:** final code-and-ledger main SHA b034280d61a1d8a569825f777ce84115ff5d0ff5 passed [GitHub Actions 43420174685](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43420174685). **102/102 general validation and 18/18 native PostgreSQL job steps SUCCESS, zero failed/skipped**. Decoded general job 131867909995 confirms **11/11** source-hash-pinned reviewer test methods PASS on pandas 2.3.3 / matplotlib 3.10.8 / Seaborn 0.13.2; native job 131867910293 reports PostgreSQL server_version_num=160016. Tests replay public derivative code; not private original screenshots or Academy grading.

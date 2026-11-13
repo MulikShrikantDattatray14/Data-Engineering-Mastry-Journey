@@ -119,6 +119,9 @@ jobs:
       - name: Reviewer-only source-pinned runtime semantics for ten Pending Bosscoder Pandas-07 MCQs
         run: /tmp/mentor-pandas-db-runtime/bin/python scripts/check_bosscoder_pandas_07_pending_mcq_semantics.py
 
+      - name: Audit eight live-inspected W3Schools SQL lessons against source-pinned PNP Bosscoder foundations and reviewer fixtures
+        run: python3 scripts/check_w3schools_sql_foundations_cross_source.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

@@ -1,0 +1,27 @@
+# W3Schools SQL SELECT, NULL, JOIN and aggregation — independent cross-source audit
+
+**Date: 13 November 2026. Status: PARTIAL.** Eight distinct official W3Schools tutorial pages were independently opened and their actual teaching sections read, rather than relying on the repository's earlier URL index. Ten Git-blob-pinned local source/canonical files were compared for concept presence. This is source statement inspection and reviewer-owned synthetic runtime evidence, not W3Schools editor execution, any course's official graded answers, learner submission or mastery.
+
+| Official page opened and statement inspected | Specific teaching verified on the page | Archived PNP / Bosscoder and canonical overlap; essential extra nuance |
+| --- | --- | --- |
+| [SQL SELECT](https://www.w3schools.com/sql/sql_select.asp) | Projection of chosen columns from a table. | Canonical SQL Basics covers SELECT and row filtering. A SELECT example alone does not guarantee ordering; synthetic explicit ORDER BY check. |
+| [SQL NULL Values](https://www.w3schools.com/sql/sql_null_values.asp) | IS NULL / IS NOT NULL instead of equality comparisons for unknown values. | Original PNP NULL chapter and canonical NULL note also separate NULL from empty text/zero and explain SQL UNKNOWN; W3 phrasing about 'empty values' is not a license to equate empty string and NULL. |
+| [SQL Joins](https://www.w3schools.com/sql/sql_join.asp) | Match-related-table framing and join-family overview. | Original Bosscoder Joins and canonical Joins identify one-to-many fan-out; general tutorial overview alone does not establish business grain. |
+| [SQL INNER JOIN](https://www.w3schools.com/sql/sql_join_inner.asp) | Only matched rows; JOIN shorthand is INNER JOIN, unmatched lookup rows disappear. | Original Bosscoder Joins confirms duplicate-key multiplicity and NULL-key exclusion; tested with one customer having multiple orders. |
+| [SQL LEFT JOIN](https://www.w3schools.com/sql/sql_join_left.asp) | All left-side rows preserved, unmatched right values NULL; examples include customer anti-join with a right-side CustomerID check. | Canonical Joins / PNP NULL additionally warn that a matched order can itself have a NULL nullable attribute, and right-side status conditions in WHERE remove unmatched rows. Use a guaranteed non-NULL right match identifier for anti-joins. |
+| [SQL GROUP BY](https://www.w3schools.com/sql/sql_groupby.asp) | Summarize rows into grouping keys using aggregates. | PNP Sorting/Grouping and canonical Grouping distinguish output grain and grouping NULL keys into one group; reviewer fixtures inspect both. |
+| [SQL HAVING](https://www.w3schools.com/sql/sql_having.asp) | HAVING filters grouped aggregates; WHERE filters incoming rows. | Canonical sorting/grouping demonstrates a paid-order filter before SUM and a qualifying-threshold HAVING after grouping. |
+| [SQL COUNT](https://www.w3schools.com/sql/sql_count.asp) | COUNT(*) counts input rows, COUNT(column) non-NULL values, COUNT(DISTINCT column) unique known values. | PNP NULL + canonical Aggregation cover joined NULL-extension, mixed denominations and many-to-one fan-out; reviewer checks 6/4/3 and 7/5/4 examples. |
+
+## Exactly inspected local evidence (immutable SHA-1 git blobs)
+
+- W3Schools URL/topic index: c6328c2eb420f47e5585026a7bf3c0a4e41be720.
+- Canonical SQL Basics: d181dd73f96b1f2b7327600e290d52e9fd59a976; Joins: 61d952c98f02a62c6591caaedf5c02cf0b43e3b1; Sorting/Grouping: 5cf690cb6ca5942795fe332aa447bbf77e14232e; Aggregation: 7dcd722be94284602dd17e316dca9ce096954c33; NULL Logic: af9cc8d5d47e0279fe0d8b0f9276b700ce496888.
+- Preserved Bosscoder Joins foundation: b65b32c17a8c35a3130a3164799c307bc02dbf17.
+- Preserved PNP Joins: 4130c69922d653b8f2c033e028d91a56d098fe5f; Sorting/Grouping: 6beb99ba1b26edccb42d1087ea76e3e0b61a20b1; NULL: 7ba0d8943a74ca0ae2d967c2ea982e4df3af917a.
+
+## Reviewer fixtures and evidence tiers
+
+Read-only script: [scripts/check_w3schools_sql_foundations_cross_source.py](../scripts/check_w3schools_sql_foundations_cross_source.py). It pins all ten actual local source blobs and eight published links, then tests synthetic in-memory SQLite input/output for SELECT, NULL equality/IS NULL, INNER/LEFT fan-out, ON versus WHERE retention, anti-join NULL traps, HAVING/WHERE, COUNT variants, grouped NULL, zero-row aggregates, DISTINCT and a PNP-specific NOT IN/NULL boundary. All fixture data was authored by the auditor; it is **not** the W3Schools hosted Northwind tables, original Academy judge, actual PNP full dataset or authenticated official question answers. The NOT IN NULL example goes beyond these eight inspected W3 pages and is explicitly sourced from archived PNP NULL principles.
+
+**Pending:** validate code-head and final documentation-head CI on their exact SHAs; verify external page-change history if relevant; inspect the remaining W3Schools SQL and Python topics individually (the earlier W3Schools topics register is still an index, not proof of inspection); original provider PDF/answer/dataset parity; independent learner coursework; redistribution/privacy permissions; comprehensive source-to-concept audit. Leave all original source archives, historic attempts and canonical notes unchanged, and keep Issue #1 OPEN. The separate ChatGPT Library learner log and subsequent study remain UNSYNCED with GitHub.

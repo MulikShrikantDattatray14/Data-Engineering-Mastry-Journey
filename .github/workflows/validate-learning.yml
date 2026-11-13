@@ -125,6 +125,9 @@ jobs:
       - name: Audit eight more live W3Schools SQL DISTINCT/filter/pattern/EXISTS/UNION lessons and pinned cross-source reviewer fixtures
         run: python3 scripts/check_w3schools_sql_filter_patterns_set_cross_source.py
 
+      - name: Review eight more official W3Schools SQL outer/self joins CASE COALESCE AND/OR/NOT lessons against pinned sources
+        run: python3 scripts/check_w3schools_sql_outer_self_case_boolean_cross_source.py
+
       - name: Audit 13 immutable Bosscoder Intro SQL answers on SQLite sample and synthetic fixtures
         run: python3 scripts/check_bosscoder_sql_intro_answers.py
 

@@ -1,3 +1,11 @@
+## CI-VERIFIED partial Pandas-07 Q01–Q10 derivative MCQ semantic replay — 13 November 2026
+
+- [x] **Independently inspected exact code/ledger/status-head CI:** final code-and-ledger main SHA b034280d61a1d8a569825f777ce84115ff5d0ff5 passed [GitHub Actions 43420174685](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43420174685). **102/102 general validation and 18/18 native PostgreSQL job steps SUCCESS, zero failed/skipped**. Decoded general job 131867909995 confirms **11/11** source-hash-pinned reviewer test methods PASS on pandas 2.3.3 / matplotlib 3.10.8 / Seaborn 0.13.2; native job 131867910293 reports PostgreSQL server_version_num=160016. Tests replay public derivative code; not private original screenshots or Academy grading.
+- [x] Independent [scoped GitHub compare](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/compare/c4ece83d15058caf2f807a9bdc13e5b35903d389...b034280d61a1d8a569825f777ce84115ff5d0ff5) confirms **two commits, exactly four audit-only paths** (new checker, new additive ledger, workflow insertion, additive MIGRATION-STATUS.md). No source archives, historical learner attempts/progress or canonical foundations changed. Exact final documentation-only main head must be checked separately.
+- [ ] **Still open:** Q01 identical options 1 and 3; Q06 no original df/bench rubric or reproducible winner; Q08–Q10 depend on notebook-inherited imports. All Academy private MCQ screenshots, original key, grader, and student submissions are unauthenticated. PNP SQL clean key replay remains 94/205 unique IDs, unchanged. Full original PDFs/dataset and remaining Bosscoder, mentorship Python, W3Schools, DE, licensing/privacy, source-to-concept/integrity signoff pending. Issue #1 OPEN. Library learner-study record and later practice UNSYNCED.
+
+---
+
 ## PARTIAL — 13 November 2026: Bosscoder pandas Lecture-07 derived MCQ Q01–Q10 independent reviewer replay
 
 - [x] Individually statement-inspected ten public derivative assignment question/code/options and original Pending student status, verified immutable original Git blob pins. [Question-by-question additive ledger](<02. Python Mastery/BOSSCODER-PANDAS-07-PENDING-MCQ-SEMANTIC-AUDIT.md>).

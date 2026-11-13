@@ -77,6 +77,9 @@ jobs:
       - name: Reviewer-only exhaustive small-domain checks for pending Bosscoder Refresher-1 Q02 Q10 Q11 Q12
         run: python3 scripts/check_bosscoder_refresher_01_pending_semantics.py
 
+      - name: Reviewer-only exhaustive checks for eight other pending Bosscoder Refresher-1 assignments
+        run: python3 scripts/check_bosscoder_refresher_01_remaining_semantics.py
+
       - name: Audit Bosscoder Refresher-2 archived notes (13 source examples, 4 pending assignments, 5 synthetic boundaries)
         run: python3 scripts/check_bosscoder_refresher_02_notes.py
 

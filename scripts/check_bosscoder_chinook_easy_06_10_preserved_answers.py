@@ -124,9 +124,12 @@ class ChinookEasySixThroughTen(unittest.TestCase):
         rows = [(1, "Rock"), (2, "Jazz"), (3, "Pop"), (4, "ROCK"), (5, None), (6, "Jazz")]
         mine, key = replay(9, "CREATE TABLE Genre(GenreId INT, Name TEXT);", [
             ("INSERT INTO Genre VALUES (?,?)", rows)])
-        expected = [(2, "Jazz"), (6, "Jazz"), (1, "Rock")]
-        self.assertEqual(mine, expected)
-        self.assertEqual(key, expected)
+        expected = Counter([(2, "Jazz"), (6, "Jazz"), (1, "Rock")])
+        self.assertEqual(Counter(mine), expected)
+        self.assertEqual(Counter(key), expected)
+        self.assertEqual([name for _, name in mine], ["Jazz", "Jazz", "Rock"])
+        self.assertEqual([name for _, name in key], ["Jazz", "Jazz", "Rock"])
+        # Two Jazz IDs have equal ORDER BY Name keys; their mutual order is unspecified.
 
     def test_08_q10_source_example_join_count_and_zero_genre(self):
         mine, key = replay(10, "CREATE TABLE Genre(GenreId INT, Name TEXT);"

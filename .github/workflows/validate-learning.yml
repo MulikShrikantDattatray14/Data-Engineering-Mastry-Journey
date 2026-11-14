@@ -363,6 +363,9 @@ jobs:
       - name: Cross-audit five preserved PNP A091-A095 NULL logic questions with seven bounded reviewer methods
         run: python3 scripts/check_pnp_advanced_91_95_null_cross_source_contracts.py
 
+      - name: Source-pin and replay five preserved historical Chinook easy Q1-Q5 answer pairs on eight SQLite reviewer cases
+        run: python3 scripts/check_bosscoder_chinook_easy_01_05_preserved_answers.py
+
       - name: Cross-review five immutable PNP A096-A100 calendar questions against Python oracles
         run: python3 scripts/check_pnp_advanced_96_100_calendar_policy.py
 

@@ -7,7 +7,7 @@ original PDF page verification, or additional source-example coverage.
 """
 from __future__ import annotations
 
-from decimal import Decimal, ROUND_HALF_EVEN
+from decimal import Decimal, InvalidOperation, ROUND_HALF_EVEN
 import hashlib
 from pathlib import Path
 import unittest
@@ -162,7 +162,7 @@ class W3PythonCastingOperatorsStringsFiveCrossSource(unittest.TestCase):
                          [s.strip().lower() for s in rows])
         raw = "nan"
         self.assertTrue(float(raw) != float(raw))  # parses but not usable as money
-        with self.assertRaises(ValueError):
+        with self.assertRaises(InvalidOperation):
             Decimal("2,500")
 
 

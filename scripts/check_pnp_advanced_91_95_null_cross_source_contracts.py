@@ -23,7 +23,7 @@ def original(sid):
     if len(matches) != 1:
         raise AssertionError((sid, "missing or duplicate archived source", matches))
     raw = matches[0].read_bytes()
-    digest = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    digest = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     if digest != PINS[sid]:
         raise AssertionError((sid, "original Git blob mismatch", digest))
     return raw.decode("utf-8")

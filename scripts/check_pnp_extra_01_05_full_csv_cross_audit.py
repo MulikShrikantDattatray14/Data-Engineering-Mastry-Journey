@@ -189,9 +189,9 @@ class OriginalFullDatasetCrossAudit(unittest.TestCase):
         self.assertEqual(sum(row[3] for row in self.results["X001"]),total_rated)
         self.assertEqual(sum(row[2] for row in self.results["X001"]),len(self.products))
         self.assertEqual(sum(row[1] for row in self.results["X004"]),len(self.products))
+        per_brand=collections.Counter(p[4] for p in self.products if p[5] is not None)
         self.assertEqual(sum(row[1] for row in self.results["X002"]),
-                         sum(1 for p in self.products if p[5] is not None and
-                             sum(1 for t in self.products if t[4]==p[4] and t[5] is not None)>=20))
+                         sum(n for n in per_brand.values() if n>=20))
         self.assertLessEqual(len(self.results["X005"]),total_rated)
         self.assertTrue(all(row[2] is not None for row in self.results["X003"]))
         missing_details=sum(pid not in self.by_id for _,pid,_ in self.details)

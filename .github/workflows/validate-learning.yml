@@ -351,6 +351,9 @@ jobs:
       - name: Audit original mentor Python local runner source hashes, archived demo, scratch limits and loopback guards
         run: python3 scripts/check_python_practice_runner_original_safety.py
 
+      - name: Independently replay original mentorship ETL p71-p74 source contracts (11 bounded tests)
+        run: python3 scripts/check_python_mentorship_etl_p71_74_contracts.py
+
   native_postgres_pnp_84_90:
     name: Native PostgreSQL 16 PNP Q084/Q089/Q090/Q091/Q093/Q095/Q096/Q097/Q098/Q099/Q100 partial audit
     runs-on: ubuntu-latest

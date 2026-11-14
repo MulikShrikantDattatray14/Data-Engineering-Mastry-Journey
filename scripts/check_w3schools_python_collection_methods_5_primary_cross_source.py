@@ -34,7 +34,15 @@ def blob_sha(raw: bytes) -> str:
     return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def source_text(name: str) -> str:
-    return (BASE / name).read_bytes().decode("utf-8-sig")
+    # Reject any mutated/unpinned Markdown BEFORE executing source examples,
+    # including on pull-request CI where another test could otherwise run it.
+    matches = [sha for filename, sha, _ in ORIGINALS if filename == name]
+    if len(matches) != 1:
+        raise AssertionError("Unapproved source file for original-code replay")
+    raw = (BASE / name).read_bytes()
+    if blob_sha(raw) != matches[0]:
+        raise AssertionError("Original source blob changed; refusing code replay")
+    return raw.decode("utf-8-sig")
 
 def published_pairs(name: str) -> list[tuple[str, str]]:
     # Two literal fence styles exist in this preserved source archive.

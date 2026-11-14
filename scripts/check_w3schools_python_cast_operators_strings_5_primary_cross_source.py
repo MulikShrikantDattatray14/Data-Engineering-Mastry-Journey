@@ -7,7 +7,7 @@ original PDF page verification, or additional source-example coverage.
 """
 from __future__ import annotations
 
-from decimal import Decimal, InvalidOperation, ROUND_HALF_EVEN
+from decimal import Decimal, ROUND_HALF_EVEN
 import hashlib
 from pathlib import Path
 import unittest
@@ -67,7 +67,7 @@ class W3PythonCastingOperatorsStringsFiveCrossSource(unittest.TestCase):
         self.assertTrue(float("nan") != float("nan"))
         self.assertFalse(Decimal("NaN").is_finite())
         self.assertFalse(Decimal("Infinity").is_finite())
-        with self.assertRaises(InvalidOperation):
+        with self.assertRaises(ValueError):
             int(Decimal("NaN"))
 
     def test_05_negative_floor_and_remainder_follow_invariant(self):

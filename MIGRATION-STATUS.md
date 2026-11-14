@@ -1,3 +1,11 @@
+## PARTIAL — 14 November 2026: actual Python mentorship sample-data cross-source checks (NOT OFFICIAL ANSWERS)
+
+- [x] Independently read and SHA-pinned **8 original small CSV files, customers.json and 4 linked p.33/p.68/p.72/p.73 mentorship companion source files**. [Source-by-source evidence ledger](<02. Python Mastery/PYTHON-SMALL-DATASETS-CROSS-SOURCE-PARTIAL-AUDIT.md>) and [nine-method, immutable-source reviewer checker](scripts/check_python_training_fixture_cross_source.py).
+- [x] All **15 source orders reconcile to 24 source lines** with original-data Decimal sum 23,268.00, and clean customer/product/manager references, eight CSV schemas, 7 dirty-row classification and day1/day2 snapshot change set were independently checked. Source p.73 quality example **does not validate invalid calendar dates**; source p.68 does. Separate JOIN fanout, changed-catalogue, duplicate-key and multi-fault reviewer tests are **synthetic only**.
+- [ ] New reviewer suite added to CI; **do not claim CI success before checking exact final SHA**. Provider PDF visual parity, 205 SQL official-dataset/key/dialect checks, all remaining Python/Bosscoder/W3Schools/DE, licensing/PII and final integrity/signoff incomplete. No new official verified answers, learner independent completions or mastery; Issue #1 remains OPEN. Library learner-study evidence remains **UNSYNCED**, gated on full audit signoff plus separate post-sync CI.
+
+---
+
 ## PARTIAL — 14 November 2026: five A-series SQL policy/correlation boundaries (not official answers)
 
 - [x] Re-read five original, SHA-pinned PNP Advanced task Markdown records: **A015, A021, A024, A027, A028**. Independently compared existing coverage ledgers. All five were *previously statement-inspected*; this does **not** add new question IDs to the 205-index count or award official keys or learner solutions. [Exact source-by-source new ledger](<01. SQL Mastery/PNP-A015-A021-A024-A027-A028-POLICY-BOUNDARIES-PARTIAL-AUDIT.md>).

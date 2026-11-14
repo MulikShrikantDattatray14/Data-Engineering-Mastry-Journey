@@ -1,0 +1,39 @@
+# W3Schools Python OOP / RegEx / pip — five hosted-page primary source cross-review (PARTIAL)
+
+**15 November 2026.** Independently read the actual live teaching bodies at five *distinct* hosted URLs, rather than treating their presence in an index as source verification. Compared against six separately retrieved, unchanged original mentor/Journey companion lessons and the immutable fourteen-line original `app.log`; recorded their exact native Git blob IDs below. Previous hosted W3 Python reviews individually inspected **26** pages; these five extend direct *statement inspection* to **31 distinct W3 Python teaching pages**. This is **not** a count of validated W3 editor exercises, mastered course topics, or newly verified original-PDF pages.
+
+## Independently inspected hosted pages and source pairing
+
+| Hosted primary W3 page | Source(s) independently inspected in this batch | Cross-source semantic finding and limit |
+|---|---|---|
+| [Python Classes/Objects](https://www.w3schools.com/python/python_classes.asp) | Archived mentor **Part 3 / 03. Classes and dataclasses.md**, original PDF reference p.37; preserved Bosscoder Lecture-05 `01-classes-objects-methods.md` | Hosted page illustrates a class attribute `x=5`, instances, `del` and `pass`. **Precision caveat:** its assertion that each object has its own copy of class properties is not generally correct: unshadowed instances resolve the *same* class attribute, including mutable class-state sharing. Instance overrides can shadow it; compare the original Bosscoder class/instance explanation. |
+| [Python Inheritance](https://www.w3schools.com/python/python_inheritance.asp) | Original Bosscoder Lecture-05 `02-inheritance-and-mro.md`; mentor p.37 abstract extractor design | Hosted inheritance/parent `__init__`/`super()` primer compared with archived C3 MRO, cooperative multiple inheritance and subclass initializer pitfalls. Synthetic tests demonstrate where parent initialization is *not* implicit and where conflicting base orders are rejected. |
+| [Python Polymorphism](https://www.w3schools.com/python/python_polymorphism.asp) | Original Bosscoder Lecture-05 `03-encapsulation-polymorphism-abstraction.md`; mentor p.37 abstract extractor interface | Hosted `len()`, shared method names and child overrides illustrate polymorphism; original material additionally distinguishes structural duck typing from abstract base-class enforcement and warns not to treat mangled names as security controls. Synthetic tests cover both interfaces; no Bosscoder MCQ marked answered. |
+| [Python RegEx](https://www.w3schools.com/python/python_regex.asp) | Original mentor **Part 5 / 07. Parse logs.md**, source PDF reference p.64, plus unchanged `python_de_dataset/app.log` | Hosted `re.search`, `findall`, `split`, `sub`, flags and regex tokens compared with the archived named-group log parser. Original log has 14 lines; independently reviewer-parsed **13** and quarantined scheduler notice at **line 7**. Case and Unicode flags and `search` versus `fullmatch` alter acceptance; regex shapes alone do not validate dates. |
+| [Python PIP](https://www.w3schools.com/python/python_pip.asp) | Archived mentorship **Part 1 / 16. Modules packages and pip.md**, source PDF reference p.20 | Hosted pip introduction describes terminal install/list/remove and a `camelcase` example. Mentor source explains `python -m pip` bound to chosen interpreter and virtualenv isolation, safer for reproducible project setup. Reviewer does **not** install any package, contact PyPI, authenticate W3 exercises or claim environment pinning. |
+
+## Original archive identities and coverage evidence
+
+All seven files below were individually read from live repository contents and/or original source, and are pinned by Git-blob SHA-1 in the new immutable-file reviewer:
+
+| Unmodified archived file (under its existing original snapshot) | Git blob SHA |
+|---|---|
+| `Original Mastery Snapshot/2. Python Mastry/3. Advanced Python/03. Classes and dataclasses.md` | `0a8c6988b3f29fa4256bfdcdcf54bb8219fbce98` |
+| `Original Mastery Snapshot/2. Python Mastry/1. Python from Zero/16. Modules packages and pip.md` | `2002d657a4bb52dcd1e369a9083dfd1d7b5c37eb` |
+| `Original Mastery Snapshot/2. Python Mastry/5. Coding Round Patterns/07. Parse logs.md` | `a766d7427e0cafee1ea227ace0418ec692a25fa4` |
+| `Legacy Journey Snapshot/02-python/bosscoder/lecture-05/01-classes-objects-methods.md` | `d4edea0c25bb4e3ba9f993c7be510783d53ba3cb` |
+| `Legacy Journey Snapshot/02-python/bosscoder/lecture-05/02-inheritance-and-mro.md` | `37fcd48c2ae27037ac7240d08ccd1a33be73c611` |
+| `Legacy Journey Snapshot/02-python/bosscoder/lecture-05/03-encapsulation-polymorphism-abstraction.md` | `e8fd269bfdaab9f667746e1ebdf371a0ecf7de21` |
+| `Original Mastery Snapshot/2. Python Mastry/python_de_dataset/app.log` | `d75778a27a947725c57b84134ec32297f45bb9df` |
+
+The preserved Bosscoder OOP notes explicitly say assignments remain unsolved/not completed. Existing [independent Bosscoder OOP PDF partial audit](BOSSCODER-OOP-05-INDEPENDENT-AUDIT.md) separately reviewed the private PDF; **this batch did not re-open, reproduce or regrade that private PDF or its 12 pending MCQs.** Previous mentorship p.37 examples already had CI coverage elsewhere; the two literal source replay checks in this cross-review are redundant regression checks, **not two additional original mentorship examples**.
+
+## Reviewer tests / evidence tiers
+
+[New source-pinned read-only checker](../scripts/check_w3schools_python_oop_regex_pip_5_primary_cross_source.py) contains **16 methods**: one immutable original SHA/primary-link and historical-status guard, **two exact original mentor p.37 snippet-stdout replays**, and **thirteen bounded reviewer-authored Python environment/semantic checks**. The synthetic methods test shared versus shadowed class attributes and mutable lists; method binding, alternate `cls` constructors, `super()`, C3 cooperative and impossible orders, ABC versus duck typing, shallow mutability under `frozen=True` dataclasses, regex matching/Unicode/flags, and 13/14 original log parsing. No network/pip installation or changes to source datasets, original notes, learner answers or progress.
+
+**CI evidence gate:** the checker is wired to `.github/workflows/validate-learning.yml`. Do not mark its 16 methods **CI passed** until the exact code/documentation commit's actual Actions validation-job log explicitly lists the 16 test methods and reports `Ran 16 tests / OK`, and both general/native PostgreSQL jobs succeed. Any intermediate failure is an audit-checker issue until independently triaged, not a provider defect. A CI failure must be explicitly documented in Issue #1. **No hosted W3 interactive runner/editor answer or authentication was performed.**
+
+Evidence tier separation: five hosted pages **statement-inspected**, seven original archive files **Git-blob pinned**; synthetic tests **only where subsequently evidenced by local/CI runtime**; **zero** new authenticated official grades, **zero** new independently completed learner assignments, and **zero** new mastery credit.
+
+**Unresolved:** exact rendered original PDF page parity (including p.20/p.37/p.64), original provider grading/interactive W3 editor and Academy notebook-state fidelity, full Python and W3 curriculum, all 205 original PNP SQL problem semantics/data/key/native dialects (conservative clean supplied-key replay still **94/205**), further DE content, licensing/public redistribution and embedded-binary/PII clearance, and audit-wide source-to-concept integrity. Keep GitHub Issue #1 **OPEN**. The ChatGPT Library learner record `/Data Engineering Study/DE_LEARNING_PENDING_GITHUB_SYNC_2026-11-09.md` and later interactive study remain **UNSYNCED with GitHub** until full independently evidenced audit signoff followed by separate learner-sync commits/CI.

@@ -1,3 +1,12 @@
+## PARTIAL — 14 November 2026: archived Chinook easy Q6–Q10 saved SQL pair verification (NOT final signoff)
+
+- [x] Individually reread immutable archived Q6–Q10 Chinook source statements and their recorded historical learner SQLite/SQL Server SQL plus attributed `Official solution` queries. Original Git SHA-1 blob pins and five independently checked source-level contracts appear in [Q6–Q10 evidence ledger](<01. SQL Mastery/CHINOOK-EASY-06-10-HISTORICAL-ANSWERS-CROSS-CHECK-PARTIAL-AUDIT.md>). Each remains **Solved (recorded) 2026-10-13**, not newly independently solved.
+- [x] Added [nine-method read-only reviewer checker](scripts/check_bosscoder_chinook_easy_06_10_preserved_answers.py), replaying literal archived SQLite learner/key SQL against disposable illustrative and synthetic data. Before upload, nine boundary methods passed a local minimal-source *surrogate*; exact original Git blob checks and live-main CI require separate verification. Q6 identical-name order, Q7 fifth-place ties, Q8 canonical timestamp assumption, Q9 name/collation, Q10 grouping-key/display-label contracts are documented, not silently changed.
+- [ ] Independently verify **exact integration commit** GitHub Actions run, the nine methods individually, all jobs, and final run SHA. Local surrogate execution does not certify the archived bytes or current-head CI.
+- [ ] Do not award PNP 205-source coverage, authenticated provider official answers, independent learner completions or mastery from this historical Chinook tranche. PNP supplied-key replay **94/205 unchanged**. Original full Chinook dataset/output, screenshot parity, SQL Server, rights/privacy, remaining PNP/Python/Bosscoder/W3Schools/DE, final integrity/concept matrix unfinished. **Keep Issue #1 OPEN.** ChatGPT Library pending learner-study record and later practice **UNSYNCED with GitHub** pending full audit signoff and separate post-sync CI.
+
+---
+
 ## PARTIAL — 14 November 2026: archived Chinook easy Q1–Q5 historical answer-pair cross-check (NOT final signoff)
 
 - [x] Independently re-read and Git-blob-pinned **five** immutable archived `A. PNP easy` SQL source files (Q1–Q5), preserving the original **2026-10-13 Solved (recorded)** learner status, learner SQLite/SQL Server submissions, and attributed key sections. This is **not** five new PNP 205-question inspections or independent mastery credit. [Per-question source hashes and ledger](<01. SQL Mastery/CHINOOK-EASY-01-05-HISTORICAL-ANSWERS-CROSS-CHECK-PARTIAL-AUDIT.md>).

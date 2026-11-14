@@ -384,6 +384,9 @@ jobs:
       - name: Source-pin historical Chinook Q25 Q26 and cross-audit 12-month annual running revenue (10 tests)
         run: python3 scripts/check_bosscoder_chinook_easy_25_26_year_running_contracts.py
 
+      - name: Replay pinned original Python from Zero lessons 16-20 and dataset with twelve read-only checks
+        run: python3 scripts/check_python_from_zero_lessons_16_20_source_contracts.py
+
   native_postgres_pnp_84_90:
     name: Native PostgreSQL 16 PNP Q084/Q089/Q090/Q091/Q093/Q095/Q096/Q097/Q098/Q099/Q100 partial audit
     runs-on: ubuntu-latest

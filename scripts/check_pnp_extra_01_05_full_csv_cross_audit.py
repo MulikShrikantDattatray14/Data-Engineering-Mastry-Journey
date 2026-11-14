@@ -184,6 +184,31 @@ class OriginalFullDatasetCrossAudit(unittest.TestCase):
         self.assertEqual(actual,expected)
         print("PASS X005 full CSV rated product anti-join:",len(actual),"rated products without details")
 
+    def test_08_instructor_planted_issue_key_subset(self):
+        # Separately preserved instructor *data-quality* key, NOT an X001-X005 answer key.
+        key_path=SOURCE / "instructor" / "planted_issues.md"
+        key=key_path.read_bytes()
+        self.assertEqual(blob_sha(key),"6f4da61474880372a6e269b17ffc7958350541e6")
+        original=key.decode("utf-8")
+        for marker in (
+            "Rating missing (unrated products) | 4360",
+            "CategoryID 5012 (a category never added to Category) | 40",
+            "Category 5013 Electronics Accessories exists but has no products | 1",
+            "Lines whose ProductID is not in Products | 15",
+            "Quantity missing | 10",
+            "Quantity = 0 | 5",
+        ):
+            self.assertIn(marker,original)
+        self.assertEqual(sum(p[5] is None for p in self.products),4360)
+        self.assertEqual(sum(p[2] not in self.category_map for p in self.products),40)
+        self.assertIn(5013,self.category_map)
+        self.assertFalse(any(p[2]==5013 for p in self.products))
+        self.assertEqual(sum(pid not in self.by_id for _,pid,_ in self.details),15)
+        self.assertEqual(sum(qty is None for _,_,qty in self.details),10)
+        self.assertEqual(sum(qty==0 for _,_,qty in self.details),5)
+        print("PASS 6 independently reproduced instructor planted-issue source counts;",
+              "does NOT verify any X exercise solution")
+
     def test_07_cross_question_denominators_and_integrity(self):
         total_rated=sum(r is not None for *_,r in self.products)
         self.assertEqual(sum(row[3] for row in self.results["X001"]),total_rated)

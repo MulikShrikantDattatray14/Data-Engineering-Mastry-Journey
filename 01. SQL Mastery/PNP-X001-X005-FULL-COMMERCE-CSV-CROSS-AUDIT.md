@@ -1,0 +1,35 @@
+# PNP X001–X005 — independent whole-CSV cross-question audit (PARTIAL)
+
+**Audit date:** 14 November 2026. **Evidence type:** existing original source prompts/README already statement-inspected, plus a NEW independent cross-check using the **complete preserved CSV rows** and an independent Python reference calculation. This is **not** an original PDF/provider solution, a learner answer or native database-grade verification. The original README expressly states that **none of the five extra questions has an answer key**.
+
+## Provenance and executed scope
+
+The [new read-only full-data checker](../scripts/check_pnp_extra_01_05_full_csv_cross_audit.py) verifies the original SHA-pinned X001–X005 Markdown prompts and [README](<../99. Reference Materials/Original Mastery Snapshot/1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/Source Materials/PrepNPlaced_SQL_100_v2/README.md>) using the [earlier statement-level checker](../scripts/check_pnp_extra_01_05_sources.py). It independently pins and reads four **unchanged original** files: Products.csv (`61c11d7f65434aa38a90ef581acb1256515c3d7d`), OrderDetails.csv (`ddd2fc4d61ca4cc17a49e3dd19440716f07416ae`), Category.csv (`b355b85ddce21146a792aa1bde71b153d1b7d42b`) and load_dataset_v2.sql (`3787743252d29268c67c491d6a2eb47c1757c35b`). Counts are **22,088 Products, 168,567 OrderDetails, 12 Category** data rows, matching the preserved README.
+
+The reviewer executes the *previously auditor-authored* X001–X005 SQLite queries on **all 3 original CSVs**, then calculates results independently in Python from source rows, including product-level zero-sales treatment. New tests do not alter any source archive, execute learner queries or authenticate a provider grade. Each test works in disposable SQLite memory; no customer details or source data are published in this ledger.
+
+## Actual full-data reviewer findings
+
+| ID | Independent row-level/oracle check | Reviewer-only result on the complete preserved CSVs | Important unresolved source policy |
+|---|---|---|---|
+| X001 | Python groups each product by raw category identifier and non-NULL rating, compares to SQLite LEFT JOIN output, preserving missing Category members | **12 category-ID groups**; product and rated denominators reconcile across all 22,088 products | Category 5013 with no products does not appear when grouping *Products*; missing category 5012 is retained; alternative group-of-all-categories interpretation requires explicit policy |
+| X002 | Independent brand buckets, rated count threshold of 20 and per-brand mean vs SQL | **215 eligible brand groups** under exact raw-brand (non-normalized) grouping | NULL/empty/whitespace brand collapse and sampling meaning not specified |
+| X003 | Independent product unit totals, subcategory mean rating over rated rows, and median units over **all** subcategory products including unsold | **90 subcategories; 3,399 qualifying products** under the chosen reviewer interpretation | Zero/NULL/negative quantity treatment, returns, subcategory and rating quality; no official key |
+| X004 | Per-product units including zero for unsold, grouped under reviewer-defined bands | **Below 3: 234; [3,4): 7,058; 4+: 10,436; unrated: 4,360** products; counts total 22,088 | Band boundaries and absence of orders are explicit reviewer assumptions, not official provider grading; correlations cannot establish causality |
+| X005 | Independent anti-join by ProductID plus non-NULL rating, even if matching detail Quantity is zero | **4,488 rated catalog products without matching OrderDetails** | Imported/generated ratings, time scope and orphan detail lines make invalid/fake-rating inference unjustified |
+
+**Cross-question invariants checked:** category-rated sum equals all non-NULL product ratings; category product sum and rating-band counts both equal 22,088; brand threshold denominator agrees with filtered rated-product population; X003 excludes NULL-rated rows; X005 is a subset of rated products. The Python oracle uses separate row aggregation rather than copying the SQL candidate outputs.
+
+A second preserved [instructor planted-data-issues key](<../99. Reference Materials/Original Mastery Snapshot/1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/Source Materials/PrepNPlaced_SQL_100_v2/instructor/planted_issues.md>), Git blob `6f4da61474880372a6e269b17ffc7958350541e6`, supplies **data-quality counts**, NOT solutions to X001–X005. A new bounded check independently reconciles six specific instructor claims against the full three CSVs: **4,360 NULL Ratings; 40 Products with unmatched CategoryID 5012; category 5013 with zero Products; 15 OrderDetails with missing ProductID in Products; 10 NULL quantities; 5 zero quantities**. The no-category and orphan groups are *preserved dirty-data conditions*, not unexpected artifacts to repair.
+
+The immediately preceding [GitHub Actions run 43562631108](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43562631108) independently **passed seven full-CSV reviewer tests** at code commit `a902bc136faa731fa52ec5b18a2d9b5fd139a4ad`; actual logs showed the five per-question full-CSV checks and cross-invariants passed. The subsequent sixth-instructor-key reconciliation is a **new eighth test**: do **not** credit it as passed until final-head CI has completed; see GitHub Issue #1 for exact final-run evidence.
+
+## Explicit evidence-tier boundary and open blockers
+
+- **Indexed:** X001–X005 all present, already indexed, no duplicate coverage credit.
+- **Statement inspected:** all five preserved Markdown prompts plus original README independently inspected in prior audits and source blob guarded in this run.
+- **Synthetic test passed:** ten older small reviewer fixture groups already CI-verified. **Full archived CSV reviewer cross-check:** seven methods independently passed at `a902bc1`; eighth independent instructor-key method needs exact-head CI confirmation. This is more extensive than synthetic fixtures but remains *reviewer-derived SQL outputs*.
+- **Official answer verified:** **NONE for X001–X005**; their README explicitly says no key exists. A planted-issue instructor count is a *separate source data-quality claim*, not an answer to X questions.
+- **Learner independently solved:** **NO new evidence**. Historical source fields remain NOT SOLVED YET/Pending.
+
+**Still unresolved:** original hosted/PDF output and any optional supplied provider comparison for the 100 P-series; seven P-series native/key completion gaps, Advanced MySQL provider key and full question-output parity, all other dataset quality claims, native PostgreSQL/MySQL X execution, missing-category and rating-policy choices, remaining original Python/Bosscoder/W3Schools/Data Engineering sources, rights and privacy, source-to-concept signoff. The global conservative P-series supplied-key tally stays **94/205**, not increased by these X tests. **Issue #1 remains OPEN and post-audit ChatGPT Library learner sync remains UNSYNCED** until final independent audit signoff and successful CI.

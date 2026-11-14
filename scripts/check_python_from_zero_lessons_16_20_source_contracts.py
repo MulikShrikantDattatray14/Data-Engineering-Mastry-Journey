@@ -108,7 +108,14 @@ class ImmutablePython16To20(unittest.TestCase):
             "run directly: running the tool\n",
             proc.stdout,
         )
-        w3 = run_original(16, [1, 2], tilde=True)
+        # The archived W3 source explicitly creates TWO distinct files:
+        # pricing.py and main.py. Concatenating both blocks into -c is invalid.
+        with tempfile.TemporaryDirectory(prefix="w3-module-archive-test-") as td:
+            (Path(td) / "pricing.py").write_text(snippets(16, True)[0], encoding="utf-8")
+            w3 = subprocess.run(
+                [sys.executable, "-c", snippets(16, True)[1]],
+                cwd=td, capture_output=True, text=True, check=False, timeout=15,
+            )
         self.assertEqual(0, w3.returncode, w3.stderr)
         self.assertEqual("600.0\n", w3.stdout)
 

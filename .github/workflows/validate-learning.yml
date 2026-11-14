@@ -372,6 +372,9 @@ jobs:
       - name: Source-pin and replay saved historical easy Q11-Q15 Northwind and Chinook SQL pairs (twelve reviewer tests)
         run: python3 scripts/check_bosscoder_chinook_easy_11_15_preserved_answers.py
 
+      - name: Source-pin archived easy Q16-Q20 and replay 11 Northwind SQL reviewer cases
+        run: python3 scripts/check_bosscoder_chinook_easy_16_20_preserved_answers.py
+
       - name: Cross-review five immutable PNP A096-A100 calendar questions against Python oracles
         run: python3 scripts/check_pnp_advanced_96_100_calendar_policy.py
 

@@ -348,7 +348,7 @@ jobs:
       - name: Audit original mentorship Python sample datasets and linked lessons with nine read-only tests
         run: python3 scripts/check_python_training_fixture_cross_source.py
 
-      - name: Audit original mentor Python local runner: source hashes, archived demo, scratch limits and loopback guards
+      - name: Audit original mentor Python local runner source hashes, archived demo, scratch limits and loopback guards
         run: python3 scripts/check_python_practice_runner_original_safety.py
 
   native_postgres_pnp_84_90:

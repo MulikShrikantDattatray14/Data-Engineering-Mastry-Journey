@@ -1,3 +1,11 @@
+### 14 November 2026 — Q16–Q20 original-blob-pinned CI independently verified (PARTIAL)
+
+- [x] **Exact integrated-main SHA fc915844af33da7db0d8b733def4432b2fe57ad8** successfully passed [GitHub Actions run 43589061430](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43589061430). Independently read actual validation job 132429705819 logs: all **11/11** original source-pinned `HistoricalEasySixteenThroughTwenty` methods displayed `ok`, `Ran 11 tests` and `OK`; **125/125 general validation** and **18/18 native PostgreSQL** job steps successful, zero failed/skipped. The native PostgreSQL job relates to older PNP source checks, not native Northwind Q16–Q20 SQL Server execution.
+- [x] Independent Git comparison baseline 49a690945ea6cb6a6acad77bececb14745f2a4d7 → integrated-main fc915844af33da7db0d8b733def4432b2fe57ad8: **one scoped commit, exactly four audit-owned changed paths** — source-pinned checker, new evidence ledger, workflow, append-only status. Original archives/learner historical records/canonical foundations unchanged. This follow-up documentation commit **requires its own exact-head CI** before attributing success to final main.
+- [ ] Source provider row totals/screenshots and authoritative Northwind schema/DB and SQL Server/provider answer grades remain unverified; these are **reviewer synthetic boundaries**, not original exercise grades. Source-index question count PNP clean supplied key **94/205 unchanged**; official answers authenticated **0 new**, independent learner solves **0 new**, mastery **0 new**. Issue #1 OPEN; whole course, licensing/privacy and source-to-concept signoff incomplete. ChatGPT Library pending study record remains UNSYNCED with GitHub.
+
+---
+
 ## PARTIAL — 14 November 2026: archived Northwind easy Q16–Q20 saved SQL pair cross-check (CI NOT YET VERIFIED)
 
 - [x] Individually re-read all five preserved original Northwind historical Q16–Q20 question files, full archived learner SQLite/SQL Server SQL and archive-attributed answer sections. Their five unchanged Git blob identities and individual contracts are documented in [Q16–Q20 evidence ledger](<01. SQL Mastery/NORTHWIND-EASY-16-20-HISTORICAL-ANSWERS-CROSS-CHECK-PARTIAL-AUDIT.md>). Historical "Solved (recorded): 2026-10-13" remains historical only. They are **not** extra PNP P/A/X question IDs.

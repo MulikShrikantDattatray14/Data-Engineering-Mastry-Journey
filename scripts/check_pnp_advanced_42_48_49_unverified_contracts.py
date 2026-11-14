@@ -150,10 +150,10 @@ class PNPUnverifiedCTEAveragesAndReporting(unittest.TestCase):
         self.assertEqual({r[0] for r in rows}-{r[0] for r in result},{5,6,7})
 
     def test_11_root_query_does_not_invent_zero_depth_for_empty_org(self):
-        with open_fixture() as db:
-            result=db.execute("WITH paths AS ("+ROOTED_QUERY.split("WITH RECURSIVE ")[1].split("SELECT emp_id,path,depth")[0]+
-                              "SELECT 1) SELECT 1").fetchall() if False else db.execute("SELECT MAX(emp_id) FROM employees").fetchall()
         self.assertEqual(rooted([]),[])
+        with open_fixture() as db:
+            # SQL aggregate MAX over an empty input is NULL, not zero.
+            result=db.execute("SELECT MAX(emp_id) FROM employees").fetchall()
         self.assertEqual(result,[(None,)])
 
     def test_12_prefix_overlap_1_11_111_and_duplicate_names_are_safe(self):

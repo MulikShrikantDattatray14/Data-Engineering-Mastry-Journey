@@ -50,7 +50,11 @@ def replay(name: str, indexes: tuple[int, ...]) -> None:
             exec(compile(code, name + ":original-example-" + str(index + 1), "exec"),
                  {"__name__": "__audit_replay__"})
             actual = captured.getvalue().rstrip("\n")
-        if actual != published.rstrip("\n"):
+        # Archive Markdown trims invisible end-of-line spaces from the printed
+        # sample (L12 snippet 2 uses print(product, end=" ")). Preserve every
+        # visible character and line; ignore only trailing ASCII spaces.
+        norm = lambda value: "\n".join(line.rstrip(" ") for line in value.splitlines())
+        if norm(actual) != norm(published):
             raise AssertionError(f"{name} original example {index + 1}: {actual!r} != {published!r}")
 
 class W3PythonCollectionMethodsFiveCrossSource(unittest.TestCase):

@@ -390,6 +390,9 @@ jobs:
       - name: Cross-check five hosted W3 Python fundamentals against archive pins and twelve reviewer methods
         run: python3 scripts/check_w3schools_python_fundamentals_5_primary_cross_source.py
 
+      - name: Cross-check five hosted W3 Python input control-flow and lists lessons (14 reviewer tests)
+        run: python3 scripts/check_w3schools_python_control_flow_lists_5_primary_cross_source.py
+
   native_postgres_pnp_84_90:
     name: Native PostgreSQL 16 PNP Q084/Q089/Q090/Q091/Q093/Q095/Q096/Q097/Q098/Q099/Q100 partial audit
     runs-on: ubuntu-latest

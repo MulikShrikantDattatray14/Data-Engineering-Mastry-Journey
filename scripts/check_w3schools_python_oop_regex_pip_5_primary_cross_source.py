@@ -58,7 +58,7 @@ class W3PythonOopRegexPipFiveCrossSource(unittest.TestCase):
         for path, expected in ORIGINALS:
             with self.subTest(path=path.name):
                 self.assertEqual(expected, git_blob_sha(path.read_bytes()))
-        self.assertIn("PDF, page 37", CLASS_LESSON.read_text(encoding="utf-8"))
+        self.assertIn("PDF page 37 of 80", CLASS_LESSON.read_text(encoding="utf-8"))
         self.assertIn("https://www.w3schools.com/python/python_classes.asp",
                       CLASS_LESSON.read_text(encoding="utf-8"))
         self.assertIn("https://www.w3schools.com/python/python_pip.asp",

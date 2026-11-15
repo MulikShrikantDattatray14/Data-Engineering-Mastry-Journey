@@ -4,6 +4,7 @@
 Runs the original supplier SQL without translation on disposable temp tables.
 Synthetic tests never establish original Commerce CSV parity or learner mastery.
 """
+import csv
 import hashlib
 import os
 import re
@@ -166,6 +167,27 @@ class OriginalQ083NativePostgres(unittest.TestCase):
         result = run([(1, "Care", "Y")], products, orders, details)
         self.assertEqual(result, [
             ("Care", "A", 2, 0, Decimal("0.00"), Decimal("7.50"))])
+
+
+    def test_13_original_category_csv_population_and_active_flags(self):
+        """Inspect actual small archived Category.csv; not the unavailable Products/Orders."""
+        source = BASE / "Source Materials/PrepNPlaced_SQL_100_v2/data/Category.csv"
+        self.assertEqual(git_blob(source),
+                         "b355b85ddce21146a792aa1bde71b153d1b7d42b")
+        with source.open(encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            self.assertEqual(reader.fieldnames, ["CategoryID", "CategoryName", "Active"])
+            rows = list(reader)
+        self.assertEqual(len(rows), 12)
+        self.assertEqual(len({x["CategoryID"] for x in rows}), 12)
+        self.assertEqual(len({x["CategoryName"] for x in rows}), 12)
+        self.assertTrue(all(x["CategoryName"].strip() for x in rows))
+        active = {"1", "TRUE", "T", "Y", "YES"}
+        enabled = sum(x["Active"].strip().upper() in active for x in rows)
+        self.assertEqual(enabled, 9)
+        self.assertEqual(len(rows) - enabled, 3)
+        # Thus Q083's category-name collisions/NULLs are schema-permitted
+        # conditional cases, NOT observed in this twelve-row Category source.
 
 
 if __name__ == "__main__":

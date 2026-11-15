@@ -36,6 +36,8 @@ DATA_PINS = {
     "employees.csv": "08d2330cc9dab1530d6ff8e896211f7867438e4b",
     "customers.json": "d6125fce237e7f7e3193667946d1eb117cd19db0",
     "events.jsonl": "975c007a68c336007023a9ebd92ba82f02a6b7c3",
+    "logins.csv": "e5669aa40eb3a08569355351eaa1c4f6e35a556d",
+    "order_items.csv": "072bd904c499ce5547049eb8ba0fc2dd4c071cd0",
 }
 FENCE = re.compile(r"(?ms)^~~~(python|text)[ \t]*\n(.*?)^~~~[ \t]*$")
 

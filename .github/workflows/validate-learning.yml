@@ -594,6 +594,14 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q079_q080_native_postgres_retention.py
+      - name: Replay PNP Q077 Q078 unmodified supplier keys on native PostgreSQL and test price/null boundaries (15 tests)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q077_q078_native_postgres_supplier_price_percentile.py
       - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
         env:
           PGHOST: 127.0.0.1

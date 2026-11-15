@@ -8,6 +8,7 @@ PDF page-render parity, supplied production data, learner submissions, or master
 import hashlib
 import itertools
 import sqlite3
+from contextlib import closing
 import statistics
 import unittest
 from pathlib import Path
@@ -82,7 +83,7 @@ QUERIES = {
  """
 }
 def run(which, records):
-    with sqlite3.connect(":memory:") as c:
+    with closing(sqlite3.connect(":memory:")) as c:
         c.executescript(SCHEMA)
         for table, vals in records.items():
             if not vals:

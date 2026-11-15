@@ -37,11 +37,11 @@ DATA_PINS = {
     "customers.json": "d6125fce237e7f7e3193667946d1eb117cd19db0",
     "events.jsonl": "975c007a68c336007023a9ebd92ba82f02a6b7c3",
 }
-FENCE = re.compile(r"(?ms)^~~~(python|text)[ \\t]*\\n(.*?)^~~~[ \\t]*$")
+FENCE = re.compile(r"(?ms)^~~~(python|text)[ \t]*\n(.*?)^~~~[ \t]*$")
 
 
 def git_blob_sha(raw: bytes) -> str:
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
 def original(lesson: int) -> str:
@@ -193,7 +193,7 @@ class PreservedFoundationsSixToTen(unittest.TestCase):
         self.assertEqual([3] * 4, [f() for f in late])
         self.assertEqual(list(range(4)), [f() for f in frozen])
         with self.assertRaises(UnboundLocalError):
-            exec("n=1\\ndef bump():\\n    n+=1\\nbump()")
+            exec("n=1\ndef bump():\n    n+=1\nbump()")
 
     def test_15_keyword_only_type_hints_do_not_enforce_types(self):
         def add(*, x: int, y: int) -> int:
@@ -240,14 +240,14 @@ class PreservedFoundationsSixToTen(unittest.TestCase):
     def test_18_csv_quoted_comma_and_output_header_fields(self):
         with tempfile.TemporaryDirectory() as temp:
             file = Path(temp) / "a.csv"
-            file.write_text('id,amount\\n1,"1,200"\\n', encoding="utf-8")
+            file.write_text('id,amount\n1,"1,200"\n', encoding="utf-8")
             with file.open(newline="", encoding="utf-8") as source:
                 self.assertEqual("1,200", next(csv.DictReader(source))["amount"])
             with file.open("w", newline="", encoding="utf-8") as out:
                 writer = csv.DictWriter(out, fieldnames=["id"], extrasaction="ignore")
                 writer.writeheader()
                 writer.writerow({"id": 1, "amount": "1,200"})
-            self.assertEqual("id\\n1\\n", file.read_text(encoding="utf-8"))
+            self.assertEqual("id\n1\n", file.read_text(encoding="utf-8"))
 
     def test_19_json_null_and_json_lines_bad_empty_line_boundary(self):
         self.assertIsNone(json.loads('{"city":null}')["city"])

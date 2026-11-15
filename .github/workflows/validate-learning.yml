@@ -578,6 +578,14 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q037_q071_q072_native_postgres_forensic.py
+      - name: Reproduce original PNP Q076 12-month calendar-spine discrepancy on native PostgreSQL 16 (12 tests)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q076_native_postgres_calendar_spine.py
       - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
         env:
           PGHOST: 127.0.0.1

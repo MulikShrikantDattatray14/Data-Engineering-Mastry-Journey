@@ -1,0 +1,23 @@
+# PNP Q076 — original supplier SQL on native PostgreSQL 16 (PARTIAL)
+
+**Audit date:** 16 November 2026. This is an **additional native-engine replay** of an already indexed, individually inspected PNP Foundation question and supplied answer key; it is **not a newly verified official answer** and not new learner work.
+
+## Original sources, provenance and evidence tiers
+
+- Original preserved Q076: `99. Reference Materials/Original Mastery Snapshot/1. SQL Mastery/1. SQL Mastry/2.PNP- foundations and practice/12. Dates and Time/P076. Order value from new vs returning customers by month.md`, Git blob `5c991b66eb5a87e858a021b0c94f0e93c173f190`. Source attributes the problem to the mentorship SQL PDF question 76, pp. 141–144; original rendered PDF page parity remains unverified here.
+- Separate archived **supplier-provided PostgreSQL reference key**, `.../Source Materials/PrepNPlaced_SQL_100_v2/sql/all_100_solutions.sql`, Git blob `7912c8e676621c513e0b635a40c6ee299404676e`; Q76 block extracted and executed *without SQL rewrites*.
+- Historical learner badges and solution sections were checked: **NOT SOLVED YET**, SQLite/SQL Server **Pending**, official-display section **Pending**. The external bundled supplier key does **not** make that section an authenticated official-grade verification.
+
+**Read-only CI reviewer:** [12 native PostgreSQL tests](../scripts/check_pnp_q076_native_postgres_calendar_spine.py), using transaction-scoped temporary tables. The twelve methods cover immutable source identity, PostgreSQL-16 runtime, source example populated rows, explicit missing calendar spine, prewindow full-history classification, multiple orders in first month, leap-day boundary, NULL amount semantics, a zero signed-value denominator, a nullable-customer/latest-date data-quality counterexample, missing order-date handling, and a positive control with all 12 months populated. Fixture data is auditor-created except for the original six-line source sample.
+
+## Independently specified contract outcomes
+
+1. **Source/key illustrated-row mismatch:** Q076 requires **all twelve calendar months**, February 2025–January 2026, including ten zero-order months, each with 0 orders, 0 value and a NULL percentage. Its unchanged supplier key aggregates solely observed `tagged.order_month` values. On the source six-order example, native PostgreSQL returns **only December 2025 and January 2026** (2 rows), with the two populated-month figures matching the source. The ten February–November 2025 zero-order months are absent. Passing a regression that *reproduces* the gap is **not** passing the full question's expected output.
+2. **Correct bounded behaviors in the unchanged supplier SQL:** historical earlier-than-window customer order correctly makes an in-window order returning; all orders in a customer's first *calendar month* count new, subsequent-month orders count returning; leap-day-first-order handling, NULL/zero totals and denominator-0 NULL behavior match the independently specified fixtures. When every reporting month has an order, the key returns 12 months.
+3. **Conditional data-quality weakness:** The anchor's `MAX(OrderDate)` reads all orders, while the tagged CTE excludes rows with NULL `CustomerID`. A synthetic future-dated row with unknown customer moves the 12-month window and omits an earlier legitimate row; whether real Commerce v2 schema permits such rows was **not established**. Do not infer that this occurs in the actual dataset.
+
+**Status vocabulary:** indexed **yes**; original statement inspected **yes**; synthetic source-key replay **tested in native PostgreSQL only after CI confirms**; official answer/grade independently verified **no**; learner independently solved **no**. Earlier SQLite tests had already flagged the calendar-spine discrepancy; this native follow-up must not increase the conservative unique supplied-key count (still **94/205**) or imply original PDF/production-data parity.
+
+## Still blocked / next gates
+
+Render and compare actual PDF pp.141–144; inspect original Commerce v2 schema plus full CSV (especially NULL CustomerID/data validation) and validate native-key outputs with complete data; obtain authentic provider grading/clarification on empty-month policy and a source-consistent calendar spine; inspect remaining PNP question semantics, Python/Bosscoder/W3Schools/DE, licensing and privacy, then full source-to-concept signoff. Preserve original archive, supplied key, historical learner attempts and canonical foundations **unaltered**. GitHub Issue #1 stays **OPEN**. No learner-study ChatGPT Library sync until full independent audit signoff and separate passing post-sync CI.

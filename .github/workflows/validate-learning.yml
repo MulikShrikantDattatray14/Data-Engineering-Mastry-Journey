@@ -440,6 +440,9 @@ jobs:
       - name: Source-pin Python-from-Zero original pages 15-19 and replay 17 reviewer methods
         run: python3 scripts/check_python_from_zero_lessons_11_15_source_contracts.py
 
+      - name: Reconcile 76 Python pages and 205 PNP SQL source-to-concept index links (10 tests)
+        run: python3 scripts/check_source_to_concept_index_reconciliation.py
+
   native_mysql_pnp_85_90:
     name: Native MySQL 8.0 original A088 Error 1093 and A085–A090 partial reviewer audit
     runs-on: ubuntu-latest

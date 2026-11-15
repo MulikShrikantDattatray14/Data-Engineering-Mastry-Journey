@@ -429,6 +429,40 @@ jobs:
       - name: Source-pin A081-A084 and cross-audit day month ID streak semantics with 17 bounded tests
         run: python3 scripts/check_pnp_advanced_81_84_day_month_id_differential.py
 
+  native_mysql_pnp_85_90:
+    name: Native MySQL 8.0 original A088 Error 1093 and A085–A090 partial reviewer audit
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: only_disposable_audit
+          MYSQL_DATABASE: audit
+          MYSQL_USER: audit
+          MYSQL_PASSWORD: audit
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd "mysqladmin ping -h localhost -uroot -ponly_disposable_audit"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - name: Native MySQL 8.0 exact A088 archived SQL and 13-source-pinned A085-A090 bounded methods
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_PORT: 3306
+          MYSQL_DATABASE: audit
+          MYSQL_USER: audit
+          MYSQL_PASSWORD: audit
+        run: |
+          python3 -m venv /tmp/pnp-native-mysql
+          /tmp/pnp-native-mysql/bin/python -m pip install --disable-pip-version-check 'PyMySQL==1.1.1'
+          /tmp/pnp-native-mysql/bin/python scripts/check_pnp_advanced_85_90_native_mysql.py
+
   native_postgres_pnp_84_90:
     name: Native PostgreSQL 16 PNP Q084/Q089/Q090/Q091/Q093/Q095/Q096/Q097/Q098/Q099/Q100 partial audit
     runs-on: ubuntu-latest

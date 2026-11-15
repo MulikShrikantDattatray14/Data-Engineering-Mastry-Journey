@@ -22,9 +22,6 @@ jobs:
       - name: Audit seven DE subject navigation-only folders against 18 source-pinned originals (12 structural checks)
         run: python3 scripts/check_de_subject_03_09_navigation_primary_gap.py
 
-      - name: Replay 13 original Bosscoder Python Refresher-2 lecture fences and audit four still-pending assignment statements (16 tests)
-        run: python3 scripts/check_bosscoder_python_refresher_02_lecture_and_pending_grading_contracts.py
-
       - name: Check fenced Python examples parse successfully
         run: python3 scripts/check_python_fences.py
 

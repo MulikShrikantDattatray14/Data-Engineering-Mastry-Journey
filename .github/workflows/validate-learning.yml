@@ -89,6 +89,9 @@ jobs:
       - name: Inspect original private Bosscoder Refresher-2 PDF pages 4-6 recorded outputs vs sequential Python state (10 tests)
         run: python3 scripts/check_bosscoder_refresher_02_original_pdf_p4_p6_sequential_state.py
 
+      - name: Review Bosscoder original private PDF pages 7-11 string tuple set dictionary contracts (16 bounded tests)
+        run: python3 scripts/check_bosscoder_refresher_02_original_pdf_p7_p11_boundaries.py
+
       - name: Reviewer-only semantic stress checks for four pending Bosscoder Python Refresher-2 assignments
         run: python3 scripts/check_bosscoder_refresher_02_pending_semantics.py
 

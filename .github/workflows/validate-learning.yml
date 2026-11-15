@@ -86,6 +86,9 @@ jobs:
       - name: Audit Bosscoder Refresher-2 archived notes (13 source examples, 4 pending assignments, 5 synthetic boundaries)
         run: python3 scripts/check_bosscoder_refresher_02_notes.py
 
+      - name: Inspect original private Bosscoder Refresher-2 PDF pages 4-6 recorded outputs vs sequential Python state (10 tests)
+        run: python3 scripts/check_bosscoder_refresher_02_original_pdf_p4_p6_sequential_state.py
+
       - name: Reviewer-only semantic stress checks for four pending Bosscoder Python Refresher-2 assignments
         run: python3 scripts/check_bosscoder_refresher_02_pending_semantics.py
 

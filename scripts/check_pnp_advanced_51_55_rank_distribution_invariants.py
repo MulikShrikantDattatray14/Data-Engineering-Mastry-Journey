@@ -9,6 +9,7 @@ import itertools
 import sqlite3
 import unittest
 from pathlib import Path
+from contextlib import closing
 
 BASE = Path(__file__).resolve().parents[1] / (
     "99. Reference Materials/Original Mastery Snapshot/"
@@ -55,11 +56,11 @@ def connection(rows):
     return con
 
 def windows(rows):
-    with connection(rows) as con:
+    with closing(connection(rows)) as con:
         return con.execute(WINDOW).fetchall()
 
 def top(rows):
-    with connection(rows) as con:
+    with closing(connection(rows)) as con:
         return con.execute(TOP).fetchall()
 
 class PNPAdvancedRankDistributionCrossCheck(unittest.TestCase):
@@ -89,7 +90,7 @@ class PNPAdvancedRankDistributionCrossCheck(unittest.TestCase):
 
     def test_03_A052_original_department_reset_illustration_retyped(self):
         rows=[(1,10,100,None),(2,10,90,None),(3,10,90,None),(4,20,80,None)]
-        self.assertEqual([(r[0],r[6]) for r in windows(rows)],
+        self.assertEqual([(r[0],r[8]) for r in windows(rows)],
                          [(1,1),(2,2),(3,2),(4,1)])
 
     def test_04_A053_original_earliest_hire_tie_illustration_retyped(self):
@@ -158,7 +159,7 @@ class PNPAdvancedRankDistributionCrossCheck(unittest.TestCase):
 
     def test_12_adding_emp_id_to_rank_window_destroys_salary_peers(self):
         rows=[(1,10,100,None),(2,10,90,None),(3,10,90,None)]
-        with connection(rows) as con:
+        with closing(connection(rows)) as con:
             broken=con.execute(
                 "SELECT emp_id,RANK() OVER (ORDER BY salary DESC,emp_id)"
                 " FROM employees ORDER BY emp_id").fetchall()
@@ -169,7 +170,7 @@ class PNPAdvancedRankDistributionCrossCheck(unittest.TestCase):
     def test_13_cume_dist_is_not_rows_running_share_with_ties(self):
         rows=[(1,10,10,None),(2,10,20,None),
               (3,10,20,None),(4,10,30,None)]
-        with connection(rows) as con:
+        with closing(connection(rows)) as con:
             running=con.execute(
                 "SELECT emp_id,ROW_NUMBER() OVER (ORDER BY salary,emp_id)/4.0 "
                 "FROM employees ORDER BY emp_id").fetchall()
@@ -185,7 +186,7 @@ class PNPAdvancedRankDistributionCrossCheck(unittest.TestCase):
     def test_15_A053_NULL_hire_date_sorts_before_valid_date_in_sqlite(self):
         rows=[(1,10,100,None),(2,10,100,"2010-01-01")]
         self.assertEqual(top(rows),[(10,1,100)])
-        with connection(rows) as con:
+        with closing(connection(rows)) as con:
             qualified=con.execute(
                 "SELECT emp_id FROM employees ORDER BY "
                 "salary DESC,(hire_date IS NULL),hire_date,emp_id LIMIT 1"

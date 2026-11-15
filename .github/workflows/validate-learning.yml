@@ -570,6 +570,14 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_100_native_postgres.py
+      - name: Forensic native PostgreSQL Q037 Q071 Q072 source-key replay and NULL/orphan policy gaps (15 tests)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q037_q071_q072_native_postgres_forensic.py
       - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
         env:
           PGHOST: 127.0.0.1

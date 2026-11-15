@@ -96,7 +96,7 @@ class SourcePinnedPolicyChecks(unittest.TestCase):
         self.assertEqual(len(SOURCES),5)
         for k,(name,expected,page) in SOURCES.items():
             data=(BASE/(k+". "+name)).read_bytes()
-            real=hashlib.sha1(b"blob "+str(len(data)).encode()+b"\\0"+data).hexdigest()
+            real=hashlib.sha1(b"blob "+str(len(data)).encode()+b"\0"+data).hexdigest()
             self.assertEqual(real,expected,k)
             body=data.decode("utf-8")
             for marker in ("# Advanced Q"+k[1:]+".",
@@ -105,9 +105,9 @@ class SourcePinnedPolicyChecks(unittest.TestCase):
                            "### Sample input and expected output (illustrative)",
                            "The PDF does not provide separate sample input",
                            "NOT SOLVED YET",
-                           "## My solution — SQLite\\n\\nPending.",
-                           "## My solution — SQL Server\\n\\nPending.",
-                           "## Official solution\\n\\nPending until"):
+                           "## My solution — SQLite\n\nPending.",
+                           "## My solution — SQL Server\n\nPending.",
+                           "## Official solution\n\nPending until"):
                 self.assertIn(marker,body,(k,marker))
 
     # Five LOCAL archive-authored illustrations, not supplier-certified output.
@@ -122,10 +122,10 @@ class SourcePinnedPolicyChecks(unittest.TestCase):
                            enumerate((100,80,60,40,20),1)]}),[(10,100)])
     def test_05_a074_local_illustration(self):
         products=[(1,"Books"),(2,"Books"),(3,"Books"),(4,"Books"),(5,"Audio")]
-        lines=[(i+10,i,1,50-10*i) for i in range(1,6)]
+        lines=[(i+10,i,1,5 if i==5 else 50-10*i) for i in range(1,6)]
         self.assertEqual(run("A074",{"products":products,"order_items":lines}),
                          [("Books",1,40),("Books",2,30),
-                          ("Books",3,20),("Audio",5,0)])
+                          ("Books",3,20),("Audio",5,5)])
     def test_06_a075_local_illustration(self):
         rows=[(1,10,"2026-01-01 09:00",50),
               (2,10,"2026-01-02 09:00",50),

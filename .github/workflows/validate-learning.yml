@@ -431,6 +431,8 @@ jobs:
 
       - name: Replay 19 preserved Python Foundations page 25-29 examples and 20 source-pinned reviewer methods
         run: python3 scripts/check_python_foundations_01_05_source_examples.py
+      - name: Replay 23 original Python Foundations page 30-34 blocks and 23 source-pinned review tests
+        run: python3 scripts/check_python_foundations_06_10_source_examples.py
 
   native_mysql_pnp_85_90:
     name: Native MySQL 8.0 original A088 Error 1093 and A085–A090 partial reviewer audit

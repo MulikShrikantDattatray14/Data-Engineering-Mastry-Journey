@@ -24,3 +24,9 @@ The linked archived CSV `python_de_dataset/orders.csv` is independently pinned t
 ## CI status
 
 The new reviewer was committed as `0cc469120ee555255a4d86604ad105e3ddf16d66`; CI integration at `6b2694468de0ecfaf499344333e9979a398b89eb` started [Actions run 43705100520](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43705100520). **Do not mark any of its 20 tests as PASS until the named CI methods actually complete**. Any first-run failures must be disclosed and attributed to the tested code or reviewer as evidence shows, without modifying original archives.
+
+## Independently verified first reviewer-enabled CI
+
+[Actions run 43705100520](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43705100520) **completed SUCCESS** for exact workflow-head `6b2694468de0ecfaf499344333e9979a398b89eb`. Decoded actual validation job `132784380991`: all **20 individually named PreservedFiveLessons methods** displayed `... ok`, `Ran 20 tests in 0.196s`, `OK`. The five source-page methods collectively executed **all 19 untouched archived code snippets** and matched their respective archived printed output blocks, including the 15-row CSV-backed sample. Separate native PostgreSQL **18/18** and MySQL **9/9** job steps passed; full general validation **145/145** steps passed, without failures/skips. This is Markdown companion output parity, **not** original PDF rendered parity, provider grading or learner work.
+
+This appended documentation itself produces a new SHA and requires an independent final **exact-head** CI check. The original five companion source blobs, historical learner records and canonical foundation notes were not modified.

@@ -92,7 +92,7 @@ class NativeDatesAndRetention(unittest.TestCase):
 
     def a097(self):
         return self.run_sql("""SELECT order_id,
-          DATE_FORMAT(order_date,'%%Y-%%m-01') AS month_start,
+          DATE_FORMAT(order_date,'%Y-%m-01') AS month_start,
           LAST_DAY(order_date) AS month_end
           FROM orders ORDER BY order_id""")
 
@@ -113,10 +113,10 @@ class NativeDatesAndRetention(unittest.TestCase):
 
     def a100(self):
         return self.run_sql("""WITH firsts AS
-          (SELECT cust_id,DATE_FORMAT(MIN(order_date),'%%Y-%%m-01') AS first_month
+          (SELECT cust_id,DATE_FORMAT(MIN(order_date),'%Y-%m-01') AS first_month
            FROM orders WHERE cust_id IS NOT NULL AND order_date IS NOT NULL
            GROUP BY cust_id)
-          SELECT DATE_FORMAT(f.first_month,'%%Y%%m') AS cohort,
+          SELECT DATE_FORMAT(f.first_month,'%Y%m') AS cohort,
             COUNT(DISTINCT o.cust_id) AS retained_m1
           FROM firsts f JOIN orders o ON o.cust_id=f.cust_id
             AND o.order_date >= DATE_ADD(f.first_month,INTERVAL 1 MONTH)
@@ -171,7 +171,7 @@ class NativeDatesAndRetention(unittest.TestCase):
            FORCE INDEX(idx_order_date)
            WHERE order_date >= DATE_SUB('2026-02-01',INTERVAL 30 DAY)""")[0]
         # MySQL EXPLAIN: id/select_type/table/partitions/type/possible_keys/key...
-        self.assertEqual(plan[5], "idx_order_date")
+        self.assertEqual(plan[6], "idx_order_date")
         self.assertEqual(plan[4], "range")
         # Hinted synthetic plan shows eligible range access, not production speed.
 

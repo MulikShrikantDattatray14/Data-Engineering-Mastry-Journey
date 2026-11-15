@@ -95,7 +95,7 @@ class PreservedFoundationsSixToTen(unittest.TestCase):
                 self.assertEqual(result.stdout, expected)
                 self.assertEqual(result.stderr, "")
 
-    def test_01_five_original_blob_pins_23_output_pairs_four_dataset_pins(self):
+    def test_01_five_original_blob_pins_23_output_pairs_six_dataset_pins(self):
         self.assertEqual(23, sum(len(paired_snippets(n)) for n in PINS))
         for filename, sha in DATA_PINS.items():
             with self.subTest(filename=filename):

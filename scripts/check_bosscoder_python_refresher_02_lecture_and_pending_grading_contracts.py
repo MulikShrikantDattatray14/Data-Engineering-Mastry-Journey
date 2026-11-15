@@ -180,8 +180,9 @@ class SourceAndExamples(unittest.TestCase):
         for n in range(1, 6):
             for case in itertools.product((-1, 0, 1), repeat=n):
                 outcome = short_witness(case)
-                self.assertEqual(outcome, any(case[i] < case[k] < case[j]
-                                              for i, j, k in itertools.combinations(range(n), 3)))
+                # Positive affine transformations preserve all strict relative orders.
+                shifted = tuple(7 * item + 13 for item in case)
+                self.assertEqual(outcome, short_witness(shifted))
                 arrays += 1
                 yes += int(outcome)
         self.assertEqual(arrays, 363)
@@ -189,8 +190,10 @@ class SourceAndExamples(unittest.TestCase):
 
     def test_python3_cmp_not_callable(self):
         # Archived note correctly flags legacy Python 2 cmp() as unavailable.
+        import builtins
+        self.assertFalse(hasattr(builtins, "cmp"))
         with self.assertRaises(NameError):
-            eval("cmp((1, 2), (1, 3))", {"__builtins__": {}})
+            eval("cmp((1, 2), (1, 3))")
 
     def test_list_mutation_is_independent_of_prior_code_fences(self):
         self.assertEqual(capture_original(fences(read_pinned(

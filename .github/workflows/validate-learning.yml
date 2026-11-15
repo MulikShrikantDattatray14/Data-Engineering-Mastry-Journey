@@ -318,6 +318,8 @@ jobs:
         run: python3 scripts/check_pnp_advanced_61_70_sources.py
       - name: Differential review A071-A075 source samples median percentile top revenue and payment boundaries (18 tests)
         run: python3 scripts/check_pnp_advanced_71_75_percentile_median_revenue_latest_cross_contracts.py
+      - name: Cross-check A076-A080 ranking and gaps in 18 source-pinned SQLite reviewer methods
+        run: python3 scripts/check_pnp_advanced_76_80_ranking_gap_source_contracts.py
       - name: Audit source-pinned A071-A080, ten original statements and twenty reviewer SQLite cases
         run: python3 scripts/check_pnp_advanced_71_80_sources.py
       - name: Audit immutable A081-A090 source and twenty bounded reviewer-only SQLite cases

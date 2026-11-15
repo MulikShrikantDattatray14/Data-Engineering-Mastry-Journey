@@ -306,6 +306,8 @@ jobs:
 
       - name: Audit source-pinned A051-A060 and 20 synthetic window/rank/date fixtures
         run: python3 scripts/check_pnp_advanced_51_60_sources.py
+      - name: Exhaustively cross-check PNP A051-A055 ranked distributions and NULL policy on 1296 reviewer fixtures
+        run: python3 scripts/check_pnp_advanced_51_55_rank_distribution_invariants.py
       - name: Audit source-pinned A061-A070 and 20 calendar/window/peer reviewer SQLite fixture groups
         run: python3 scripts/check_pnp_advanced_61_70_sources.py
       - name: Audit source-pinned A071-A080, ten original statements and twenty reviewer SQLite cases

@@ -1,0 +1,17 @@
+# PNP Advanced A066–A070: original-source window/quartile/share cross-review — PARTIAL (15 November 2026)
+
+Five preserved original question Markdown bodies were independently fetched, read and pinned by Git blob hash. These questions were already indexed/statement-inspected in A061–A070; there are zero new unique statement IDs. PDF page numbers are archive-attributed, NOT rendered original-PDF parity. The supplier's MySQL8 answers and full original seven-table dataset were not available for independent grading. Reviewer SQL is SQLite-only, NOT supplied provider SQL or learner-written work.
+
+| ID | Exact original Git blob SHA | Archive-authored local illustrative result | Independently identified policy boundary |
+|---|---|---|---|
+| A066 | 67ae69cbbdaee250db53057171ab3482ccb108f9 | p.13: tied 10,10,20: ROWS 10/20/40; RANGE 20/20/40 | RANGE treats ORDER BY peers together; ROWS walks one row at a time. Sample ROWS order assumes smaller order ID first. NULL peers and stable tie ordering require explicit policy. |
+| A067 | d9ad182199cd687c0fdfaaf846575b1d6aaa3f90 | p.13: Jan 30 10; Jan 31 20; Feb 1 5 -> 10/30/5 | Partition by year-month, not month number. Duplicate dates, NULL dates and cancelled orders not provider specified. |
+| A068 | 130c2d5e7f9efc5f7a0afd073618f4f04b98f3eb | p.13: amounts 40,25,60 -> maxima 40,40,60; differences 0,-15,0 | Per-customer order, order-ID tie resolution, current-row inclusion, negative/NULL amounts require stated assumptions. |
+| A069 | 518a30fa3c649e61d29ed1326741d2b24537c0ec | p.14: spends 80/60/40/20 -> quartiles 1/2/3/4 | Group by customer before NTILE(4); ties can split between tiles, populations under four produce fewer tiles, customers with zero orders may be excluded. |
+| A070 | 289da2f3137fe948b437a414a00754a5a7109cab | p.14: Electronics 70, Books 30 -> 70%/30% | Line revenue qty*unit_price, duplicate product-key fanout, orphan order items, zero/negative denominator, cancellation/refund inclusion unknown. |
+
+All five originals retain NOT SOLVED YET, learner SQLite Pending, learner SQL Server Pending, and Official solution Pending. The archived illustrations are NOT official provider expected outputs; no original answer or learner historical record was edited.
+
+Source-pin guard and nineteen further synthetic methods are implemented in [20-method reviewer](../scripts/check_pnp_advanced_66_70_window_quartile_share_contracts.py). Five methods replay archived local illustrative examples. Four independent deterministic Python oracle sweeps cover 81 month-running, 81 running-max, 256 quartile ordering, and 27 category share scenarios = 445 **reviewer-generated** combinations, not source examples/graded outputs/independent learner work. Test execution result must be verified from completed matching-head GitHub Actions logs before awarding synthetic-pass credit.
+
+**Unresolved:** visual rendered original PDF pp.13–14, authenticated supplier MySQL 8 SQL and output verification, original dataset, licensing/privacy review, remaining PNP/Bosscoder/Python/W3Schools/other DE content, comprehensive source→concept evidence. Conservative clean PNP supplied-key replay still 94/205. No new official answer verified, no independent learner completion, no mastery. Issue #1 remains OPEN. Pending ChatGPT Library learning record plus later sessions remain UNSYNCED from GitHub until full independent audit signoff and separately passing post-sync CI.

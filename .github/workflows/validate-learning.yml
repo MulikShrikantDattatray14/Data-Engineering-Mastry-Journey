@@ -312,6 +312,8 @@ jobs:
         run: python3 scripts/check_pnp_advanced_56_60_revenue_lag_lead_cross_contracts.py
       - name: Differential review A061-A065 archived illustration and 18 immutable-source-pinned calendar/window tests
         run: python3 scripts/check_pnp_advanced_61_65_calendar_running_differential.py
+      - name: Source-pin A066-A070 original questions and replay 20 bounded SQLite reviewer contracts
+        run: python3 scripts/check_pnp_advanced_66_70_window_quartile_share_contracts.py
       - name: Audit source-pinned A061-A070 and 20 calendar/window/peer reviewer SQLite fixture groups
         run: python3 scripts/check_pnp_advanced_61_70_sources.py
       - name: Audit source-pinned A071-A080, ten original statements and twenty reviewer SQLite cases

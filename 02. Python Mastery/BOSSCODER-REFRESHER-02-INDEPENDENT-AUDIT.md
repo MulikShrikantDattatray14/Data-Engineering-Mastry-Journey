@@ -49,3 +49,27 @@ Compared all Lecture-02 topic families with the preexisting canonical Python cha
 CI executes [the lecture-02 source-hash-pinned checker](../scripts/check_bosscoder_refresher_02_notes.py) in the established repository workflow: `python3 scripts/check_bosscoder_refresher_02_notes.py`. A successful run verifies **only** the archived-note statements, their described outputs and synthetic fixture assertions, **not** the user's private PDF or original academy grading.
 
 Open: remaining original PDF source cells and original notebook execution-state fidelity; four original platform assignments (no learner-authored solutions/grades); Bosscoder Lectures 03–07; PNP 205 official SQL answer/output/dataset/dialect signoff; W3Schools broader comparison; other DE domains; privacy/license/source-to-concept final signoff; post-audit learning sync. No historical learner attempt, original archive, active progress JSON or separate ChatGPT Library study record is modified. **Issue #1 must stay OPEN.**
+
+
+## 15 November 2026 — independently re-opened original PDF pp.4–6; precise cross-cell state forensic evidence (PARTIAL)
+
+**Primary-source access recovered in the user-owned ChatGPT Library for audit only, with no public PDF copy:** opened actual original **pages 4, 5 and 6** including page renders, materialized the private 577,682-byte PDF solely to the auditor's temporary work area, and independently recomputed the exact SHA-256 \`09ba1141054463b6eac814da13eaa0c401822298eded114fe831d89d5a3ff010\` across the 11-page file. This matches the original PDF SHA previously recorded above and establishes which private original was re-opened, not which notebook cell execution sequence produced its screenshots.
+
+**New source-specific finding: four displayed *lists* differ from a clean uninterrupted run of just the visible p4→p5 code**, beyond the already documented inline comments/stale-state warning. The auditor re-executed the visible operations sequentially in isolated CPython without modifying archived notebooks, user attempts or source PDF.
+
+| Visible cell | Uninterrupted fresh-kernel replay | List printed in original PDF | Result |
+| --- | --- | --- | --- |
+| PDF p4 append | \`['apple','banana','cherry','date']\` | Same members/order | Match |
+| PDF p4 insert banana at index 1 | \`['apple','banana','banana','cherry','date']\` | Contains **three** bananas rather than two | **Mismatch** |
+| PDF p4 remove first banana | \`['apple','banana','cherry','date']\` | Still contains **two** bananas | **Mismatch** |
+| PDF p4 pop index 1 | Returned \`banana\`; remaining \`['apple','cherry','date']\` | Returned \`banana\` matches, but printed list retains another banana | **List mismatch** |
+| PDF p4 clear | \`[]\` | \`[]\` | Match |
+| PDF p5 extend after p4 clear | \`['fig','grape']\` | Original display also includes \`apple,banana,cherry\` | **Mismatch** |
+
+The separate p5 \`fruit\` (singular) count cell prints **1** and **does not** assign to \`fruits\` (plural), so it does not resolve the displayed-state discrepancy. A PDF is a snapshot, not a Colab execution trace: **out-of-order re-runs, hidden notebook state and intervening cells cannot be independently excluded**. Do not label these four discrepancies an authenticated Academy-key defect or mark original learner attempts wrong.
+
+**Additional directly checked primary-page contracts:** p4 numeric \`sort()\` then \`reverse()\` correctly show [1,2,5,9] then [9,5,2,1]; p5 the basic concatenation, threefold repetition and two membership expressions match the Python semantics; p6 the six displayed expression values for length, lower/upper, whitespace trimming, replacement and split match **interactive repr()**, not stdout from \`print()\`. Page 6's character loop \`print(ch, end=" ")\` outputs a final trailing space and no final newline by Python semantics (a rendered PDF may not expose trailing whitespace reliably).
+
+[Dedicated reviewer-only 10-method regression](../scripts/check_bosscoder_refresher_02_original_pdf_p4_p6_sequential_state.py) checks the independently transcribed visible/output contracts. **Crucial evidence distinction:** the exact private PDF was read/rendered and SHA-verified outside GitHub; GitHub Actions does **not** receive the private PDF, so its checker can only replay the clearly labeled transcriptions and synthetic continuous-state counterfactual, not perform original PDF blob-level/source-image CI comparison. This is an incremental original-source provenance and reproducibility check, **not** a new graded assignment, learner answer, full page-1–11 cell replay, or mastery. All four Lecture-02 assignments remain 0/4 independent completions.
+
+The 13 companion Markdown-fence executions and 21,844 Q04 synthetic arrays were **already verified by the two preexisting independent checkers**; these are explicitly *not* counted again as newly covered lesson examples. A proposed redundant duplicate checker/ledger was reverted before publishing this targeted primary-PDF regression. The private PDF stays in user Library; neither original archive nor historical learner progress nor canonical foundations nor pending learning-sync record is modified. Full Issue #1 audit and separate post-signoff learning synchronization remain gated.

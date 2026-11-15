@@ -610,6 +610,14 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q081_q082_native_postgres_boundaries.py
+      - name: Replay unmodified PNP Q083 active-category P25 source SQL on native PostgreSQL 16 (12 tests)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q083_native_postgres_subcategory_percentile.py
       - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
         env:
           PGHOST: 127.0.0.1

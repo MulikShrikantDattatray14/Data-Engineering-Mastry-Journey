@@ -434,7 +434,7 @@ jobs:
       - name: Replay 23 original Python Foundations page 30-34 blocks and 23 source-pinned review tests
         run: python3 scripts/check_python_foundations_06_10_source_examples.py
 
-      - name: Source-pin Python-from-Zero original pages 15-19 and replay 16 reviewer methods
+      - name: Source-pin Python-from-Zero original pages 15-19 and replay 17 reviewer methods
         run: python3 scripts/check_python_from_zero_lessons_11_15_source_contracts.py
 
   native_mysql_pnp_85_90:

@@ -63,9 +63,22 @@ class IndependentOriginalElevenToFifteen(unittest.TestCase):
         for i in range(5):
             with self.subTest(source=i): exact(11, [i], i)
 
-    def test_03_lesson12_all_seven_original_exact_printouts(self):
-        for i in range(7):
+    def test_03_lesson12_six_original_exact_printouts(self):
+        for i in (0, 2, 3, 4, 5, 6):
             with self.subTest(source=i): exact(12, [i], i)
+
+    def test_03b_source12_original_trailing_space_output_discrepancy(self):
+        # Source intentionally PRESERVED, not silently normalized or rewritten.
+        # Original code's print(product, end=" ") emits a trailing space.
+        observed = run(12, [1])
+        self.assertEqual(0, observed.returncode, observed.stderr)
+        expected_display = blocks(12, "text")[1]
+        self.assertIn("Mouse Hub Pens\n", expected_display)
+        self.assertEqual(
+            expected_display.replace("Mouse Hub Pens\n", "Mouse Hub Pens \n", 1),
+            observed.stdout,
+        )
+        self.assertNotEqual(expected_display, observed.stdout)
 
     def test_04_lesson13_one_exact_ordered_original_printout(self):
         exact(13, [1], 0)

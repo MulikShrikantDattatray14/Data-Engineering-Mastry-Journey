@@ -460,7 +460,7 @@ jobs:
           MYSQL_PASSWORD: audit
         run: |
           python3 -m venv /tmp/pnp-native-mysql
-          /tmp/pnp-native-mysql/bin/python -m pip install --disable-pip-version-check 'PyMySQL==1.1.1'
+          /tmp/pnp-native-mysql/bin/python -m pip install --disable-pip-version-check 'PyMySQL==1.1.1' 'cryptography==46.0.3'
           /tmp/pnp-native-mysql/bin/python scripts/check_pnp_advanced_85_90_native_mysql.py
 
   native_postgres_pnp_84_90:

@@ -205,12 +205,10 @@ class NativeNULLSemantics(unittest.TestCase):
             clean = [v for v in values if v is not None]
             self.assertEqual(actual,(5,len(clean),len(set(clean))))
 
-    def test_15_a093_256_synthetic_contact_oracles(self):
+    def test_15_a093_64_distinct_synthetic_contact_oracles(self):
         kinds = (None,""," A ","B")
-        for i,values in enumerate(itertools.product(kinds,repeat=4)):
+        for i,values in enumerate(itertools.product(kinds,repeat=3)):
             self.execute("DELETE FROM customer_contacts")
-            # Four contact candidates across the same schema: evaluate first three as source.
-            values = values[:3]
             self.insert("customer_contacts", [(1,*values)])
             result = self.execute("""SELECT COALESCE(work_phone,mobile,email,'no contact')
                                      FROM customer_contacts""")[0][0]

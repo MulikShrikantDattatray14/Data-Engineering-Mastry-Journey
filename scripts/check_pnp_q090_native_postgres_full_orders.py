@@ -44,12 +44,12 @@ DDL = """CREATE TEMP TABLE Orders (
 
 def blob(path):
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def key_sql():
     source = KEY.read_text(encoding="utf-8")
-    match = re.search(r"(?ms)^-- Q90\\. [^\\n]*\\n(.*?)(?=^-- Q\\d+\\.|\\Z)", source)
+    match = re.search(r"(?ms)^-- Q90\. [^\n]*\n(.*?)(?=^-- Q\d+\.|\Z)", source)
     assert match, "Source Q090 SQL section absent"
     sql = match.group(1).strip()
     assert sql.startswith("WITH anchor AS (") and sql.endswith(";"), "Unexpected Q090 key format"
@@ -136,7 +136,7 @@ class Q090FullOriginalOrdersAudit(unittest.TestCase):
             assert blob(path) == sha, "Source blob drift: " + str(path)
         original = QUESTION.read_text(encoding="utf-8")
         for phrase in ("# PNP Q090.", "NOT SOLVED YET", "## Schema",
-                       "## Official solution\\n\\nPending",
+                       "## Official solution\n\nPending",
                        "### Sample input and expected output"):
             assert phrase in original, phrase
         loader = LOADER.read_text(encoding="utf-8")
@@ -214,9 +214,9 @@ class Q090FullOriginalOrdersAudit(unittest.TestCase):
 
     def test_09_historical_learner_and_official_pending_not_promoted(self):
         content=QUESTION.read_text(encoding="utf-8")
-        self.assertIn("## My solution — SQLite\\n\\nPending.",content)
-        self.assertIn("## My solution — SQL Server\\n\\nPending.",content)
-        self.assertIn("## Official solution\\n\\nPending",content)
+        self.assertIn("## My solution — SQLite\n\nPending.",content)
+        self.assertIn("## My solution — SQL Server\n\nPending.",content)
+        self.assertIn("## Official solution\n\nPending",content)
 
 
 if __name__=="__main__":

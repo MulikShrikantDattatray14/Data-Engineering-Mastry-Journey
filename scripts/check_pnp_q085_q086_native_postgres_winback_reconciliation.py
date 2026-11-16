@@ -221,7 +221,7 @@ class Q086OriginalReconciliation(unittest.TestCase):
         self.assertEqual(result["Header zero or NULL"][4],Decimal("45"))
 
     def test_16_other_shortfall_header_above_and_unknown_product(self):
-        result = grouped(run86(headers=[(1,10,17),(2,10,25),(3,10,20)],
+        result = grouped(run86(headers=[(1,10,16),(2,10,25),(3,10,20)],
                                lines=[(1,1,101,1),(2,2,101,1),(3,3,999,1)],
                                products=[(101,20)], payments=[(10,"Card")]))
         self.assertEqual(result["Other shortfall"][1],1)

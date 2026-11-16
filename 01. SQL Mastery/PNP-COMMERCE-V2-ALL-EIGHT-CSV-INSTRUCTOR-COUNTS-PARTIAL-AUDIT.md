@@ -33,3 +33,13 @@ The instructor's **72 duplicate accounts** and other grouped duplicate/submissio
 ## Audit status and required next work
 
 **PARTIAL, NOT signed off.** After first CI completion, inspect each named test and correct any assertion mismatch by documenting original-source calculation and why, **never altering original archives to force a pass**. Confirm exact main head, file scope preservation and Issue #1 status. Full Commerce PostgreSQL import, supplier answer keys and rendered PDFs, all 205 question/source-contract signoff, remaining Python/Bosscoder/W3Schools/DE coursework, public distribution rights, personal-data review and source-to-concept reconciliation remain open. Conservative distinct supplied-key replay tally remains **94/205**, unchanged; no authenticated provider answer, independent learner completion, or mastery is gained. Pending ChatGPT Library study record and later learner evidence remain **UNSYNCED** pending final audit signoff and post-sync CI.
+
+## New whole-CSV discrepancy evidence from first exact-head CI (16 November)
+
+The initial [implementation run 43787160283](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43787160283) exposed **two genuine literal-predicate versus instructor-count discrepancies** plus a reviewer implementation bug. **Do not suppress or reinterpret either discrepancy as official-provider grading proof**:
+
+1. **Products Market_Price < Sale_Price: 18 actual full-CSV rows**, despite instructor claiming 12 under that literal predicate. The source also flags **six Market_Price=0 rows**. Excluding zero-market-price rows yields **12 nonzero below-sale rows**; thus 12+6 are disjoint only under an additional Market_Price > 0 condition absent from its documented query. Corrected reviewer asserts 18 literal and 12 nonzero counts against untouched CSV.
+2. **Customers Email LIKE '% %': 38 full-CSV rows** contain a literal space; only **three contain an internal space after trimming outer whitespace**. The key calls internal-space issue '3' but recommends raw LIKE, which includes 35 externally padded emails. Corrected reviewer asserts 38 raw and three internal-space results without publishing any address.
+3. Original audit helper used sum on expressions sometimes returning None rather than False when date blank; an **auditor-reviewer bug**, not dataset problem. Corrected optional-date counters to explicit bool and kept DD-MM-YYYY source parsing. Date results require new exact-head CI.
+
+The first run reported **nine passed, two failed, one error out of twelve**; changing reviewer interpretations does **not** repair any original archive. Corrected-head CI verification and Issue #1 reporting remain required.

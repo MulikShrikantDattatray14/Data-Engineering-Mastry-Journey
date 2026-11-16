@@ -1,3 +1,10 @@
+### 16 November 2026 — actual eight-CSV instructor-key discrepancies (PARTIAL; corrected-head CI pending)
+
+- [x] Initial exact-head full-data run [43787160283](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43787160283) exposed two independent source interpretation mismatches: actual Market_Price < Sale_Price finds **18** products, not instructor's **12**, because six zero-market products overlap; adding Market_Price > 0 yields 12. Actual Email LIKE '% %' finds **38** customers, not instructor's **three** internal-space emails; trimming outer spaces first yields three. Neither authenticates provider grading nor changes the source. Reviewer now checks both literal and narrowed buckets, [evidence ledger](<01. SQL Mastery/PNP-COMMERCE-V2-ALL-EIGHT-CSV-INSTRUCTOR-COUNTS-PARTIAL-AUDIT.md>).
+- [x] Corrected auditor-only optional-date sum(None) error (not a source defect). Initial 12 tests: nine pass, two fail under unqualified key claims, one error. **Corrected commit needs exact-head CI**, no success claimed. Original sources and learner history unchanged; Issue open, distinct supplied-key tally **94/205** unchanged, ChatGPT Library learner study **UNSYNCED**.
+
+---
+
 ### 16 November 2026 — original Commerce v2 complete eight-CSV vs instructor anomaly-key consistency (PARTIAL; exact final CI pending)
 
 - [x] Reopened complete source dataset provenance (8 Git-blob-pinned untouched CSVs; original README, load_dataset_v2.sql and instructor/planted_issues.md) and added [12-method read-only full-CSV reviewer](scripts/check_pnp_v2_full_commerce_planted_issues.py) with [per-source evidence ledger](<01. SQL Mastery/PNP-COMMERCE-V2-ALL-EIGHT-CSV-INSTRUCTOR-COUNTS-PARTIAL-AUDIT.md>). This is an **actual full-CSV source-row comparison** of supplier/instructor issue counts, not synthetic key output; original CSVs are not copied or modified. CI must be independently checked before execution PASS is claimed.

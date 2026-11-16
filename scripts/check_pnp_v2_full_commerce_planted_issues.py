@@ -137,10 +137,19 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
         brand_blank = sum(not r["Brand"].strip() for r in p)
         trailing_name = sum(r["Product"] != r["Product"].strip() for r in p)
         rating_missing = sum(r["Rating"] == "" for r in p)
+        nonzero_below = sum(number(r["Market_Price"]) is not None and
+                            number(r["Market_Price"]) > 0 and
+                            number(r["Sale_Price"]) is not None and
+                            number(r["Market_Price"]) < number(r["Sale_Price"])
+                            for r in p)
         actual = (sale_below, market_zero, sale_missing,
                   brand_blank, trailing_name, rating_missing)
-        self.assertEqual(actual, (12, 6, 4, 10, 8, 4360))
-        print("Products quality (market below sale, market zero, sale NULL, brand blank, name padding, unrated):", actual)
+        # Instructor calls 12 rows "Market_Price below Sale_Price" and separately
+        # 6 rows price=0. But its literal WHERE market < sale returns 18,
+        # because those six zero-market rows overlap; count nonzero separately.
+        self.assertEqual(actual, (18, 6, 4, 10, 8, 4360))
+        self.assertEqual(nonzero_below, 12)
+        print("Products actual market<sale 18 (including six zero markets); nonzero market<sale 12; other issue counts:", actual)
 
     def test_04_suppliers_duplicate_emails_countries_and_unused_source_ids(self):
         by_name = collections.Counter(r["CompanyName"].strip().casefold() for r in self.s)
@@ -182,16 +191,19 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
         print("Shippers: unused source IDs 9/10; 25 NULL and 3 orphan order shipper references (ID 11)")
 
     def test_07_customer_email_gaps_and_no_order_accounts(self):
-        emails_with_space = sum(" " in r["Email"] for r in self.cu)
+        raw_space = sum(" " in r["Email"] for r in self.cu)
+        emails_with_space = sum(" " in r["Email"].strip() for r in self.cu)
         ordered = {ident(r["CustomerID"]) for r in self.o if r["CustomerID"]}
         never_ordered = self.keys["Customers.csv"] - ordered
         norm = collections.Counter(r["Email"].strip().casefold()
                                    for r in self.cu if r["Email"].strip())
         duplicate_groups = sum(v > 1 for v in norm.values())
         duplicate_extras = sum(v - 1 for v in norm.values() if v > 1)
-        self.assertEqual(emails_with_space, 3)
+        # WHERE Email LIKE '% %' in source key also counts edge-padding.
+        # Distinguish 3 internal-space values from 38 with ANY literal space.
+        self.assertEqual((raw_space, emails_with_space), (38, 3))
         self.assertEqual(len(never_ordered), 647)
-        print("Customers: 3 emails containing spaces; never ordered:", len(never_ordered),
+        print("Customers: 38 raw-space emails, of which 3 have internal spaces; never ordered:", len(never_ordered),
               "normalized-email duplicate groups:", duplicate_groups,
               "extra accounts:", duplicate_extras,
               "(72 instructor label not yet assigned to group-vs-row semantics)")
@@ -226,19 +238,19 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
               (bad_order, bad_product, bad_supplier, empty_quantity, zero_quantity, len(no_lines)))
 
     def test_10_actual_shipping_date_contradictions_and_late_unshipped(self):
-        shipped_first = sum(day(r["ShipDate"]) and day(r["OrderDate"]) and
-                            day(r["ShipDate"]) < day(r["OrderDate"])
+        shipped_first = sum(bool(day(r["ShipDate"]) and day(r["OrderDate"]) and
+                                 day(r["ShipDate"]) < day(r["OrderDate"]))
                             for r in self.o)
-        delivered_first = sum(day(r["DeliveryDate"]) and day(r["ShipDate"]) and
-                              day(r["DeliveryDate"]) < day(r["ShipDate"])
+        delivered_first = sum(bool(day(r["DeliveryDate"]) and day(r["ShipDate"]) and
+                                   day(r["DeliveryDate"]) < day(r["ShipDate"]))
                               for r in self.o)
         delivered_unshipped = sum(r["DeliveryDate"] and not r["ShipDate"] for r in self.o)
         self.assertEqual((shipped_first, delivered_first, delivered_unshipped),
                          (12, 9, 6))
         last_order = max(day(r["OrderDate"]) for r in self.o if r["OrderDate"])
         cutoff = last_order - timedelta(days=14)
-        old_unshipped = sum(not r["ShipDate"] and day(r["OrderDate"]) and
-                            day(r["OrderDate"]) <= cutoff for r in self.o)
+        old_unshipped = sum(bool(not r["ShipDate"] and day(r["OrderDate"]) and
+                                 day(r["OrderDate"]) <= cutoff) for r in self.o)
         self.assertEqual(old_unshipped, 320)
         print("Orders: ship before order, deliver before ship, deliver without ship, 14-day cutoff unshipped:",
               (shipped_first, delivered_first, delivered_unshipped, old_unshipped))

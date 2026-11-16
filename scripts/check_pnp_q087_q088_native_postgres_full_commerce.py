@@ -343,6 +343,8 @@ class PNPQ087Q088OriginalFullSourceAudit(unittest.TestCase):
         self.__class__.whole_data = data
         self.__class__.whole_q87_ok = True
         print("Q087 full 8-CSV original key: seven rows vs independent reference counts PASS")
+        print("Q087 aggregate child/null/orphan counts:",
+              [(r[0],r[1],r[2],r[3]) for r in expected87(data)])
 
     def test_13_actual_eight_immutable_CSVs_versus_independent_q088_rules(self):
         data = getattr(self.__class__,"whole_data",None)
@@ -353,6 +355,8 @@ class PNPQ087Q088OriginalFullSourceAudit(unittest.TestCase):
         self.assertEqual(rows,reference)
         self.assertEqual(len(rows),9)
         print("Q088 full 8-CSV original key: nine rules vs independent date reference PASS")
+        print("Q088 aggregate rule/checked/violations/rate:",
+              [(r[0],r[3],r[4],str(r[5])) for r in reference])
 
     def test_14_original_claims_not_provider_grading_or_learner_completion(self):
         for q in (Q87,Q88):

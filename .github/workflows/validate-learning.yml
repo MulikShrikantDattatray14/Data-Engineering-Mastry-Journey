@@ -645,6 +645,14 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q090_native_postgres_full_orders.py
+      - name: Differential full-source Q091 cohort LTV against 46438 original Orders records (9 tests)
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: 5432
+          PGDATABASE: audit
+          PGUSER: audit
+          PGPASSWORD: audit
+        run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q091_full_original_orders_cohort.py
       - name: Replay original PNP P099 weekly anomaly SQL natively and flag silent trailing week gap
         env:
           PGHOST: 127.0.0.1

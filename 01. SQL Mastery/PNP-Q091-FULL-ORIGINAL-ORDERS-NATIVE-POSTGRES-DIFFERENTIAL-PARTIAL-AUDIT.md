@@ -26,3 +26,27 @@ Nine bounded/source-data tests are defined: immutable blobs and historical state
 **Indexed:** already yes, Q091 one of original 205. **Statement inspected:** yes, original task, schema, illustration, supplier key and loader individually reopened with immutable pins. **Synthetic test passed:** this new suite requires its own CI proof; earlier native Q091 bounded tests have been verified separately. **Actual-source output verified:** pending final run evidence. **Official answer verified:** **NO** (both contradictory source example and no authenticated provider grading). **Learner independently solved:** **NO**; original pending fields are preserved. **Mastery:** **NO**.
 
 Do **not** increment the conservative distinct clean PNP supplier-key count (**94/205**) for repeat inspection or for a mismatch. Original PDF pp.180–184 not rendered, complete 205 SQL output/semantics, Python mentorship, Bosscoder Python/SQL lectures/assignments, W3Schools, other DE, rights/PII and complete source-to-concept final signoff remain open. [GitHub Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) must stay **OPEN**. The separate ChatGPT Library `/Data Engineering Study/DE_LEARNING_PENDING_GITHUB_SYNC_2026-11-09.md` plus later practice are **UNSYNCED** until independent full-audit signoff plus a **separate successful post-sync CI**.
+
+
+## Direct native CI log evidence: original whole-Orders result (16 November 2026)
+
+The *implementation/workflow-head* [Actions 43810020879](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43810020879) **completed/success** at exact SHA `f562df52892843fbfe48c2c31bbc7cd4d9050cd2`. Independently decoded its PostgreSQL job `133109394073`: **all nine named `Q091FullCommerceCohortReview` tests `ok`, `Ran 9 tests`, `OK`**, including the entire 46,438-row differential, historical Pending guard, original illustration contradiction, native PG version and bounded data-quality edge cases. The job log says **12 quarterly cohorts**, **4,427 unique non-NULL dated customers** across them, first cohort 2023-01-01, last 2025-10-01. Latest source order 2025-12-28; supplier last fully observed month computes to 2025-11-01.
+
+**Exact matching original-source tuples (unaltered PostgreSQL Q91 SQL = independently coded Python Decimal oracle for the *supplier maturity policy*):**
+
+| Acquisition quarter | Customers | m0 | m3 | m6 | m12 |
+|---|---:|---:|---:|---:|---:|
+| 2023-Q1 | 203 | 2895.27 | 7424.71 | 11414.38 | 19553.06 |
+| 2023-Q2 | 126 | 2110.10 | 6849.02 | 10981.25 | 16357.10 |
+| 2023-Q3 | 138 | 1936.66 | 7087.96 | 10611.94 | 15786.41 |
+| 2023-Q4 | 206 | 1835.81 | 5513.52 | 8064.22 | 12722.01 |
+| 2024-Q1 | 220 | 2369.60 | 6719.33 | 10720.40 | 17021.09 |
+| 2024-Q2 | 228 | 2368.85 | 6388.72 | 10073.38 | 15306.44 |
+| 2024-Q3 | 301 | 1725.03 | 6657.23 | 10204.10 | 15939.99 |
+| 2024-Q4 | 445 | 2164.06 | 6971.86 | 10227.62 | NULL |
+| 2025-Q1 | 464 | 2144.52 | 6392.78 | 10129.42 | NULL |
+| 2025-Q2 | 501 | 2103.59 | 6416.20 | NULL | NULL |
+| 2025-Q3 | 591 | 2215.92 | NULL | NULL | NULL |
+| 2025-Q4 | 1004 | NULL | NULL | NULL | NULL |
+
+All twelve original-key rows matched independent reference row-for-row, but this **does not resolve** the two original illustrated source contract discrepancies. The youngest 2025-Q4 cohort's m0 is NULL under the unchanged source supplier's **entire-quarter** maturity rule; do not silently label that a provider mistake or confuse that policy with each customer's independently acquired-month maturity. The first **tested** implementation head passed; any **later** documentation/status main SHA still needs its own exact-head complete CI verification. Actual-source output test **PASS**, *official answer verified* **NO**, *learner independently solved* **NO**, clean distinct key tally **94/205 unchanged**.

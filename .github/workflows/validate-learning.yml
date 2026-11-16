@@ -19,6 +19,9 @@ jobs:
       - name: Verify preserved references, indexes and links
         run: python3 scripts/validate_learning_repository.py
 
+      - name: Cross-check all eight original Commerce v2 CSVs against instructor planted-issues counts (12 source tests)
+        run: python3 scripts/check_pnp_v2_full_commerce_planted_issues.py
+
       - name: Audit seven DE subject navigation-only folders against 18 source-pinned originals (12 structural checks)
         run: python3 scripts/check_de_subject_03_09_navigation_primary_gap.py
 

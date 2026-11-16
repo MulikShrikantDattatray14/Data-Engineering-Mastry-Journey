@@ -45,12 +45,12 @@ DDL = """CREATE TEMP TABLE Orders (
 
 def blob_sha(path: Path) -> str:
     data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def source_sql() -> str:
     text = KEY.read_text(encoding="utf-8-sig")
-    match = re.search(r"(?ms)^-- Q91\\. [^\\n]*\\n(.*?)(?=^-- Q92\\.|\\Z)", text)
+    match = re.search(r"(?ms)^-- Q91\. [^\n]*\n(.*?)(?=^-- Q92\.|\Z)", text)
     assert match, "Q091 original supplier SQL marker not found"
     sql = match.group(1).strip()
     assert sql.startswith("WITH anchor AS") and sql.endswith(";"), "key source section drift"
@@ -173,8 +173,8 @@ class Q091FullCommerceCohortReview(unittest.TestCase):
         question = QUESTION.read_text(encoding="utf-8-sig")
         for text in ("# PNP Q091.", "NOT SOLVED YET",
                      "2025-01-05", "2026-01-31", "cohort has not yet",
-                     "## My solution — SQLite\\n\\nPending",
-                     "## Official solution\\n\\nPending"):
+                     "## My solution — SQLite\n\nPending",
+                     "## Official solution\n\nPending"):
             assert text in question, ("source status/task drift", text)
         loader = LOADER.read_text(encoding="utf-8")
         for text in ("Total_Order_Amount NUMERIC(12,2)",
@@ -270,8 +270,8 @@ class Q091FullCommerceCohortReview(unittest.TestCase):
 
     def test_09_no_provider_grade_or_learner_solution_inferred(self):
         question = QUESTION.read_text(encoding="utf-8-sig")
-        self.assertIn("## My solution — SQL Server\\n\\nPending",question)
-        self.assertIn("## Official solution\\n\\nPending",question)
+        self.assertIn("## My solution — SQL Server\n\nPending",question)
+        self.assertIn("## Official solution\n\nPending",question)
 
 
 if __name__ == "__main__":

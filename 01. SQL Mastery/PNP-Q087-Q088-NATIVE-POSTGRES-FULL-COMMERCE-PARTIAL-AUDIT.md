@@ -45,3 +45,41 @@ Q087 checks all seven relationship counts, NULL foreign keys, non-NULL missing-p
 - **Conservative supplied-key clean replay tally:** previously **94/205**; no automatic increase from the two previously inspected questions or a Q088 known contract failure.
 - **CI and scope:** exact-main workflow/job/log verification and Git compare are still required after test and documentation commits; do not mark completed merely because a workflow started.
 - **Unresolved globally:** original PDF page visual/parity, full 205-question contract/output review and source-provided answers, Bosscoder SQL/Python and mentorship, W3Schools, other DE curriculum, licensing/PII, final all-source concept/integrity signoff. **Issue #1 stays OPEN.** Pending ChatGPT Library learner-study record and later study remain **UNSYNCED** until the complete independent audit and separately successful post-sync CI.
+
+## Independently verified implementation-head execution (16 November 2026)
+
+The [GitHub Actions implementation-head run 43795846551](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43795846551) executed at exact commit `54e311dacfd40308f8fe8709b758febd05c9e865`. Decoded native PostgreSQL job logs (job `133064359170`) independently show **14/14 reviewer methods OK**, PostgreSQL **16.16**, both unmodified supplier SQL sections executing on the complete original **eight** source CSVs and producing **exactly matching rows** to the independently calculated Python reference, including orphan-key samples, exception example IDs and rounded percentages. The repository ledger records safe aggregate counts only; it does not disclose individual record keys. CI for the **subsequent documentation head** must still be independently checked after this edit.
+
+**Q087 actual complete-source output** (relationship order from original, columns: total child rows / NULL FK rows / orphan FK rows):
+
+| Original relationship | Child rows | NULL FK | Non-NULL orphan FK |
+| --- | ---: | ---: | ---: |
+| Products.CategoryID → Category | 22,088 | 0 | 40 |
+| Orders.CustomerID → Customers | 46,438 | 0 | 8 |
+| Orders.PaymentID → Payments | 46,438 | 20 | 0 |
+| Orders.ShipperID → Shippers | 46,438 | 25 | 3 |
+| OrderDetails.OrderID → Orders | 168,567 | 0 | 12 |
+| OrderDetails.ProductID → Products | 168,567 | 0 | 15 |
+| OrderDetails.SupplierID → Suppliers | 168,567 | 0 | 5 |
+
+These are actual original data matches, including the full supplier-key orphan-sample values compared internally (not published). This independently reconciles the Q087 supplier report with the original full CSVs; it does not certify supplier official grading.
+
+**Q088 actual complete-source scorecard** (the supplier key and independent Python calculation agree on all nine rows):
+
+| Rule | Records checked | Violations | Rate (%) |
+| ---: | ---: | ---: | ---: |
+| 1 — Order date missing | 46,438 | 0 | 0.00 |
+| 2 — Shipped before ordered | 46,438 | 12 | 0.03 |
+| 3 — Delivered before shipped | 46,438 | 9 | 0.02 |
+| 4 — Delivered before ordered | 46,438 | 4 | 0.01 |
+| 5 — Delivered with no ship date | 46,438 | 6 | 0.01 |
+| 6 — Ordered before sign-up | 46,438 | 29 | 0.06 |
+| 7 — Delivered after seven-day promise | 46,438 | 6,350 | 13.67 |
+| 8 — Not shipped 14+ days after order | 46,438 | 320 | 0.69 |
+| 9 — Customer sign-up date missing | 5,072 | 40 | 0.79 |
+
+**Substantive reconciliation of prior CSV findings:** Rule 8's 320 orders correctly excludes the six records that have a DeliveryDate despite no ShipDate, whereas a loose original instructor predicate counted 326. Q088 rule 5 independently flags those six as a different error category. Rule 7's 6,350 is the source-key's strict whole-day `> 7` rule, not a published provider grade. Rule 9's 40 corresponds to original customer date strings mapped to NULL by the loader's patterns, not an invented missing-data count.
+
+**Open source-contract failure:** Empty Orders **and** Customers produces zero rule rows, violating the explicitly fixed nine-rule zero-count output requirement; an empty Customers table drops rule 9 even when Orders exist. The native reviewer includes assertions that reproduce these failures as known discrepancies, not assertions that these outputs satisfy the task. Source-level results on the actual nonempty original CSVs can still agree with the independent reference.
+
+**Level separation:** `indexed` ✔; `statement inspected` ✔ (existing prior credit); `native synthetic replay` ✔ (14 tests); `full original-source supplier output compared` ✔ for **Q087/Q088 only**, with the empty-input caveat; `official answer authenticated` ✘; `learner independently solved` ✘. Conservative clean verified supplier-key distinct count **94/205 remains unchanged**. No original archive, canonical learner note, historical attempt/progress or supplier answer was edited. Full-source parity of the **projection** used for these two SQL queries does not prove the whole original loader/schema, original PDF visual text, all 205 keys, licensing/privacy, or the four-source curriculum audit.

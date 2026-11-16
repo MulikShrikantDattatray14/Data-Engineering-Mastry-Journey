@@ -30,3 +30,21 @@ An independent Python implementation then calculates, for **each of eight origin
 - **Learner independently solved:** no, historical NOT SOLVED YET/Pending untouched.
 
 **Open beyond Q090:** unresolved empty-table output contract, complete provider PDF/source reconciliation, remaining PNP SQL source/key semantics across all 205, Python mentorship, Bosscoder, W3Schools, other DE, PDF/ZIP/CSV image licensing and PII, plus whole-repository source-to-concept signoff. Conservative clean distinct supplied-key count stays **94/205**, without crediting Q090's known gap. [GitHub Issue #1](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/issues/1) must remain **OPEN**. The ChatGPT Library learning record `/Data Engineering Study/DE_LEARNING_PENDING_GITHUB_SYNC_2026-11-09.md` and later interactive learning remain **UNSYNCED** until separate audit and post-sync CI gates.
+
+
+## Independently observed native execution on code/workflow head (16 November)
+
+The *native PostgreSQL job* in [Actions run 43800717771](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry-Journey/actions/runs/43800717771), head `53dae37c7563e310447c0ad867c6c90ecce5ce40`, independently reports **9/9 named new tests passed** (`Ran 9 tests`, `OK`) from job `133080060606`. This is a verified native-job result, **not** yet final documentation-head full workflow success. The original supplier-attributed Q090 SQL and independent Python reference produced **exactly equal eight full-data result tuples**, including column order, NULL percentages and all distinct counts:
+
+| Column | Rows | NULL | NULL % | Latest-30d NULL % | Distinct non-NULL |
+|---|---:|---:|---:|---:|---:|
+| OrderID | 46,438 | 0 | 0.00 | 0.00 | 46,438 |
+| CustomerID | 46,438 | 0 | 0.00 | 0.00 | 4,427 |
+| PaymentID | 46,438 | 20 | 0.04 | 0.00 | 8 |
+| OrderDate | 46,438 | 0 | 0.00 | 0.00 | 1,093 |
+| ShipperID | 46,438 | 25 | 0.05 | 0.00 | 9 |
+| Total_Order_Amount | 46,438 | 5 | 0.01 | 0.00 | 8,870 |
+| ShipDate | 46,438 | 455 | 0.98 | 4.11 | 1,093 |
+| DeliveryDate | 46,438 | 796 | 1.71 | 15.17 | 1,093 |
+
+Independent latest non-NULL OrderDate = **2025-12-28**; the strict `> max - 30 days` window contains **3,138** dated Orders; source OrderDate NULL count = **0**. The full-data match is a stronger partial audit than an illustrative fixture, but **does not resolve** the independently reproduced Q090 empty-input zero-row contract gap. No provider grading, learner completion or mastery is claimed. All later documentation commits need their **own exact-main, all-jobs final CI check**.

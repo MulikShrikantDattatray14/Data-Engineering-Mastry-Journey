@@ -203,6 +203,7 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
         # Distinguish 3 internal-space values from 38 with ANY literal space.
         self.assertEqual((raw_space, emails_with_space), (38, 3))
         self.assertEqual(len(never_ordered), 647)
+        self.assertEqual((duplicate_groups, duplicate_extras), (72, 72))
         print("Customers: 38 raw-space emails, of which 3 have internal spaces; never ordered:", len(never_ordered),
               "normalized-email duplicate groups:", duplicate_groups,
               "extra accounts:", duplicate_extras,
@@ -251,9 +252,15 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
         cutoff = last_order - timedelta(days=14)
         old_unshipped = sum(bool(not r["ShipDate"] and day(r["OrderDate"]) and
                                  day(r["OrderDate"]) <= cutoff) for r in self.o)
-        self.assertEqual(old_unshipped, 320)
-        print("Orders: ship before order, deliver before ship, deliver without ship, 14-day cutoff unshipped:",
-              (shipped_first, delivered_first, delivered_unshipped, old_unshipped))
+        # Literal source predicate ShipDate IS NULL includes six with a
+        # DeliveryDate despite missing ship date. Source key's "never shipped"
+        # count 320 is recovered by excluding those six contradictory rows.
+        truly_undelivered = sum(bool(not r["ShipDate"] and not r["DeliveryDate"]
+                                     and day(r["OrderDate"]) and
+                                     day(r["OrderDate"]) <= cutoff) for r in self.o)
+        self.assertEqual((old_unshipped, truly_undelivered), (326, 320))
+        print("Orders: ship before order, deliver before ship, deliver without ship, raw NULL-ship 14-day cutoff, undelivered subset:",
+              (shipped_first, delivered_first, delivered_unshipped, old_unshipped, truly_undelivered))
 
     def test_11_actual_line_duplicate_grouping_under_instructor_stated_keys(self):
         groups = collections.Counter((r["OrderID"], r["ProductID"],

@@ -610,7 +610,7 @@ jobs:
           PGUSER: audit
           PGPASSWORD: audit
         run: /tmp/pnp-native-pg/bin/python scripts/check_pnp_q081_q082_native_postgres_boundaries.py
-      - name: Replay unmodified PNP Q083 active-category P25 source SQL on native PostgreSQL 16 (12 tests)
+      - name: Replay unmodified PNP Q083 active-category P25 source SQL on native PostgreSQL 16 (13 tests)
         env:
           PGHOST: 127.0.0.1
           PGPORT: 5432

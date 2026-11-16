@@ -244,7 +244,7 @@ class CommerceV2FullOriginalDataAudit(unittest.TestCase):
         delivered_first = sum(bool(day(r["DeliveryDate"]) and day(r["ShipDate"]) and
                                    day(r["DeliveryDate"]) < day(r["ShipDate"]))
                               for r in self.o)
-        delivered_unshipped = sum(r["DeliveryDate"] and not r["ShipDate"] for r in self.o)
+        delivered_unshipped = sum(bool(r["DeliveryDate"] and not r["ShipDate"]) for r in self.o)
         self.assertEqual((shipped_first, delivered_first, delivered_unshipped),
                          (12, 9, 6))
         last_order = max(day(r["OrderDate"]) for r in self.o if r["OrderDate"])
